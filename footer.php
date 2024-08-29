@@ -1,0 +1,757 @@
+<!-- Footer
+	================================================== -->
+    <footer class="footer">
+    <div class="content-block">
+        <div class="container">
+            <div class="row">
+                <!--<div class="col-lg-1 col-md-1 pd0"></div>-->
+                <div class="col-lg-3 col-md-3 pd0">
+                    <div class="row mr0">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="footer-holder">
+                                <img src="https://theguardiansindia.com/images/the-guardians-logo.png?v=0.2" alt="The-Guardians-Real-Estate-Advisory-Firm-in-India">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mr0">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="footer-holder">
+                                <h4 class="footer-seo">The Guardians Real Estate Advisory Firm</h4><br>
+
+
+                                <a class="footer-seo line-gap" role="button" data-toggle="collapse" href="#Mumbai_Office"
+                                   aria-expanded="false" aria-controls="Mumbai_Office">
+                                    + Mumbai Office
+                                </a>
+                                <div class="collapse" id="Mumbai_Office">
+                                    <div class="well">
+                                        <ul class="footer-address">
+                                            <li>C-602 & 603, ONE BKC, G Block, Bandra Kurla Complex,<br>Bandra (E), Mumbai - 400051
+                                            </li>
+                                            <li>022-68770000</li>
+                                            <li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="87e2e9f6f2eef5fec7f3efe2e0f2e6f5e3eee6e9f4eee9e3eee6a9e4e8ea">[email&#160;protected]</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <a class="footer-seo line-gap" role="button" data-toggle="collapse" href="#Dubai_Office"
+                                   aria-expanded="false" aria-controls="Dubai_Office">
+                                    + Dubai Office
+                                </a>
+                                <div class="collapse" id="Dubai_Office">
+                                    <div class="well">
+                                        <ul class="footer-address">
+                                            <li>
+                                                TGREA International Advisory LLP, P07 Building No. 03, Bay Square - Business
+                                                Bay,<br>Dubai (UAE)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <a class="footer-seo line-gap" role="button" data-toggle="collapse" href="#Pune_Office"
+                                   aria-expanded="false" aria-controls="Pune_Office">
+                                    + Pune Office
+                                </a>
+                                <div class="collapse" id="Pune_Office">
+                                    <div class="well">
+                                        <ul class="footer-address">
+                                            <li>Survey No 305, 306 and 339, DSK Ranwara Internal Rd, Ram Nagar, Bavdhan,
+                                                Pune, <br>Maharashtra 411021
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!--<a class="footer-seo line-gap" role="button" data-toggle="collapse" href="#Bengaluru_Office"-->
+                                <!--   aria-expanded="false" aria-controls="Bengaluru_Office">-->
+                                <!--    + Bengaluru Office-->
+                                <!--</a>-->
+                                <!--<div class="collapse" id="Bengaluru_Office">-->
+                                <!--    <div class="well">-->
+                                <!--        <ul class="footer-address">-->
+                                <!--            <li>-->
+                                <!--                World Trade Center, 22nd Floor, Brigade Gateway Campus, Malleshwaram-->
+                                <!--                (W),<br>Bangalore-560055-->
+                                <!--            </li>-->
+                                <!--        </ul>-->
+                                <!--    </div>-->
+                                <!--</div>-->
+
+
+                                <!--<h3 class="footer-seo">Mumbai Office:</h3>
+                                <ul class="footer-address">
+                                    <li>C-603, ONE BKC, G Block, Bandra Kurla Complex, Bandra (E), Mumbai - 400051
+                                    </li>
+                                    <li>022-68770000</li>
+                                    <li>enquiry@theguardiansindia.com</li>
+                                </ul>
+                                <br>
+                                <h3 class="footer-seo">Dubai Office:</h3>
+                                <ul class="footer-address">
+                                    <li>
+                                        TGREA International Advisory LLP,<br>P07 Building No. 03, Bay Square - Business
+                                        Bay, Dubai (UAE)
+                                    </li>
+                                </ul>
+                                <br>
+                                <h2 class="footer-seo">Pune Office:</h2>
+                                <ul class="footer-address">
+                                    <li>Survey No 305, 306 and 339,<br>DSK Ranwara Internal Rd,<br>Ram Nagar, Bavdhan,
+                                        Pune, <br>Maharashtra 411021
+                                    </li>
+                                </ul>
+                                <br>
+                                <h2 class="footer-seo">Bengaluru Office:</h2>
+                                <ul class="footer-address">
+                                    <li>
+                                        World Trade Center, 22nd Floor,<br>Brigade Gateway Campus,<br>Malleshwaram
+                                        (W),<br>Bangalore-560055
+                                    </li>
+                                </ul>-->
+
+
+                            </div>
+                        </div>
+                        <!--<div class="col-lg-6 col-md-6">
+                            <div class="footer-holder">
+                                <h2 class="footer-seo">Pune Office:</h2>
+                                <ul class="footer-address">
+                                    <li>Survey No 305, 306 and 339,<br>DSK Ranwara Internal Rd,<br>Ram Nagar, Bavdhan, Pune, <br>Maharashtra 411021</li>
+                                </ul>
+                                <br>
+                                <h2 class="footer-seo">Bengaluru Office:</h2>
+                                <ul class="footer-address">
+                                    <li>
+                                        World Trade Center, 22nd Floor,<br>Brigade Gateway Campus,<br>Malleshwaram (W),<br>Bangalore-560055
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="row mr0">
+                        <div class="col-md-12">
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-3 pd0">
+                    <div class="footer-links">
+                        <h3>Projects & Other</h3>
+                        <div class="footer-line"></div>
+                        <ul>
+                            <li><a href="https://theguardiansindia.com/our-work.php">Ongoing & Upcoming Projects</a></li>
+                            <!--<li><a href="">Upcoming Projects</a></li>-->
+                            <li><a href="https://theguardiansindia.com/past-projects.php">Completed Projects</a></li>
+                            <li><a href="/blog" target="_blank">Blog</a></li>
+                            <li><a href="/sitemap.xml" target="_blank">Sitemap</a></li>
+                            <li><a href="https://theguardiansindia.com/careers.php">Careers</a></li>
+                            <li><a href="https://theguardiansindia.com/about-us.php">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 pd0">
+                    <div class="footer-links">
+                        <h3>Services</h3>
+                        <div class="footer-line"></div>
+                        <ul>
+                            <li><a href="https://theguardiansindia.com/services/residential-services.php">Residential Services</a></li>
+                            <li><a href="https://theguardiansindia.com/services/commercial-services.php">Commercial Services</a></li>
+                            <li><a href="https://theguardiansindia.com/services/retail-services.php">Retail Services</a></li>
+
+                            <li><a href="https://theguardiansindia.com/services/marketing-consulting-services.php">Marketing Consulting Services</a></li>
+                            <li><a href="https://theguardiansindia.com/services/land-services.php">Land Services</a></li>
+                            <!--<li><a href="">Financial Services</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                                <div class="col-lg-3 col-md-3 pd0">
+                    <div class="footer-links">
+                        <h3>Quicklinks</h3>
+                        <div class="footer-line"></div>
+                        <ul>
+                            <li><a href="https://theguardiansindia.com/services/land-solutions">Land Solutions </a></li>
+                            <li><a href="https://theguardiansindia.com/services/real-estate-strategy-development-marketing-consulting-firms">Marketing Consulting Services</a></li>
+                            <li><a href="https://theguardiansindia.com/services/commercial-real-estate-consultant">Commercial Services</a></li>
+
+                            <li><a href="https://theguardiansindia.com/real-estate-consulting-company/">Real Estate Consulting </a></li>
+                            <li><a href="https://theguardiansindia.com/about-real-estate-strategic-and-advisory-partner">Property Advisory</a></li>
+                            <!--<li><a href="">Financial Services</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 pd0">
+                    <ul class="social-share-buttons">
+                        <li class="facebook"><a
+                                    href="https://www.facebook.com/TheGuardiansRealEstateAdvisory"
+                                    target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="instagram"><a
+                                    href="https://www.instagram.com/theguardiansrealestateadvisory/"
+                                    target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li class="linkedin"><a
+                                    href="https://www.linkedin.com/company/theguardiansrealestateadvisory"
+                                    target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="twitter"><a href="https://twitter.com/GuardiansFirm" target="_blank"><i
+                                        class="fab fa-twitter"></i></a></li>
+                        <li class="youtube"><a
+                                    href="https://www.youtube.com/channel/UCo7pMykCz4xj6xSmamJsxCw"
+                                    target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<section class="copy-sec">
+    <div class="container">
+        <p style="color:#fff">The Guardians © 2024. All Rights Reserved. | <a href="javascript:void(0);"
+                                                                              class="disc-btn">Disclaimer</a> | <a href="privacy_policy.php"
+                                                                              class="">Privacy Policy</a></p>
+        <p style="color:#fff">MahaRERA Reg No. A51900000832 | Available at <a href=" https://maharera.mahaonline.gov.in/"
+                                                           target="_blank">https://maharera.mahaonline.gov.in/</a></p>
+    </div>
+</section>
+
+<!--<footer class="footer">
+    <div class="content-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="column-logo">
+                        <img src="https://theguardiansindia.com/images/logo.png" alt="The-Guardians-Real-Estate-Advisory-Firm-in-India">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <!--<div class="column-contact">
+                        <p>MahaRERA Reg No. A51900000832<br>GST No. 27AAQFG8948R1Z2</p>
+                    </div>--
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <div class="social-content mb-30">
+                        <ul>
+                            <li class="pl-0"><a href="https://theguardiansindia.com/">Home</a></li>
+                            <li><a href="https://theguardiansindia.com/about-us.php">About Us</a></li>
+                            <li><a href="https://theguardiansindia.com/ongoing-projects/">Project</a></li>
+                            <li><a href="https://theguardiansindia.com/contact-us.php">Contact Us</a></li>
+                            <li><a href="javascript:void(0);" class="disc-btn">Disclaimer</a></li>
+                        </ul>
+                    </div>
+                    <div class="column-content">
+                        <h5>The Guardians © 2019. All Rights Reserved.</h5>
+                        <h5>MahaRERA Reg No. A51900000832 | Available at <a href=" https://maharera.mahaonline.gov.in/"
+                                target="_blank">https://maharera.mahaonline.gov.in/</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>-->
+
+
+<!-- -======================  Disclaimer PopUp  -->
+
+<div class="modal fade in" tabindex="-1" role="dialog" id="disc-pop" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">×</span></button>
+
+                <h4 class="modal-title">Disclaimer!</h4>
+            </div>
+            <div class="modal-body">
+                <img src="https://theguardiansindia.com/images/logo.png" class="disc-logo" alt="The-Guardians-Real-Estate-Advisory-Firm-in-India">
+                <p class="text-justify">
+                    Other than as expressly set out in these terms, the
+                    website and its contents are provided on an &quot;as is&quot; basis.
+                    The Guardians Real Estate Advisory expressly disclaims
+                    all warranties, including the warranties of
+                    merchantability, fitness for a particular purpose and
+                    non-infringement. The Guardians Real Estate Advisory
+                    disclaims all responsibility for any loss, injury, claim,
+                    liability or damage of any kind resulting from, arising out
+                    of or any way related to (a) any errors in or omissions
+                    from this website and the content, including but not
+                    limited to technical inaccuracies and typographical
+                    errors, (b) any third party web sites or content therein
+                    directly or indirectly accessed through links in this
+                    website, including but not limited to any errors in or
+                    omissions therefrom, (c) the unavailability of the
+                    website or any portion thereof, (d) your use of this
+                    website or (e) your use of any equipment or software in
+                    connection with the website.
+                </p>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default modal-btn" data-dismiss="modal" aria-label="Close">OK
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+    <!-- FOOTER LINK  -->
+    <!--connecting js files-->
+<!--jquery-->
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
+<!--<script src="animatemodal/jquery.min.js"></script>-->
+
+<!--<script src="splash/jquery.splashscreen.js"></script>-->
+<!--<script src="splash/script.js"></script>-->
+
+<!--imagesloaded-->
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<!--tweenMax-->
+<script src="js/TweenMax.min.js"></script>
+<!--isotope-->
+<script src="js/isotope.pkgd.min.js"></script>
+<!--tilt-->
+<script src="js/tilt.jquery.min.js"></script>
+<!--waypoints-->
+<script src="js/jquery.waypoints.min.js"></script>
+<!--plyr-->
+<!--<script src="assets/js/plyr.min.js"></script>-->
+<!--charming-->
+<script src="js/charming.min.js"></script>
+<!--hover-reveal-links-->
+<script src="js/hover-reveal-links.min.js"></script>
+<!--swiper-->
+<script src="js/swiper.min.js"></script>
+<!--slideshow-->
+<script src="js/slideshow.js"></script>
+<!--gallery-menu-->
+<script src="js/gallery-menu.js"></script>
+<!--glitch-links-->
+<script src="js/glitch-links.js"></script>
+<!--perlin-->
+<script src="js/perlin.min.js"></script>
+<!--three-->
+<script src="js/three.min.js"></script>
+<!--main-->
+<script src="js/main.js"></script>
+
+
+<!-- Optional JavaScript -->
+<!--<script src="cuby/assets/js/jquery-3.1.1.min.js"></script>-->
+<script src="js/plugins.js"></script>
+<script src="js/dsn-grid.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/animatedModal.min.js"></script>
+
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+
+
+<script src="js/jquery.validate.js"></script>
+<script src="js/mobilevalidate.js"></script>
+<script src="js/cookie.js"></script>
+<script src="js/popout.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+        // Add smooth scrolling to all links
+        $(".f-look").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    // window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+
+
+<script>
+    window.onload = function() {
+        $("#preloader").fadeOut("fast");
+        //$("#preloader").slideUp("slow");
+    }
+</script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+
+        $(".disc-btn").click(function () {
+            $('#disc-pop').modal('show');
+        });
+
+    });
+</script>
+
+    <!-- ================ Road Block ==================== -->
+    <div class="modal fade in" tabindex="-1" role="dialog" id="roadblock" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <a href="https://www.facebook.com/TheGuardiansRealEstateAdvisory/videos/2046954398806137/"
+                        target="_blank" class="">
+                        <img class="roadblockimg" src="images/tgrea-roadblock.jpg" alt="TGREA Offer">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <!--<script src="js/jquery.counterup.min.js"></script>-->
+    <script src="js/counter.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!--<script src="js/loadimage.js"></script>-->
+
+    <!--<script>
+    // $(window).on("load", function (e) {
+
+    var width = screen.width;
+
+    var images = [], x = 0;
+    images[0] = "images/tgrea/T.jpg";
+    images[1] = "images/tgrea/G.jpg";
+    images[2] = "images/tgrea/R.jpg";
+    images[3] = "images/tgrea/E.jpg";
+    images[4] = "images/tgrea/A.jpg";
+
+
+    function slide() {
+        var img = document.getElementById("img");
+        img.src = images[x];
+        x++;
+        if (x > images.length) {
+            var go = document.getElementById("splacewrap").style.display = 'none';
+            return false;
+        }
+        setTimeout(function () {
+            slide();
+        }, 800);
+    }
+
+    //});
+</script>-->
+
+
+    <script>
+    $('.channel-carousel').owlCarousel({
+        animateOut: 'slideOutLeft',
+        animateIn: 'slideInRight',
+        items: 4,
+        // loop: true,
+        margin: 25,
+        // autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+
+        dots: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-circle-left' aria-hidden='true'></i>",
+            "<i class='fa fa-chevron-circle-right' aria-hidden='true'></i>"
+        ],
+        responsive: {
+            0: {
+                items: 1,
+                autoplay: true,
+                loop: true,
+            },
+            768: {
+                items: 3
+            }
+        }
+    });
+    </script>
+
+    <script>
+    $(document).ready(function() {
+        $("#progress").css("top", $(window).height() / 2);
+        $("#progress").css("left", ($(window).width() - $("#progress").width()) / 2);
+    });
+
+    var screenwidth = screen.width;
+    var images = [],
+        x = 0;
+
+    if (screenwidth <= 767) {
+
+        images[0] = "images/tgrea/webp/T.webp";
+        images[1] = "images/tgrea/webp/G.webp";
+        images[2] = "images/tgrea/webp/R.webp";
+        images[3] = "images/tgrea/webp/E.webp";
+        images[4] = "images/tgrea/webp/A.webp";
+
+    } else {
+
+        images[0] = "images/tgrea/webp/D-T.webp";
+        images[1] = "images/tgrea/webp/D-G.webp";
+        images[2] = "images/tgrea/webp/D-R.webp";
+        images[3] = "images/tgrea/webp/D-E.webp";
+        images[4] = "images/tgrea/webp/D-A.webp";
+
+    }
+
+    var loadedSoFar = 0;
+
+    function loaded() {
+        $(".progress-wrap").hide();
+
+        var img = document.getElementById("img");
+        img.src = images[x];
+        x++;
+        if (x > images.length) {
+            Set_Cookie('imagesloader', 'Preloader Done', 15, '/', '', '');
+            var go = document.getElementById("splacewrap").style.display = 'none';
+
+            //            $('.counternum').counterUp({
+            //                delay: 30,
+            //                time: 1000
+            //            });
+
+            $('.numscroller').scrollzip({
+                showFunction: function() {
+                    numberRoller($(this).attr('data-slno'));
+                },
+                wholeVisible: false,
+            });
+
+            return false;
+        }
+        setTimeout(function() {
+            loaded();
+        }, 1500);
+
+    }
+
+    function updateProgress() {
+        console.log("loaded");
+        loadedSoFar++;
+        var newWidth = $("#progress").width() * (loadedSoFar / images.length);
+        $("#bar").stop(true, true);
+        $("#bar").animate({
+            width: newWidth
+        }, 500, function() {
+            if (loadedSoFar === images.length) {
+
+                if (!Get_Cookie('imagesloader')) {
+                    loaded()
+                } else {
+                    $(".progress-wrap").hide();
+                    var go = document.getElementById("splacewrap").style.display = 'none';
+
+                    //                    $(".counternum").counterUp({
+                    //                        delay: 30,
+                    //                        time: 1000
+                    //                    });
+
+                    $('.numscroller').scrollzip({
+                        showFunction: function() {
+                            numberRoller($(this).attr('data-slno'));
+                        },
+                        wholeVisible: false,
+                    });
+
+
+                }
+            }
+        });
+    }
+
+    for (var i = 0; i < images.length; i++) {
+        var img = new Image();
+        img.src = images[i];
+        img.onload = function() {
+            updateProgress();
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "The Guardians Real Estate Advisory Firm",
+        "alternateName": "The Guardians, Real Estate Advisory Firm",
+        "url": "https://www.theguardiansindia.com/",
+        "logo": "https://www.theguardiansindia.com/images/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "022-68770000",
+            "contactType": "customer service"
+        },
+        "sameAs": [
+            "https://www.facebook.com/The-Guardians-Real-Estate-Advisory-107748847353578/",
+            "https://twitter.com/GuardiansFirm",
+            "https://in.linkedin.com/company/guardians-real-estate-advisory-llp",
+            "https://www.theguardiansindia.com/"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "The Guardians",
+        "image": "https://www.theguardiansindia.com/images/logo.png",
+        "description": "The Guardians is one of the leading real estate  advisory & consultancy firm in India. And today has evolved amongst the fastest-growing organizations in real estate.",
+        "brand": "Thing",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "ratingCount": "45"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    [{
+            "@context": "https://schema.org",
+            "@type": "SiteNavigationElement",
+            "name": "Residential Services",
+            "url": "https://www.theguardiansindia.com/services/residential-services.php"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "SiteNavigationElement",
+            "name": "Commercial Services",
+            "url": "https://www.theguardiansindia.com/services/commercial-services.php"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "SiteNavigationElement",
+            "name": "Marketing Consulting Services",
+            "url": "https://www.theguardiansindia.com/services/marketing-consulting-services.php"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "SiteNavigationElement",
+            "name": "Financial Services",
+            "url": "https://www.theguardiansindia.com/services/financial-services.php"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "SiteNavigationElement",
+            "name": "About Us",
+            "url": "https://www.theguardiansindia.com/about-us.php"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "SiteNavigationElement",
+            "name": "Contact Us",
+            "url": "https://www.theguardiansindia.com/contact-us.php"
+        }
+    ]
+    </script>
+
+    <script>
+    // Roadblock PopUp
+    $(window).on("load", function() {
+        var width = $(window).width();
+        //if (width >= 767) {
+        setTimeout(function() {
+            //$('#roadblock').modal('show');
+        }, 6000);
+        //}
+    });
+    $('.life').owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        smartSpeed: 2000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<img src='images/left.png'>", "<img src='images/right.png'>"]
+    });
+    $('.success-count').owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        smartSpeed: 2000,
+        autoplayHoverPause: true,
+        nav: false
+    });
+    $('.clientele').owlCarousel({
+        loop: true,
+        margin: 10,
+        //items: 6,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        smartSpeed: 200,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<img src='images/left.png'>", "<img src='images/right.png'>"],
+        responsive: {
+            0: {
+                items: 2
+            },
+            768: {
+                items: 3
+            },
+            1200: {
+                items: 6
+            }
+        }
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const displayedImage = document.getElementById('displayedImage');
+    const marquee = document.querySelector('.marquee');
+
+    function checkCenter() {
+        const marqueeRect = marquee.getBoundingClientRect();
+        const marqueeCenter = marqueeRect.left + marqueeRect.width / 2;
+
+        thumbnails.forEach(thumbnail => {
+            const thumbnailRect = thumbnail.getBoundingClientRect();
+            const thumbnailCenter = thumbnailRect.left + thumbnailRect.width / 2;
+
+            if (Math.abs(marqueeCenter - thumbnailCenter) < thumbnailRect.width / 2) {
+                thumbnail.classList.add('active');
+                const newImageSrc = thumbnail.getAttribute('data-image');
+                if (displayedImage.src !== newImageSrc) {
+                    displayedImage.src = newImageSrc;
+                }
+            } else {
+                thumbnail.classList.remove('active');
+            }
+        });
+    }
+
+    setInterval(checkCenter, 500); // Adjust the interval as needed
+});
+
+    </script>
+
+</body>
+<!-- BODY END -->
+
+
+</html>
+<!-- HTML END -->

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <style>
+        body {
+            overflow: hidden; /* Remove or adjust this line */
+        }
+
+        .testimonial_section {
+            /* background-color: #020d26; */
+        }
+
+        .container {
+            max-width: 100%; /* Adjust or remove as needed */
+        }
+
+        .about_content .section_title h5 {
+            color: #818a8f;
+            font-family: "Open Sans";
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 28px;
+            margin-bottom: 6px;
+        }
+
+        .about_content .section_title h2 {
+            font-family: "Titillium Web";
+            font-weight: 300;
+            font-size: 45px;
+            line-height: 50px;
+            color: #000;
+            margin-bottom: 24px;
+        }
+
+        .about_content .section_title h2 strong {
+            font-weight: 600 !important;
+            display: block;
+        }
+
+        .about_content .section_title .heading_line {
+            position: relative;
+            margin-bottom: 24px;
+        }
+
+        .about_content .section_title p {
+            color: #fff;
+            margin-bottom: 24px;
+        }
+
+        .about_content a {
+            color: #fff;
+            text-transform: capitalize;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .about_content a:hover {
+            color: #ff5e14;
+        }
+
+        .testimonial_box {
+            width: 100%; /* Adjust width as needed */
+        }
+
+        .testimonial_box .testimonial_container {
+            background-color: #ff5e14;
+            padding: 30px 0;
+            width: 100%; /* Adjust width as needed */
+            
+            height: auto;
+        }
+
+        .testimonial_content {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.13);
+            width: 500px;
+            height: 280px;
+            margin-left: -100px;
+            
+        }
+.owl-item{
+    margin: 20px;
+}
+        .testimonial_img img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+        }
+
+        .testimonial_caption h6 {
+            font-size: 19px;
+            font-weight: 600;
+            color: #020d26;
+        }
+
+        .testimonial_caption span {
+            font-size: 12px;
+            color: #9f9f9f;
+            display: block;
+        }
+
+        .testimonial_content p {
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 400;
+            color: #5d6576;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        .owl-nav .owl-prev,
+        .owl-nav .owl-next {
+            background: #ff5e14;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 0;
+            margin-top: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .owl-nav .owl-prev:hover,
+        .owl-nav .owl-next:hover {
+            background: #020d26;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="testimonial_section py-5">
+        <div class="container my-0">
+            <div class="row">
+                <div class="col-lg-4 pl-5">
+                    <div class="about_content">
+                        <div class="section_title">
+                            <h5>CLIENTS</h5>
+                            <h2>Happy with<strong>Customers & Clients</strong></h2>
+                            <div class="heading_line">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 d-flex justify-content-end">
+                    <div class="testimonial_box">
+                        <div class="testimonial_container">
+                            <div class="testimonial_owlCarousel owl-carousel">
+                                <div class="testimonials">
+                                    <div class="testimonial_content d-flex align-items-center">
+                                        <div class="testimonial_img mr-3">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.pixabay.com/photo/2017/08/30/17/27/business-woman-2697954_960_720.jpg"
+                                                alt="images not found">
+                                        </div>
+                                        <div>
+                                            <div class="testimonial_caption">
+                                                <h6>Robert Clarkson</h6>
+                                                <span>CEO, Axura</span>
+                                            </div>
+                                            <p>The team at Tectxon industry is very talented, dedicated, well organized,
+                                                and knowledgeable. I was most satisfied with the quality of the
+                                                workmanship. They did excellent work.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonials">
+                                    <div class="testimonial_content d-flex align-items-center">
+                                        <div class="testimonial_img mr-3">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.pixabay.com/photo/2016/02/19/10/56/man-1209494_960_720.jpg"
+                                                alt="images not found">
+                                        </div>
+                                        <div>
+                                            <div class="testimonial_caption">
+                                                <h6>Robert Clarkson</h6>
+                                                <span>CEO, Axura</span>
+                                            </div>
+                                            <p>The team at Tectxon industry is very talented, dedicated, well organized,
+                                                and knowledgeable. I was most satisfied with the quality of the
+                                                workmanship. They did excellent work.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonials">
+                                    <div class="testimonial_content d-flex align-items-center">
+                                        <div class="testimonial_img mr-3">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.pixabay.com/photo/2017/09/21/19/06/woman-2773007_960_720.jpg"
+                                                alt="images not found">
+                                        </div>
+                                        <div>
+                                            <div class="testimonial_caption">
+                                                <h6>Robert Clarkson</h6>
+                                                <span>CEO, Axura</span>
+                                            </div>
+                                            <p>The team at Tectxon industry is very talented, dedicated, well organized,
+                                                and knowledgeable. I was most satisfied with the quality of the
+                                                workmanship. They did excellent work.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-nav">
+                                <button class="owl-prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="owl-next"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script>
+        $('.testimonial_owlCarousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: false,
+            nav: true,
+            autoplay: true,
+            smartSpeed: 2000,
+            autoplayTimeout: 4000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 2
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
