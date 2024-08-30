@@ -89,7 +89,7 @@
 
                                 <button type="button" class="custom-btn"
                                     onclick="window.location.href='our-success-stories.php'">
-                                    <span class="custom-btn__label">View More</span>
+                                    <span class="custom-btn__label">View more</span>
 
                                     <span class="custom-btn__icon">
 
@@ -149,7 +149,7 @@
 
                                 <button type="button" class="custom-btn"
                                     onclick="window.location.href='upcoming-projects.php'">
-                                    <span class="custom-btn__label">View More</span>
+                                    <span class="custom-btn__label">View more</span>
 
                                     <span class="custom-btn__icon">
 
@@ -208,7 +208,7 @@
                                 </ul>
 
                                 <button type="button" class="custom-btn" onclick="window.location.href='services.php'">
-                                    <span class="custom-btn__label">View More</span>
+                                    <span class="custom-btn__label">View more</span>
 
                                     <span class="custom-btn__icon">
 
@@ -264,7 +264,7 @@
 
                                 <button type="button" class="custom-btn"
                                     onclick="window.location.href='our-clients.php'">
-                                    <span class="custom-btn__label">View More</span>
+                                    <span class="custom-btn__label">View more</span>
 
                                     <span class="custom-btn__icon">
 
@@ -480,170 +480,6 @@
             <div class="owl-carousel owl-theme life">
 
 
-
-                <!--NEWWWWWW-->
-
-
-                <!--        <div class="item">-->
-                <!--    <div class="row mr0">-->
-                <!--        <div class="col-md-8 pd0">-->
-                <!--            <div class="feature_img_wrap">-->
-                <!--                <img src="images/rajele.jpg" alt="Raj Realty">-->
-                <!--                <p class="artist">Artist’s Impression</p>-->
-                <!--            </div>-->
-                <!--        </div>-->
-                <!--        <div class="col-md-4 pd0">-->
-                <!--            <div class="project_content">-->
-                <!--                <div>-->
-                <!--                    <figure><img class="feature_logo" src="images/rajlogo.png" alt="Raj Realty"></figure>-->
-                <!--                    <div class="projct_name aos-init aos-animate" data-aos="fade-up">127 Raj Homes</div>-->
-                <!--                    <div class="projct_dtls">-->
-                <!--                        <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                            <span><img src="images/pin.png" alt="location pin"></span>-->
-                <!--                          Off Western Express Highway, Near Dahisar-->
-                <!--                        </div>-->
-                <!--                        <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                            <span><img src="images/icon1.png" alt="house"></span>-->
-                <!--                           2 BHK Residences-->
-                <!--                        </div>-->
-                <!--<div class="dtl_col aos-init" data-aos="fade-up">
-            <!--                            <span><img src="images/time.png" alt=""></span>-->
-                <!--                            Possession within 24 months-->
-                <!--                        </div>-->-->
-                <!--                    </div>-->
-                <!--                    <a href="our-work.php" class="feature-btn">See All Projects</a>-->
-                <!--                </div>-->
-
-                <!--            </div>-->
-
-
-                <!--        </div>-->
-                <!--    </div>-->
-                <!--</div>-->
-
-
-
-
-
-                <!--<div class="item">-->
-                <!--    <div class="row mr0">-->
-                <!--        <div class="col-md-8 pd0">-->
-                <!--            <div class="feature_img_wrap">-->
-                <!--                <img src="images/gccele.jpg" alt="GCC">-->
-                <!--                <p class="artist">Artist’s Impression</p>-->
-                <!--            </div>-->
-                <!--        </div>-->
-                <!--        <div class="col-md-4 pd0">-->
-                <!--            <div class="project_content">-->
-                <!--                <div>-->
-                <!--                    <figure><img class="feature_logo" src="images/gcclogo.png" alt="Passcode Bavdhan Prime"></figure>-->
-                <!--                    <div class="projct_name aos-init aos-animate" data-aos="fade-up">Passcode Bavdhan Prime </div>-->
-                <!--                    <div class="projct_dtls">-->
-                <!--                        <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                            <span><img src="images/pin.png" alt="location pin"></span>-->
-                <!--                     Bavdhan, Off. Pashan, Pune-->
-                <!--                        </div>-->
-                <!--                        <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                            <span><img src="images/icon1.png" alt="house"></span>-->
-                <!--                           2, 3, 3.5 BHK Residences-->
-                <!--                        </div>-->
-                <!--<div class="dtl_col aos-init" data-aos="fade-up">
-            <!--                            <span><img src="images/time.png" alt=""></span>-->
-                <!--                            Possession within 24 months-->
-                <!--                        </div>-->-->
-                <!--                    </div>-->
-                <!--                    <a href="our-work.php" class="feature-btn">See All Projects</a>-->
-                <!--                </div>-->
-
-                <!--            </div>-->
-
-
-                <!--        </div>-->
-                <!--    </div>-->
-                <!--</div>-->
-
-
-
-
-
-                <!-- <div class="item">-->
-                <!--    <div class="row mr0">-->
-                <!--        <div class="col-md-8 pd0">-->
-                <!--            <div class="feature_img_wrap">-->
-                <!--                <img src="images/mohanele.jpg" alt="MOhan Group">-->
-                <!--                <p class="artist">Artist’s Impression</p>-->
-                <!--            </div>-->
-                <!--        </div>-->
-                <!--        <div class="col-md-4 pd0">-->
-                <!--            <div class="project_content">-->
-                <!--                <div>-->
-                <!--                    <figure><img class="feature_logo" src="images/mohanlogo.png" alt="Passcode ABC"></figure>-->
-                <!--                    <div class="projct_name aos-init aos-animate" data-aos="fade-up">Passcode ABC </div>-->
-                <!--                    <div class="projct_dtls">-->
-                <!--                        <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                            <span><img src="images/pin.png" alt="location pin"></span>-->
-                <!--                       Navare Nagar, Ambernath-->
-                <!--                        </div>-->
-                <!--                        <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                            <span><img src="images/icon1.png" alt="house"></span>-->
-                <!--                           1 & 2 BHK Residences-->
-                <!--                        </div>-->
-                <!--<div class="dtl_col aos-init" data-aos="fade-up">
-            <!--                            <span><img src="images/time.png" alt=""></span>-->
-                <!--                            Possession within 24 months-->
-                <!--                        </div>-->-->
-                <!--                    </div>-->
-                <!--                    <a href="our-work.php" class="feature-btn">See All Projects</a>-->
-                <!--                </div>-->
-
-                <!--            </div>-->
-
-
-                <!--        </div>-->
-                <!--    </div>-->
-                <!--</div>-->
-
-
-
-
-
-                <!--<div class="item">-->
-                <!--    <div class="row mr0">-->
-                <!--        <div class="col-md-8 pd0">-->
-                <!--            <div class="feature_img_wrap">-->
-                <!--                <img src="images/leoele.jpg?v=0.1" alt="Leo Builders">-->
-                <!--                <p class="artist">Artist’s Impression</p>-->
-                <!--            </div>-->
-                <!--        </div>-->
-                <!--        <div class="col-md-4 pd0">-->
-                <!--            <div class="project_content">-->
-                <!--                <div>-->
-                <!--                    <figure><img class="feature_logo" src="images/leologo.png" alt="Leo Eminence"></figure>-->
-                <!--                    <div class="projct_name aos-init aos-animate" data-aos="fade-up">Leo Eminence </div>-->
-                <!--                    <div class="projct_dtls">-->
-                <!--                        <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                            <span><img src="images/pin.png" alt="location pin"></span>-->
-                <!--                    BKC, Bandra East, Mumbai-->
-                <!--                        </div>-->
-                <!--                        <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                            <span><img src="images/icon1.png" alt="house"></span>-->
-                <!--                            2 BHK Residences-->
-                <!--                        </div>-->
-                <!--<div class="dtl_col aos-init" data-aos="fade-up">
-            <!--                            <span><img src="images/time.png" alt=""></span>-->
-                <!--                            Possession within 24 months-->
-                <!--                        </div>-->-->
-                <!--                    </div>-->
-                <!--                    <a href="our-work.php" class="feature-btn">See All Projects</a>-->
-                <!--                </div>-->
-
-                <!--            </div>-->
-
-
-                <!--        </div>-->
-                <!--    </div>-->
-                <!--</div>-->
-
                 <div class="item">
                     <div class="row mr0">
                         <div class="col-md-8 pd0">
@@ -655,26 +491,27 @@
                         <div class="col-md-4 pd0">
                             <div class="project_content">
                                 <div>
-                                    <figure><img class="feature_logo" src="images/dostilogo.svg"
-                                            alt="Dosti 1 Mumbai"></figure>
+                                    <!-- <figure><img class="feature_logo" src="images/dostilogo.svg"
+                                            alt="Dosti 1 Mumbai"></figure> -->
                                     <div class="projct_name aos-init aos-animate" data-aos="fade-up">Dosti 1 Mumbai
                                     </div>
                                     <div class="projct_dtls">
-                                        <div class="dtl_col aos-init" data-aos="fade-up">
-                                            <span><img src="images/pin.png" alt="location pin"></span>
-                                            BKC Experience Center,
-                                            Bandra East
+                                        <div class="project_cat mb-20">
+                                                Hospitality
                                         </div>
                                         <div class="dtl_col aos-init" data-aos="fade-up">
-                                            <span><img src="images/icon1.png" alt="house"></span>
-                                            1 & 2 BHK Residences
+                                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </div>
+                                        <div class="dtl_col aos-init project_loc" data-aos="fade-up">
+                                            <span><i class="fa fa-map-marker-alt"></i></span>
+                                            Nashik, Maharashtra
                                         </div>
                                         <!--<div class="dtl_col aos-init" data-aos="fade-up">
                                         <span><img src="images/time.png" alt=""></span>
                                         Possession within 24 months
                                     </div>-->
                                     </div>
-                                    <a href="our-work.php" class="feature-btn">See All Projects</a>
+                                    <a href="our-work.php" class="feature-btn">View more</a>
                                 </div>
 
                             </div>
@@ -683,45 +520,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-                <!--<div class="item">-->
-                <!--        <div class="row mr0">-->
-                <!--            <div class="col-md-8 pd0">-->
-                <!--                <div class="feature_img_wrap">-->
-                <!--                    <img src="images/runwalele.jpg" alt="Runwal">-->
-                <!--                    <p class="artist">Artist’s Impression</p>-->
-                <!--                </div>-->
-                <!--            </div>-->
-                <!--            <div class="col-md-4 pd0">-->
-                <!--                <div class="project_content">-->
-                <!--                    <div>-->
-                <!--                        <figure><img class="feature_logo" src="images/runwallogo.jpg" alt="Runwal PB Global"></figure>-->
-                <!--                        <div class="projct_name aos-init aos-animate" data-aos="fade-up">Runwal PB Global </div>-->
-                <!--                        <div class="projct_dtls">-->
-                <!--                            <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                                <span><img src="images/pin.png" alt="location pin"></span>-->
-                <!--                       Ghodbunder Road, Thane (W)-->
-                <!--                            </div>-->
-                <!--                            <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                                <span><img src="images/icon1.png" alt="house"></span>-->
-                <!--                                2 & 3 BHK Residences-->
-                <!--                            </div>-->
-
-                <!--                        </div>-->
-                <!--                        <a href="our-work.php" class="feature-btn">See All Projects</a>-->
-                <!--                    </div>-->
-
-                <!--                </div>-->
-
-
-                <!--            </div>-->
-                <!--        </div>-->
-                <!--    </div>-->
-
 
 
 
@@ -737,17 +535,17 @@
                         <div class="col-md-4 pd0">
                             <div class="project_content">
                                 <div>
-                                    <figure><img class="feature_logo" src="images/sunlogonew.png"
-                                            alt="Sunbeam Heights"></figure>
+                                    <!-- <figure><img class="feature_logo" src="images/sunlogonew.png"
+                                            alt="Sunbeam Heights"></figure> -->
                                     <div class="projct_name aos-init aos-animate" data-aos="fade-up">Sunbeam Heights
                                     </div>
                                     <div class="projct_dtls">
                                         <div class="dtl_col aos-init" data-aos="fade-up">
-                                            <span><img src="images/pin.png" alt="location pin"></span>
+                                            <span><i class="fa fa-map-marker-alt"></i></span>
                                             Eastern Express Highway, Thane (w)
                                         </div>
                                         <div class="dtl_col aos-init" data-aos="fade-up">
-                                            <span><img src="images/icon1.png" alt="house"></span>
+                                            
                                             3 & 4 BHK Residences
                                         </div>
                                         <!--<div class="dtl_col aos-init" data-aos="fade-up">
@@ -755,7 +553,7 @@
                                         Possession within 24 months
                                     </div>-->
                                     </div>
-                                    <a href="our-work.php" class="feature-btn">See All Projects</a>
+                                    <a href="our-work.php" class="feature-btn">View more</a>
                                 </div>
 
                             </div>
@@ -766,43 +564,6 @@
                 </div>
 
 
-
-                <!--  <div class="item">-->
-                <!--    <div class="row mr0">-->
-                <!--        <div class="col-md-8 pd0">-->
-                <!--            <div class="feature_img_wrap">-->
-                <!--                <img src="images/sejalele.jpg?v=0.1" alt="Sejal">-->
-                <!--                <p class="artist">Artist’s Impression</p>-->
-                <!--            </div>-->
-                <!--        </div>-->
-                <!--        <div class="col-md-4 pd0">-->
-                <!--            <div class="project_content">-->
-                <!--                <div>-->
-                <!--                    <figure><img class="feature_logo" src="images/sejallogo.jpg" alt="Palatial"></figure>-->
-                <!--                    <div class="projct_name aos-init aos-animate" data-aos="fade-up">Sea & Believe </div>-->
-                <!--                    <div class="projct_dtls">-->
-                <!--                        <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                            <span><img src="images/pin.png" alt="location pin"></span>-->
-                <!--              Marine Lines, Mumbai -->
-                <!--                        </div>-->
-                <!--                        <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                            <span><img src="images/icon1.png" alt="house"></span>-->
-                <!--                          1 & 2 BHK Residences-->
-                <!--                        </div>-->
-                <!--<div class="dtl_col aos-init" data-aos="fade-up">
-            <!--                            <span><img src="images/time.png" alt=""></span>-->
-                <!--                            Possession within 24 months-->
-                <!--                        </div>-->-->
-                <!--                    </div>-->
-                <!--                    <a href="our-work.php" class="feature-btn">See All Projects</a>-->
-                <!--                </div>-->
-
-                <!--            </div>-->
-
-
-                <!--        </div>-->
-                <!--    </div>-->
-                <!--</div>-->
 
 
 
@@ -817,21 +578,21 @@
                         <div class="col-md-4 pd0">
                             <div class="project_content">
                                 <div>
-                                    <figure><img class="feature_logo" src="images/marlogo.jpg"
-                                            alt="Monte South"></figure>
+                                    <!-- <figure><img class="feature_logo" src="images/marlogo.jpg"
+                                            alt="Monte South"></figure> -->
                                     <div class="projct_name aos-init aos-animate" data-aos="fade-up">Monte South </div>
                                     <div class="projct_dtls">
                                         <div class="dtl_col aos-init" data-aos="fade-up">
-                                            <span><img src="images/pin.png" alt="location pin"></span>
+                                            <span><i class="fa fa-map-marker-alt"></i></span>
                                             Byculla, Mumbai, Maharashtra
                                         </div>
                                         <div class="dtl_col aos-init" data-aos="fade-up">
-                                            <span><img src="images/icon1.png" alt="house"></span>
+                                            
                                             2, 2.5, 3 & 3.5 BHK Residences
                                         </div>
 
                                         <!--</div>-->
-                                        <a href="our-work.php" class="feature-btn">See All Projects</a>
+                                        <a href="our-work.php" class="feature-btn">View more</a>
                                     </div>
 
                                 </div>
@@ -842,46 +603,7 @@
                     </div>
                 </div>
 
-                <!--newwww-->
-
-
-
-                <!--<div class="item">-->
-                <!--    <div class="row mr0">-->
-                <!--        <div class="col-md-8 pd0">-->
-                <!--            <div class="feature_img_wrap">-->
-                <!--                <img src="images/victoria.jpg" alt="X-BKC">-->
-                <!--                <p class="artist">Artist’s Impression</p>-->
-                <!--            </div>-->
-                <!--        </div>-->
-                <!--        <div class="col-md-4 pd0">-->
-                <!--            <div class="project_content">-->
-                <!--                <div>-->
-                <!--                    <figure><img class="feature_logo" src="images/Sheth-New.png" alt="Victoria Towers"></figure>-->
-                <!--                    <div class="projct_name aos-init aos-animate" data-aos="fade-up">Victoria Towers</div>-->
-                <!--                    <div class="projct_dtls">-->
-                <!--                        <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                            <span><img src="images/pin.png" alt="location pin"></span>-->
-                <!--                          Eastern Express Highway, Thane (w)-->
-                <!--                        </div>-->
-                <!--                        <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                            <span><img src="images/icon1.png" alt="house"></span>-->
-                <!--                            3 & 4 BHK Residences-->
-                <!--                        </div>-->
-
-                <!--                    </div>-->
-                <!--                    <a href="our-work.php" class="feature-btn">See All Projects</a>-->
-                <!--                </div>-->
-
-                <!--            </div>-->
-
-
-                <!--        </div>-->
-                <!--    </div>-->
-                <!--</div>-->
-
-
-
+               
 
                 <div class="item">
                     <div class="row mr0">
@@ -899,11 +621,11 @@
                                     <div class="projct_name aos-init aos-animate" data-aos="fade-up">Rivali Park</div>
                                     <div class="projct_dtls">
                                         <div class="dtl_col aos-init" data-aos="fade-up">
-                                            <span><img src="images/pin.png" alt="location pin"></span>
+                                            <span><i class="fa fa-map-marker-alt"></i></span>
                                             Western Express Highway, Borivali East
                                         </div>
                                         <div class="dtl_col aos-init" data-aos="fade-up">
-                                            <span><img src="images/icon1.png" alt="house"></span>
+                                            
                                             2 & 3 BHK Residences
                                         </div>
                                         <!--<div class="dtl_col aos-init" data-aos="fade-up">
@@ -911,7 +633,7 @@
                                         Possession within 24 months
                                     </div>-->
                                     </div>
-                                    <a href="our-work.php" class="feature-btn">See All Projects</a>
+                                    <a href="our-work.php" class="feature-btn">View more</a>
                                 </div>
 
                             </div>
@@ -920,13 +642,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
 
 
                 <div class="item">
@@ -946,11 +661,11 @@
                                         XBKC</div>
                                     <div class="projct_dtls">
                                         <div class="dtl_col aos-init" data-aos="fade-up">
-                                            <span><img src="images/pin.png" alt="location pin"></span>
+                                            <span><i class="fa fa-map-marker-alt"></i></span>
                                             BKC, Mumbai
                                         </div>
                                         <div class="dtl_col aos-init" data-aos="fade-up">
-                                            <span><img src="images/icon1.png" alt="house"></span>
+                                            
                                             3 & 4 Bed Luxury Suites
                                         </div>
                                         <!--<div class="dtl_col aos-init" data-aos="fade-up">
@@ -958,7 +673,7 @@
                                         Possession within 24 months
                                     </div>-->
                                     </div>
-                                    <a href="our-work.php" class="feature-btn">See All Projects</a>
+                                    <a href="our-work.php" class="feature-btn">View more</a>
                                 </div>
 
                             </div>
@@ -968,121 +683,6 @@
                     </div>
                 </div>
 
-
-                <!--<div class="item">
-                <div class="row mr0">
-                    <div class="col-md-8 pd0">
-                        <div class="feature_img_wrap">
-                            <img src="images/fea-tribeca.jpg" alt="tribeca">
-                            <p class="artist">Artist’s Impression</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 pd0">
-                        <div class="project_content">
-                            <div>
-                                <figure><img class="feature_logo" src="images/trebecaLogo.png" alt="trebecaLogo"></figure>
-                                <div class="projct_name aos-init aos-animate" data-aos="fade-up">Yoo One</div>
-                                <div class="projct_dtls">
-                                    <div class="dtl_col aos-init" data-aos="fade-up">
-                                        <span><img src="images/pin.png" alt="location pin"></span>
-                                        Nibm, Pune
-                                    </div>
-                                    <div class="dtl_col aos-init" data-aos="fade-up">
-                                        <span><img src="images/icon1.png" alt="house"></span>
-                                        3 & 4 BHK Residences
-                                    </div>
-                                    <!--<div class="dtl_col aos-init" data-aos="fade-up">
-                                        <span><img src="images/time.png" alt=""></span>
-                                        Possession within 24 months
-                                    </div>--
-                                </div>
-                                <a href="ongoing-projects/" class="feature-btn">See All Projects</a>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>-->
-
-
-                <!--<div class="item">-->
-                <!--    <div class="row mr0">-->
-                <!--        <div class="col-md-8 pd0">-->
-                <!--            <div class="feature_img_wrap">-->
-                <!--                <img src="images/the-sapphirecollection-elev.webp" alt="the-sapphirecollection">-->
-                <!--                <p class="artist">Artist’s Impression</p>-->
-                <!--            </div>-->
-                <!--        </div>-->
-                <!--        <div class="col-md-4 pd0">-->
-                <!--            <div class="project_content">-->
-                <!--                <div>-->
-                <!--                    <figure><img class="feature_logo" src="images/bombay-realty.png" alt="bombay-realty">-->
-                <!--                    </figure>-->
-                <!--                    <div class="projct_name aos-init aos-animate" data-aos="fade-up">The Sapphire-->
-                <!--                        Collection-->
-                <!--                    </div>-->
-                <!--                    <div class="projct_dtls">-->
-                <!--                        <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                            <span><img src="images/pin.png" alt="location pin"></span>-->
-                <!--                            Ambekar Marg, Dadar (E)-->
-                <!--                        </div>-->
-                <!--                        <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                            <span><img src="images/icon1.png" alt="house"></span>-->
-                <!--                            3 & 4 BHK Residences-->
-                <!--                        </div>-->
-
-
-                <!--                    </div>-->
-                <!--                    <a href="our-work.php" class="feature-btn">See All Projects</a>-->
-                <!--                </div>-->
-
-                <!--            </div>-->
-
-
-                <!--        </div>-->
-                <!--    </div>-->
-                <!--</div>-->
-                <!--<div class="item">-->
-                <!--    <div class="row mr0">-->
-                <!--        <div class="col-md-8 pd0">-->
-                <!--            <div class="feature_img_wrap">-->
-                <!--                <img src="images/Valmark-elev.webp" alt="Valmark">-->
-                <!--                <p class="artist">Artist’s Impression</p>-->
-                <!--            </div>-->
-                <!--        </div>-->
-                <!--        <div class="col-md-4 pd0">-->
-                <!--            <div class="project_content">-->
-                <!--                <div>-->
-                <!--                    <figure><img class="feature_logo" src="images/Valmark-logo.png" alt="Valmark-logo"></figure>-->
-                <!--                    <div class="projct_name aos-init aos-animate" data-aos="fade-up">The Lakeshore-->
-                <!--                        Collection-->
-                <!--                    </div>-->
-                <!--                    <div class="projct_dtls">-->
-                <!--                        <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                            <span><img src="images/pin.png" alt="location pin"></span>-->
-                <!--                            Bannerghatta Main Rd, Hulimavu, Bengaluru-->
-                <!--                        </div>-->
-                <!--                        <div class="dtl_col aos-init" data-aos="fade-up">-->
-                <!--                            <span><img src="images/icon1.png" alt="house"></span>-->
-                <!--                            3 & 4 BHK Sky Bungalows-->
-                <!--                        </div>-->
-
-                <!--<div class="dtl_col aos-init" data-aos="fade-up">
-            <!--                            <span><img src="images/time.png" alt=""></span>-->
-                <!--                            Possession within 24 months-->
-                <!--                        </div>-->-->
-                <!--                    </div>-->
-                <!--                    <a href="our-work.php" class="feature-btn">See All Projects</a>-->
-                <!--                </div>-->
-
-                <!--            </div>-->
-
-
-                <!--        </div>-->
-                <!--    </div>-->
-                <!--</div>-->
 
 
             </div>

@@ -4320,16 +4320,17 @@ hr.style2 {
 
 .new_heading {
     position: relative;
-    /* font-family: 'Poppins Bold'; */
-    font-size: 28px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    color: #343434;
+    font-family: "Allerta Stencil";
+    font-size: 40px;
+    font-weight: 400;
+    /* letter-spacing: 1px; */
+    color: #FF7425;
     padding-bottom: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    
 }
 
-.new_heading:before {
+/* .new_heading:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -4337,13 +4338,18 @@ hr.style2 {
     width: 50px;
     height: 3px;
     background: #8f8183;
-}
+} */
 
 .new_subhead {
     font-size: 25px;
     font-weight: 500;
     letter-spacing: 1px;
     color: #000;
+    font-family: 'Poppins';
+    font-weight: 400;
+    line-height: 43.41px;
+
+
 }
 
 .feature_project {
@@ -4373,23 +4379,52 @@ hr.style2 {
 }
 
 .projct_name {
-    font-size: 28px;
+    font-size: 40px;
     text-transform: uppercase;
     margin: 30px 0;
-    color: #222;
+    color: #000;
+    font-family: "Allerta Stencil";
 }
-
+.project_cat{
+font-family: 'Poppins';
+font-size: 24px;
+font-weight: 400;
+line-height: 37.21px;
+text-align: left;
+color:#000;
+}
 .dtl_col {
-    border-bottom: 1px solid #cccccc;
+    /* border-bottom: 1px solid #cccccc; */
     width: auto;
     margin-bottom: 1em;
     padding-bottom: 1em;
     color: #222;
     display: flex;
     align-items: center;
-    font-size: 20px;
-}
+   
+    padding: 10px 25px;
+    font-family: 'Poppins';
+font-size: 16px;
+font-weight: 300;
+line-height: 24.81px;
+text-align: left;
 
+}
+.dtl_col i {
+    font-size: 30px;
+    /* line-height: 25px; */
+    color: #F15B2A;
+    padding: 0 15px 0 0px;
+}
+.project_loc{
+font-family: 'Poppins';
+font-size: 24px;
+font-weight: 400;
+line-height: 37.21px;
+text-align: left;
+color:#606060;
+
+}
 .dtl_col span img {
     width: 30px !important;
     margin-right: 10px !important;
@@ -4400,16 +4435,24 @@ hr.style2 {
 }
 
 .feature-btn {
-    color: #222;
-    border: 2px solid #222;
-    padding: 7px 15px;
-    font-size: 17px;
-    letter-spacing: 2px;
+    color: #fff;
+    /* border: 2px solid #222; */
+    padding: 7px 20px;
+    font-size: 18px;
+    /* letter-spacing: 2px; */
     transition: ease all 0.5s;
-    border-radius: 25px;
+    border-radius: 30px;
     margin-top: 10px;
-    width: 200px;
+    width:190px;
+    background: #F15B2A;
     text-align: center;
+    font-family: "Poppins", sans-serif;;
+    font-weight: 400;
+    height: 50px;
+    line-height: 25px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
 }
 
 .feature-btn:hover,
