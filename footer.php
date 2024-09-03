@@ -700,7 +700,7 @@
     $('.clientele').owlCarousel({
         loop: true,
         margin: 10,
-        //items: 6,
+        items: 4,
         autoplay: true,
         autoplayTimeout: 2000,
         smartSpeed: 200,
@@ -715,7 +715,29 @@
                 items: 3
             },
             1200: {
-                items: 6
+                items: 4
+            }
+        }
+    });
+    $('.clientcar').owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 2,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        smartSpeed: 200,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i> "],
+        responsive: {
+            0: {
+                items: 2
+            },
+            768: {
+                items: 2
+            },
+            1200: {
+                items: 2
             }
         }
     });
