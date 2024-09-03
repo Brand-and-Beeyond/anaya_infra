@@ -512,10 +512,10 @@
 
 
 
-                <div class="col-md-12">
+                <!-- <div class="col-md-12">
                     <a href="/media/" class="feature-btn" style="margin: 0 auto; display: block; margin-top: 40px;">See
                         More</a>
-                </div>
+                </div> -->
             </div>
 
 
@@ -533,7 +533,7 @@
                 <div class="col-md-9">
                     <div class="client-testi position-relative">
                         <div class="row mr0">
-                            <div class="owl-carousel clientcar">
+                            <div class="owl-carousel clientcar position-relative">
                                 <div class="item">
                                     <h3 class="client_heading">Lorem ipsum</h3>
                                     <h5 class="client_subheading">Touchwood bliss</h5>

@@ -9415,10 +9415,14 @@ footer .inner-wrapper .copyright {
 }
 .clientcar .item {
   height: 287px;
-  width: 555px;
+  width: 578px;
   padding: 10px 12px;
   background-color: #eeeeee;
   box-shadow: -2px 0px 4.4px 2px #53535340;
+}
+
+.client_para{
+  width: 385px;
 }
 
 .client_para p {
@@ -9439,4 +9443,7 @@ footer .inner-wrapper .copyright {
   top: -35%;
   left: 120px;
   overflow-x: hidden;
+}
+.owl-nav .owl-prev i,.owl-nav .owl-next i{
+  color: #F15B2A;
 }

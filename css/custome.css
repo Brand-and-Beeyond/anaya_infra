@@ -5190,3 +5190,17 @@ margin: 20px 0;
         align-items: center;
     }
 }
+.clientcar.owl-carousel .owl-nav .owl-prev{
+   display: none;
+}
+.clientcar.owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    right: 50px;
+    top: 45%;
+    background: rgba(255, 255, 255, 0.6) !important;
+    padding: 10px 15px !important;
+    /* border: 2px solid transparent !important; */
+    border-radius: 50% !important;
+    transition: ease all 0.5s;
+    box-shadow: 1px 1px 10.2px 0px #70707040;
+}

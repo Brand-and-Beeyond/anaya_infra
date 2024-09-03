@@ -17,15 +17,15 @@
     <meta name="format-detection" content="telephone=no">
     <title>Anaya Infrabuild Nashik</title>
     <meta name="keywords"
-        content="The Guardians consultancy, The Guardians advisory, The Guardians solutions, The Guardians projects, The Guardians builders, The Guardians Mumbai,  The Guardians real estate, The Guardians new projects, The Guardians construction company, The Guardians properties">
+        content="">
     <meta name="description"
-        content="The Guardians stands out as a top real estate advisory consultancy firm in India and has evolved as the fastest-growing real estate consulting firm in the country.">
+        content="">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-<link rel="icon" href="https://theguardiansindia.com/images/favicon.png" type="image/png" sizes="50x50">
+<link rel="icon" href="./images/favicon.png" type="image/png" sizes="50x50">
 <!--connecting css files-->
 <link rel="stylesheet" href="css/all.min.css">
 <link rel="stylesheet" href="css/plyr.css">
