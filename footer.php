@@ -685,7 +685,7 @@
         smartSpeed: 2000,
         autoplayHoverPause: true,
         nav: true,
-        navText: ["<img src='images/left.png'>", "<img src='images/right.png'>"]
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i> "]
     });
     $('.success-count').owlCarousel({
         loop: true,
@@ -706,7 +706,7 @@
         smartSpeed: 200,
         autoplayHoverPause: true,
         nav: true,
-        navText: ["<img src='images/left.png'>", "<img src='images/right.png'>"],
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i> "],
         responsive: {
             0: {
                 items: 2
@@ -721,9 +721,17 @@
     });
     document.addEventListener('DOMContentLoaded', function () {
     const thumbnails = document.querySelectorAll('.thumbnail');
-    const displayedImage = document.getElementById('displayedImage');
     const marquee = document.querySelector('.marquee');
-
+    
+    // Initially set the displayed image to the first thumbnail
+    const displayedImage = document.createElement('img');
+    displayedImage.id = 'displayedImage';
+    displayedImage.src = thumbnails[0].getAttribute('data-image');
+    displayedImage.alt = 'Displayed Image';
+    displayedImage.style.width = '100%';
+    displayedImage.style.height = 'auto';
+    document.querySelector('.image-display').prepend(displayedImage);
+    
     function checkCenter() {
         const marqueeRect = marquee.getBoundingClientRect();
         const marqueeCenter = marqueeRect.left + marqueeRect.width / 2;

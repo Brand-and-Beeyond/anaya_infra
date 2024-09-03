@@ -113,16 +113,8 @@ integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fW
         text-align: center;
     }
 
-    .owl-carousel .owl-item img {
-        height: initial !important;
-        /* margin: auto; */
-        width: 900px;
-    }
+    
 
-    .news_img img {
-        height: 296px;
-        object-fit: cover;
-    }
 
     @media only screen and (max-width: 767px) {
         .mytop {
@@ -304,9 +296,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>-->
             <!--logo-->
             <div class="logo-wrapper">
-                <a href="https://theguardiansindia.com/">
-                    <img src="https://theguardiansindia.com/images/the-guardians-logo.png?v=0.2"
-                        alt="The-Guardians-Real-Estate-Advisory-Firm-in-India" class="logo">
+                <a href="index.php">
+                    <img src="images/anaya_white.png" alt="" class="logo">
                 </a>
             </div>
         </div>
@@ -910,3 +901,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </form>
     </div>
 </nav>    <!-- NENU END -->
+<div class="cursor-wrapper">
+        <!--custom cursor-->
+        <div id="ball-cursor"></div>
+    </div>

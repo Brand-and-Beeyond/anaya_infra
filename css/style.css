@@ -922,8 +922,8 @@ p {
                    Core
 -------------------------------------------------------- */
 body {
-  background-color: #1b1b1b !important;
-  cursor: url(../img/dot.png) 3 3, auto !important;
+  /* background-color: #1b1b1b !important; */
+  cursor: url(../images/dot.png) 3 3, auto !important;
   overflow: hidden !important;
 }
 
