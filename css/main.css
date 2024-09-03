@@ -9410,14 +9410,15 @@ footer .inner-wrapper .copyright {
   color: #000;
   margin: 10px 0;
 }
-.clientcar{
-  margin-left: 55px;
+.client-testi{
+   right: -16px;
 }
 .clientcar .item {
   height: 287px;
-  width: 535px;
+  width: 555px;
   padding: 10px 12px;
   background-color: #eeeeee;
+  box-shadow: -2px 0px 4.4px 2px #53535340;
 }
 
 .client_para p {
