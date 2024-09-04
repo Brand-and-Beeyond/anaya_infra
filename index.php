@@ -99,30 +99,45 @@
 
 
     <section class="why_us" style="background: #fff;">
-        <div class="container">
-            <div class="row mr0 align-items-center">
-                <div class="col-md-1">
-                    <h5 class="why_heading">Why Us</h5>
-                    <h1 class="why_sub_heading">Why Choose Us</h1>
-                </div>
-
-                <div class="col-md-11 row section-padding justify-content-end align-items-center why_border">
-                    <div class="col-md-6 why_inner_border">
-                        <div class="p-3">
-                            <i class="fa fa-user-graduate why_icon"></i>
-                            <p class="why_txt">It is a long established fact that a reader will be distracted
-                                by the readable content of a page when looking at its layout.
-                                The point of using Lorem Ipsum is that it has a more-or-less
-                                normal distribution of letters, as opposed to using 'Content here,
-                                content here', making it look like readable English. Many desktop,</p>
+        <div class="container-fluid">
+            <div class="row mr0 align-items-center justify-content-start">
+                <div class="col-lg-12">
+                    <div class="row position-relative">
+                        <div class="col-lg-2 col-md-2">
+                            <div class="whyushead">
+                                <h5 class="why_heading">Why Us</h5>
+                            </div>
+                            <div class="why-sub">
+                                <h1 class="why_sub_heading">Why Choose Us</h1>
+                            </div>
                         </div>
 
-                    </div>
-                    <div class="col-md-4">
-                        <h4 class="new_heading">Ongoing Projects</h4>
-                        <h2 class="new_subhead">Exquisite Residences and Bespoke Commercial Spaces</h2>
+                        <div class="col-lg-8 col-md-8 section-padding  justify-content-center align-items-center why_border">
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-9 why_inner_border">
+                                    <div class="p-3">
+                                        <i class="fa fa-user-graduate why_icon"></i>
+                                        <p class="why_txt">It is a long established fact that a reader will be distracted
+                                            by the readable content of a page when looking at its layout.
+                                            The point of using Lorem Ipsum is that it has a more-or-less
+                                            normal distribution of letters, as opposed to using 'Content here,
+                                            content here', making it look like readable English. Many desktop,</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-2">
+                            <div class="vis-mis-headings">
+                                <h4 class="new_heading">Vision</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -131,7 +146,7 @@
     <section class="feature_project white_pointer" style="background: #fff;">
 
         <div class="row mr0">
-            <div class="container">
+            <div class="container-fluid">
                 <h4 class="new_heading">Ongoing Projects</h4>
                 <h2 class="new_subhead">Exquisite Residences and Bespoke Commercial Spaces</h2>
             </div>

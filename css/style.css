@@ -1,36 +1,4 @@
-/*-----------------------------------------------------------
 
-  Template Name: Cuby - Portfolio Showcase HTML Template
-  Template URI: http://theme.dsngrid.com/cuby
-  Description: Cuby creative agencies and freelancers HTML Template
-  Author: design_grid
-  Author URI: https://themeforest.net/user/design_grid
-  Version: 1.1.2
-
--------------------------------------------------------------*/
-/*-----------------------------------------------------------
-
-    1.  variables
-    2.  mixins
-    3.  helpers
-    4.  typography
-    5.  Core
-    6.  header
-    7.  Menu
-    8.  slider
-    9.  project
-    10. about
-    11. blog
-    12. contact
-    13. Footer
-
--------------------------------------------------------------*/
-/* -------------------------------------------------------
-                   Variables
--------------------------------------------------------- */
-/* -------------------------------------------------------
-                     mixins
--------------------------------------------------------- */
 [data-overlay]:before {
   content: '';
   position: absolute;
@@ -935,9 +903,10 @@ body.cuby-mobile {
   overflow: auto !important;
 }
 
-.container {
+/* .container {
   max-width: 1340px;
-}
+  
+} */
 
 .single-title {
   margin-bottom: 50px;
@@ -5379,8 +5348,10 @@ a.single-image {
 -------------------------------------------------------- */
 .footer {
   position: relative;
-  background-color: #000000;
+  background-color: #686161;
   z-index: 999;
+  padding: 80px;
+  margin: auto;
 }
 
 .footer .social-content {

@@ -126,7 +126,18 @@ padding: 20px 0 0px 0px;
     color:#ED673D;
 
 }
+.whyushead{
+    position: absolute;
+    left: 55%;
+    top: 30%;
+}
+.why-sub{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+}
 .why_sub_heading{
+  
     font-family: 'Poppins';
     font-size: 32px;
     font-weight: 400;
@@ -137,9 +148,14 @@ padding: 20px 0 0px 0px;
     background: #F7F7F7;
     width: 300px;
     height: 70px;
-    margin-left: -1.8em;
+    /* margin-left: -1.8em; */
     z-index: 1;
     margin-top: 0.5em;
+}
+.vis-mis-headings{
+    position: absolute;
+    top: 35%;
+    right: 73%;
 }
 .why_icon{
 font-size: 50px;
@@ -4067,6 +4083,9 @@ hr.style2 {
 .footer-links ul li a {
     color: #fff;
     display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.83px;
 }
 
 .footer-line {
@@ -4225,7 +4244,6 @@ hr.style2 {
     float: left;
     justify-content: center;
     align-items: center;
-    border: 1px solid #fff;
     margin-right: 10px;
     border-radius: 50%;
 }
@@ -4237,7 +4255,8 @@ hr.style2 {
 .social-share-buttons li a {}
 
 .social-share-buttons li a i {
-    color: #ffffff;
+    color:#D0DAF5;
+    font-size: 15.5px;
 }
 
 .social-share-buttons li:hover {
