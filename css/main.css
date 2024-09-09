@@ -9621,7 +9621,7 @@ footer .inner-wrapper .copyright {
 
 .about_text{
  font-family: "Allerta Stencil", system-ui;
- color: #FF7425;
+ color: #F15B2A;
  font-size: 100px;
  font-weight: 400;
  line-height: 110px;
@@ -9651,6 +9651,32 @@ footer .inner-wrapper .copyright {
 .vismisrow{
   top: -50px;
 }
-.vacard .vs-content{
-  
+.vs-content{
+  margin-top: 70px;
+}
+.vscard .innerbody .vs-content .vs-head{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52.8px;
+    font-family: "Allerta Stencil", system-ui;
+    color: #F15B2A;
+}
+.vs-content .vs-para{
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 24.81px;
+
+}
+.orange_sec{
+  height: 550px;
+  background-color:#F15B2A;
+}
+.reach_to_us{
+  height: 719px;
+  display: flex;
+  align-items: center;
+  background-color: #E3DCD6;
+  padding: 10px 0;
 }

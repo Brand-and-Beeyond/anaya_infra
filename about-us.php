@@ -46,28 +46,67 @@
     </section>
 
     <section class="abt_vismissvalues">
-          <div class="container-fluid">
-             <div class="row justify-content-center vismisrow position-relative">
-                  <div class="col-lg-8">
-                      <div class="row g-2">
-                          <div class="col-lg-4">
-                               <div class="card vscard border-0 bg-transparent">
-                                  <div class="card-body innerbody d-flex justify-content-center">
-                                        <div class="icon-box">
-                                                  
-                                        </div>
-                                        <div class="vs-content">
-                                             <h4 class="vs-text">Mission</h4>
-                                        </div>
-                                  </div>
-                               </div>
-                          </div>
-                          <div class="col-lg-4"></div>
-                          <div class="col-lg-4"></div>
-                      </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center vismisrow position-relative">
+                <div class="col-lg-9">
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="card vscard border-0 bg-transparent">
+                                <div class="card-body innerbody d-flex justify-content-center align-items-center flex-column">
+                                    <div class="icon-box">
+
+                                    </div>
+                                    <div class="vs-content text-center">
+                                        <h4 class="vs-head">Mission</h4>
+                                        <p class="vs-para py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas iste laboriosam blanditiis, fugiat esse iusto architecto cum facere vitae magni natus aperiam doloribus dolores harum! Sint minus odio dolorum quibusdam."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card vscard border-0 bg-transparent">
+                                <div class="card-body innerbody d-flex justify-content-center align-items-center flex-column">
+                                    <div class="icon-box">
+
+                                    </div>
+                                    <div class="vs-content text-center">
+                                        <h4 class="vs-head">Vision</h4>
+                                        <p class="vs-para py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas iste laboriosam blanditiis, fugiat esse iusto architecto cum facere vitae magni natus aperiam doloribus dolores harum! Sint minus odio dolorum quibusdam."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card vscard border-0 bg-transparent">
+                                <div class="card-body innerbody d-flex justify-content-center align-items-center flex-column">
+                                    <div class="icon-box">
+
+                                    </div>
+                                    <div class="vs-content text-center">
+                                        <h4 class="vs-head">Values</h4>
+                                        <p class="vs-para py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas iste laboriosam blanditiis, fugiat esse iusto architecto cum facere vitae magni natus aperiam doloribus dolores harum! Sint minus odio dolorum quibusdam."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="orange_sec mt-5">
+    </section>
+
+    <section class="reach_to_us">
+         <div class="container-fluid">
+             <div class="row justify-content-center">
+                  <h4 class="reachus_head">Any questions? Reach us</h4>
+                  <div class="col-lg-10">
+                      <div class="row"></div>
                   </div>
              </div>
-          </div>
+         </div>         
     </section>
 </main>
 
