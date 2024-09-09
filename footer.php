@@ -370,13 +370,13 @@ function updateTabs() {
 // Pinning the #whyus section with evenly distributed scroll time for each tab
 ScrollTrigger.create({
     trigger: tabSection,
-    start: "top top", // Start pinning when the top of #whyus hits the top of the viewport
-    end: () => "+=" + (window.innerHeight * (tabs.length - 1)), // Adjust end to match the number of tabs
+    start: "top top",
+    end: () => "+=" + (window.innerHeight * (tabs.length - 1) * 0.75), // Reduce the overall scroll time by multiplying by 0.5
     pin: true,
     scrub: true,
     onUpdate: self => {
-        const newIndex = Math.round(self.progress * (tabs.length - 1)); // Determine which tab to show based on scroll progress
-        if (newIndex !== currentTab) {
+        const newIndex = Math.floor(self.progress * (tabs.length * 1.5)); // Make tab switching more responsive
+        if (newIndex !== currentTab && newIndex < tabs.length) {
             currentTab = newIndex;
             updateTabs();
         }
