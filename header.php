@@ -284,19 +284,6 @@
     <nav class="navigation navigation-type-split">
         <div class="inner-wrapper">
             <div class="left-side">
-                <!--menu toggle-->
-                <!--<div class="menu-toggle toggle-text-slider">
-                <div class="bars">
-                    <span class="toggle-bar"></span>
-                    <span class="toggle-bar"></span>
-                    <span class="toggle-bar"></span>
-                </div>
-                <div class="menu-toggle-text">
-                        <span>
-                            menu
-                        </span>
-                </div>
-            </div>-->
                 <!--logo-->
                 <div class="logo-wrapper">
                     <a href="index.php">
@@ -308,9 +295,7 @@
             <div class="right-side">
                 <div class="menu-toggle toggle-text-slider">
                     <div class="bars">
-                        <!-- <span class="toggle-bar"></span>
-                        <span class="toggle-bar"></span>
-                        <span class="toggle-bar"></span> -->
+                       
                         <img src="images/menu.png" class="img-fluid togglemenu"  alt="">
                     </div>
                     <div class="menu-toggle-text">
@@ -320,121 +305,6 @@
                     </div>
                 </div>
             </div>
-
-
-            <!--<ul class="right-side">
-            <li class="shop-wrapper">
-
-                <div class="shop-toggle">
-                    <div class="icon-wrapper">
-                        <i class="fa fa-shopping-basket">
-                        </i>
-                        <span class="products-count">
-                                5
-                        </span>
-                    </div>
-                    <div class="text-slider-wrapper">
-                        <span>
-                            shop
-                        </span>
-                    </div>
-
-                    <div class="shop-products-list">
-                        <ul>
-                            <li>
-                                <div class="img-side">
-                                    <img src="assets/img/products/prod-6.jpg" alt="prod-1" class="img-fluid">
-                                </div>
-                                <div class="info-side">
-                                    <h6 class="product-title">Flying Ninja</h6>
-                                    <div class="product-info">
-                                        <span class="price">
-                                            $39
-                                        </span>
-                                        <span class="star-wrapper">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-side">
-                                    <img src="assets/img/products/prod-7.jpg" alt="prod-1" class="img-fluid">
-                                </div>
-                                <div class="info-side">
-                                    <h6 class="product-title">Woo Logotype</h6>
-                                    <div class="product-info">
-                                            <span class="price">
-                                                $39
-                                            </span>
-                                        <span class="star-wrapper">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star-half"></i>
-                                            </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-side">
-                                    <img src="assets/img/products/prod-8.jpg" alt="prod-1" class="img-fluid">
-                                </div>
-                                <div class="info-side">
-                                    <h6 class="product-title">Ship Your Idea</h6>
-                                    <div class="product-info">
-                                            <span class="price">
-                                                $49
-                                            </span>
-                                        <span class="star-wrapper">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-
-            <li class="search-form-wrapper">
-                <div class="search-form">
-                    <form>
-                        <input type="text" placeholder="Input some keywords...">
-                    </form>
-                </div>
-                <div class="search-toggle toggle-text-slider">
-                    <i class="fa fa-search">
-                    </i>
-                    <div class="text-slider-wrapper">
-                        <span>
-                            search
-                        </span>
-                        <span>
-                            exit
-                        </span>
-                    </div>
-                </div>
-            </li>
-
-            <li class="sidebar-wrapper">
-                <div class="sidebar-toggle">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-            </li>
-        </ul>-->
-
 
         </div>
         <!--navigation menu-->

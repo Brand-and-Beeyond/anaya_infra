@@ -15,7 +15,7 @@
                     <span class="thumbnail"
                         data-image="https://touchwoodbliss.com/images/villa-slide/tent-view.jpg">Thumbnail 4</span>
                     <span class="thumbnail"
-                        data-image="https://s3-alpha-sig.figma.com/img/0ad2/d6ba/0cbe1b303b1f6cff403ecb6c32df5b54?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kv6UBFcQdPww~1iu1V29ExVud-WLzM1b-V5q6ul2ezexgg6VTBaNDT1E-i-oPLPTdW-E3lwauVtgTQar6zCj4ORdLqwrGVwOs77t1iXuD60IwApX1FHlImWEzE8ucrylI-uTWYQ3NSbi9-oji8~~waINWQQC-4u1r13vdMBns2bdhol-hgQjMLPLBJqpLl34CedzPZpw4sUQkisqmQZqtNYKJDcUFursW5HoEZ5u6m98i0AwpBLzBgRKZ~Zf0DizJJEO3MqkS5a~zkV22ErPS31gkVR5BZER0Jrq2c2rZKcyb9Ige0ZAJ6PkRGL5rEarHA9wZO-v~u-6thXzKBrAWw__">Thumbnail
+                        data-image="images/projects/blisstent.jpg">Thumbnail
                         5</span>
                     <!-- Add more thumbnails as needed -->
                 </div>
