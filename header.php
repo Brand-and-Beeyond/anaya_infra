@@ -458,7 +458,7 @@
 
                 <li class="menu-item"
                     data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
-                    <a href="https://theguardiansindia.com/">
+                    <a href="index.php">
                         <span>
                             Home
                         </span>

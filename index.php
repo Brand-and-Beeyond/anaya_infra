@@ -6,7 +6,6 @@
 
     <div class="slider-container pb-20">
         <div class="image-display">
-            <!-- <img id="displayedImage" src="https://touchwoodbliss.com/images/villa-slide/courtyard.jpg" alt="Displayed Image"> -->
             <div class="marquee">
                 <div class="marquee-inner">
                     <span class="thumbnail" data-image="images/projects/touchwood_bliss.jpg">Touchwood Bliss</span>
@@ -26,68 +25,7 @@
 
 
 
-    <!-- <section class="aboutsite" style="background:#E3DCD6;">
-        <div class="container">
-            <div class="row mr0 align-items-center">
-                <div class="col-md-3 visible-xs">
-
-                    <div class="owl-carousel owl-theme success-count">
-
-                        <div class="item">
-                            <div class="info_box" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1300">
-                                <h3><span>250+</span></h3>
-                                <p>Project Launches</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="info_box" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1300">
-                                <h3><span>23,332</span></h3>
-                                <p>Units Sold</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="info_box" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1300">
-                                <h3><span>46%<span style="font-size: inherit; padding: 0 2px 0 5px;"></span></span>
-                                </h3>
-                                <p>Worth Of Inventory Sold</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="col-md-3 hidden-xs">
-                    <div class="info_box" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1300">
-                        <h3><span>250+</span></h3>
-                        <p>Project Launches</p>
-                    </div>
-                    <div class="info_box" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1300">
-                        <h3><span>23,332</span></h3>
-                        <p>Units Sold</p>
-                    </div>
-                    <div class="info_box" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1300">
-                        <h3><span>46%<span style="font-size: inherit; padding: 0 2px 0 5px;"><span
-                                        style="font-size: inherit; letter-spacing: 1px;"></span></h3>
-                        <p>Worth Of Inventory Sold</p>
-                    </div>
-
-
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-
-                    <h1 class="home_abt_heading">Loren Ipsum</h1>
-                    <p class="seo-link home_abt_txt">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. </p>
-                    <div>
-                        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" class="home_video"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+   
 
 
     <section class="aboutsite">
