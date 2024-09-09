@@ -99,14 +99,65 @@
     </section>
 
     <section class="reach_to_us">
-         <div class="container-fluid">
-             <div class="row justify-content-center">
-                  <h4 class="reachus_head">Any questions? Reach us</h4>
-                  <div class="col-lg-10">
-                      <div class="row"></div>
-                  </div>
-             </div>
-         </div>         
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+
+                <div class="col-lg-10">
+                    <div class="row">
+                        <h4 class="reachus_head py-4">Any questions? Reach us</h4>
+                        <div class="col-lg-5">
+                            <p class="reachus_para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero maiores alias, eum, neque odit mollitia laboriosam eius minima nostrum, provident asperiores dolorum veritatis excepturi quaerat odio reprehenderit cum voluptas sunt iure praesentium modi cumque ipsum aut eos. Adipisci, corporis aperiam!</p>
+                        </div>
+                    </div>
+                    <div class="row supportcard_sec g-4">
+                        <div class="col-lg-3">
+                            <div class="card supportcard border-0 bg-white">
+                                <div class="card-body innerbody d-flex flex-column justify-content- align-items-center">
+                                    <img src="images/headphone.png" class="img-fluid headset" alt="">
+                                    <div class="support-content text-center">
+                                        <h5 class="support-text my-3">Call us</h5>
+                                        <span class="support-extra">080-882171731</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card supportcard border-0 bg-white">
+                                <div class="card-body innerbody d-flex flex-column justify-content- align-items-center">
+                                    <img src="images/website.png" class="img-fluid headset" alt="">
+                                    <div class="support-content text-center">
+                                        <h5 class="support-text my-3">website</h5>
+                                        <span class="support-extra">www.domain.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card supportcard border-0 bg-white">
+                                <div class="card-body innerbody d-flex flex-column justify-content- align-items-center">
+                                    <img src="images/address.png" class="img-fluid address" alt="">
+                                    <div class="support-content text-center">
+                                        <h5 class="support-text my-3">Address</h5>
+                                        <span class="support-extra">xyz address</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card supportcard border-0 bg-white">
+                                <div class="card-body innerbody d-flex flex-column justify-content- align-items-center">
+                                    <img src="images/email.png" class="img-fluid email" alt="">
+                                    <div class="support-content text-center">
+                                        <h5 class="support-text my-3">Email</h5>
+                                        <span class="support-extra">info@domain.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 
