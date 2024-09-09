@@ -519,11 +519,11 @@ $(function () {
             subMenus = menuWrapper.find('.sub-menu'),
             menuList = menuWrapper.find('.navigation-menu-list'),
             navigationOverlay = menuWrapper.find('.navigation-overlay'),
-            menuToggle = TweenMax.to(toggle, 1, {}).reverse(),
+            menuToggle = gsap.timeline({ paused: true }).to(toggle, { duration: 1 }).reverse(),
             imageWrapper = menuWrapper.find('.navigation-image-side'),
             navigationAnimateElement = menuWrapper.find('.navigation-animate-element'),
             imageOverlay;
-
+    
         let init = () => {
             $(subMenus).each(function () {
                 $(this).prepend('<span class="menu-item back-link"><a href="#"><p><i class="fa fa-angle-left"></i></p> go back </a></span>');
@@ -533,20 +533,12 @@ $(function () {
                 let i = 1;
                 if ($(this).hasClass('sub-menu')) {
                     $($(this).children().not(':first-child').children('a')).each(function () {
-                        if (i >= 10) {
-                            $(this).prepend('<p>' + i + '</p>');
-                        } else {
-                            $(this).prepend('<p>0' + i + '</p>');
-                        }
+                        $(this).prepend('<p>' + (i < 10 ? '0' : '') + i + '</p>');
                         i++;
                     });
                 } else {
                     $($(this).children().children('a')).each(function () {
-                        if (i >= 10) {
-                            $(this).prepend('<p>' + i + '</p>');
-                        } else {
-                            $(this).prepend('<p>0' + i + '</p>');
-                        }
+                        $(this).prepend('<p>' + (i < 10 ? '0' : '') + i + '</p>');
                         i++;
                     });
                 }
@@ -555,116 +547,123 @@ $(function () {
                 imageWrapper.append('<div class="image-background" style="background-image: url(' + $(this).data('navigation-overlay-image') + ')"></div>');
                 imageOverlay = imageWrapper.find('.image-background');
             });
-            TweenMax.set(imageOverlay.first(), {
+            gsap.set(imageOverlay.first(), {
                 opacity: 1,
                 className: '+=image-active'
             });
         };
-
+    
         $(menuList.children().children('a')).on('mouseenter', function () {
-            TweenMax.to(imageWrapper.children('.image-active'), 0.2, {
-                opacity: 0,
-                className: '-=image-active'
-            });
-            TweenMax.to(imageWrapper.children().eq($(this).parent().index()), 0.2, {
-                opacity: 1,
-                className: '+=image-active'
-            });
+            gsap.to(imageWrapper.children('.image-active'), { duration: 0.2, opacity: 0, className: '-=image-active' });
+            gsap.to(imageWrapper.children().eq($(this).parent().index()), { duration: 0.2, opacity: 1, className: '+=image-active' });
         });
-
-        let showItems = (showItems, delay, onCompleteFunc) => {
-                TweenMax.staggerTo(showItems, 0.5, {
+    
+        let showItems = (items, delay, onCompleteFunc) => {
+                gsap.to(items, {
+                    duration: 0.5,
                     delay: delay,
-                    transform: 'translateY(0)',
+                    y: 0,
                     opacity: 1,
                     pointerEvents: 'auto',
-                    ease: Power3.ease,
-                    onComplete: onCompleteFunc
-                }, 0.1);
+                    ease: 'power3.out',
+                    onComplete: onCompleteFunc,
+                    stagger: 0.1
+                });
             },
-            hideItems = (hiddenItems, onCompleteFunc) => {
-                TweenMax.staggerTo(hiddenItems, 0.7, {
-                    transform: 'translateY(50px)',
+            hideItems = (items, onCompleteFunc) => {
+                gsap.to(items, {
+                    duration: 0.7,
+                    y: 50,
                     opacity: 0,
                     pointerEvents: 'none',
-                    ease: Power3.easeIn,
-                    onComplete: onCompleteFunc
-                }, 0.1);
+                    ease: 'power3.in',
+                    onComplete: onCompleteFunc,
+                    stagger: 0.1
+                });
             },
             showMenu = function () {
-                TweenMax.to(navigationOverlay.children(), 0.7, {
+                gsap.to(navigationOverlay.children(), {
+                    duration: 0.7,
                     width: '50%',
-                    ease: Expo.easeInOut,
+                    ease: 'expo.inOut',
                     onComplete: () => {
                         $(menuWrapper).css('pointer-events', 'auto');
                         toggle.addClass('active-toggle');
                         showItems(menuWrapper.find('.active-list').children().children('a'), 0.7);
                         menuWrapper.addClass('animate-element').removeClass('animate-element-hide');
-                        TweenMax.to(toggleClose, 1, {
+                        gsap.to(toggleClose, {
+                            duration: 1,
                             opacity: 1,
                             pointerEvents: 'auto',
-                            ease: Expo.easeInOut
+                            ease: 'expo.inOut'
                         });
-                        TweenMax.staggerTo(navigationAnimateElement, 1, {
+                        gsap.to(navigationAnimateElement, {
+                            duration: 1,
                             opacity: 1,
-                            ease: Expo.easeInOut,
+                            ease: 'expo.inOut',
+                            stagger: 0.15,
                             onComplete: () => {
                                 menuToggle.play();
                             }
-                        }, 0.15);
-                        TweenMax.to(imageOverlay, 0.5, {
-                            transform: 'translateX(0)',
-                            ease: Expo.easeInOut
+                        });
+                        gsap.to(imageOverlay, {
+                            duration: 0.5,
+                            x: 0,
+                            ease: 'expo.inOut'
                         });
                     }
                 });
             },
             hideMenu = function () {
                 let hideOverlay = () => {
-                    TweenMax.to(navigationOverlay.children(), 0.5, {
+                    gsap.to(navigationOverlay.children(), {
+                        duration: 0.5,
                         width: 0,
-                        ease: Power3.easeIn,
+                        ease: 'power3.in',
                         onComplete: () => {
                             menuToggle.reverse();
                             $(menuWrapper).css('pointer-events', 'none');
-                        },
+                        }
                     });
                 };
                 hideItems(menuWrapper.find('.active-list').children().children('a'), hideOverlay);
-                TweenMax.staggerTo(navigationAnimateElement, 1, {
+                gsap.to(navigationAnimateElement, {
+                    duration: 1,
                     opacity: 0,
-                    ease: Power3.easeIn,
-                }, 0.1);
-                TweenMax.to(toggleClose, 1, {
+                    ease: 'power3.in',
+                    stagger: 0.1
+                });
+                gsap.to(toggleClose, {
+                    duration: 1,
                     opacity: 0,
                     pointerEvents: 'none',
-                    ease: Expo.easeInOut,
+                    ease: 'expo.inOut',
                     onComplete: () => {
                         toggle.removeClass('active-toggle');
                     }
                 });
                 if (general.w > 768) {
-                    TweenMax.to(imageOverlay, 0.5, {
-                        transform: 'translateX(-110%)',
-                        ease: Power3.easeIn,
+                    gsap.to(imageOverlay, {
+                        duration: 0.5,
+                        x: '-110%',
+                        ease: 'power3.in'
                     });
                 }
                 menuWrapper.addClass('animate-element-hide').removeClass('animate-element');
             };
-
+    
         toggle.on('click', function () {
             if (menuToggle.reversed() && !toggle.hasClass('active-toggle')) {
                 showMenu();
             }
-
         });
-
+    
         toggleClose.on('click', function () {
             if (!menuToggle.reversed() && toggle.hasClass('active-toggle')) {
                 hideMenu();
             }
         });
-
+    
         menuList.children('.menu-item-has-children').children('a').on('click', function () {
             let subMenu = $(this).parent().children('.sub-menu');
             let showItemsCallback = () => {
@@ -674,7 +673,7 @@ $(function () {
             };
             hideItems($(this).parent().parent().children().children('a'), showItemsCallback);
         });
-
+    
         init();
         subMenus.children('.back-link').on('click', function () {
             let showItemsCallback = () => {
@@ -685,6 +684,7 @@ $(function () {
             hideItems($(this).parent().children().children('a'), showItemsCallback);
         });
     };
+    
 
     // Navigation sidebar
     let navigationSidebar = () => {

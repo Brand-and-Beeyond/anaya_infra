@@ -891,7 +891,7 @@ p {
 -------------------------------------------------------- */
 body {
   /* background-color: #1b1b1b !important; */
-  cursor: url(../images/cursororange.png) 3 3, auto !important;
+  cursor: url(../images/orangecursor.png) 2 2, auto !important;
   overflow: hidden !important;
 }
 

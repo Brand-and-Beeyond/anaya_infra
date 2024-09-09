@@ -235,7 +235,7 @@
 <script src="js/cookie.js"></script>
 <script src="js/popout.js"></script>
 
-<!-- <script src="js/ScrollSmoother.min.js"></script>
+<script src="js/ScrollSmoother.min.js"></script>
 <script src="js/gsap.min.js"></script>
 <script src="js/ScrollTrigger.min.js"></script>
 <script>
@@ -247,7 +247,7 @@
             effects: true
         });
 
-    }) -->
+    })
 </script>
 <script>
     jQuery(document).ready(function($) {
@@ -349,6 +349,45 @@
 
 
 <script>
+const tabs = document.querySelectorAll('.tab-link');
+const tabContents = document.querySelectorAll('.tab-pane'); // All tab content panes
+const tabSection = document.querySelector('#whyus'); // Target the main section
+let currentTab = 0; // Start with the first tab (index 0)
+
+// Function to update the active tab and corresponding content
+function updateTabs() {
+    tabs.forEach((tab, index) => {
+        if (index === currentTab) {
+            tab.classList.add('active');
+            tabContents[index].classList.add('show', 'active'); // Show the corresponding content
+        } else {
+            tab.classList.remove('active');
+            tabContents[index].classList.remove('show', 'active'); // Hide the other content
+        }
+    });
+}
+
+// Pinning the #whyus section with evenly distributed scroll time for each tab
+ScrollTrigger.create({
+    trigger: tabSection,
+    start: "top top", // Start pinning when the top of #whyus hits the top of the viewport
+    end: () => "+=" + (window.innerHeight * (tabs.length - 1)), // Adjust end to match the number of tabs
+    pin: true,
+    scrub: true,
+    onUpdate: self => {
+        const newIndex = Math.round(self.progress * (tabs.length - 1)); // Determine which tab to show based on scroll progress
+        if (newIndex !== currentTab) {
+            currentTab = newIndex;
+            updateTabs();
+        }
+    }
+});
+
+// Initialize the first tab as active
+updateTabs();
+</script>
+
+<script>
     $('.channel-carousel').owlCarousel({
         animateOut: 'slideOutLeft',
         animateIn: 'slideInRight',
@@ -377,6 +416,16 @@
     });
 </script>
 
+<script>
+    document.querySelectorAll('.play-icon').forEach(function (playIcon) {
+    playIcon.addEventListener('click', function () {
+        var videoBox = this.closest('.video-box');
+        var videoIframe = videoBox.querySelector('.video-iframe');
+
+        videoIframe.style.display = 'block';
+    });
+});
+</script>
 <script>
     $(document).ready(function() {
         $("#progress").css("top", $(window).height() / 2);
@@ -577,16 +626,16 @@
         nav: true,
         navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i> "]
     });
-    $('.success-count').owlCarousel({
-        loop: true,
-        margin: 0,
-        items: 1,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        smartSpeed: 2000,
-        autoplayHoverPause: true,
-        nav: false
-    });
+    // $('.success-count').owlCarousel({
+    //     loop: true,
+    //     margin: 0,
+    //     items: 1,
+    //     autoplay: true,
+    //     autoplayTimeout: 3000,
+    //     smartSpeed: 2000,
+    //     autoplayHoverPause: true,
+    //     nav: false
+    // });
     $('.clientele').owlCarousel({
         loop: true,
         margin: 10,

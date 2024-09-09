@@ -1521,7 +1521,7 @@ span {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: #000000;
   line-height: 1;
 }
 
@@ -1537,7 +1537,7 @@ span {
 .navigation-type-split .navigation-menu-wrapper .navigation-overlay .str {
   width: 0;
   height: 100%;
-  background-color: #000000;
+  background-color:#E3DCD6;
   position: absolute;
 }
 
@@ -1672,12 +1672,12 @@ span {
 }
 
 .navigation-type-split .navigation-menu-wrapper .navigation-menu-list .menu-item a span {
-  color: #ffffff;
+  color:#000000;
   transition: all .2s ease-in-out;
 }
 
 .navigation-type-split .navigation-menu-wrapper .navigation-menu-list .menu-item a:hover span {
-  color: var(--primary-color);
+  color:#F15B2A;
 }
 
 .navigation-type-split .navigation-menu-wrapper .navigation-menu-list .menu-item:not(:last-child) {
@@ -1761,12 +1761,12 @@ span {
 }
 
 .navigation-type-split .navigation-menu-wrapper .navigation-menu-list .menu-item-has-children .menu-item-has-children-link:after {
-  content: '\f107';
+  content: '+';
   font-family: 'Font Awesome 5 Free';
   display: block;
   border-radius: 100%;
-  font-size: 13px;
-  color: var(--white-color-1);
+  font-size: 20px;
+  color:#F15B2A;
   margin-left: 20px;
 }
 
@@ -2771,9 +2771,8 @@ span {
   z-index: 100;
 }
 
-body {
-  cursor: url("../images/cursororange.png"), auto;
-}
+
+
 
 @media (max-width: 575px) {
   body {
@@ -9325,20 +9324,32 @@ footer .inner-wrapper .copyright {
   }
 }
 
-
+.navigation-type-split .inner-wrapper .right-side .menu-toggle .menu-toggle-text span {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4E4E4E;
+  line-height: 15.34px;
+  margin-top: 3px;
+  font-family: "Allerta Stencil", system-ui;
+}
 
 /* dhiraj css */
 
 .aboutsite {
-  height: 851px;
+  height: 760px;
   display: flex;
   align-items: center;
-  padding-top: 60px;
+  padding-top: 20px;
+  background-color: #E3DCD6;
 }
 
 .why_us {
   margin-top: 140px;
-  height: 851px;
+  min-height: 650px;
   display: flex;
   align-items: center;
 }
@@ -9392,18 +9403,20 @@ footer .inner-wrapper .copyright {
   color: #000;
   margin: 10px 0;
 }
-.client-testi{
-   right: -16px;
-}
-.clientcar .item {
-  height: 287px;
-  width: 578px;
-  padding: 10px 12px;
-  background-color: #eeeeee;
-  box-shadow: -2px 0px 4.4px 2px #53535340;
+
+.client-testi {
+  right: -16px;
 }
 
-.client_para{
+.clientcar .item {
+  height: 287px;
+  width: 550px;
+  padding: 20px 0px 14px 40px;
+  background-color: #eeeeee;
+  box-shadow: 2px 0px 4.4px 2px #53535340;
+}
+
+.client_para {
   width: 385px;
 }
 
@@ -9426,13 +9439,17 @@ footer .inner-wrapper .copyright {
   left: 120px;
   overflow-x: hidden;
 }
-.owl-nav .owl-prev i,.owl-nav .owl-next i{
+
+.owl-nav .owl-prev i,
+.owl-nav .owl-next i {
   color: #F15B2A;
 }
-.dmsans{
+
+.dmsans {
   font-family: "DM Sans", sans-serif;
 }
-.footmainlink{
+
+.footmainlink {
   font-size: 16px;
   font-weight: 700;
   line-height: 28px;
@@ -9440,20 +9457,186 @@ footer .inner-wrapper .copyright {
 
 }
 
-.logofoot .anayalogo{
+.logofoot .anayalogo {
   width: 200px;
-  background-color:#F15B2A;
+  background-color: #F15B2A;
   padding: 11px 26px;
   border: 2px dashed #ffffff;
-  margin:14px auto;
+  margin: 14px auto;
 }
-.center{
+
+.center {
   text-align: center;
 }
-.reservekeyword{
+
+.reservekeyword {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   font-family: "DM Sans", sans-serif;
   color: #D0DAF5;
+}
+
+.vr-line {
+  position: absolute;
+  height: 300px;
+  width: 2px;
+  background-color: #F15B2A;
+  left: 0;
+  top: 0;
+}
+
+.hr-line {
+  position: absolute;
+  height: 1.5px;
+  width: 350px;
+  background-color: #F15B2A;
+  left: -8%;
+  bottom: 0;
+}
+
+.video-box {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  width: 100%;
+  cursor: pointer;
+  height: 520px;
+  top: 35px;
+}
+
+.video-box .vthumb {
+  height: 100%;
+  width: 100%;
+}
+
+.boxhover {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  display: none;
+}
+
+.video-iframe iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.video-box:hover .boxhover {
+  opacity: 1;
+}
+
+.play-icon img {
+  height: 80px;
+  width: 80px;
+}
+
+.whyus_vector {
+  position: absolute;
+  left: 65%;
+  top: -19%;
+}
+
+.whyus_vector img {
+  width: 50%;
+}
+
+.quote img {
+  width: 120px;
+}
+
+.quote {
+  position: absolute;
+  top: -25%;
+  left: -8%;
+  z-index: 90;
+}
+
+.clientale {
+  padding: 100px 0;
+}
+
+.owl-carousel.on_projects {
+  padding: 0 24px 0 0;
+}
+
+.vis-mis-headings {
+  position: absolute;
+  top: 30%;
+  right: -5%;
+}
+
+.vis-mis-headings .tab-side {
+  width: 100%;
+  overflow: hidden;
+  padding: 8px;
+  background-color: white;
+}
+
+.tab-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #9E9E9E;
+  transition: all 0.3s;
+  letter-spacing: 0.03em;
+}
+
+.tab-link.active {
+  font-family: "Roboto", sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  color: #FF7425;
+  letter-spacing: 0.03em;
+}
+
+
+/* about page css */
+
+.about_text{
+ font-family: "Allerta Stencil", system-ui;
+ color: #FF7425;
+ font-size: 100px;
+ line-height: 110px;
+}
+.about_text .about,.about_text .us{
+  display: block;
+}
+
+.us{
+  margin-top: 0px;
+}
+
+.about_para p{
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 34.44px;
+  font-family: "poppins";
+  color: #000000;
+  padding: 0 10px;
+}
+.about_us{
+  height: 700px;
+  padding-top: 30px;
+  background-color: #E3DCD6;
 }

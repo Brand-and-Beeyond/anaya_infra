@@ -127,6 +127,9 @@
             color: #6c757d;
             font-size: 35px !important;
         }
+        .bars .togglemenu{
+          height: 25px;
+        }
     </style>
     <meta name="google-site-verification" content="N_SQRRNdO05Q8-iJrI7mbqi0z2A-J1EDzVED7579jts" />
 
@@ -305,9 +308,10 @@
             <div class="right-side">
                 <div class="menu-toggle toggle-text-slider">
                     <div class="bars">
+                        <!-- <span class="toggle-bar"></span>
                         <span class="toggle-bar"></span>
-                        <span class="toggle-bar"></span>
-                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span> -->
+                        <img src="images/menu.png" class="img-fluid togglemenu"  alt="">
                     </div>
                     <div class="menu-toggle-text">
                         <span>
@@ -437,9 +441,8 @@
         <div class="navigation-menu-wrapper">
             <!--exit toggle-->
             <div class="menu-close">
-                <i class="fa fa-times"></i>
                 <div class="menu-toggle-text">
-                    <span>exit</span>
+                    <span>Back</span>
                 </div>
             </div>
             <!--navigation overlay-->
@@ -461,74 +464,21 @@
                         </span>
                     </a>
                 </li>
-                <li class="menu-item menu-item-has-children"
+                <li class="menu-item"
                     data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
-                    <a href="Javascript:void (0);">
+                    <a href="about-us.php">
                         <span>
                             About Us
                         </span>
                     </a>
 
-                    <ul class="sub-menu">
-                        <li class="menu-item">
-                            <a href="https://theguardiansindia.com/about-us.php">
-                                <span>
-                                    Our Story
-                                </span>
-                            </a>
-                        </li>
-                        <!-- <li class="menu-item">
-                        <a href="https://theguardiansindia.com/about-us.php#ourteam">
-                                <span>
-                                    Our Management Team
-                                </span>
-                        </a>
-                    </li> -->
-                        <li class="menu-item">
-                            <a href="https://theguardiansindia.com/tgrea-edge.php">
-                                <span>
-                                    The Guardians Edge
-                                </span>
-                            </a>
-                        </li>
-
-                        <!--<li class="menu-item">-->
-                        <!--    <a href="#">-->
-                        <!--        <span>-->
-                        <!--            The-->
-                        <!--            Guardians-->
-                        <!--            CSR-->
-                        <!--        </span>-->
-                        <!--    </a>-->
-                        <!--</li>-->
-                        <!-- <li class="menu-item">
-                        <a href="https://theguardiansindia.com/international.php">
-                            <span>
-                                Intl. Network By The Guardians
-                            </span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="/media">
-                            <span>
-                                Media
-                            </span>
-                        </a>
-                    </li> -->
-                        <!--<li class="menu-item">
-                        <a href="https://theguardiansindia.com/our-milestone.php">
-                                <span>
-                                    Our Milestone
-                                </span>
-                        </a>
-                    </li>-->
-                    </ul>
+                   
                 </li>
                 <li class="menu-item menu-item-has-children"
                     data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
                     <a href="Javascript:void (0);">
                         <span>
-                            Services
+                            Consulting
                         </span>
                     </a>
                     <ul class="sub-menu">
@@ -546,85 +496,26 @@
                                 </span>
                             </a>
                         </li>
-                        <!-- <li class="menu-item">
-                        <a href="https://theguardiansindia.com/services/">
-                            <span>
-                                All Services
-                            </span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="https://theguardiansindia.com/services/residential-services.php">
-                            <span>
-                                Residential
-                            </span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="https://theguardiansindia.com/services/commercial-services.php">
-                            <span>
-                                Commercial
-                            </span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="https://theguardiansindia.com/services/retail-services.php">
-                            <span>
-                                Retail
-                            </span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="https://theguardiansindia.com/services/marketing-consulting-services.php">
-                            <span>
-                                Marketing Consulting Services
-                            </span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="https://theguardiansindia.com/services/land-services.php">
-                            <span>
-                                Land
-                            </span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="https://theguardiansindia.com/services/financial-services.php">
-                            <span>
-                                Financial Services
-                            </span>
-                        </a>
-                    </li> -->
+                     
                     </ul>
                 </li>
 
-                <li class="menu-item menu-item-has-children"
+                <li class="menu-item"
                     data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
                     <a href="Javascript:void (0);">
                         <span>
-                            Clients
+                            Contracting
                         </span>
                     </a>
 
 
-                    <ul class="sub-menu">
-                        <li class="menu-item">
-                            <a href="https://theguardiansindia.com/our-clients.php">
-                                <span>
-                                    Client
-                                    Showcase
-                                </span>
-                            </a>
-                        </li>
-
-
-                    </ul>
+                    
                 </li>
                 <li class="menu-item menu-item-has-children"
                     data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
                     <a href="Javascript:void (0);">
                         <span>
-                            Our Work
+                            Project
                         </span>
                     </a>
 
@@ -673,7 +564,7 @@
                     data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
                     <a href="Javascript:void (0);">
                         <span>
-                            Magazine
+                            Blogs
                         </span>
                     </a>
 
@@ -719,124 +610,28 @@
 
 
 
-                <li class="menu-item menu-item-has-children"
+                <li class="menu-item"
                     data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
                     <a href="Javascript:void (0);">
                         <span>
-                            The Guardians Gazette
+                            Career
                         </span>
                     </a>
 
-                    <ul class="sub-menu">
-                        <li class="menu-item">
-                            <a href="/newsletter/TheGuardiansGazette.pdf" target="_blank">
-                                <span>
-                                    June 2024
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
                 </li>
 
 
-                <li class="menu-item menu-item-has-children"
+                <li class="menu-item"
                     data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
                     <a href="Javascript:void (0);">
                         <span>
-                            Newsroom
+                            Contact us
                         </span>
                     </a>
 
-                    <ul class="sub-menu">
-                        <li class="menu-item">
-                            <a href="/media" target="_blank">
-                                <span>
-                                    Media
-                                </span>
-                            </a>
-                        </li>
-                        <!--<li class="menu-item">-->
-                        <!--    <a href="/media/press-book/" target="_blank">-->
-                        <!--        <span>-->
-                        <!--            Pressbook-->
-                        <!--        </span>-->
-                        <!--    </a>-->
-                        <!--</li>-->
-                        <!--<li class="menu-item">
-                        <a href="/blog">
-                            <span>
-                                Blog
-                            </span>
-                        </a>
-                    </li>-->
-
-                    </ul>
-                </li>
-                <li class="menu-item"
-                    data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
-                    <a href="/blog">
-                        <span>
-                            Blog
-                        </span>
-                    </a>
+                   
                 </li>
 
-                <li class="menu-item"
-                    data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
-                    <a href="https://theguardiansindia.com/careers.php">
-                        <span>
-                            Careers
-                        </span>
-                    </a>
-                </li>
-
-                <!--<li class="menu-item menu-item-has-children"-->
-                <!--    data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">-->
-                <!--    <a href="">-->
-                <!--        <span>-->
-
-                <!--        </span>-->
-                <!--    </a>-->
-
-
-                <!--<ul class="sub-menu">-->
-                <!--    <li class="menu-item">-->
-                <!--        <a href="https://theguardiansindia.com/careers.php#core-values" >-->
-                <!--            <span>-->
-                <!--                Core-->
-                <!--                Values-->
-                <!--            </span>-->
-                <!--        </a>-->
-                <!--    </li>-->
-                <!--    <li class="menu-item">-->
-                <!--        <a href="https://theguardiansindia.com/careers.php#lifeatguardians" >-->
-                <!--            <span>-->
-                <!--                Life At The-->
-                <!--                Guardians-->
-                <!--            </span>-->
-                <!--        </a>-->
-                <!--    </li>-->
-                <!--    <li class="menu-item">-->
-                <!--        <a href="https://theguardiansindia.com/careers.php#GrowWithUs" >-->
-                <!--            <span>-->
-                <!--                Come Join-->
-                <!--                Us-->
-                <!--            </span>-->
-                <!--        </a>-->
-                <!--    </li>-->
-
-                <!--</ul>-->
-                <!--</li>-->
-
-
-                <li class="menu-item"
-                    data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
-                    <a href="https://theguardiansindia.com/contact-us.php">
-                        <span>
-                            Contact Us
-                        </span>
-                    </a>
-                </li>
 
             </ul>
             <!--additional information for menu (custom)-->
@@ -903,6 +698,6 @@
     </nav> 
   <div class="viewport">
     <div class="cursor-wrapper">
-        <!--custom cursor-->
+     
         <div id="ball-cursor"></div>
     </div>
