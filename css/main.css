@@ -9613,10 +9613,17 @@ footer .inner-wrapper .copyright {
 
 /* about page css */
 
+.about_us{
+  height: 680px;
+  padding-top: 80px;
+  background-color: #E3DCD6;
+}
+
 .about_text{
  font-family: "Allerta Stencil", system-ui;
  color: #FF7425;
  font-size: 100px;
+ font-weight: 400;
  line-height: 110px;
 }
 .about_text .about,.about_text .us{
@@ -9635,8 +9642,15 @@ footer .inner-wrapper .copyright {
   color: #000000;
   padding: 0 10px;
 }
-.about_us{
-  height: 700px;
-  padding-top: 30px;
-  background-color: #E3DCD6;
+.vscard .innerbody .icon-box{
+  width: 116px;
+  height: 107px;
+  background-color: #F15B2A;
+  border-radius: 16px;
+}
+.vismisrow{
+  top: -50px;
+}
+.vacard .vs-content{
+  
 }

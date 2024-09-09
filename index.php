@@ -604,3 +604,42 @@
 </main>
 
 <?php include('footer.php'); ?>
+
+<script>
+const tabs = document.querySelectorAll('.tab-link');
+const tabContents = document.querySelectorAll('.tab-pane'); // All tab content panes
+const tabSection = document.querySelector('#whyus'); // Target the main section
+let currentTab = 0; // Start with the first tab (index 0)
+
+// Function to update the active tab and corresponding content
+function updateTabs() {
+    tabs.forEach((tab, index) => {
+        if (index === currentTab) {
+            tab.classList.add('active');
+            tabContents[index].classList.add('show', 'active'); // Show the corresponding content
+        } else {
+            tab.classList.remove('active');
+            tabContents[index].classList.remove('show', 'active'); // Hide the other content
+        }
+    });
+}
+
+// Pinning the #whyus section with evenly distributed scroll time for each tab
+ScrollTrigger.create({
+    trigger: tabSection,
+    start: "top top",
+    end: () => "+=" + (window.innerHeight * (tabs.length - 1) * 0.75), // Reduce the overall scroll time by multiplying by 0.5
+    pin: true,
+    scrub: true,
+    onUpdate: self => {
+        const newIndex = Math.floor(self.progress * (tabs.length * 1.5)); // Make tab switching more responsive
+        if (newIndex !== currentTab && newIndex < tabs.length) {
+            currentTab = newIndex;
+            updateTabs();
+        }
+    }
+});
+
+// Initialize the first tab as active
+updateTabs();
+</script>
