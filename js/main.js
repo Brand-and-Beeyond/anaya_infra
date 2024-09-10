@@ -137,41 +137,7 @@ $(function () {
     };
 
     // Custom cursor
-    let mouseBall = () => {
-        let xmouse, ymouse;
-        document.addEventListener('mousemove', function (e) {
-            xmouse = e.clientX || e.pageX;
-            ymouse = e.clientY || e.pageY;
-        });
-        let ball = document.querySelector('#ball-cursor'),
-            x = void 0,
-            y = void 0,
-            dx = void 0,
-            dy = void 0,
-            tx = 0,
-            ty = 0,
-            key = -1,
-            followMouse = function followMouse() {
-                key = requestAnimationFrame(followMouse);
-                if (!x || !y) {
-                    x = xmouse;
-                    y = ymouse;
-                } else {
-                    dx = (xmouse - x) * 0.125;
-                    dy = (ymouse - y) * 0.125;
-                    if (Math.abs(dx) + Math.abs(dy) < 0.1) {
-                        x = xmouse;
-                        y = ymouse;
-                    } else {
-                        x += dx;
-                        y += dy;
-                    }
-                }
-                ball.style.left = x + 'px';
-                ball.style.top = y + 'px';
-            };
-        followMouse();
-    };
+   
 
     // Bottom panel contact form
     let bottomPanelContact = () => {
@@ -664,15 +630,19 @@ $(function () {
             }
         });
     
-        menuList.children('.menu-item-has-children').children('a').on('click', function () {
-            let subMenu = $(this).parent().children('.sub-menu');
-            let showItemsCallback = () => {
-                $(this).parent().parent().removeClass('active-list');
-                subMenu.addClass('active-list');
-                showItems($(this).parent().children('.sub-menu').children().children('a'), 0.2);
-            };
-            hideItems($(this).parent().parent().children().children('a'), showItemsCallback);
-        });
+        // this is opening the subMenus with animation
+         
+        // menuList.children('.menu-item-has-children').children('a').on('click', function () {
+        //     let subMenu = $(this).parent().children('.sub-menu');
+        //     let showItemsCallback = () => {
+        //         $(this).parent().parent().removeClass('active-list');
+        //         subMenu.addClass('active-list');
+        //         showItems($(this).parent().children('.sub-menu').children().children('a'), 0.2);
+        //     };
+        //     hideItems($(this).parent().parent().children().children('a'), showItemsCallback);
+        // });
+
+        
     
         init();
         subMenus.children('.back-link').on('click', function () {
@@ -686,6 +656,23 @@ $(function () {
     };
     
 
+    document.querySelectorAll('.menu-item-has-children > a').forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+    
+            // Close other open menus
+            document.querySelectorAll('.menu-item-has-children').forEach(menuItem => {
+                if (menuItem !== this.parentElement) {
+                    menuItem.classList.remove('open');
+                }
+            });
+    
+            // Toggle the clicked menu
+            const menuItem = this.parentElement;
+            menuItem.classList.toggle('open');
+        });
+    });
+    
     // Navigation sidebar
     let navigationSidebar = () => {
         let sidebar = $('.sidebar-side-panel'),

@@ -239,15 +239,56 @@
 <script src="js/gsap.min.js"></script>
 <script src="js/ScrollTrigger.min.js"></script>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var smoother = ScrollSmoother.create({
-            content: ".viewport",
-            smooth: 3,
-            smoothTouch: 0,
-            effects: true
-        });
+   let mouseBall = () => {
+    let xmouse, ymouse;
+    document.addEventListener('mousemove', function (e) {
+        // Adjust mouse position by subtracting the ScrollSmoother's scroll position
+        xmouse = e.clientX || e.pageX;
+        ymouse = e.clientY || e.pageY + ScrollSmoother.get().scrollTop(); // Adjust for ScrollSmoother
+    });
 
-    })
+    let ball = document.querySelector('#ball-cursor'),
+        x = undefined,
+        y = undefined,
+        dx = undefined,
+        dy = undefined,
+        tx = 0,
+        ty = 0,
+        key = -1,
+        followMouse = function followMouse() {
+            key = requestAnimationFrame(followMouse);
+            if (x === undefined || y === undefined) {
+                x = xmouse;
+                y = ymouse;
+            } else {
+                dx = (xmouse - x) * 0.125;
+                dy = (ymouse - y) * 0.125;
+                if (Math.abs(dx) + Math.abs(dy) < 0.1) {
+                    x = xmouse;
+                    y = ymouse;
+                } else {
+                    x += dx;
+                    y += dy;
+                }
+            }
+            ball.style.left = x + 'px';
+            ball.style.top = y + 'px';
+        };
+    followMouse();
+};
+
+// Initialize ScrollSmoother and your custom cursor script
+document.addEventListener("DOMContentLoaded", function() {
+    var smoother = ScrollSmoother.create({
+        content: ".viewport",
+        smooth: 3,
+        smoothTouch: 0,
+        effects: true
+    });
+
+    mouseBall(); // Initialize the custom cursor script after ScrollSmoother
+});
+
 </script>
 <script>
     jQuery(document).ready(function($) {

@@ -4577,6 +4577,10 @@ color:#606060;
     transition: ease all 0.5s;
     cursor: url('../images/whitecursor.png'),auto !important;
 }
+.orange_sec:hover{
+    transition: ease all 0.5s;
+    cursor: url('../images/whitecursor.png'),auto !important;
+}
 
 .channel_partners {
     position: relative;

@@ -327,7 +327,7 @@
             <ul class="navigation-menu-list active-list">
 
                 <li class="menu-item"
-                    data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
+                    data-navigation-overlay-image="">
                     <a href="index.php">
                         <span>
                             Home
@@ -335,7 +335,7 @@
                     </a>
                 </li>
                 <li class="menu-item"
-                    data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
+                    data-navigation-overlay-image="">
                     <a href="about-us.php">
                         <span>
                             About Us
@@ -345,10 +345,10 @@
                    
                 </li>
                 <li class="menu-item menu-item-has-children"
-                    data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
+                    data-navigation-overlay-image="">
                     <a href="Javascript:void (0);">
                         <span>
-                            Consulting
+                            Consulting <i class="fas fa-plus"></i>
                         </span>
                     </a>
                     <ul class="sub-menu">
@@ -371,7 +371,7 @@
                 </li>
 
                 <li class="menu-item"
-                    data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
+                    data-navigation-overlay-image="">
                     <a href="Javascript:void (0);">
                         <span>
                             Contracting
@@ -382,7 +382,7 @@
                     
                 </li>
                 <li class="menu-item menu-item-has-children"
-                    data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
+                    data-navigation-overlay-image="">
                     <a href="Javascript:void (0);">
                         <span>
                             Project
@@ -431,7 +431,7 @@
             </li> -->
 
                 <li class="menu-item menu-item-has-children"
-                    data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
+                    data-navigation-overlay-image="">
                     <a href="Javascript:void (0);">
                         <span>
                             Blogs
@@ -481,7 +481,7 @@
 
 
                 <li class="menu-item"
-                    data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
+                    data-navigation-overlay-image="">
                     <a href="Javascript:void (0);">
                         <span>
                             Career
@@ -492,7 +492,7 @@
 
 
                 <li class="menu-item"
-                    data-navigation-overlay-image="https://theguardiansindia.com/images/menuitem/2.jpg">
+                    data-navigation-overlay-image="">
                     <a href="Javascript:void (0);">
                         <span>
                             Contact us
@@ -566,8 +566,9 @@
             </form>
         </div>
     </nav> 
-  <div class="viewport">
+
     <div class="cursor-wrapper">
      
         <div id="ball-cursor"></div>
     </div>
+    <div class="viewport">

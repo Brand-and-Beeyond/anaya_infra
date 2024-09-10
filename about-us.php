@@ -122,74 +122,83 @@
                     <div class="events-content">
                         <ol>
                             <li class="selected" data-date="14/06/2016">
-                                <h2>TK</h2>
-                                <em>June 14th, 2016</em>
-                                <p>
+                                <h2 class="event-head my-3">Touchwood Bliss</h2>
+                                <h4 class="event-category mb-3">Hospitality project</h4>
+                                <span class="event-date d-block mb-3">June 21st, 2018</span>
+                                <p class="event-desc">
                                     AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community Lighting.”
                                 </p>
                             </li>
 
                             <li data-date="21/06/2016">
-                                <h2>TK</h2>
-                                <em>June 21st, 2016</em>
-                                <p>
-                                    CNN publishes “Doctors issue warning about LED streetlighting.”
+                                <h2 class="event-head my-3">Ashoka medicover</h2>
+                                <h4 class="event-category mb-3">Hospitality project</h4>
+                                <span class="event-date d-block mb-3">June 21st, 2018</span>
+                                <p class="event-desc">
+                                    AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community Lighting.”
                                 </p>
                             </li>
 
                             <li data-date="24/06/2016">
-                                <h2>TK</h2>
-                                <em>June 24th, 2016</em>
-                                <p>
-                                    In response to AMA Report 2-A-16, IES Issues “IES Board Position on AMA CSAPH Report 2-A-16.
+                                <h2 class="event-head my-3">Namco bank</h2>
+                                <h4 class="event-category mb-3">Banking infra</h4>
+                                <span class="event-date d-block mb-3">June 21st, 2018</span>
+                                <p class="event-desc">
+                                    AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community Lighting.”
                                 </p>
                             </li>
 
                             <li data-date="30/06/2016">
-                                <h2>TK</h2>
-                                <em>June 21-30th, 2016</em>
-                                <p>
-                                    Various entities in the lighting community issue responses to AMA Report 2-A-16.
+                                <h2 class="event-head my-3">Touchwood Bliss</h2>
+                                <h4 class="event-category mb-3">Hospitality project</h4>
+                                <span class="event-date d-block mb-3">June 21st, 2018</span>
+                                <p class="event-desc">
+                                    AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community Lighting.”
                                 </p>
                             </li>
 
                             <li data-date="08/07/2016">
-                                <h2>TK</h2>
-                                <em>July, 2016</em>
-                                <p>
-                                    Lighting publications report on the AMA controversy.
+                                <h2 class="event-head my-3">Touchwood Bliss</h2>
+                                <h4 class="event-category mb-3">Hospitality project</h4>
+                                <span class="event-date d-block mb-3">June 21st, 2018</span>
+                                <p class="event-desc">
+                                    AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community Lighting.”
                                 </p>
                             </li>
 
                             <li data-date="17/07/2016">
-                                <h2>TK</h2>
-                                <em>June 28th, 2017</em>
-                                <p>
-                                    IES issues Position Statement PS-09-17 (status update of dialogue with AMA).
+                                <h2 class="event-head my-3">Touchwood Bliss</h2>
+                                <h4 class="event-category mb-3">Hospitality project</h4>
+                                <span class="event-date d-block mb-3">June 21st, 2018</span>
+                                <p class="event-desc">
+                                    AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community Lighting.”
                                 </p>
                             </li>
 
                             <li data-date="23/07/2016">
-                                <h2>TK</h2>
-                                <em>June 30th, 2017</em>
-                                <p>
-                                    IALD endorses IES Position Statement PS-09-17.
+                                <h2 class="event-head my-3">Touchwood Bliss</h2>
+                                <h4 class="event-category mb-3">Hospitality project</h4>
+                                <span class="event-date d-block mb-3">June 21st, 2018</span>
+                                <p class="event-desc">
+                                    AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community Lighting.”
                                 </p>
                             </li>
 
                             <li data-date="26/07/2016">
-                                <h2>TK</h2>
-                                <em>August 23rd, 2017</em>
-                                <p>
-                                    U.S. Department of Energy’s Solid-State Lighting program issues an activity and research update in its SSL Postings newsletter.
+                                <h2 class="event-head my-3">Touchwood Bliss</h2>
+                                <h4 class="event-category mb-3">Hospitality project</h4>
+                                <span class="event-date d-block mb-3">June 21st, 2018</span>
+                                <p class="event-desc">
+                                    AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community Lighting.”
                                 </p>
                             </li>
 
                             <li data-date="30/07/2016">
-                                <h2>TK</h2>
-                                <em>September 25, 2017</em>
-                                <p>
-                                    The Washington Post publishes, “Some cities are taking another look at LED lighting after AMA warning.”
+                                <h2 class="event-head my-3">Touchwood Bliss</h2>
+                                <h4 class="event-category mb-3">Hospitality project</h4>
+                                <span class="event-date d-block mb-3">June 21st, 2018</span>
+                                <p class="event-desc">
+                                    AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community Lighting.”
                                 </p>
                             </li>
 
@@ -267,48 +276,43 @@
 <?php include('footer.php'); ?>
 
 <script>
- document.addEventListener('DOMContentLoaded', function() {
-    const dots = document.querySelectorAll('.cd-horizontal-timeline .dot');
-    const fillingLine = document.querySelector('.cd-horizontal-timeline .filling-line');
-    const eventContentItems = document.querySelectorAll('.events-content li');
+    document.addEventListener('DOMContentLoaded', function() {
+        const dots = document.querySelectorAll('.cd-horizontal-timeline .dot');
+        const fillingLine = document.querySelector('.cd-horizontal-timeline .filling-line');
+        const eventContentItems = document.querySelectorAll('.events-content li');
 
-    // Helper function to update filling line width
-    function updateFillingLine(index) {
-        const totalDots = dots.length;
-        const lineWidth = (index / (totalDots - 1)) * 100;
-        fillingLine.style.width = `${lineWidth}%`;
-    }
+        // Helper function to update filling line width
+        function updateFillingLine(index) {
+            const totalDots = dots.length;
+            const lineWidth = (index / (totalDots - 1)) * 100;
+            fillingLine.style.width = `${lineWidth}%`;
+        }
 
-    // Helper function to update the event content
-    function updateEventContent(index) {
-        document.querySelector('.events-content li.selected').classList.remove('selected');
-        eventContentItems[index].classList.add('selected');
-    }
+        // Helper function to update the event content
+        function updateEventContent(index) {
+            document.querySelector('.events-content li.selected').classList.remove('selected');
+            eventContentItems[index].classList.add('selected');
+        }
 
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', function(event) {
-            event.preventDefault();
-            
-            // Update dot selection
-            document.querySelector('.dot.selected').classList.remove('selected');
-            dot.classList.add('selected');
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', function(event) {
+                event.preventDefault();
 
-            // Update filling line and event content
-            updateFillingLine(index);
-            updateEventContent(index);
+                // Update dot selection
+                document.querySelector('.dot.selected').classList.remove('selected');
+                dot.classList.add('selected');
+
+                // Update filling line and event content
+                updateFillingLine(index);
+                updateEventContent(index);
+            });
         });
+
+        // Optional: Initialize the timeline to the first dot and event content
+        if (dots.length > 0 && eventContentItems.length > 0) {
+            dots[0].classList.add('selected');
+            eventContentItems[0].classList.add('selected');
+            updateFillingLine(0);
+        }
     });
-
-    // Optional: Initialize the timeline to the first dot and event content
-    if (dots.length > 0 && eventContentItems.length > 0) {
-        dots[0].classList.add('selected');
-        eventContentItems[0].classList.add('selected');
-        updateFillingLine(0);
-    }
-});
-
-
-
-
-
 </script>
