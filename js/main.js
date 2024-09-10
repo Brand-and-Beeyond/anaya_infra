@@ -490,39 +490,39 @@ $(function () {
             navigationAnimateElement = menuWrapper.find('.navigation-animate-element'),
             imageOverlay;
     
-        let init = () => {
-            $(subMenus).each(function () {
-                $(this).prepend('<span class="menu-item back-link"><a href="#"><p><i class="fa fa-angle-left"></i></p> go back </a></span>');
-            });
-            menuList.children().children('a').addClass('menu-item-has-children-link');
-            $(menuWrapper.find('ul')).each(function () {
-                let i = 1;
-                if ($(this).hasClass('sub-menu')) {
-                    $($(this).children().not(':first-child').children('a')).each(function () {
-                        $(this).prepend('<p>' + (i < 10 ? '0' : '') + i + '</p>');
-                        i++;
-                    });
-                } else {
-                    $($(this).children().children('a')).each(function () {
-                        $(this).prepend('<p>' + (i < 10 ? '0' : '') + i + '</p>');
-                        i++;
-                    });
-                }
-            });
-            $(menuList.children()).each(function () {
-                imageWrapper.append('<div class="image-background" style="background-image: url(' + $(this).data('navigation-overlay-image') + ')"></div>');
-                imageOverlay = imageWrapper.find('.image-background');
-            });
-            gsap.set(imageOverlay.first(), {
-                opacity: 1,
-                className: '+=image-active'
-            });
-        };
+        // let init = () => {
+        //     $(subMenus).each(function () {
+        //         $(this).prepend('<span class="menu-item back-link"><a href="#"><p><i class="fa fa-angle-left"></i></p> go back </a></span>');
+        //     });
+        //     menuList.children().children('a').addClass('menu-item-has-children-link');
+        //     $(menuWrapper.find('ul')).each(function () {
+        //         let i = 1;
+        //         if ($(this).hasClass('sub-menu')) {
+        //             $($(this).children().not(':first-child').children('a')).each(function () {
+        //                 $(this).prepend('<p>' + (i < 10 ? '0' : '') + i + '</p>');
+        //                 i++;
+        //             });
+        //         } else {
+        //             $($(this).children().children('a')).each(function () {
+        //                 $(this).prepend('<p>' + (i < 10 ? '0' : '') + i + '</p>');
+        //                 i++;
+        //             });
+        //         }
+        //     });
+        //     $(menuList.children()).each(function () {
+        //         imageWrapper.append('<div class="image-background" style="background-image: url(' + $(this).data('navigation-overlay-image') + ')"></div>');
+        //         imageOverlay = imageWrapper.find('.image-background');
+        //     });
+        //     gsap.set(imageOverlay.first(), {
+        //         opacity: 1,
+        //         className: '+=image-active'
+        //     });
+        // };
     
-        $(menuList.children().children('a')).on('mouseenter', function () {
-            gsap.to(imageWrapper.children('.image-active'), { duration: 0.2, opacity: 0, className: '-=image-active' });
-            gsap.to(imageWrapper.children().eq($(this).parent().index()), { duration: 0.2, opacity: 1, className: '+=image-active' });
-        });
+        // $(menuList.children().children('a')).on('mouseenter', function () {
+        //     gsap.to(imageWrapper.children('.image-active'), { duration: 0.2, opacity: 0, className: '-=image-active' });
+        //     gsap.to(imageWrapper.children().eq($(this).parent().index()), { duration: 0.2, opacity: 1, className: '+=image-active' });
+        // });
     
         let showItems = (items, delay, onCompleteFunc) => {
                 gsap.to(items, {
@@ -644,34 +644,19 @@ $(function () {
 
         
     
-        init();
-        subMenus.children('.back-link').on('click', function () {
-            let showItemsCallback = () => {
-                $(this).parent().removeClass('active-list');
-                $(this).parent().parent().parent().addClass('active-list');
-                showItems($(this).parent().parent().parent().children().children('a'), 0.2);
-            };
-            hideItems($(this).parent().children().children('a'), showItemsCallback);
-        });
+        // init();
+        // subMenus.children('.back-link').on('click', function () {
+        //     let showItemsCallback = () => {
+        //         $(this).parent().removeClass('active-list');
+        //         $(this).parent().parent().parent().addClass('active-list');
+        //         showItems($(this).parent().parent().parent().children().children('a'), 0.2);
+        //     };
+        //     hideItems($(this).parent().children().children('a'), showItemsCallback);
+        // });
     };
     
 
-    document.querySelectorAll('.menu-item-has-children > a').forEach(item => {
-        item.addEventListener('click', function(e) {
-            e.preventDefault();
-    
-            // Close other open menus
-            document.querySelectorAll('.menu-item-has-children').forEach(menuItem => {
-                if (menuItem !== this.parentElement) {
-                    menuItem.classList.remove('open');
-                }
-            });
-    
-            // Toggle the clicked menu
-            const menuItem = this.parentElement;
-            menuItem.classList.toggle('open');
-        });
-    });
+   
     
     // Navigation sidebar
     let navigationSidebar = () => {

@@ -289,6 +289,7 @@ document.addEventListener("DOMContentLoaded", function() {
     mouseBall(); // Initialize the custom cursor script after ScrollSmoother
 });
 
+
 </script>
 <script>
     jQuery(document).ready(function($) {

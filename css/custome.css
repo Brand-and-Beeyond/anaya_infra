@@ -289,6 +289,7 @@ padding-bottom: 20px;
     font-size: 23px !important;
     padding: 9px !important;
     font-weight: 400 !important;
+    color: #000;
 }
 
 .navigation-type-split .navigation-menu-wrapper .navigation-menu-list .menu-item:not(:last-child) {

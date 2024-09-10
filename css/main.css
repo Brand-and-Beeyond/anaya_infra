@@ -1702,46 +1702,54 @@ span {
 
 
 /* Menu item styles */
-.navigation-type-split .navigation-menu-wrapper .navigation-menu-list .menu-item {
-  position: relative; /* Ensure the submenu is positioned relative to this item */
-  margin-bottom: 0; /* Remove any extra margin at the bottom */
+.main-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 0%
 }
 
-/* Sub-menu styles */
-.navigation-type-split .navigation-menu-wrapper .navigation-menu-list .menu-item .sub-menu {
-  position: relative; /* Position relative to the parent menu item */
+.menu-item {
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 14px 0;
+  margin: 0px;
+}
+
+.sub-menu {
+  display: none;
+  position: relative;
   top: 100%;
   left: 0;
-  padding: 20px 30px;
-  display: none;
-  pointer-events: none; /* Disable interaction when hidden */
-  transform: translateY(-20px); /* Adjust for smooth dropdown */
-  transition: all 0.3s ease; /* Smooth show/hide transition */
-  z-index: 10; /* Ensure the submenu appears above other elements */
+  /* background-color: #fff; */
+  width: max-content;
 }
 
-/* When the dropdown is opened (toggle the 'open' class via JavaScript) */
-.navigation-type-split .navigation-menu-wrapper .navigation-menu-list .menu-item .sub-menu.open {
+.menu-item.active .sub-menu {
+  display: block !important;
+}
+
+.sub-menu li {
+  padding: 10px;
+}
+
+.sub-menu li a {
+  color: #000;
+  text-decoration: none;
   display: block;
-  transform: translateY(0); /* Move the dropdown back into position */
+  width: 135px;
+  font-size: 14px;
+  text-wrap: wrap;
+  word-wrap: break-word;
+  border-bottom: 1px solid;
+  line-height: 25px;
 }
 
-/* Style for the plus/minus icon */
-.navigation-type-split .navigation-menu-wrapper .navigation-menu-list .menu-item span i {
-  transition: transform 0.3s ease;
+.sub-menu li a:hover {
+  background-color: transparent;
 }
-
-/* When submenu is open, rotate the plus icon to show minus */
-.navigation-type-split .navigation-menu-wrapper .navigation-menu-list .menu-item .sub-menu.open + span i {
-  transform: rotate(45deg); /* Rotate icon to indicate the submenu is open */
-}
-
-/* Style for pushing the rest of the menu items down when submenu is open */
-.navigation-type-split .navigation-menu-wrapper .navigation-menu-list .menu-item.open ~ .menu-item {
-  transform: translateY(100px); /* Push the bottom items down (adjust as needed) */
-  transition: transform 0.3s ease; /* Smooth transition when menu opens */
-}
-
 
 
 @media (max-width: 1023px) {
@@ -1774,7 +1782,7 @@ span {
   }
 }
 
-.navigation-type-split .navigation-menu-wrapper .navigation-menu-list .menu-item .sub-menu .back-link a p {
+/* .navigation-type-split .navigation-menu-wrapper .navigation-menu-list .menu-item .sub-menu .back-link a p {
   width: 50px;
   height: 50px;
   color: var(--white-color-1);
@@ -1785,7 +1793,7 @@ span {
   justify-content: center;
   margin-right: 25px;
   transition: all .2s ease-in-out;
-}
+} */
 
 .navigation-type-split .navigation-menu-wrapper .navigation-menu-list .menu-item .sub-menu .back-link a i {
   font-size: 10px;
@@ -9955,3 +9963,5 @@ Main Components
   line-height: 1.5;
   color: #555;
 }
+
+

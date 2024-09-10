@@ -127,8 +127,9 @@
             color: #6c757d;
             font-size: 35px !important;
         }
-        .bars .togglemenu{
-          height: 25px;
+
+        .bars .togglemenu {
+            height: 25px;
         }
     </style>
     <meta name="google-site-verification" content="N_SQRRNdO05Q8-iJrI7mbqi0z2A-J1EDzVED7579jts" />
@@ -295,8 +296,8 @@
             <div class="right-side">
                 <div class="menu-toggle toggle-text-slider">
                     <div class="bars">
-                       
-                        <img src="images/menu.png" class="img-fluid togglemenu"  alt="">
+
+                        <img src="images/menu.png" class="img-fluid togglemenu" alt="">
                     </div>
                     <div class="menu-toggle-text">
                         <span>
@@ -326,6 +327,33 @@
             <!--menu list-->
             <ul class="navigation-menu-list active-list">
 
+                <li class="menu-item" data-hover="home"><a href="index.php">Home</a></li>
+                <li class="menu-item" data-hover="home"><a href="about-us.php">About us</a></li>
+                <li class="menu-item" data-hover="home">
+                    <a href="#" class="sub-btn">Consulting</a>
+                    <div class="sub-dropdown">
+                        <a class="sub-item" href="farmsyde-villa.php">Farmsyde</a>
+                        <a class="sub-item" href="courtyard-villa.php">Courtyard</a>
+                        <a class="sub-item" href="glamping-tent.php">Glamping Tent</a>
+                    </div>
+                </li>
+                <li class="menu-item" data-hover="home"><a href="">Contracting</a></li>
+                <li class="menu-item" data-hover="home">
+                    <a href="#">Project</a>
+                    <div class="sub-menu">
+                        <a class="sub-item" href="farmsyde-villa.php">Farmsyde</a>
+                        <a class="sub-item" href="courtyard-villa.php">Courtyard</a>
+                        <a class="sub-item" href="glamping-tent.php">Glamping Tent</a>
+                    </div>
+                </li>
+                <li class="menu-item" data-hover="home"><a href="">Blogs</a></li>
+                <li class="menu-item" data-hover="home"><a href="">Careers</a></li>
+                <li class="menu-item" data-hover="home"><a href="">Contact us</a></li>
+
+
+            </ul>
+            <!-- <ul class="navigation-menu-list active-list">
+
                 <li class="menu-item"
                     data-navigation-overlay-image="">
                     <a href="index.php">
@@ -342,7 +370,7 @@
                         </span>
                     </a>
 
-                   
+
                 </li>
                 <li class="menu-item menu-item-has-children"
                     data-navigation-overlay-image="">
@@ -366,7 +394,7 @@
                                 </span>
                             </a>
                         </li>
-                     
+
                     </ul>
                 </li>
 
@@ -379,7 +407,7 @@
                     </a>
 
 
-                    
+
                 </li>
                 <li class="menu-item menu-item-has-children"
                     data-navigation-overlay-image="">
@@ -412,23 +440,11 @@
                             </a>
                         </li>
 
-                        <!--<li class="menu-item">-->
-                        <!--    <a href="https://theguardiansindia.com/past-projects.php">-->
-                        <!--        <span>-->
-                        <!--            Past Projects-->
-                        <!--        </span>-->
-                        <!--    </a>-->
-                        <!--</li>-->
+                      
 
                     </ul>
                 </li>
-                <!-- <li class="menu-item">
-                <a href="https://theguardiansindia.com/our-success-stories.php">
-                    <span>
-                        Success Stories
-                    </span>
-                </a>
-            </li> -->
+             
 
                 <li class="menu-item menu-item-has-children"
                     data-navigation-overlay-image="">
@@ -499,11 +515,14 @@
                         </span>
                     </a>
 
-                   
+
                 </li>
 
 
-            </ul>
+            </ul> -->
+
+
+           
             <!--additional information for menu (custom)-->
             <div class="navigation-information">
                 <div class="navigation-animate-element">
@@ -565,10 +584,10 @@
                 </button>
             </form>
         </div>
-    </nav> 
+    </nav>
 
     <div class="cursor-wrapper">
-     
+
         <div id="ball-cursor"></div>
     </div>
     <div class="viewport">
