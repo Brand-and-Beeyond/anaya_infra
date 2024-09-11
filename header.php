@@ -309,22 +309,20 @@
 
         </div>
         <!--navigation menu-->
-        <div class="navigation-menu-wrapper">
-            <!--exit toggle-->
+        <!-- <div class="navigation-menu-wrapper">
+          
             <div class="menu-close">
                 <div class="menu-toggle-text">
                     <span>Back</span>
                 </div>
             </div>
-            <!--navigation overlay-->
+            
             <div class="navigation-overlay">
                 <div class="str str-one"></div>
-                <!--<div class="str str-two"></div>
-            <div class="str str-three"></div>
-            <div class="str str-four"></div>-->
+          
                 <div class="str str-five navigation-image-side"></div>
             </div>
-            <!--menu list-->
+           
             <ul class="navigation-menu-list active-list">
 
                 <li class="menu-item" data-hover="home"><a href="index.php">Home</a></li>
@@ -340,7 +338,7 @@
                 <li class="menu-item" data-hover="home"><a href="">Contracting</a></li>
                 <li class="menu-item" data-hover="home">
                     <a href="#">Project</a>
-                    <div class="sub-menu">
+                    <div class="sub-dropdown">
                         <a class="sub-item" href="farmsyde-villa.php">Farmsyde</a>
                         <a class="sub-item" href="courtyard-villa.php">Courtyard</a>
                         <a class="sub-item" href="glamping-tent.php">Glamping Tent</a>
@@ -352,178 +350,9 @@
 
 
             </ul>
-            <!-- <ul class="navigation-menu-list active-list">
-
-                <li class="menu-item"
-                    data-navigation-overlay-image="">
-                    <a href="index.php">
-                        <span>
-                            Home
-                        </span>
-                    </a>
-                </li>
-                <li class="menu-item"
-                    data-navigation-overlay-image="">
-                    <a href="about-us.php">
-                        <span>
-                            About Us
-                        </span>
-                    </a>
-
-
-                </li>
-                <li class="menu-item menu-item-has-children"
-                    data-navigation-overlay-image="">
-                    <a href="Javascript:void (0);">
-                        <span>
-                            Consulting <i class="fas fa-plus"></i>
-                        </span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li class="menu-item">
-                            <a href="https://theguardiansindia.com/our-domestic-network.php">
-                                <span>
-                                    All Services
-                                </span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="https://theguardiansindia.com/international.php">
-                                <span>
-                                    NRI Corner
-                                </span>
-                            </a>
-                        </li>
-
-                    </ul>
-                </li>
-
-                <li class="menu-item"
-                    data-navigation-overlay-image="">
-                    <a href="Javascript:void (0);">
-                        <span>
-                            Contracting
-                        </span>
-                    </a>
-
-
-
-                </li>
-                <li class="menu-item menu-item-has-children"
-                    data-navigation-overlay-image="">
-                    <a href="Javascript:void (0);">
-                        <span>
-                            Project
-                        </span>
-                    </a>
-
-                    <ul class="sub-menu">
-                        <li class="menu-item">
-                            <a href="https://theguardiansindia.com/our-work.php">
-                                <span>
-                                    Ongoing & Completed Projects
-                                </span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="https://theguardiansindia.com/upcoming-projects.php">
-                                <span>
-                                    Upcoming Projects
-                                </span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="https://theguardiansindia.com/our-work.php#our-success-stories">
-                                <span>
-                                    Success Stories
-                                </span>
-                            </a>
-                        </li>
-
-                      
-
-                    </ul>
-                </li>
-             
-
-                <li class="menu-item menu-item-has-children"
-                    data-navigation-overlay-image="">
-                    <a href="Javascript:void (0);">
-                        <span>
-                            Blogs
-                        </span>
-                    </a>
-
-                    <ul class="sub-menu">
-                        <li class="menu-item">
-                            <a href="/magazine/edition04/" target="_blank">
-                                <span>
-                                    Open Acres (2024) Volume 4
-                                </span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/magazine/edition03/" target="_blank">
-                                <span>
-                                    Open Acres (2023) Volume 3
-                                </span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/magazine/edition02/" target="_blank">
-                                <span>
-                                    Open Acres (2022) Volume 2
-                                </span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/magazine/edition01/" target="_blank">
-                                <span>
-                                    Open Acres (2022) Volume 1
-                                </span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/magazine" target="_blank">
-                                <span>
-                                    Open Acres (2021)
-                                </span>
-                            </a>
-                        </li>
-
-                    </ul>
-                </li>
-
-
-
-                <li class="menu-item"
-                    data-navigation-overlay-image="">
-                    <a href="Javascript:void (0);">
-                        <span>
-                            Career
-                        </span>
-                    </a>
-
-                </li>
-
-
-                <li class="menu-item"
-                    data-navigation-overlay-image="">
-                    <a href="Javascript:void (0);">
-                        <span>
-                            Contact us
-                        </span>
-                    </a>
-
-
-                </li>
-
-
-            </ul> -->
-
-
+   
            
-            <!--additional information for menu (custom)-->
+           
             <div class="navigation-information">
                 <div class="navigation-animate-element">
                     <h3 class="main-title">Get in touch with us - Say Hello!</h3>
@@ -573,8 +402,38 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+
+
+        <div class="naviside">
+            <span type="button" class="close-nav">Back</span>
+            <div class="nav-inner">
+                <ul>
+                    <li class="menu-item"><a href="index.php">Home</a></li>
+                    <li class="menu-item"><a href="about-us.php">About us</a></li>
+                    <li class="menu-item dropdown">
+                        <a href="#" class="sub-btn">Consulting <span class="icon">+<span></a>
+                        <div class="sub-dropdown">
+                            <a class="sub-item" href="farmsyde-villa.php">Farmsyde</a>
+                            <a class="sub-item" href="courtyard-villa.php">Courtyard</a>
+                            <a class="sub-item" href="glamping-tent.php">Glamping Tent</a>
+                        </div>
+                    </li>
+                    <li class="menu-item"><a href="">Contracting</a></li>
+                    <li class="menu-item">
+                        <a href="#" class="sub-btn">Project</a>
+                        <div class="sub-dropdown">
+                            <a class="sub-item" href="farmsyde-villa.php">Farmsyde</a>
+                            <a class="sub-item" href="courtyard-villa.php">Courtyard</a>
+                            <a class="sub-item" href="glamping-tent.php">Glamping Tent</a>
+                        </div>
+                    </li>
+                    <li class="menu-item"><a href="">Blogs</a></li>
+                    <li class="menu-item"><a href="">Careers</a></li>
+                    <li class="menu-item"><a href="">Contact us</a></li>
+                </ul>
+            </div>
         </div>
-        <!--mobile search form-->
         <div class="mobile-search-form">
             <span class="exit-toggle">exit <i class="fa fa-times"></i></span>
             <form class="search-form">

@@ -1702,12 +1702,12 @@ span {
 
 
 /* Menu item styles */
-.main-menu {
+/* Menu and Dropdown styles */
+.navigation-menu-list {
   list-style: none;
   padding: 0;
   margin: 0;
   position: relative;
-  top: 0%
 }
 
 .menu-item {
@@ -1717,39 +1717,17 @@ span {
   padding: 14px 0;
   margin: 0px;
 }
-
-.sub-menu {
-  display: none;
+.navigation-menu-list .item {
   position: relative;
-  top: 100%;
-  left: 0;
-  /* background-color: #fff; */
-  width: max-content;
+  cursor: pointer;
+  padding: 14px 0;
+  border-bottom: 1px solid #ececec;
+}
+.menu-item .sub-btn {
+  position: relative;
 }
 
-.menu-item.active .sub-menu {
-  display: block !important;
-}
 
-.sub-menu li {
-  padding: 10px;
-}
-
-.sub-menu li a {
-  color: #000;
-  text-decoration: none;
-  display: block;
-  width: 135px;
-  font-size: 14px;
-  text-wrap: wrap;
-  word-wrap: break-word;
-  border-bottom: 1px solid;
-  line-height: 25px;
-}
-
-.sub-menu li a:hover {
-  background-color: transparent;
-}
 
 
 @media (max-width: 1023px) {
@@ -9729,7 +9707,7 @@ footer .inner-wrapper .copyright {
 
 }
 .orange_sec{
-  height: 630px;
+  height: 474px;
   margin-top: 60px;
   background-color:#F15B2A;
 }
@@ -9906,9 +9884,9 @@ Main Components
 /* Additional content styles */
 .events-content {
   position: relative;
-  margin-top: 70px;
+  margin-top: 30px;
   padding: 0 20px;
-  min-height: 500px;
+  min-height: 400px;
   display: flex;
   align-items: center;
 }
@@ -9965,3 +9943,172 @@ Main Components
 }
 
 
+
+/* new sidebar menu */
+
+
+.naviside{
+  position: fixed;
+  left:0;
+	top:0;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+	background-color: #E3DCD6;
+	overflow-y: auto;
+	transform: translateX(100%);
+	transition: all 0.5s ease;
+}
+.naviside.open{
+  transform: translateX(0%);
+}
+.naviside .nav-inner{
+  min-height: 100vh;
+	padding: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.naviside .close-nav{
+  position: absolute;
+  top: 30px;
+  left: 4%;
+  color: #000000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25.57px;
+  font-family: "Allerta Stencil", system-ui;
+}
+
+
+ .naviside.open .close-nav{
+    transform: translateY(0px);
+	opacity: 1;
+	transition-delay: 0.5s;
+}
+
+
+.naviside .nav-inner ul .menu-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transform: translateX(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.naviside.open ul .menu-item:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.naviside.open ul .menu-item:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.naviside.open ul .menu-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.naviside.open ul .menu-item:nth-child(4) {
+  animation-delay: 0.7s;
+}
+
+.naviside.open ul .menu-item:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.naviside.open ul .menu-item:nth-child(6) {
+  animation-delay: 0.9s;
+}
+.naviside.open ul .menu-item:nth-child(7) {
+  animation-delay: 1s;
+}
+.naviside.open ul .menu-item:nth-child(8) {
+  animation-delay: 1.1s;
+}
+
+.naviside.open .menu-item {
+  opacity: 1;
+  transform: translateY(0);
+  transform: translateX(0);
+  animation: translateNavs 0.6s ease forwards;
+}
+.naviside .nav-inner ul .menu-item a{
+   color: #000000;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 38.35px;
+   font-family: "Allerta Stencil", system-ui;
+}
+.naviside .nav-inner ul .menu-item{
+  position: relative;
+}
+
+
+/* Style for the dropdown */
+.naviside .nav-inner ul .menu-item .sub-dropdown {
+  display: none; /* Hidden by default */
+  opacity: 0; /* Hidden by opacity */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for visibility and position */
+  position: relative; /* Positioned relative to the .menu-item */
+  top: 100%; /* Position it below the menu item */
+  left: 0; /* Align to the left edge of the menu item */
+  width: max-content; /* Adjust width to fit content */
+  color: #000;
+  z-index: 99;
+  margin-top: 8px;
+  /* Ensure content is displayed as a column */
+  display: flex;
+  flex-direction: column;
+}
+
+/* When active, show the dropdown and animate it */
+.menu-item.active .sub-dropdown {
+  display: flex; /* Use flex to ensure it aligns properly */
+  opacity: 1; /* Make it visible */
+  transform: translateY(0); /* Move it to its normal position */
+}
+
+
+
+/* Style for dropdown items */
+.naviside .nav-inner ul .menu-item .sub-dropdown .sub-item {
+  padding: 10px 15px; /* Add padding for better spacing */
+  text-decoration: none; /* Remove underline from links */
+  color: #000; /* Link color */
+  display: block; /* Ensure links are block-level for full width */
+  transition: background-color 0.3s ease; /* Smooth background color change */
+  transform: translateX(-10px); /* Start from slightly left */
+  opacity: 0;
+  font-size: 18px;
+}
+
+.sub-btn .icon{
+  color: #F15B2A;
+  margin-left: 7px;
+  font-size: 24px;
+  line-height: 46.02px;
+}
+.sub-btn.active{
+  color: #F15B2A !important;
+}
+
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-20px); /* Start from slightly left */
+    opacity: 0; /* Start as invisible */
+  }
+  to {
+    transform: translateX(0); /* End at normal position */
+    opacity: 1; /* End as visible */
+  }
+}
+
+@keyframes translateNavs {
+  from {
+    transform: translateY(20px) translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}

@@ -478,182 +478,191 @@ $(function () {
     };
 
     // Navigation menu
-    let navigationMenu = () => {
-        let toggle = navigation.find('.menu-toggle'),
-            toggleClose = navigation.find('.menu-close'),
-            menuWrapper = navigation.find('.navigation-menu-wrapper'),
-            subMenus = menuWrapper.find('.sub-menu'),
-            menuList = menuWrapper.find('.navigation-menu-list'),
-            navigationOverlay = menuWrapper.find('.navigation-overlay'),
-            menuToggle = gsap.timeline({ paused: true }).to(toggle, { duration: 1 }).reverse(),
-            imageWrapper = menuWrapper.find('.navigation-image-side'),
-            navigationAnimateElement = menuWrapper.find('.navigation-animate-element'),
-            imageOverlay;
+    // let navigationMenu = () => {
+    //     let toggle = navigation.find('.menu-toggle'),
+    //         toggleClose = navigation.find('.menu-close'),
+    //         menuWrapper = navigation.find('.navigation-menu-wrapper'),
+    //         menuList = menuWrapper.find('.navigation-menu-list'),
+    //         navigationOverlay = menuWrapper.find('.navigation-overlay'),
+    //         menuToggle = gsap.timeline({ paused: true }).to(toggle, { duration: 1 }).reverse(),
+    //         imageWrapper = menuWrapper.find('.navigation-image-side'),
+    //         navigationAnimateElement = menuWrapper.find('.navigation-animate-element'),
+    //         imageOverlay;
     
-        // let init = () => {
-        //     $(subMenus).each(function () {
-        //         $(this).prepend('<span class="menu-item back-link"><a href="#"><p><i class="fa fa-angle-left"></i></p> go back </a></span>');
-        //     });
-        //     menuList.children().children('a').addClass('menu-item-has-children-link');
-        //     $(menuWrapper.find('ul')).each(function () {
-        //         let i = 1;
-        //         if ($(this).hasClass('sub-menu')) {
-        //             $($(this).children().not(':first-child').children('a')).each(function () {
-        //                 $(this).prepend('<p>' + (i < 10 ? '0' : '') + i + '</p>');
-        //                 i++;
-        //             });
-        //         } else {
-        //             $($(this).children().children('a')).each(function () {
-        //                 $(this).prepend('<p>' + (i < 10 ? '0' : '') + i + '</p>');
-        //                 i++;
-        //             });
-        //         }
-        //     });
-        //     $(menuList.children()).each(function () {
-        //         imageWrapper.append('<div class="image-background" style="background-image: url(' + $(this).data('navigation-overlay-image') + ')"></div>');
-        //         imageOverlay = imageWrapper.find('.image-background');
-        //     });
-        //     gsap.set(imageOverlay.first(), {
-        //         opacity: 1,
-        //         className: '+=image-active'
-        //     });
-        // };
+    //     let showItems = (items, delay, onCompleteFunc) => {
+    //             gsap.to(items, {
+    //                 duration: 0.5,
+    //                 delay: delay,
+    //                 y: 0,
+    //                 opacity: 1,
+    //                 pointerEvents: 'auto',
+    //                 ease: 'power3.out',
+    //                 onComplete: onCompleteFunc,
+    //                 stagger: 0.1
+    //             });
+    //         },
+    //         hideItems = (items, onCompleteFunc) => {
+    //             gsap.to(items, {
+    //                 duration: 0.7,
+    //                 y: 50,
+    //                 opacity: 0,
+    //                 pointerEvents: 'none',
+    //                 ease: 'power3.in',
+    //                 onComplete: onCompleteFunc,
+    //                 stagger: 0.1
+    //             });
+    //         },
+    //         showMenu = function () {
+    //             gsap.to(navigationOverlay.children(), {
+    //                 duration: 0.7,
+    //                 width: '50%',
+    //                 ease: 'expo.inOut',
+    //                 onComplete: () => {
+    //                     $(menuWrapper).css('pointer-events', 'auto');
+    //                     toggle.addClass('active-toggle');
+    //                     showItems(menuWrapper.find('.active-list').children().children('a'), 0.7);
+    //                     menuWrapper.addClass('animate-element').removeClass('animate-element-hide');
+    //                     gsap.to(toggleClose, {
+    //                         duration: 1,
+    //                         opacity: 1,
+    //                         pointerEvents: 'auto',
+    //                         ease: 'expo.inOut'
+    //                     });
+    //                     gsap.to(navigationAnimateElement, {
+    //                         duration: 1,
+    //                         opacity: 1,
+    //                         ease: 'expo.inOut',
+    //                         stagger: 0.15,
+    //                         onComplete: () => {
+    //                             menuToggle.play();
+    //                         }
+    //                     });
+    //                     gsap.to(imageOverlay, {
+    //                         duration: 0.5,
+    //                         x: 0,
+    //                         ease: 'expo.inOut'
+    //                     });
     
-        // $(menuList.children().children('a')).on('mouseenter', function () {
-        //     gsap.to(imageWrapper.children('.image-active'), { duration: 0.2, opacity: 0, className: '-=image-active' });
-        //     gsap.to(imageWrapper.children().eq($(this).parent().index()), { duration: 0.2, opacity: 1, className: '+=image-active' });
-        // });
+    //                     // Ensure dropdowns stay hidden when the menu opens
+    //                     menuWrapper.find('.sub-dropdown').each(function() {
+    //                         gsap.set(this, { opacity: 0, transform: 'translateY(-10px)', pointerEvents: 'none' });
+    //                     });
+    //                 }
+    //             });
+    //         },
+    //         hideMenu = function () {
+    //             let hideOverlay = () => {
+    //                 gsap.to(navigationOverlay.children(), {
+    //                     duration: 0.5,
+    //                     width: 0,
+    //                     ease: 'power3.in',
+    //                     onComplete: () => {
+    //                         menuToggle.reverse();
+    //                         $(menuWrapper).css('pointer-events', 'none');
+    //                     }
+    //                 });
+    //             };
+    //             // Hide dropdowns by setting their opacity to 0 and transform to move up
+    //             gsap.to(menuWrapper.find('.sub-dropdown'), {
+    //                 duration: 0.7,
+    //                 opacity: 0,
+    //                 transform: 'translateY(-10px)',
+    //                 ease: 'power3.in',
+    //                 onComplete: () => {
+    //                     gsap.set(menuWrapper.find('.sub-dropdown'), { display: 'none' });
+    //                 }
+    //             });
+    //             hideItems(menuWrapper.find('.active-list').children().children('a'), hideOverlay);
+    //             gsap.to(navigationAnimateElement, {
+    //                 duration: 1,
+    //                 opacity: 0,
+    //                 ease: 'power3.in',
+    //                 stagger: 0.1
+    //             });
+    //             gsap.to(toggleClose, {
+    //                 duration: 1,
+    //                 opacity: 0,
+    //                 pointerEvents: 'none',
+    //                 ease: 'expo.inOut',
+    //                 onComplete: () => {
+    //                     toggle.removeClass('active-toggle');
+    //                 }
+    //             });
+    //             if (general.w > 768) {
+    //                 gsap.to(imageOverlay, {
+    //                     duration: 0.5,
+    //                     x: '-110%',
+    //                     ease: 'power3.in'
+    //                 });
+    //             }
+    //             menuWrapper.addClass('animate-element-hide').removeClass('animate-element');
+    //         };
     
-        let showItems = (items, delay, onCompleteFunc) => {
-                gsap.to(items, {
-                    duration: 0.5,
-                    delay: delay,
-                    y: 0,
-                    opacity: 1,
-                    pointerEvents: 'auto',
-                    ease: 'power3.out',
-                    onComplete: onCompleteFunc,
-                    stagger: 0.1
-                });
-            },
-            hideItems = (items, onCompleteFunc) => {
-                gsap.to(items, {
-                    duration: 0.7,
-                    y: 50,
-                    opacity: 0,
-                    pointerEvents: 'none',
-                    ease: 'power3.in',
-                    onComplete: onCompleteFunc,
-                    stagger: 0.1
-                });
-            },
-            showMenu = function () {
-                gsap.to(navigationOverlay.children(), {
-                    duration: 0.7,
-                    width: '50%',
-                    ease: 'expo.inOut',
-                    onComplete: () => {
-                        $(menuWrapper).css('pointer-events', 'auto');
-                        toggle.addClass('active-toggle');
-                        showItems(menuWrapper.find('.active-list').children().children('a'), 0.7);
-                        menuWrapper.addClass('animate-element').removeClass('animate-element-hide');
-                        gsap.to(toggleClose, {
-                            duration: 1,
-                            opacity: 1,
-                            pointerEvents: 'auto',
-                            ease: 'expo.inOut'
-                        });
-                        gsap.to(navigationAnimateElement, {
-                            duration: 1,
-                            opacity: 1,
-                            ease: 'expo.inOut',
-                            stagger: 0.15,
-                            onComplete: () => {
-                                menuToggle.play();
-                            }
-                        });
-                        gsap.to(imageOverlay, {
-                            duration: 0.5,
-                            x: 0,
-                            ease: 'expo.inOut'
-                        });
+    //     toggle.on('click', function () {
+    //         if (menuToggle.reversed() && !toggle.hasClass('active-toggle')) {
+    //             showMenu();
+    //         }
+    //     });
+    
+    //     toggleClose.on('click', function () {
+    //         if (!menuToggle.reversed() && toggle.hasClass('active-toggle')) {
+    //             hideMenu();
+    //         }
+    //     });
+    // };
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get all elements with the class 'sub-btn'
+        const subButtons = document.querySelectorAll('.sub-btn');
+    
+        // Loop through each button and add a click event listener
+        subButtons.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                // Toggle the active class on the parent menu-item
+                const menuItem = this.parentElement;
+                const isActive = menuItem.classList.toggle('active');
+    
+                // Toggle the visibility of the next sibling element with the class 'sub-dropdown'
+                const subMenu = this.nextElementSibling;
+                if (subMenu && subMenu.classList.contains('sub-dropdown')) {
+                    // Use CSS transitions for smooth show/hide
+                    if (isActive) {
+                        subMenu.style.display = 'block';
+                        gsap.to(subMenu, { opacity: 1, transform: 'translateY(0)', duration: 0.3, ease: 'power3.out' });
+                    } else {
+                        gsap.to(subMenu, { opacity: 0, transform: 'translateY(-10px)', duration: 0.3, ease: 'power3.in', onComplete: () => {
+                            subMenu.style.display = 'none';
+                        }});
                     }
-                });
-            },
-            hideMenu = function () {
-                let hideOverlay = () => {
-                    gsap.to(navigationOverlay.children(), {
-                        duration: 0.5,
-                        width: 0,
-                        ease: 'power3.in',
-                        onComplete: () => {
-                            menuToggle.reverse();
-                            $(menuWrapper).css('pointer-events', 'none');
-                        }
-                    });
-                };
-                hideItems(menuWrapper.find('.active-list').children().children('a'), hideOverlay);
-                gsap.to(navigationAnimateElement, {
-                    duration: 1,
-                    opacity: 0,
-                    ease: 'power3.in',
-                    stagger: 0.1
-                });
-                gsap.to(toggleClose, {
-                    duration: 1,
-                    opacity: 0,
-                    pointerEvents: 'none',
-                    ease: 'expo.inOut',
-                    onComplete: () => {
-                        toggle.removeClass('active-toggle');
-                    }
-                });
-                if (general.w > 768) {
-                    gsap.to(imageOverlay, {
-                        duration: 0.5,
-                        x: '-110%',
-                        ease: 'power3.in'
-                    });
                 }
-                menuWrapper.addClass('animate-element-hide').removeClass('animate-element');
-            };
     
-        toggle.on('click', function () {
-            if (menuToggle.reversed() && !toggle.hasClass('active-toggle')) {
-                showMenu();
-            }
+                // Toggle the 'rotate' class on the child element with the class 'dropdown'
+                const dropdown = this.querySelector('.dropdown');
+                if (dropdown) {
+                    dropdown.classList.toggle('rotate');
+                }
+    
+                // Toggle the 'menuactive' class on the clicked button
+                this.classList.toggle('menuactive');
+            });
         });
     
-        toggleClose.on('click', function () {
-            if (!menuToggle.reversed() && toggle.hasClass('active-toggle')) {
-                hideMenu();
+        // Close dropdowns when the menu is closed
+        document.addEventListener('click', function (event) {
+            if (!navigationMenu().contains(event.target) && !event.target.classList.contains('sub-btn')) {
+                document.querySelectorAll('.sub-dropdown').forEach(dropdown => {
+                    gsap.to(dropdown, { opacity: 0, transform: 'translateY(-10px)', duration: 0.3, ease: 'power3.in', onComplete: () => {
+                        dropdown.style.display = 'none';
+                    }});
+                });
             }
         });
+    });
     
-        // this is opening the subMenus with animation
-         
-        // menuList.children('.menu-item-has-children').children('a').on('click', function () {
-        //     let subMenu = $(this).parent().children('.sub-menu');
-        //     let showItemsCallback = () => {
-        //         $(this).parent().parent().removeClass('active-list');
-        //         subMenu.addClass('active-list');
-        //         showItems($(this).parent().children('.sub-menu').children().children('a'), 0.2);
-        //     };
-        //     hideItems($(this).parent().parent().children().children('a'), showItemsCallback);
-        // });
-
-        
     
-        // init();
-        // subMenus.children('.back-link').on('click', function () {
-        //     let showItemsCallback = () => {
-        //         $(this).parent().removeClass('active-list');
-        //         $(this).parent().parent().parent().addClass('active-list');
-        //         showItems($(this).parent().parent().parent().children().children('a'), 0.2);
-        //     };
-        //     hideItems($(this).parent().children().children('a'), showItemsCallback);
-        // });
-    };
+    
+    
+    
     
 
    

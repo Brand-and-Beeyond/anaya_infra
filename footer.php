@@ -70,7 +70,7 @@
             <div class="row my-4 logofoot">
                 <img src="./images/anaya_white.png" class="img-fluid anayalogo" alt="">
             </div>
-            
+
             <div class="row mt-4">
                 <div class="col-lg-12 col-md-12 pd0">
                     <ul class="social-share-buttons">
@@ -239,58 +239,143 @@
 <script src="js/gsap.min.js"></script>
 <script src="js/ScrollTrigger.min.js"></script>
 <script>
-   let mouseBall = () => {
-    let xmouse, ymouse;
-    document.addEventListener('mousemove', function (e) {
-        // Adjust mouse position by subtracting the ScrollSmoother's scroll position
-        xmouse = e.clientX || e.pageX;
-        ymouse = e.clientY || e.pageY + ScrollSmoother.get().scrollTop(); // Adjust for ScrollSmoother
-    });
+    let mouseBall = () => {
+        let xmouse, ymouse;
+        document.addEventListener('mousemove', function(e) {
+            // Adjust mouse position by subtracting the ScrollSmoother's scroll position
+            xmouse = e.clientX || e.pageX;
+            ymouse = e.clientY || e.pageY + ScrollSmoother.get().scrollTop(); // Adjust for ScrollSmoother
+        });
 
-    let ball = document.querySelector('#ball-cursor'),
-        x = undefined,
-        y = undefined,
-        dx = undefined,
-        dy = undefined,
-        tx = 0,
-        ty = 0,
-        key = -1,
-        followMouse = function followMouse() {
-            key = requestAnimationFrame(followMouse);
-            if (x === undefined || y === undefined) {
-                x = xmouse;
-                y = ymouse;
-            } else {
-                dx = (xmouse - x) * 0.125;
-                dy = (ymouse - y) * 0.125;
-                if (Math.abs(dx) + Math.abs(dy) < 0.1) {
+        let ball = document.querySelector('#ball-cursor'),
+            x = undefined,
+            y = undefined,
+            dx = undefined,
+            dy = undefined,
+            tx = 0,
+            ty = 0,
+            key = -1,
+            followMouse = function followMouse() {
+                key = requestAnimationFrame(followMouse);
+                if (x === undefined || y === undefined) {
                     x = xmouse;
                     y = ymouse;
                 } else {
-                    x += dx;
-                    y += dy;
+                    dx = (xmouse - x) * 0.125;
+                    dy = (ymouse - y) * 0.125;
+                    if (Math.abs(dx) + Math.abs(dy) < 0.1) {
+                        x = xmouse;
+                        y = ymouse;
+                    } else {
+                        x += dx;
+                        y += dy;
+                    }
                 }
-            }
-            ball.style.left = x + 'px';
-            ball.style.top = y + 'px';
-        };
-    followMouse();
-};
+                ball.style.left = x + 'px';
+                ball.style.top = y + 'px';
+            };
+        followMouse();
+    };
 
-// Initialize ScrollSmoother and your custom cursor script
-document.addEventListener("DOMContentLoaded", function() {
-    var smoother = ScrollSmoother.create({
-        content: ".viewport",
-        smooth: 3,
-        smoothTouch: 0,
-        effects: true
+    // Initialize ScrollSmoother and your custom cursor script
+    document.addEventListener("DOMContentLoaded", function() {
+        var smoother = ScrollSmoother.create({
+            content: ".viewport",
+            smooth: 3,
+            smoothTouch: 0,
+            effects: true
+        });
+
+        mouseBall(); // Initialize the custom cursor script after ScrollSmoother
+    });
+</script>
+
+
+<script>
+    const openNav = document.querySelector('.menu-toggle');
+    const closeNavBtn = document.querySelector(".close-nav");
+    openNav.addEventListener("click", toggleNav);
+    closeNavBtn.addEventListener("click", toggleNav);
+
+    function toggleNav() {
+        document.querySelector(".naviside").classList.toggle("open");
+    }
+
+    
+    document.addEventListener("DOMContentLoaded", () => {
+    const subButtons = document.querySelectorAll('.sub-btn');
+    const menuWrapper = document.querySelector('.naviside');
+
+    // Function to close all dropdowns, reset icons, and remove 'active' class
+    const closeAllDropdowns = () => {
+        document.querySelectorAll('.sub-dropdown').forEach(dropdown => {
+            dropdown.style.display = 'none';
+            dropdown.style.opacity = '0';
+
+            // Reset icon to '+' for all dropdown buttons and remove 'active' class
+            const btn = dropdown.previousElementSibling;
+            const iconSpan = btn.querySelector('.icon');
+            if (iconSpan) {
+                iconSpan.textContent = '+'; 
+            }
+            btn.classList.remove('active'); // Remove active class
+        });
+    };
+
+    // Toggle dropdown visibility, icon, and color
+    subButtons.forEach(btn => {
+        // Dynamically create and append the icon span if it doesn't exist
+        let iconSpan = btn.querySelector('.icon');
+        if (!iconSpan) {
+            iconSpan = document.createElement('span');
+            iconSpan.classList.add('icon');
+            iconSpan.textContent = '+';
+            btn.appendChild(iconSpan);
+        }
+
+        btn.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+
+            const dropdown = this.nextElementSibling;
+            const isVisible = dropdown.style.display === 'flex';
+
+            if (isVisible) {
+                // If the dropdown is already visible, close it
+                dropdown.style.display = 'none';
+                dropdown.style.opacity = '0';
+                iconSpan.textContent = '+'; // Change icon back to "+"
+                btn.classList.remove('active'); // Remove active class (color change)
+            } else {
+                // Close all other dropdowns and then show the clicked one
+                closeAllDropdowns();
+                dropdown.style.display = 'flex';
+                dropdown.style.opacity = '1';
+                iconSpan.textContent = '–'; // Change icon to "-"
+                btn.classList.add('active'); // Add active class (color change)
+
+                // Apply animation with delays
+                dropdown.querySelectorAll('.sub-item').forEach((item, index) => {
+                    item.style.animation = `slideRight 0.9s ease forwards ${index * 0.1}s`;
+                });
+            }
+        });
     });
 
-    mouseBall(); // Initialize the custom cursor script after ScrollSmoother
+    // Close dropdowns when clicking outside the menu
+    document.addEventListener('click', (event) => {
+        if (!menuWrapper.contains(event.target)) {
+            closeAllDropdowns();
+        }
+    });
+
+    // Close menu when clicking 'Back'
+    document.querySelector('.close-nav').addEventListener('click', () => {
+        closeAllDropdowns();
+    });
 });
 
-
 </script>
+
 <script>
     jQuery(document).ready(function($) {
         // Add smooth scrolling to all links
@@ -422,14 +507,14 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 <script>
-    document.querySelectorAll('.play-icon').forEach(function (playIcon) {
-    playIcon.addEventListener('click', function () {
-        var videoBox = this.closest('.video-box');
-        var videoIframe = videoBox.querySelector('.video-iframe');
+    document.querySelectorAll('.play-icon').forEach(function(playIcon) {
+        playIcon.addEventListener('click', function() {
+            var videoBox = this.closest('.video-box');
+            var videoIframe = videoBox.querySelector('.video-iframe');
 
-        videoIframe.style.display = 'block';
+            videoIframe.style.display = 'block';
+        });
     });
-});
 </script>
 <script>
     $(document).ready(function() {
