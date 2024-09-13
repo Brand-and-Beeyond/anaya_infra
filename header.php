@@ -406,7 +406,7 @@
 
 
         <div class="naviside">
-            <span type="button" class="close-nav">Back</span>
+            <span type="button" class="close-nav"><span class="closeicon">&times;</span>Back</span>
             <div class="nav-inner">
                 <ul>
                     <li class="menu-item"><a href="index.php">Home</a></li>
@@ -430,7 +430,7 @@
                     </li>
                     <li class="menu-item"><a href="">Blogs</a></li>
                     <li class="menu-item"><a href="">Careers</a></li>
-                    <li class="menu-item"><a href="">Contact us</a></li>
+                    <li class="menu-item"><a href="contact-us.php">Contact us</a></li>
                 </ul>
             </div>
         </div>

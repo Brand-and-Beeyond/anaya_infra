@@ -31,15 +31,13 @@
   right: 0;
   overflow: hidden;
   white-space: nowrap;
-  /* background: rgba(0, 0, 0, 0.5);  */
-  padding: 10px 0;
 }
 
 .marquee-inner {
   display: inline-block;
-  animation: marquee 20s linear infinite;
+  animation: marquee 15s linear infinite; /* Keep the animation consistent */
+  animation-delay: 0s; /* Start immediately, no delay */
 }
-
 .thumbnail {
   display: inline-block;
   padding: 10px;
@@ -63,7 +61,7 @@
 }
 
 .thumbnail.active {
-  transform: scale(1.2);
+  transform: scale(1.17);
   color: #FF7425;
   ;
 }
@@ -9424,7 +9422,10 @@ footer .inner-wrapper .copyright {
 .client-testi {
   right: -16px;
 }
-
+.prothumbnail{
+  min-height: 290px;
+  width: 100%;
+}
 .clientcar .item {
   height: 287px;
   width: 550px;
@@ -9455,6 +9456,7 @@ footer .inner-wrapper .copyright {
   top: -35%;
   left: 120px;
   overflow-x: hidden;
+  cursor: url('../images/whitecursor.png'),auto !important;
 }
 
 .owl-nav .owl-prev i,
@@ -9480,6 +9482,10 @@ footer .inner-wrapper .copyright {
   padding: 11px 26px;
   border: 2px dashed #ffffff;
   margin: 14px auto;
+}
+.logofoot .anayalogo:hover{
+  transition: ease all 0.5s;
+  cursor: url('../images/whitecursor.png'),auto !important;
 }
 
 .center {
@@ -9631,7 +9637,7 @@ footer .inner-wrapper .copyright {
 /* about page css */
 
 .about_us{
-  height: 680px;
+  min-height: 680px;
   padding-top: 80px;
   background-color: #E3DCD6;
 }
@@ -9642,6 +9648,10 @@ footer .inner-wrapper .copyright {
  font-size: 100px;
  font-weight: 400;
  line-height: 110px;
+}
+.about_text .about:hover,.about_text .us:hover{
+  transition: ease all 0.5s;
+  cursor: url('../images/whitecursor.png'),auto !important;
 }
 .about_text .about,.about_text .us{
   display: block;
@@ -9975,11 +9985,16 @@ Main Components
   left: 4%;
   color: #000000;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 25.57px;
+  font-size: 15px;
+  /* line-height: 25.57px; */
   font-family: "Allerta Stencil", system-ui;
 }
 
+.naviside .close-nav .closeicon{
+  font-size: 22px;
+  margin-right: 10px;
+  padding-top: 10px;
+}
 
  .naviside.open .close-nav{
     transform: translateY(0px);
@@ -10111,4 +10126,37 @@ Main Components
     transform: translateY(0) translateX(0);
     opacity: 1;
   }
+}
+
+
+
+/* contact page css */
+
+
+.contact-banner{
+  height: 600px;
+  margin-bottom: 60px;
+}
+
+.contact_text{
+   color: #000000;
+   font-size: 100px;
+   font-weight: 400;
+   font-family: "Allerta Stencil", system-ui;
+   line-height: 110px;
+   bottom: -18%;
+   left: 3%;
+}
+.contact-detail{
+  margin-top: 100px;
+}
+.contact_text .connect,.contact_text .withus{
+  display: block;
+}
+.phone .contact-icon{
+  height: 60px;
+  width: 60px;
+  background-color:#F15B2A;
+  border-radius: 50%;
+
 }

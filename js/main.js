@@ -205,7 +205,7 @@ $(function () {
                 ease: Expo.easeInOut
             }, 0.1);
         }
-
+    
         if (bottomPanel.length) {
             let contactNav = bottomPanel.find('.contact-wrapper'),
                 linksList = bottomPanel.find('.links-list'),
@@ -234,28 +234,30 @@ $(function () {
                 }, 0.1);
             }
         }
-
+    
         if (navigation.length) {
             let rightSide = navigation.find('.right-side'),
                 leftSide = navigation.find('.left-side'),
                 logoWrapper = navigation.find('.logo-wrapper');
-
+    
+            // Reduce delay for leftSide (menu items)
             TweenMax.staggerTo(leftSide.children(), 1, {
-                delay: 0.6,
+                delay: 0.2, // Reduced from 0.6 to 0.2
                 opacity: 1,
                 y: 0,
                 ease: Expo.easeInOut,
             }, 0.1);
-
+    
+            // Reduce delay for logoWrapper
             TweenMax.to(logoWrapper, 1, {
-                delay: 0.8,
+                delay: 0.3, // Reduced from 0.8 to 0.3
                 opacity: 1,
                 y: 0,
                 ease: Expo.easeInOut
             });
-
+    
             TweenMax.staggerTo(rightSide.children(), 1, {
-                delay: 1,
+                delay: 0.6, // Reduced delay from 1 to 0.6
                 opacity: 1,
                 y: 0,
                 ease: Expo.easeInOut,
@@ -264,7 +266,7 @@ $(function () {
                 }
             }, 0.1);
         }
-
+    
         if (heroInteractiveMenu.length) {
             let menuItems = heroInteractiveMenu.find('.menu__item');
             TweenMax.staggerTo(menuItems, 1, {
@@ -273,7 +275,7 @@ $(function () {
                 ease: Expo.easeInOut
             }, 0.15);
         }
-
+    
         if (heroProjectSlideshow.length) {
             let slideshow = heroProjectSlideshow.find('.slideshow'),
                 slidenav = heroProjectSlideshow.find('.slidenav');
@@ -288,7 +290,7 @@ $(function () {
                 ease: Expo.easeInOut
             }, 0.15);
         }
-
+    
         if (heroDigitalBackground.length) {
             let textWrapper = heroDigitalBackground.find('.text-wrapper');
             TweenMax.staggerTo(textWrapper.children(), 1, {
@@ -297,7 +299,7 @@ $(function () {
                 ease: Expo.easeInOut
             }, 0.15);
         }
-
+    
         if (heroGlitchLinks.length) {
             let glitchSlides = heroGlitchLinks.find('.glitch-slides'),
                 glitchNav = heroGlitchLinks.find('.slide-nav');
@@ -314,6 +316,7 @@ $(function () {
             }, 0.15);
         }
     };
+    
 
     // Toggle text slider
     let toggleTextSlider = () => {

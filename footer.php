@@ -771,40 +771,57 @@
         }
     });
     document.addEventListener('DOMContentLoaded', function() {
-        const thumbnails = document.querySelectorAll('.thumbnail');
-        const marquee = document.querySelector('.marquee');
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const marquee = document.querySelector('.marquee');
+    const marqueeInner = document.querySelector('.marquee-inner');
 
-        // Initially set the displayed image to the first thumbnail
-        const displayedImage = document.createElement('img');
-        displayedImage.id = 'displayedImage';
-        displayedImage.src = thumbnails[0].getAttribute('data-image');
-        displayedImage.alt = 'Displayed Image';
-        displayedImage.style.width = '100%';
-        displayedImage.style.height = 'auto';
-        document.querySelector('.image-display').prepend(displayedImage);
+    // Initially set the displayed image to the first thumbnail
+    const displayedImage = document.createElement('img');
+    displayedImage.id = 'displayedImage';
+    displayedImage.src = thumbnails[0].getAttribute('data-image');
+    displayedImage.alt = 'Displayed Image';
+    displayedImage.style.width = '100%';
+    displayedImage.style.height = 'auto';
+    document.querySelector('.image-display').prepend(displayedImage);
 
-        function checkCenter() {
-            const marqueeRect = marquee.getBoundingClientRect();
-            const marqueeCenter = marqueeRect.left + marqueeRect.width / 2;
+    // Set the marquee animation to start right after the page is loaded
+    marqueeInner.style.animationDelay = '0s'; // No delay, start immediately
 
-            thumbnails.forEach(thumbnail => {
-                const thumbnailRect = thumbnail.getBoundingClientRect();
-                const thumbnailCenter = thumbnailRect.left + thumbnailRect.width / 2;
+    function checkCenter() {
+        const marqueeRect = marquee.getBoundingClientRect();
+        const marqueeCenter = marqueeRect.left + marqueeRect.width / 2;
 
-                if (Math.abs(marqueeCenter - thumbnailCenter) < thumbnailRect.width / 2) {
-                    thumbnail.classList.add('active');
-                    const newImageSrc = thumbnail.getAttribute('data-image');
-                    if (displayedImage.src !== newImageSrc) {
-                        displayedImage.src = newImageSrc;
-                    }
-                } else {
-                    thumbnail.classList.remove('active');
+        thumbnails.forEach(thumbnail => {
+            const thumbnailRect = thumbnail.getBoundingClientRect();
+            const thumbnailCenter = thumbnailRect.left + thumbnailRect.width / 2;
+
+            if (Math.abs(marqueeCenter - thumbnailCenter) < thumbnailRect.width / 2) {
+                thumbnail.classList.add('active');
+                const newImageSrc = thumbnail.getAttribute('data-image');
+                if (displayedImage.src !== newImageSrc) {
+                    displayedImage.src = newImageSrc;
                 }
-            });
-        }
+            } else {
+                thumbnail.classList.remove('active');
+            }
+        });
+    }
 
-        setInterval(checkCenter, 500); // Adjust the interval as needed
-    });
+    // Set a fixed marquee scroll duration for consistent speed across images
+    function adjustMarqueeSpeed() {
+        marqueeInner.style.animationDuration = `15s`; // Fixed duration for smooth scrolling
+        marqueeInner.style.animationTimingFunction = 'linear'; // Smooth, constant speed
+        marqueeInner.style.animationPlayState = 'running'; // Ensure animation starts running immediately
+    }
+
+    // Adjust the interval for checking the center
+    setInterval(checkCenter, 100); // Check frequently
+    adjustMarqueeSpeed();
+
+    window.addEventListener('resize', adjustMarqueeSpeed); // Adjust speed on window resize if needed
+});
+
+
 </script>
 
 </body>

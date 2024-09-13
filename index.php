@@ -11,13 +11,13 @@
                     <span class="thumbnail" data-image="images/projects/touchwood_bliss.jpg">Touchwood Bliss</span>
                     <span class="thumbnail" data-image="images/projects/ashoka.jpg">Ashoka Medicover</span>
                     <span class="thumbnail"
-                        data-image="https://touchwoodbliss.com/images/villa-slide/farmsyde.jpeg">Thumbnail 3</span>
+                        data-image="https://touchwoodbliss.com/images/villa-slide/farmsyde.jpeg">Namco bank</span>
                     <span class="thumbnail"
                         data-image="https://touchwoodbliss.com/images/villa-slide/tent-view.jpg">Thumbnail 4</span>
                     <span class="thumbnail"
                         data-image="images/projects/blisstent.jpg">Thumbnail
                         5</span>
-                    <!-- Add more thumbnails as needed -->
+                   
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@
 
 
 
-   
+
 
 
     <section class="aboutsite">
@@ -97,13 +97,13 @@
                                         <i class="fa fa-user-graduate why_icon"></i>
                                         <div class="tab-content">
                                             <div class="tab-pane fade show active" id="vision">
-                                                <p class="why_txt">Brief text for <span class="text-dark fw-bold">Tab 1</span>  goes here. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit temporibus alias aut nemo laborum, nulla totam expedita sapiente ipsa. Nulla molestiae fugit obcaecati optio quibusdam aut autem dolor, rerum quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut id doloribus magni placeat, natus tenetur voluptatibus nesciunt odit a!</p>
+                                                <p class="why_txt">Brief text for <span class="text-dark fw-bold">Tab 1</span> goes here. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit temporibus alias aut nemo laborum, nulla totam expedita sapiente ipsa. Nulla molestiae fugit obcaecati optio quibusdam aut autem dolor, rerum quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut id doloribus magni placeat, natus tenetur voluptatibus nesciunt odit a!</p>
                                             </div>
                                             <div class="tab-pane fade" id="mission">
-                                            <p class="why_txt">Brief text for <span class="text-dark fw-bold">Tab 2</span>  goes here. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit temporibus alias aut nemo laborum, nulla totam expedita sapiente ipsa. Nulla molestiae fugit obcaecati optio quibusdam aut autem dolor, rerum quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut id doloribus magni placeat, natus tenetur voluptatibus nesciunt odit a!</p>
+                                                <p class="why_txt">Brief text for <span class="text-dark fw-bold">Tab 2</span> goes here. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit temporibus alias aut nemo laborum, nulla totam expedita sapiente ipsa. Nulla molestiae fugit obcaecati optio quibusdam aut autem dolor, rerum quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut id doloribus magni placeat, natus tenetur voluptatibus nesciunt odit a!</p>
                                             </div>
                                             <div class="tab-pane fade" id="values">
-                                            <p class="why_txt">Brief text for <span class="text-dark fw-bold">Tab 3</span>  goes here. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit temporibus alias aut nemo laborum, nulla totam expedita sapiente ipsa. Nulla molestiae fugit obcaecati optio quibusdam aut autem dolor, rerum quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut id doloribus magni placeat, natus tenetur voluptatibus nesciunt odit a!</p>
+                                                <p class="why_txt">Brief text for <span class="text-dark fw-bold">Tab 3</span> goes here. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit temporibus alias aut nemo laborum, nulla totam expedita sapiente ipsa. Nulla molestiae fugit obcaecati optio quibusdam aut autem dolor, rerum quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut id doloribus magni placeat, natus tenetur voluptatibus nesciunt odit a!</p>
                                             </div>
                                         </div>
 
@@ -408,7 +408,7 @@
     </section>
 
 
-    <section class="white_pointer px-3">
+    <!-- <section class="white_pointer px-3">
 
         <div class="container-fluid">
 
@@ -444,18 +444,24 @@
                             <div class="clear"></div>
                         </div>
 
-                        <!-- 2 -->
+                       
                         <div class="col-md-6 news_colm pd0">
                             <div class="row mr0">
                                 <div class="col-sm-6 col-md-6 col-xs-12 news_col pd0">
-                                    <div class="news_loc">Mumbai</div>
-                                    <h3 class="news_title">
+                                    <div class="news_loc pb-10">Institutional</div>
+                                    <h3 class="news_title pb-5">
                                         <a href="https://etedge-insights.com/industry/real-estate/how-data-centers-are-driving-up-the-demand-in-the-real-estate-sector/"
-                                            target="_blank">How data centers are driving up the demand in the real estate sector</a>
+                                            target="_blank">Ashoka Global Academy</a>
                                     </h3>
                                     <div class="news_dtl">
-                                        <p>MEDIA</p>
-                                        <p>August 19, 2024</p>
+                                      
+                                        <div class="news_dtl">
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. </p>
+                                        <a
+                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                            View more</a>
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-6 col-xs-12 pd0 news_img">
@@ -466,8 +472,6 @@
                             </div>
                             <div class="clear"></div>
                         </div>
-
-
 
 
 
@@ -492,9 +496,6 @@
                             <div class="clear"></div>
                         </div>
 
-
-
-                        <!-- 3 -->
                         <div class="col-md-6 news_colm pd0 ">
                             <div class="row mr0">
                                 <div class="col-sm-6 col-md-6 col-xs-12 pd0 news_img col-sm-pull-6">
@@ -519,22 +520,124 @@
 
                     </div>
                 </div>
-
-
-                <!-- 4 -->
-
-
-
-
-
-                <!-- <div class="col-md-12">
-                    <a href="/media/" class="feature-btn" style="margin: 0 auto; display: block; margin-top: 40px;">See
-                        More</a>
-                </div> -->
+              
             </div>
 
-
         </div>
+    </section> -->
+    <section class="white_pointer px-3">
+
+        <div class="container-fluid">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <div class="pb-5 mb-5">
+                        <h4 class="section_heading mb-1">Our Projects</h4>
+                        <h2 class="new_subhead">Exquisite Residences and Bespoke Commercial Spaces</h2>
+                    </div>
+                    <div class="row  mt-4 pt-3">
+                        <div class="col-lg-6">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="news_loc pb-10">Hospitality</div>
+                                    <h3 class="news_title pb-5">
+                                        <a
+                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                            Touchwood Bliss
+                                        </a>
+                                    </h3>
+                                    <div class="news_dtl">
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. </p>
+                                        <a
+                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                            View more</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 p-0">
+                                    <img src="https://etimg.etb2bimg.com/photo/112704608.cms" class="img-fluid object-fit-cover prothumbnail" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row align-items-center ps-3">
+                                <div class="col-lg-6">
+                                    <div class="news_loc pb-10">Institutional</div>
+                                    <h3 class="news_title pb-5">
+                                        <a
+                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                            Ashoka Global Acadamy
+                                        </a>
+                                    </h3>
+                                    <div class="news_dtl">
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. </p>
+                                        <a
+                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                            View more</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 p-0">
+                                    <img src="https://etimg.etb2bimg.com/photo/112704608.cms" class="img-fluid object-fit-cover prothumbnail" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row align-items-center flex-row-reverse">
+                                <div class="col-lg-6">
+                                    <div class="news_loc pb-10">Industrial</div>
+                                    <h3 class="news_title pb-5">
+                                        <a
+                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                            TM Cube Indware
+                                        </a>
+                                    </h3>
+                                    <div class="news_dtl">
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. </p>
+                                        <a
+                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                            View more</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 p-0">
+                                    <img src="https://etimg.etb2bimg.com/photo/112704608.cms" class="img-fluid object-fit-cover prothumbnail" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row align-items-center flex-row-reverse">
+                                <div class="col-lg-6">
+                                    <div class="news_loc pb-10">Buildership</div>
+                                    <h3 class="news_title pb-5">
+                                        <a
+                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                            24 GEMS
+                                        </a>
+                                    </h3>
+                                    <div class="news_dtl">
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. </p>
+                                        <a
+                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                            View more</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 p-0">
+                                    <img src="https://etimg.etb2bimg.com/photo/112704608.cms" class="img-fluid object-fit-cover prothumbnail" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
     </section>
 
     <section class="testimonials py-3">
@@ -606,40 +709,40 @@
 <?php include('footer.php'); ?>
 
 <script>
-const tabs = document.querySelectorAll('.tab-link');
-const tabContents = document.querySelectorAll('.tab-pane'); // All tab content panes
-const tabSection = document.querySelector('#whyus'); // Target the main section
-let currentTab = 0; // Start with the first tab (index 0)
+    const tabs = document.querySelectorAll('.tab-link');
+    const tabContents = document.querySelectorAll('.tab-pane'); // All tab content panes
+    const tabSection = document.querySelector('#whyus'); // Target the main section
+    let currentTab = 0; // Start with the first tab (index 0)
 
-// Function to update the active tab and corresponding content
-function updateTabs() {
-    tabs.forEach((tab, index) => {
-        if (index === currentTab) {
-            tab.classList.add('active');
-            tabContents[index].classList.add('show', 'active'); // Show the corresponding content
-        } else {
-            tab.classList.remove('active');
-            tabContents[index].classList.remove('show', 'active'); // Hide the other content
+    // Function to update the active tab and corresponding content
+    function updateTabs() {
+        tabs.forEach((tab, index) => {
+            if (index === currentTab) {
+                tab.classList.add('active');
+                tabContents[index].classList.add('show', 'active'); // Show the corresponding content
+            } else {
+                tab.classList.remove('active');
+                tabContents[index].classList.remove('show', 'active'); // Hide the other content
+            }
+        });
+    }
+
+    // Pinning the #whyus section with evenly distributed scroll time for each tab
+    ScrollTrigger.create({
+        trigger: tabSection,
+        start: "top top",
+        end: () => "+=" + (window.innerHeight * (tabs.length - 1) * 0.75), // Reduce the overall scroll time by multiplying by 0.5
+        pin: true,
+        scrub: true,
+        onUpdate: self => {
+            const newIndex = Math.floor(self.progress * (tabs.length * 1.5)); // Make tab switching more responsive
+            if (newIndex !== currentTab && newIndex < tabs.length) {
+                currentTab = newIndex;
+                updateTabs();
+            }
         }
     });
-}
 
-// Pinning the #whyus section with evenly distributed scroll time for each tab
-ScrollTrigger.create({
-    trigger: tabSection,
-    start: "top top",
-    end: () => "+=" + (window.innerHeight * (tabs.length - 1) * 0.75), // Reduce the overall scroll time by multiplying by 0.5
-    pin: true,
-    scrub: true,
-    onUpdate: self => {
-        const newIndex = Math.floor(self.progress * (tabs.length * 1.5)); // Make tab switching more responsive
-        if (newIndex !== currentTab && newIndex < tabs.length) {
-            currentTab = newIndex;
-            updateTabs();
-        }
-    }
-});
-
-// Initialize the first tab as active
-updateTabs();
+    // Initialize the first tab as active
+    updateTabs();
 </script>
