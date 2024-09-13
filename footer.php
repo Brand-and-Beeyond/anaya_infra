@@ -1,6 +1,6 @@
 <!-- Footer
 	================================================== -->
-<footer class="footer">
+<footer class="footer mt-5">
     <div class="content-block">
         <div class="container">
             <div class="row dmsans">
