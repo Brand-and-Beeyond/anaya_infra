@@ -301,79 +301,78 @@
         document.querySelector(".naviside").classList.toggle("open");
     }
 
-    
+
     document.addEventListener("DOMContentLoaded", () => {
-    const subButtons = document.querySelectorAll('.sub-btn');
-    const menuWrapper = document.querySelector('.naviside');
+        const subButtons = document.querySelectorAll('.sub-btn');
+        const menuWrapper = document.querySelector('.naviside');
 
-    // Function to close all dropdowns, reset icons, and remove 'active' class
-    const closeAllDropdowns = () => {
-        document.querySelectorAll('.sub-dropdown').forEach(dropdown => {
-            dropdown.style.display = 'none';
-            dropdown.style.opacity = '0';
-
-            // Reset icon to '+' for all dropdown buttons and remove 'active' class
-            const btn = dropdown.previousElementSibling;
-            const iconSpan = btn.querySelector('.icon');
-            if (iconSpan) {
-                iconSpan.textContent = '+'; 
-            }
-            btn.classList.remove('active'); // Remove active class
-        });
-    };
-
-    // Toggle dropdown visibility, icon, and color
-    subButtons.forEach(btn => {
-        // Dynamically create and append the icon span if it doesn't exist
-        let iconSpan = btn.querySelector('.icon');
-        if (!iconSpan) {
-            iconSpan = document.createElement('span');
-            iconSpan.classList.add('icon');
-            iconSpan.textContent = '+';
-            btn.appendChild(iconSpan);
-        }
-
-        btn.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default link behavior
-
-            const dropdown = this.nextElementSibling;
-            const isVisible = dropdown.style.display === 'flex';
-
-            if (isVisible) {
-                // If the dropdown is already visible, close it
+        // Function to close all dropdowns, reset icons, and remove 'active' class
+        const closeAllDropdowns = () => {
+            document.querySelectorAll('.sub-dropdown').forEach(dropdown => {
                 dropdown.style.display = 'none';
                 dropdown.style.opacity = '0';
-                iconSpan.textContent = '+'; // Change icon back to "+"
-                btn.classList.remove('active'); // Remove active class (color change)
-            } else {
-                // Close all other dropdowns and then show the clicked one
-                closeAllDropdowns();
-                dropdown.style.display = 'flex';
-                dropdown.style.opacity = '1';
-                iconSpan.textContent = '–'; // Change icon to "-"
-                btn.classList.add('active'); // Add active class (color change)
 
-                // Apply animation with delays
-                dropdown.querySelectorAll('.sub-item').forEach((item, index) => {
-                    item.style.animation = `slideRight 0.9s ease forwards ${index * 0.1}s`;
-                });
+                // Reset icon to '+' for all dropdown buttons and remove 'active' class
+                const btn = dropdown.previousElementSibling;
+                const iconSpan = btn.querySelector('.icon');
+                if (iconSpan) {
+                    iconSpan.textContent = '+';
+                }
+                btn.classList.remove('active'); // Remove active class
+            });
+        };
+
+        // Toggle dropdown visibility, icon, and color
+        subButtons.forEach(btn => {
+            // Dynamically create and append the icon span if it doesn't exist
+            let iconSpan = btn.querySelector('.icon');
+            if (!iconSpan) {
+                iconSpan = document.createElement('span');
+                iconSpan.classList.add('icon');
+                iconSpan.textContent = '+';
+                btn.appendChild(iconSpan);
+            }
+
+            btn.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default link behavior
+
+                const dropdown = this.nextElementSibling;
+                const isVisible = dropdown.style.display === 'flex';
+
+                if (isVisible) {
+                    // If the dropdown is already visible, close it
+                    dropdown.style.display = 'none';
+                    dropdown.style.opacity = '0';
+                    iconSpan.textContent = '+'; // Change icon back to "+"
+                    btn.classList.remove('active'); // Remove active class (color change)
+                } else {
+                    // Close all other dropdowns and then show the clicked one
+                    closeAllDropdowns();
+                    dropdown.style.display = 'flex';
+                    dropdown.style.opacity = '1';
+                    iconSpan.textContent = '–'; // Change icon to "-"
+                    btn.classList.add('active'); // Add active class (color change)
+
+                    // Apply animation with delays
+                    dropdown.querySelectorAll('.sub-item').forEach((item, index) => {
+                        item.style.animation = `slideRight 0.9s ease forwards ${index * 0.1}s`;
+                    });
+                }
+            });
+        });
+
+        // Close dropdowns when clicking outside the menu
+        document.addEventListener('click', (event) => {
+            if (!menuWrapper.contains(event.target)) {
+                closeAllDropdowns();
             }
         });
-    });
 
-    // Close dropdowns when clicking outside the menu
-    document.addEventListener('click', (event) => {
-        if (!menuWrapper.contains(event.target)) {
+        // Close menu when clicking 'Back'
+        document.querySelector('.close-nav').addEventListener('click', () => {
             closeAllDropdowns();
-        }
+        });
     });
-
-    // Close menu when clicking 'Back'
-    document.querySelector('.close-nav').addEventListener('click', () => {
-        closeAllDropdowns();
-    });
-});
-
 </script>
 
 <script>
@@ -807,20 +806,19 @@
         });
     }
 
-    // Set a fixed marquee scroll duration for consistent speed across images
+    // Increase marquee scroll duration for slower sliding
     function adjustMarqueeSpeed() {
-        marqueeInner.style.animationDuration = `15s`; // Fixed duration for smooth scrolling
+        marqueeInner.style.animationDuration = `20s`; // Increased duration for slower sliding
         marqueeInner.style.animationTimingFunction = 'linear'; // Smooth, constant speed
         marqueeInner.style.animationPlayState = 'running'; // Ensure animation starts running immediately
     }
 
     // Adjust the interval for checking the center
-    setInterval(checkCenter, 100); // Check frequently
+    setInterval(checkCenter, 200); // Check frequently
     adjustMarqueeSpeed();
 
     window.addEventListener('resize', adjustMarqueeSpeed); // Adjust speed on window resize if needed
 });
-
 
 </script>
 

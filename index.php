@@ -14,9 +14,9 @@
                         data-image="https://touchwoodbliss.com/images/villa-slide/farmsyde.jpeg">Namco bank</span>
                     <span class="thumbnail"
                         data-image="https://touchwoodbliss.com/images/villa-slide/tent-view.jpg">Thumbnail 4</span>
-                    <span class="thumbnail"
+                    <!-- <span class="thumbnail"
                         data-image="images/projects/blisstent.jpg">Thumbnail
-                        5</span>
+                        5</span> -->
                    
                 </div>
             </div>
@@ -555,7 +555,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 p-0">
-                                    <img src="https://etimg.etb2bimg.com/photo/112704608.cms" class="img-fluid object-fit-cover prothumbnail" alt="">
+                                    <img src="images/ongoing_projects/farmsyde.jpg" class="img-fluid object-fit-cover prothumbnail" alt="">
                                 </div>
                             </div>
                         </div>
@@ -578,7 +578,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 p-0">
-                                    <img src="https://etimg.etb2bimg.com/photo/112704608.cms" class="img-fluid object-fit-cover prothumbnail" alt="">
+                                    <img src="images/ongoing_projects/ashoka-school.jpg" class="img-fluid object-fit-cover prothumbnail" alt="">
                                 </div>
                             </div>
                         </div>
@@ -601,7 +601,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 p-0">
-                                    <img src="https://etimg.etb2bimg.com/photo/112704608.cms" class="img-fluid object-fit-cover prothumbnail" alt="">
+                                    <img src="images/ongoing_projects/tm-cube.jpg" class="img-fluid object-fit-cover prothumbnail" alt="">
                                 </div>
                             </div>
                         </div>
