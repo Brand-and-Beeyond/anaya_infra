@@ -710,7 +710,7 @@
         items: 1,
         autoplay: true,
         autoplayTimeout: 4000,
-        smartSpeed: 2000,
+        smartSpeed: 2500,
         autoplayHoverPause: true,
         nav: true,
         navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i> "]
@@ -749,7 +749,7 @@
     });
     $('.clientcar').owlCarousel({
         loop: true,
-        margin: 0,
+        margin: 10,
         items: 2,
         autoplay: true,
         autoplayTimeout: 2000,
@@ -783,9 +783,6 @@
     displayedImage.style.height = 'auto';
     document.querySelector('.image-display').prepend(displayedImage);
 
-    // Set the marquee animation to start right after the page is loaded
-    marqueeInner.style.animationDelay = '0s'; // No delay, start immediately
-
     function checkCenter() {
         const marqueeRect = marquee.getBoundingClientRect();
         const marqueeCenter = marqueeRect.left + marqueeRect.width / 2;
@@ -806,12 +803,14 @@
         });
     }
 
-    // Increase marquee scroll duration for slower sliding
+    // Adjust marquee speed
     function adjustMarqueeSpeed() {
-        marqueeInner.style.animationDuration = `20s`; // Increased duration for slower sliding
+        marqueeInner.style.animationDuration = '23s'; // Adjust as needed for desired speed
         marqueeInner.style.animationTimingFunction = 'linear'; // Smooth, constant speed
-        marqueeInner.style.animationPlayState = 'running'; // Ensure animation starts running immediately
     }
+
+    // Initial check to set the active thumbnail and image
+    checkCenter();
 
     // Adjust the interval for checking the center
     setInterval(checkCenter, 200); // Check frequently

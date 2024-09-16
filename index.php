@@ -14,10 +14,8 @@
                         data-image="https://touchwoodbliss.com/images/villa-slide/farmsyde.jpeg">Namco bank</span>
                     <span class="thumbnail"
                         data-image="https://touchwoodbliss.com/images/villa-slide/tent-view.jpg">Thumbnail 4</span>
-                    <!-- <span class="thumbnail"
-                        data-image="images/projects/blisstent.jpg">Thumbnail
-                        5</span> -->
-                   
+
+
                 </div>
             </div>
         </div>
@@ -26,11 +24,9 @@
 
 
 
-
-
     <section class="aboutsite">
         <div class="container-fluid">
-            <div class="row justify-content-center pt-4">
+            <div class="row justify-content-center pt-50">
                 <div class="col-lg-11 col-md-10">
                     <div class="row me-0 align-items-center">
                         <div class="col-lg-5 col-md-5">
@@ -39,7 +35,7 @@
                                 <p>Project Launches</p>
                             </div>
                             <div class="info_box" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1300">
-                                <h3><span>23,332</span></h3>
+                                <h3><span>45,442</span></h3>
                                 <p>Units Sold</p>
                             </div>
                             <div class="info_box" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1300">
@@ -49,7 +45,7 @@
                             </div>
                         </div>
                         <div class="col-lg-7 col-md-7">
-                            <h1 class="home_abt_heading">Loren Ipsum</h1>
+                            <h1 class="home_abt_heading pe-4">Loren Ipsum</h1>
                             <p class="seo-link home_abt_txt">
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -148,14 +144,14 @@
                 </div>
             </div>
         </div>
-        <div class="row mr0" style="padding-top: 40px;">
+        <div class="row mr0">
 
 
             <div class="owl-carousel owl-theme life on_projects">
 
 
                 <div class="item">
-                    <div class="row mr0">
+                    <div class="row mr0 align-items-center">
                         <div class="col-md-8 pd0">
                             <div class="feature_img_wrap">
                                 <img src="images/projects/touchwood_bliss.jpg" alt="Touchwood Bliss">
@@ -170,12 +166,11 @@
                                     <div class="projct_name aos-init aos-animate" data-aos="fade-up">Touchwood Bliss
                                     </div>
                                     <div class="projct_dtls">
-                                        <div class="project_cat mb-20">
+                                        <div class="project_cat mb-1">
                                             Hospitality
                                         </div>
                                         <div class="dtl_col aos-init" data-aos="fade-up">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                            incididunt ut labore et dolore magna aliqua.
+                                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                         </div>
                                         <div class="dtl_col aos-init project_loc" data-aos="fade-up">
                                             <span><i class="fa fa-map-marker-alt"></i></span>
@@ -197,7 +192,7 @@
                 </div>
 
                 <div class="item">
-                    <div class="row mr0">
+                    <div class="row mr0 align-items-center">
                         <div class="col-md-8 pd0">
                             <div class="feature_img_wrap">
                                 <img src="images/projects/ashoka.jpg" alt="Touchwood Bliss">
@@ -212,12 +207,11 @@
                                     <div class="projct_name aos-init aos-animate" data-aos="fade-up">Ashoka Medicover
                                     </div>
                                     <div class="projct_dtls">
-                                        <div class="project_cat mb-20">
+                                        <div class="project_cat mb-1">
                                             Hospital
                                         </div>
                                         <div class="dtl_col aos-init" data-aos="fade-up">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                            incididunt ut labore et dolore magna aliqua.
+                                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                         </div>
                                         <div class="dtl_col aos-init project_loc" data-aos="fade-up">
                                             <span><i class="fa fa-map-marker-alt"></i></span>
@@ -252,155 +246,151 @@
             </div>
         </div>
         <div class="clients">
-            <div class="row mr0">
-                <div class="owl-carousel owl-theme clientele d-flex align-items-center">
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/54.jpg" alt="The Guardians Clients">
-                        </div>
+            <div class="owl-carousel owl-theme clientele d-flex align-items-center w-80 mx-auto">
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/54.jpg" alt="The Guardians Clients">
                     </div>
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/55.jpg" alt="The Guardians Clients">
-                        </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/55.jpg" alt="The Guardians Clients">
                     </div>
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/56.jpg" alt="The Guardians Clients">
-                        </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/56.jpg" alt="The Guardians Clients">
                     </div>
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/57.jpg" alt="The Guardians Clients">
-                        </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/57.jpg" alt="The Guardians Clients">
                     </div>
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/58.jpg" alt="The Guardians Clients">
-                        </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/58.jpg" alt="The Guardians Clients">
                     </div>
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/59.jpg" alt="The Guardians Clients">
-                        </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/59.jpg" alt="The Guardians Clients">
                     </div>
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/60.jpg" alt="The Guardians Clients">
-                        </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/60.jpg" alt="The Guardians Clients">
                     </div>
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/61.jpg" alt="The Guardians Clients">
-                        </div>
-                    </div>
-
-
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/38.jpg" alt="The Guardians Clients">
-                        </div>
-                    </div>
-
-
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/17.jpg" alt="The Guardians Clients">
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/10.jpg" alt="The Guardians Clients">
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/22.jpg" alt="The Guardians Clients">
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/24.jpg" alt="The Guardians Clients">
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/25.jpg" alt="The Guardians Clients">
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/26.jpg" alt="The Guardians Clients">
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/27.jpg" alt="The Guardians Clients">
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/kanakia_logo.png" alt="The Guardians Clients" style="filter:grayscale(1);">
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/29.jpg?v=1" alt="The Guardians Clients">
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/30.jpg" alt="The Guardians Clients">
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/31.jpg" alt="The Guardians Clients">
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/32.jpg" alt="The Guardians Clients">
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/33.jpg" alt="The Guardians Clients">
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/34.jpg?v=1" alt="The Guardians Clients">
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/35.jpg" alt="The Guardians Clients">
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="client-logo-wrap">
-                            <img src="images/36.jpg?v=1" alt="The Guardians Clients">
-                        </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/61.jpg" alt="The Guardians Clients">
                     </div>
                 </div>
 
 
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/38.jpg" alt="The Guardians Clients">
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/17.jpg" alt="The Guardians Clients">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/10.jpg" alt="The Guardians Clients">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/22.jpg" alt="The Guardians Clients">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/24.jpg" alt="The Guardians Clients">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/25.jpg" alt="The Guardians Clients">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/26.jpg" alt="The Guardians Clients">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/27.jpg" alt="The Guardians Clients">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/kanakia_logo.png" alt="The Guardians Clients" style="filter:grayscale(1);">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/29.jpg?v=1" alt="The Guardians Clients">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/30.jpg" alt="The Guardians Clients">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/31.jpg" alt="The Guardians Clients">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/32.jpg" alt="The Guardians Clients">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/33.jpg" alt="The Guardians Clients">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/34.jpg?v=1" alt="The Guardians Clients">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/35.jpg" alt="The Guardians Clients">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="client-logo-wrap">
+                        <img src="images/36.jpg?v=1" alt="The Guardians Clients">
+                    </div>
+                </div>
             </div>
 
 
@@ -408,130 +398,14 @@
     </section>
 
 
-    <!-- <section class="white_pointer px-3">
 
-        <div class="container-fluid">
-
-            <div class="row justify-content-center">
-                <div class="col-lg-11">
-                    <div class="row">
-                        <div class="pb-5">
-                            <h4 class="section_heading mb-1">Our Projects</h4>
-                            <h2 class="new_subhead">Exquisite Residences and Bespoke Commercial Spaces</h2>
-                        </div>
-                        <div class="col-md-6 news_colm mt-4">
-                            <div class="row mr0">
-                                <div class="col-sm-6 col-md-6 col-xs-12 news_col pd0">
-                                    <div class="news_loc pb-10">Hospitality</div>
-                                    <h3 class="news_title pb-5">
-                                        <a
-                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
-                                            Touchwood Bliss
-                                        </a>
-                                    </h3>
-                                    <div class="news_dtl">
-                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                            incididunt ut labore et dolore magna aliqua. </p>
-                                        <a
-                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
-                                            View more</a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-xs-12 pd0 news_img">
-                                    <img src="https://etimg.etb2bimg.com/photo/112704608.cms" alt="The Guardians Media">
-                                </div>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-
-                       
-                        <div class="col-md-6 news_colm pd0">
-                            <div class="row mr0">
-                                <div class="col-sm-6 col-md-6 col-xs-12 news_col pd0">
-                                    <div class="news_loc pb-10">Institutional</div>
-                                    <h3 class="news_title pb-5">
-                                        <a href="https://etedge-insights.com/industry/real-estate/how-data-centers-are-driving-up-the-demand-in-the-real-estate-sector/"
-                                            target="_blank">Ashoka Global Academy</a>
-                                    </h3>
-                                    <div class="news_dtl">
-                                      
-                                        <div class="news_dtl">
-                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                            incididunt ut labore et dolore magna aliqua. </p>
-                                        <a
-                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
-                                            View more</a>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-xs-12 pd0 news_img">
-                                    <img src="https://etedge-insights.com/wp-content/uploads/2024/08/shutterstock_572677567.jpg"
-                                        alt="The Guardians Media">
-                                </div>
-
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-
-
-
-                        <div class="col-md-6 news_colm pd0 ">
-                            <div class="row mr0">
-                                <div class="col-sm-6 col-md-6 col-xs-12 pd0 news_img col-sm-pull-6">
-                                    <img src="https://images.goodreturns.in/webp/img/2024/08/real-estate6002-1723476119.jpg">
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-xs-12 news_col pd0 col-sm-push-6">
-                                    <div class="news_loc">Mumbai</div>
-                                    <h3 class="news_title">
-                                        <a href="https://www.goodreturns.in/classroom/how-indias-real-estate-sector-has-shaped-urban-development-since-independence-1363337.html"
-                                            target="_blank">How India's Real Estate Sector Has Shaped Urban Development Since
-                                            Independence?</a>
-                                    </h3>
-                                    <div class="news_dtl">
-                                        <p>MEDIA</p>
-                                        <p>August 13, 2024</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-
-                        <div class="col-md-6 news_colm pd0 ">
-                            <div class="row mr0">
-                                <div class="col-sm-6 col-md-6 col-xs-12 pd0 news_img col-sm-pull-6">
-                                    <img src="https://static.tnn.in/thumb/msid-112366721,thumbsize-1208486,width-1280,height-720,resizemode-75/112366721.jpg?quality=100"
-                                        alt="The Guardians Media">
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-xs-12 news_col pd0 col-sm-push-6">
-                                    <div class="news_loc">Mumbai</div>
-                                    <h3 class="news_title">
-                                        <a href="https://www.timesnownews.com/mumbai/mumbaikars-be-alert-diversions-announced-at-bkc-from-today-to-ease-traffic-details-article-112362702"
-                                            target="_blank">Mumbaikars, Be Alert! Diversions Announced at BKC From Today to Ease
-                                            Traffic; DETAILS</a>
-                                    </h3>
-                                    <div class="news_dtl">
-                                        <p>MEDIA</p>
-                                        <p>August 08, 2024</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-
-                    </div>
-                </div>
-              
-            </div>
-
-        </div>
-    </section> -->
     <section class="white_pointer px-3">
 
         <div class="container-fluid">
 
             <div class="row justify-content-center">
                 <div class="col-lg-11">
-                    <div class="pb-5 mb-5">
+                    <div class="ourpro mb-5">
                         <h4 class="section_heading mb-1">Our Projects</h4>
                         <h2 class="new_subhead">Exquisite Residences and Bespoke Commercial Spaces</h2>
                     </div>
@@ -555,7 +429,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 p-0">
-                                    <img src="images/ongoing_projects/farmsyde.jpg" class="img-fluid object-fit-cover prothumbnail" alt="">
+                                    <div class="project_img">
+                                        <img src="images/ongoing_projects/farmsyde.jpg" class="img-fluid object-fit-cover prothumbnail" id="pro1" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -578,7 +454,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 p-0">
-                                    <img src="images/ongoing_projects/ashoka-school.jpg" class="img-fluid object-fit-cover prothumbnail" alt="">
+                                    <div class="project_img second">
+                                        <img src="images/ongoing_projects/ashoka-school.jpg" id="pro2" class="img-fluid object-fit-cover prothumbnail" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -601,7 +479,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 p-0">
-                                    <img src="images/ongoing_projects/tm-cube.jpg" class="img-fluid object-fit-cover prothumbnail" alt="">
+                                    <div class="project_img">
+                                        <img src="images/ongoing_projects/tm-cube.jpg" class="img-fluid object-fit-cover prothumbnail" id="pro3" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -624,7 +504,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 p-0">
-                                    <img src="https://etimg.etb2bimg.com/photo/112704608.cms" class="img-fluid object-fit-cover prothumbnail" alt="">
+                                    <div class="project_img">
+                                        <img src="images/ongoing_projects/building.png" class="img-fluid object-fit-cover prothumbnail" id="pro4" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -656,28 +538,28 @@
                                     <h3 class="client_heading">Lorem ipsum</h3>
                                     <h5 class="client_subheading">Touchwood bliss</h5>
                                     <div class="client_para my-2">
-                                        <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae magni sit laborum dolor atque, ab provident officia nemo laudantium quos perspiciatis dolore facere error eveniet tenetur doloremque natus quidem nobis.</p>
+                                        <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet, consectetur </p>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <h3 class="client_heading">Lorem ipsum</h3>
                                     <h5 class="client_subheading">Touchwood bliss</h5>
                                     <div class="client_para my-2">
-                                        <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae magni sit laborum dolor atque, ab provident officia nemo laudantium quos perspiciatis dolore facere error eveniet tenetur doloremque natus quidem nobis.</p>
+                                        <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet, consectetur </p>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <h3 class="client_heading">Lorem ipsum</h3>
                                     <h5 class="client_subheading">Touchwood bliss</h5>
                                     <div class="client_para my-2">
-                                        <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae magni sit laborum dolor atque, ab provident officia nemo laudantium quos perspiciatis dolore facere error eveniet tenetur doloremque natus quidem nobis.</p>
+                                        <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet, consectetur </p>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <h3 class="client_heading">Lorem ipsum</h3>
                                     <h5 class="client_subheading">Touchwood bliss</h5>
                                     <div class="client_para my-2">
-                                        <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae magni sit laborum dolor atque, ab provident officia nemo laudantium quos perspiciatis dolore facere error eveniet tenetur doloremque natus quidem nobis.</p>
+                                        <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet, consectetur </p>
                                     </div>
                                 </div>
 
@@ -709,40 +591,60 @@
 <?php include('footer.php'); ?>
 
 <script>
-    const tabs = document.querySelectorAll('.tab-link');
-    const tabContents = document.querySelectorAll('.tab-pane'); // All tab content panes
-    const tabSection = document.querySelector('#whyus'); // Target the main section
-    let currentTab = 0; // Start with the first tab (index 0)
+    document.addEventListener('DOMContentLoaded', function() {
+        const tabs = document.querySelectorAll('.tab-link'); // Select all the tab links
+        const tabContents = document.querySelectorAll('.tab-pane'); // Select all tab content panes
+        let currentTab = 0;
+        const fadeDuration = 300; // Duration of fade-out and fade-in in milliseconds
 
-    // Function to update the active tab and corresponding content
-    function updateTabs() {
-        tabs.forEach((tab, index) => {
-            if (index === currentTab) {
-                tab.classList.add('active');
-                tabContents[index].classList.add('show', 'active'); // Show the corresponding content
-            } else {
-                tab.classList.remove('active');
-                tabContents[index].classList.remove('show', 'active'); // Hide the other content
-            }
-        });
-    }
+        // Function to update the active tab and keep the scroll position intact
+        function updateTabs() {
+            const contentWrapper = document.querySelector('.tab-content'); // Get the content wrapper
+            const scrollTop = contentWrapper.scrollTop; // Save current scroll position
 
-    // Pinning the #whyus section with evenly distributed scroll time for each tab
-    ScrollTrigger.create({
-        trigger: tabSection,
-        start: "top top",
-        end: () => "+=" + (window.innerHeight * (tabs.length - 1) * 0.75), // Reduce the overall scroll time by multiplying by 0.5
-        pin: true,
-        scrub: true,
-        onUpdate: self => {
-            const newIndex = Math.floor(self.progress * (tabs.length * 1.5)); // Make tab switching more responsive
-            if (newIndex !== currentTab && newIndex < tabs.length) {
-                currentTab = newIndex;
-                updateTabs();
-            }
+            // First, start fading out the current content
+            tabContents.forEach((content) => {
+                content.classList.remove('fade-in'); // Ensure it's not fading in
+                content.classList.add('fade-out'); // Start fading out
+            });
+
+            // Wait for the fade-out to complete before switching content
+            setTimeout(() => {
+                // Switch tab activation
+                tabs.forEach((tab, index) => {
+                    if (index === currentTab) {
+                        tab.classList.add('active'); // Activate the clicked tab
+                    } else {
+                        tab.classList.remove('active'); // Deactivate other tabs
+                    }
+                });
+
+                // Switch content visibility and start fading in the new content
+                tabContents.forEach((content, index) => {
+                    if (index === currentTab) {
+                        content.classList.remove('fade-out'); // Remove fade-out class
+                        content.classList.add('fade-in', 'show', 'active'); // Add fade-in class and show the corresponding content
+                    } else {
+                        content.classList.remove('show', 'active'); // Hide other content
+                    }
+                });
+
+                // Restore scroll position after switching tabs
+                contentWrapper.scrollTop = scrollTop;
+            }, fadeDuration); // Wait for fade-out transition to complete
+
         }
-    });
 
-    // Initialize the first tab as active
-    updateTabs();
+        // Handle click event to change tabs
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent default link behavior
+                currentTab = index; // Update the currentTab index
+                updateTabs(); // Update tabs and content
+            });
+        });
+
+        // Initialize the first tab as active on page load
+        updateTabs();
+    });
 </script>
