@@ -115,8 +115,8 @@
                             <div class="vis-mis-headings">
                                 <div class="tab-side">
                                     <div class="tabs d-flex align-items-center flex-column">
-                                        <a href="#vision" class="tab-link mb-3 active">Vision</a>
-                                        <a href="#mission" class="tab-link mb-3">Mission</a>
+                                        <a href="#vision" class="tab-link mb-2 active">Vision</a>
+                                        <a href="#mission" class="tab-link mb-2">Mission</a>
                                         <a href="#values" class="tab-link">Values</a>
                                     </div>
 

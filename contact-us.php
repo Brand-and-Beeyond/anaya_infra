@@ -19,7 +19,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-11">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-5">
                         <div class="my-4 py-2">
                             <div class="phone d-flex flex-row align-items-center gap-4">
                                 <div class="contact-icon d-flex justify-content-center align-items-center">
@@ -70,7 +70,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-7">
                         <div class="contact_form">
                             <h2 class="text-dark">Lorem ipsum dolor sit.</h2>
                             <form action="">
