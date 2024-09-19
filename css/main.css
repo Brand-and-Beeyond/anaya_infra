@@ -9398,14 +9398,19 @@ footer .inner-wrapper .copyright {
 }
 
 .clientele {
-
   height: 336px;
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 85%;
 }
-
+.mb-40{
+  margin-bottom: 50px !important;
+}
+.middlemain{
+  position: relative;
+  border-left: 2px solid #ED673D;
+}
 
 .clientele .owl-item.cloned {
   margin-right: 14px !important;
@@ -9555,7 +9560,7 @@ footer .inner-wrapper .copyright {
 
 .vr-line {
   position: absolute;
-  height: 300px;
+  min-height: 300px;
   width: 2px;
   background-color: #F15B2A;
   left: 0;
@@ -9568,7 +9573,7 @@ footer .inner-wrapper .copyright {
   width: 350px;
   background-color: #F15B2A;
   left: -8%;
-  bottom: 0;
+  bottom: 30px;
 }
 
 .video-box {
@@ -9632,7 +9637,7 @@ footer .inner-wrapper .copyright {
   position: absolute;
   left: 65%;
   top: -19%;
-  z-index: 1;
+  z-index: 3;
 }
 
 .whyus_vector img {
@@ -9669,9 +9674,21 @@ footer .inner-wrapper .copyright {
   width: 100%;
   overflow: hidden;
   padding: 8px;
-  background: white;
+ 
+}
+.vis-mis-headings .tab-side .tabs .tab-link{
   position: relative;
-  z-index: 2;
+  z-index: 33;
+}
+.vis-mis-headings .tab-side::after{
+  content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%; 
+    background: white; 
+    z-index: 1;
 }
 
 .tab-link {

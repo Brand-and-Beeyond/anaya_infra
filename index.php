@@ -88,15 +88,15 @@
                         <div class="col-lg-8 col-md-4">
                             <div class="row">
 
-                                <div class="col-md-12 position-relative">
-                                    <div class="p-3">
+                                <div class="col-md-12 position-relative middlemain">
+                                    <div class="p-3 mb-40">
                                         <i class="fa fa-user-graduate why_icon"></i>
                                         <div class="tab-content">
                                             <div class="tab-pane fade show active" id="vision">
                                                 <p class="why_txt">Brief text for <span class="text-dark fw-bold">Tab 1</span> goes here. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit temporibus alias aut nemo laborum, nulla totam expedita sapiente ipsa. Nulla molestiae fugit obcaecati optio quibusdam aut autem dolor, rerum quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut id doloribus magni placeat, natus tenetur voluptatibus nesciunt odit a!</p>
                                             </div>
                                             <div class="tab-pane fade" id="mission">
-                                                <p class="why_txt">Brief text for <span class="text-dark fw-bold">Tab 2</span> goes here. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit temporibus alias aut nemo laborum, nulla totam expedita sapiente ipsa. Nulla molestiae fugit obcaecati optio quibusdam aut autem dolor, rerum quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut id doloribus magni placeat, natus tenetur voluptatibus nesciunt odit a!</p>
+                                                <p class="why_txt">Brief text for <span class="text-dark fw-bold">Tab 2</span> goes here. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit temporibus alias aut nemo laborum, nulla totam expedita sapiente ipsa. Nulla molestiae fugit obcaecati optio quibusdam aut autem dolor, rerum quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut id doloribus magni placeat, natus tenetur voluptatibus nesciunt odit a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae est reiciendis cumque voluptatum! Itaque repudiandae fuga labore nobis similique?</p>
                                             </div>
                                             <div class="tab-pane fade" id="values">
                                                 <p class="why_txt">Brief text for <span class="text-dark fw-bold">Tab 3</span> goes here. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit temporibus alias aut nemo laborum, nulla totam expedita sapiente ipsa. Nulla molestiae fugit obcaecati optio quibusdam aut autem dolor, rerum quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut id doloribus magni placeat, natus tenetur voluptatibus nesciunt odit a!</p>
@@ -104,7 +104,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="vr-line"></div>
+                                    <!-- <div class="vr-line"></div> -->
                                     <div class="hr-line"></div>
 
                                 </div>
@@ -170,7 +170,7 @@
                                             Hospitality
                                         </div>
                                         <div class="dtl_col aos-init" data-aos="fade-up">
-                                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         </div>
                                         <div class="dtl_col aos-init project_loc" data-aos="fade-up">
                                             <span><i class="fa fa-map-marker-alt"></i></span>
@@ -211,7 +211,7 @@
                                             Hospital
                                         </div>
                                         <div class="dtl_col aos-init" data-aos="fade-up">
-                                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         </div>
                                         <div class="dtl_col aos-init project_loc" data-aos="fade-up">
                                             <span><i class="fa fa-map-marker-alt"></i></span>
@@ -647,4 +647,5 @@
         // Initialize the first tab as active on page load
         updateTabs();
     });
+  
 </script>
