@@ -253,7 +253,20 @@ padding-bottom: 20px;
     position: relative;
     overflow: hidden;
 }
-
+.pro_heading{
+    font-family: 'Allerta Stencil';
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 76.7px;
+    color: #FF7425;
+    }
+.pro_subheading{
+    font-family: 'Allerta Stencil';
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 48.4px;
+    color: #FF7425;
+    }
 
 
 @media (max-width: 1439px) {

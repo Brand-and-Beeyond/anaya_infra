@@ -2,24 +2,8 @@
 
 
 <main class="">
-    <div class="slider-container pb-20">
-        <div class="image-display">
-
-            <div class="marquee">
-                <div class="marquee-inner">
-                    <span class="thumbnail" data-image="images/projects/touchwood_bliss.jpg">Touchwood Bliss</span>
-                    <span class="thumbnail" data-image="images/projects/ashoka.jpg">Ashoka Medicover</span>
-                    <span class="thumbnail"
-                        data-image="https://touchwoodbliss.com/images/villa-slide/farmsyde.jpeg">Thumbnail 3</span>
-                    <span class="thumbnail"
-                        data-image="https://touchwoodbliss.com/images/villa-slide/tent-view.jpg">Thumbnail 4</span>
-                    <span class="thumbnail"
-                        data-image="images/projects/blisstent.jpg">Thumbnail
-                        5</span>
-                </div>
-            </div>
-        </div>
-    </div>
+    
+    <?php include('slider.php'); ?>
 
     <section class="about_us">
         <div class="container-fluid">
@@ -34,7 +18,17 @@
                         </div>
                         <div class="col-lg-8 col-md-6">
                             <div class="about_para">
-                                <p>Pellentesque tempor nisi sem, a tristique justo mattis nec. Nunc consectetur lectus quis sem iaculis ornare. Curabitur vulputate, diam et aliquam iaculis, justo urna convallis libero, vitae aliquam ante tortor sed ante. Aenean efficitur, leo non gravida tempus, ipsum eros gravida lacus, nec laoreet neque ligula eu ipsum. Nam sed tincidunt dolor, at venenatis tellus. Suspendisse luctus auctor auctor. Suspendisse non luctus ex, id scelerisque quam. Sed neque tellus, convallis eu velit sit amet, vulputate elementum massa. Praesent id orci tincidunt, convallis nisi eget, fermentum neque. Phasellus ut mollis tellus, vitae tempor eros. Vivamus volutpat turpis ac ultrices suscipit. Aenean consectetur dui elit, ut hendrerit erat hendrerit ac. Praesent fermentum lacus arcu, venenatis scelerisque quam tempus ac. Aliquam eu dolor massa.
+                                <p>Pellentesque tempor nisi sem, a tristique justo mattis nec. Nunc consectetur lectus
+                                    quis sem iaculis ornare. Curabitur vulputate, diam et aliquam iaculis, justo urna
+                                    convallis libero, vitae aliquam ante tortor sed ante. Aenean efficitur, leo non
+                                    gravida tempus, ipsum eros gravida lacus, nec laoreet neque ligula eu ipsum. Nam sed
+                                    tincidunt dolor, at venenatis tellus. Suspendisse luctus auctor auctor. Suspendisse
+                                    non luctus ex, id scelerisque quam. Sed neque tellus, convallis eu velit sit amet,
+                                    vulputate elementum massa. Praesent id orci tincidunt, convallis nisi eget,
+                                    fermentum neque. Phasellus ut mollis tellus, vitae tempor eros. Vivamus volutpat
+                                    turpis ac ultrices suscipit. Aenean consectetur dui elit, ut hendrerit erat
+                                    hendrerit ac. Praesent fermentum lacus arcu, venenatis scelerisque quam tempus ac.
+                                    Aliquam eu dolor massa.
                                 </p>
                             </div>
                         </div>
@@ -51,39 +45,51 @@
                     <div class="row g-4">
                         <div class="col-lg-4">
                             <div class="card vscard border-0 bg-transparent">
-                                <div class="card-body innerbody d-flex justify-content-center align-items-center flex-column">
+                                <div
+                                    class="card-body innerbody d-flex justify-content-center align-items-center flex-column">
                                     <div class="icon-box d-flex justify-content-center align-items-center">
                                         <img src="images/mission.png" class="img-fluid missionicon" alt="">
                                     </div>
                                     <div class="vs-content text-center">
                                         <h4 class="vs-head">Mission</h4>
-                                        <p class="vs-para py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas iste laboriosam blanditiis, fugiat esse iusto architecto cum facere vitae magni natus aperiam doloribus dolores harum! Sint minus odio dolorum quibusdam."</p>
+                                        <p class="vs-para py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit. Voluptas iste laboriosam blanditiis, fugiat esse iusto architecto cum
+                                            facere vitae magni natus aperiam doloribus dolores harum! Sint minus odio
+                                            dolorum quibusdam."</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="card vscard border-0 bg-transparent">
-                                <div class="card-body innerbody d-flex justify-content-center align-items-center flex-column">
+                                <div
+                                    class="card-body innerbody d-flex justify-content-center align-items-center flex-column">
                                     <div class="icon-box d-flex justify-content-center align-items-center">
                                         <img src="images/vision.png" class="img-fluid visionicon" alt="">
                                     </div>
                                     <div class="vs-content text-center">
                                         <h4 class="vs-head">Vision</h4>
-                                        <p class="vs-para py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas iste laboriosam blanditiis, fugiat esse iusto architecto cum facere vitae magni natus aperiam doloribus dolores harum! Sint minus odio dolorum quibusdam."</p>
+                                        <p class="vs-para py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit. Voluptas iste laboriosam blanditiis, fugiat esse iusto architecto cum
+                                            facere vitae magni natus aperiam doloribus dolores harum! Sint minus odio
+                                            dolorum quibusdam."</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="card vscard border-0 bg-transparent">
-                                <div class="card-body innerbody d-flex justify-content-center align-items-center flex-column">
+                                <div
+                                    class="card-body innerbody d-flex justify-content-center align-items-center flex-column">
                                     <div class="icon-box d-flex justify-content-center align-items-center">
                                         <img src="images/values.png" class="img-fluid valuesicon" alt="">
                                     </div>
                                     <div class="vs-content text-center">
                                         <h4 class="vs-head">Values</h4>
-                                        <p class="vs-para py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas iste laboriosam blanditiis, fugiat esse iusto architecto cum facere vitae magni natus aperiam doloribus dolores harum! Sint minus odio dolorum quibusdam."</p>
+                                        <p class="vs-para py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit. Voluptas iste laboriosam blanditiis, fugiat esse iusto architecto cum
+                                            facere vitae magni natus aperiam doloribus dolores harum! Sint minus odio
+                                            dolorum quibusdam."</p>
                                     </div>
                                 </div>
                             </div>
@@ -130,7 +136,8 @@
                                     <h4 class="event-category mb-4">Hospitality project</h4>
                                     <span class="event-date d-block mb-4">June 21st, 2018</span>
                                     <p class="event-desc">
-                                        AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community Lighting.”
+                                        AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community
+                                        Lighting.”
                                     </p>
                                 </div>
 
@@ -142,7 +149,8 @@
                                     <h4 class="event-category mb-4">Hospitality project</h4>
                                     <span class="event-date d-block mb-4">June 21st, 2018</span>
                                     <p class="event-desc">
-                                        AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community Lighting.”
+                                        AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community
+                                        Lighting.”
                                     </p>
                                 </div>
                             </li>
@@ -153,7 +161,8 @@
                                     <h4 class="event-category mb-4">Banking infra</h4>
                                     <span class="event-date d-block mb-4">June 21st, 2018</span>
                                     <p class="event-desc">
-                                        AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community Lighting.”
+                                        AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community
+                                        Lighting.”
                                     </p>
                                 </div>
                             </li>
@@ -164,7 +173,8 @@
                                     <h4 class="event-category mb-4">Hospitality project</h4>
                                     <span class="event-date d-block mb-4">June 21st, 2018</span>
                                     <p class="event-desc">
-                                        AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community Lighting.”
+                                        AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community
+                                        Lighting.”
                                     </p>
                                 </div>
                             </li>
@@ -175,7 +185,8 @@
                                     <h4 class="event-category mb-4">Hospitality project</h4>
                                     <span class="event-date d-block mb-4">June 21st, 2018</span>
                                     <p class="event-desc">
-                                        AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community Lighting.”
+                                        AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community
+                                        Lighting.”
                                     </p>
                                 </div>
                             </li>
@@ -186,7 +197,8 @@
                                     <h4 class="event-category mb-4">Hospitality project</h4>
                                     <span class="event-date d-block mb-4">June 21st, 2018</span>
                                     <p class="event-desc">
-                                        AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community Lighting.”
+                                        AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community
+                                        Lighting.”
                                     </p>
                                 </div>
                             </li>
@@ -197,7 +209,8 @@
                                     <h4 class="event-category mb-4">Hospitality project</h4>
                                     <span class="event-date d-block mb-4">June 21st, 2018</span>
                                     <p class="event-desc">
-                                        AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community Lighting.”
+                                        AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community
+                                        Lighting.”
                                     </p>
                                 </div>
                             </li>
@@ -208,7 +221,8 @@
                                     <h4 class="event-category mb-4">Hospitality project</h4>
                                     <span class="event-date d-block mb-4">June 21st, 2018</span>
                                     <p class="event-desc">
-                                        AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community Lighting.”
+                                        AMA issues CSAPH 2-A-16, “Human Environmental Effects of LED Community
+                                        Lighting.”
                                     </p>
                                 </div>
                             </li>
@@ -231,7 +245,10 @@
                     <div class="row">
                         <h4 class="reachus_head py-4 ms-4 ps-5">Any questions ? Reach us</h4>
                         <div class="col-lg-5">
-                            <p class="reachus_para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero maiores alias, eum, neque odit mollitia laboriosam eius minima nostrum, provident asperiores dolorum veritatis excepturi quaerat odio reprehenderit cum voluptas sunt iure praesentium modi cumque ipsum aut eos. Adipisci, corporis aperiam!</p>
+                            <p class="reachus_para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                                maiores alias, eum, neque odit mollitia laboriosam eius minima nostrum, provident
+                                asperiores dolorum veritatis excepturi quaerat odio reprehenderit cum voluptas sunt iure
+                                praesentium modi cumque ipsum aut eos. Adipisci, corporis aperiam!</p>
                         </div>
                     </div>
                     <div class="row supportcard_sec g-4">
@@ -289,14 +306,14 @@
 <?php include('footer.php'); ?>
 
 <script>
-    jQuery(document).ready(function($) {
+    jQuery(document).ready(function ($) {
         var timelines = $('.cd-horizontal-timeline'),
             eventsMinDistance = 80;
 
         (timelines.length > 0) && initTimeline(timelines);
 
         function initTimeline(timelines) {
-            timelines.each(function() {
+            timelines.each(function () {
                 var timeline = $(this),
                     timelineComponents = {};
                 //cache timeline components 
@@ -317,17 +334,17 @@
                 timeline.addClass('loaded');
 
                 //detect click on the next arrow
-                timelineComponents['timelineNavigation'].on('click', '.next', function(event) {
+                timelineComponents['timelineNavigation'].on('click', '.next', function (event) {
                     event.preventDefault();
                     updateSlide(timelineComponents, timelineTotWidth, 'next');
                 });
                 //detect click on the prev arrow
-                timelineComponents['timelineNavigation'].on('click', '.prev', function(event) {
+                timelineComponents['timelineNavigation'].on('click', '.prev', function (event) {
                     event.preventDefault();
                     updateSlide(timelineComponents, timelineTotWidth, 'prev');
                 });
                 //detect click on the a single event - show new event content
-                timelineComponents['eventsWrapper'].on('click', 'a', function(event) {
+                timelineComponents['eventsWrapper'].on('click', 'a', function (event) {
                     event.preventDefault();
                     timelineComponents['timelineEvents'].removeClass('selected');
                     $(this).addClass('selected');
@@ -337,11 +354,11 @@
                 });
 
                 //on swipe, show next/prev event content
-                timelineComponents['eventsContent'].on('swipeleft', function() {
+                timelineComponents['eventsContent'].on('swipeleft', function () {
                     var mq = checkMQ();
                     (mq == 'mobile') && showNewContent(timelineComponents, timelineTotWidth, 'next');
                 });
-                timelineComponents['eventsContent'].on('swiperight', function() {
+                timelineComponents['eventsContent'].on('swiperight', function () {
                     var mq = checkMQ();
                     (mq == 'mobile') && showNewContent(timelineComponents, timelineTotWidth, 'prev');
                 });
@@ -363,7 +380,7 @@
                 wrapperWidth = Number(timelineComponents['timelineWrapper'].css('width').replace('px', ''));
 
             (string == 'next') ?
-            translateTimeline(timelineComponents, translateValue - wrapperWidth + eventsMinDistance, wrapperWidth - timelineTotWidth): translateTimeline(timelineComponents, translateValue + wrapperWidth - eventsMinDistance);
+                translateTimeline(timelineComponents, translateValue - wrapperWidth + eventsMinDistance, wrapperWidth - timelineTotWidth) : translateTimeline(timelineComponents, translateValue + wrapperWidth - eventsMinDistance);
         }
 
         function showNewContent(timelineComponents, timelineTotWidth, string) {
@@ -403,8 +420,8 @@
             value = (!(typeof totWidth === 'undefined') && value < totWidth) ? totWidth : value; //do not translate more than timeline width
             setTransformValue(eventsWrapper, 'translateX', value + 'px');
             //update navigation arrows visibility
-            (value == 0) ? timelineComponents['timelineNavigation'].find('.prev').addClass('inactive'): timelineComponents['timelineNavigation'].find('.prev').removeClass('inactive');
-            (value == totWidth) ? timelineComponents['timelineNavigation'].find('.next').addClass('inactive'): timelineComponents['timelineNavigation'].find('.next').removeClass('inactive');
+            (value == 0) ? timelineComponents['timelineNavigation'].find('.prev').addClass('inactive') : timelineComponents['timelineNavigation'].find('.prev').removeClass('inactive');
+            (value == totWidth) ? timelineComponents['timelineNavigation'].find('.next').addClass('inactive') : timelineComponents['timelineNavigation'].find('.next').removeClass('inactive');
         }
 
         function updateFilling(selectedEvent, filling, totWidth) {
@@ -453,7 +470,7 @@
             }
 
             selectedContent.attr('class', classEnetering);
-            visibleContent.attr('class', classLeaving).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
+            visibleContent.attr('class', classLeaving).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
                 visibleContent.removeClass('leave-right leave-left');
                 selectedContent.removeClass('enter-left enter-right');
             });
@@ -467,10 +484,10 @@
         function getTranslateValue(timeline) {
             var timelineStyle = window.getComputedStyle(timeline.get(0), null),
                 timelineTranslate = timelineStyle.getPropertyValue("-webkit-transform") ||
-                timelineStyle.getPropertyValue("-moz-transform") ||
-                timelineStyle.getPropertyValue("-ms-transform") ||
-                timelineStyle.getPropertyValue("-o-transform") ||
-                timelineStyle.getPropertyValue("transform");
+                    timelineStyle.getPropertyValue("-moz-transform") ||
+                    timelineStyle.getPropertyValue("-ms-transform") ||
+                    timelineStyle.getPropertyValue("-o-transform") ||
+                    timelineStyle.getPropertyValue("transform");
 
             if (timelineTranslate.indexOf('(') >= 0) {
                 var timelineTranslate = timelineTranslate.split('(')[1];
@@ -495,7 +512,7 @@
         //based on http://stackoverflow.com/questions/542938/how-do-i-get-the-number-of-days-between-two-dates-in-javascript
         function parseDate(events) {
             var dateArrays = [];
-            events.each(function() {
+            events.each(function () {
                 var dateComp = $(this).data('date').split('/'),
                     newDate = new Date(dateComp[2], dateComp[1] - 1, dateComp[0]);
                 dateArrays.push(newDate);
@@ -505,7 +522,7 @@
 
         function parseDate2(events) {
             var dateArrays = [];
-            events.each(function() {
+            events.each(function () {
                 var singleDate = $(this),
                     dateComp = singleDate.data('date').split('T');
                 if (dateComp.length > 1) { //both DD/MM/YEAR and time are provided

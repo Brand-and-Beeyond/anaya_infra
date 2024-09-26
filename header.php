@@ -423,9 +423,9 @@
                     <li class="menu-item">
                         <a href="#" class="sub-btn">Project</a>
                         <div class="sub-dropdown">
-                            <a class="sub-item" href="farmsyde-villa.php">Farmsyde</a>
-                            <a class="sub-item" href="courtyard-villa.php">Courtyard</a>
-                            <a class="sub-item" href="glamping-tent.php">Glamping Tent</a>
+                            <a class="sub-item" href="completed-projects.php">Completed</a>
+                            <a class="sub-item" href="courtyard-villa.php">Ongoing</a>
+                            <a class="sub-item" href="glamping-tent.php">Pending</a>
                         </div>
                     </li>
                     <li class="menu-item"><a href="">Blogs</a></li>

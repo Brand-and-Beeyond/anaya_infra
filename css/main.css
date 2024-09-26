@@ -9361,7 +9361,8 @@ footer .inner-wrapper .copyright {
   background-color: #E3DCD6;
   position: relative;
 }
-.aboutsite::before{
+
+.aboutsite::before {
   content: "";
   position: absolute;
   top: -5.35%;
@@ -9371,8 +9372,8 @@ footer .inner-wrapper .copyright {
   transform: scale(1.28);
   background-image: url('../images/aboutgroup.png');
   background-size: contain;
-  background-repeat: no-repeat; 
-  z-index: 1; 
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 
@@ -9404,10 +9405,12 @@ footer .inner-wrapper .copyright {
   justify-content: center;
   max-width: 85%;
 }
-.mb-40{
+
+.mb-40 {
   margin-bottom: 50px !important;
 }
-.middlemain{
+
+.middlemain {
   position: relative;
   border-left: 2px solid #ED673D;
 }
@@ -9451,31 +9454,36 @@ footer .inner-wrapper .copyright {
 .project_img {
   overflow: hidden;
 }
-.project_img.second{
+
+.project_img.second {
   transform: translateX(-8px);
 }
-.prothumbnail#pro1{
+
+.prothumbnail#pro1 {
   min-height: 290px;
   width: 100%;
   transform: scale(1.5) translateY(-50px);
   object-fit: cover;
   object-position: top;
 }
-.prothumbnail#pro2{
+
+.prothumbnail#pro2 {
   min-height: 290px;
   width: 100%;
   transform: scale(1.1);
   object-fit: cover;
   object-position: right;
 }
-.prothumbnail#pro3{
+
+.prothumbnail#pro3 {
   min-height: 290px;
   width: 100%;
   transform: scale(1.06) translateX(10px);
   object-fit: cover;
   object-position: right;
 }
-.prothumbnail#pro4{
+
+.prothumbnail#pro4 {
   height: 290px;
   width: 100%;
   transform: scale(1.08);
@@ -9674,21 +9682,23 @@ footer .inner-wrapper .copyright {
   width: 100%;
   overflow: hidden;
   padding: 8px;
- 
+
 }
-.vis-mis-headings .tab-side .tabs .tab-link{
+
+.vis-mis-headings .tab-side .tabs .tab-link {
   position: relative;
   z-index: 33;
 }
-.vis-mis-headings .tab-side::after{
+
+.vis-mis-headings .tab-side::after {
   content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%; 
-    background: white; 
-    z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: white;
+  z-index: 1;
 }
 
 .tab-link {
@@ -10026,7 +10036,7 @@ Main Components
 .cd-horizontal-timeline.loaded {
   /* show the timeline after events position has been set (using JavaScript) */
   opacity: 1;
-  margin-top:0;
+  margin-top: 0;
 }
 
 .cd-horizontal-timeline .timeline {
@@ -10066,7 +10076,7 @@ Main Components
   top: 0px;
   height: 4px;
   /* width will be set using JavaScript */
-   background: radial-gradient(50% 50% at 50% 50%, #4E4E4E 2.3%, #707070 50.5%, #909090 78.5%, #DFDFDF 93%, #FFFFFF 99.8%);
+  background: radial-gradient(50% 50% at 50% 50%, #4E4E4E 2.3%, #707070 50.5%, #909090 78.5%, #DFDFDF 93%, #FFFFFF 99.8%);
   ;
   -webkit-transition: -webkit-transform 0.4s;
   -moz-transition: -moz-transform 0.4s;
@@ -10083,7 +10093,7 @@ Main Components
   font-size: 1.3rem;
   padding-bottom: 15px;
   color: #383838;
- 
+
   /* fix bug on Safari - text flickering while timeline translates */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -10108,7 +10118,7 @@ Main Components
   width: 20px;
   border-radius: 50%;
   background-color: #ffffff;
-  border:1px solid #D9D9D9;
+  border: 1px solid #D9D9D9;
   -webkit-transition: background-color 0.3s, border-color 0.3s;
   -moz-transition: background-color 0.3s, border-color 0.3s;
   transition: background-color 0.3s, border-color 0.3s;
@@ -10128,15 +10138,17 @@ Main Components
   background-color: #4E4E4E;
   border-color: #4E4E4E;
 }
+
 .events-info {
   position: relative;
   margin-top: 30px;
   padding: 0 20px;
   min-height: 400px;
   display: flex;
- 
+
   flex-direction: column;
 }
+
 .events-info .event-head {
   font-size: 44px;
   font-weight: 400;
@@ -10179,12 +10191,12 @@ Main Components
 
 @media only screen and (min-width: 1100px) {
   .cd-horizontal-timeline {
-      margin: 6em auto;
+    margin: 6em auto;
   }
 
   .cd-horizontal-timeline::before {
-      /* never visible - this is used in jQuery to check the current MQ */
-      content: 'desktop';
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'desktop';
   }
 }
 
@@ -10208,7 +10220,7 @@ Main Components
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
 }
 
 .cd-timeline-navigation a:hover {
@@ -10262,7 +10274,7 @@ Main Components
 
 .cd-timeline-navigation a.inactive {
   cursor: not-allowed;
- 
+
 }
 
 .cd-timeline-navigation a.inactive::after {
@@ -10350,100 +10362,100 @@ Main Components
 }
 
 @media only screen and (min-width: 768px) {
- 
+
 
   .cd-horizontal-timeline .events-content em {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
-  
+
 }
 
 @-webkit-keyframes cd-enter-right {
   0% {
-      opacity: 0;
-      -webkit-transform: translateX(100%);
+    opacity: 0;
+    -webkit-transform: translateX(100%);
   }
 
   100% {
-      opacity: 1;
-      -webkit-transform: translateX(0%);
+    opacity: 1;
+    -webkit-transform: translateX(0%);
   }
 }
 
 @-moz-keyframes cd-enter-right {
   0% {
-      opacity: 0;
-      -moz-transform: translateX(100%);
+    opacity: 0;
+    -moz-transform: translateX(100%);
   }
 
   100% {
-      opacity: 1;
-      -moz-transform: translateX(0%);
+    opacity: 1;
+    -moz-transform: translateX(0%);
   }
 }
 
 @keyframes cd-enter-right {
   0% {
-      opacity: 0;
-      -webkit-transform: translateX(100%);
-      -moz-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-      -o-transform: translateX(100%);
-      transform: translateX(100%);
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
   }
 
   100% {
-      opacity: 1;
-      -webkit-transform: translateX(0%);
-      -moz-transform: translateX(0%);
-      -ms-transform: translateX(0%);
-      -o-transform: translateX(0%);
-      transform: translateX(0%);
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
   }
 }
 
 @-webkit-keyframes cd-enter-left {
   0% {
-      opacity: 0;
-      -webkit-transform: translateX(-100%);
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
   }
 
   100% {
-      opacity: 1;
-      -webkit-transform: translateX(0%);
+    opacity: 1;
+    -webkit-transform: translateX(0%);
   }
 }
 
 @-moz-keyframes cd-enter-left {
   0% {
-      opacity: 0;
-      -moz-transform: translateX(-100%);
+    opacity: 0;
+    -moz-transform: translateX(-100%);
   }
 
   100% {
-      opacity: 1;
-      -moz-transform: translateX(0%);
+    opacity: 1;
+    -moz-transform: translateX(0%);
   }
 }
 
 @keyframes cd-enter-left {
   0% {
-      opacity: 0;
-      -webkit-transform: translateX(-100%);
-      -moz-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-      -o-transform: translateX(-100%);
-      transform: translateX(-100%);
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 
   100% {
-      opacity: 1;
-      -webkit-transform: translateX(0%);
-      -moz-transform: translateX(0%);
-      -ms-transform: translateX(0%);
-      -o-transform: translateX(0%);
-      transform: translateX(0%);
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
   }
 }
 
@@ -10860,3 +10872,70 @@ Main Components
   width: 100%;
   height: 550px;
 }
+
+.pro-stat-text {
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "poppins";
+  color: #000000;
+  line-height: 32.56px;
+}
+
+.pro_subtext {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "poppins";
+  color: #3B3B3B;
+  line-height: 24.81px;
+}
+
+.card.pro-stat-card {
+  height: 427px;
+  position: relative;
+}
+
+.card.pro-stat-card img {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(1.2);
+  transition: filter 0.5s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+.card.pro-stat-card::before {
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+  bottom: 0;
+  content: "";
+  left: 50%;
+  right: 50%;
+  top: 0;
+  opacity: 1;
+  position: absolute;
+  width: 0; /* Starts at 0 width */
+  transform-origin: center; /* Will expand from the center */
+  transform: scaleX(0); /* Initially hidden with scaleX(0) */
+  transition: all 0.5s ease-in-out;
+  pointer-events: none; /* Prevents interaction with the pseudo-element */
+  z-index: 1; /* Ensure it appears above other content */
+}
+
+.card.pro-stat-card:hover::before {
+  left: 0;
+  right: 0;
+  transform: scaleX(1); /* Expand fully on hover */
+  width: 100%; /* Make it cover the entire width */
+  opacity: 1; /* Maintain opacity */
+}
+.card.pro-stat-card img:hover{
+  filter: none
+}
+
+
+
+
+
+
+
+
+
