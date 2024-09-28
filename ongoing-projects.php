@@ -39,7 +39,7 @@
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-11">
-                    <h2 class="pro_subheading mt-5">Completed projects</h2>
+                    <h2 class="pro_subheading mt-5">Ongoing projects</h2>
                     <p class="pro_subtext my-4 pb-1 w-55">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                         do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis

@@ -10889,53 +10889,92 @@ Main Components
   line-height: 24.81px;
 }
 
-.card.pro-stat-card {
-  height: 427px;
+
+
+
+.pro-banner {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 427px;
+  width: 100%;
+  /* Ensure the banner takes full width */
+  overflow: hidden;
+  /* To hide any overflow of the image */
 }
 
-.card.pro-stat-card img {
+.pro-banner a {
+  display: block;
   height: 100%;
   width: 100%;
-  filter: grayscale(1.2);
-  transition: filter 0.5s ease-in-out;
-  position: relative;
-  z-index: 1;
+  /* Ensure the anchor element fills the parent */
 }
 
-.card.pro-stat-card::before {
-  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+.pro-banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(1.2);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.pro-banner.animation2::before {
+  background: rgba(255, 255, 255, 0.3);
   bottom: 0;
   content: "";
   left: 50%;
+  position: absolute;
   right: 50%;
   top: 0;
   opacity: 1;
-  position: absolute;
-  width: 0; /* Starts at 0 width */
-  transform-origin: center; /* Will expand from the center */
-  transform: scaleX(0); /* Initially hidden with scaleX(0) */
-  transition: all 0.5s ease-in-out;
-  pointer-events: none; /* Prevents interaction with the pseudo-element */
-  z-index: 1; /* Ensure it appears above other content */
+  width: 0;
+  pointer-events: none;
 }
 
-.card.pro-stat-card:hover::before {
+.pro-banner.animation2::after {
+  background: rgba(255, 255, 255, 0.6);
+	bottom: 50%;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	opacity: 1;
+	width: 0;
+	pointer-events: none;
+}
+
+.pro-banner.animation2:hover:before {
   left: 0;
   right: 0;
-  transform: scaleX(1); /* Expand fully on hover */
-  width: 100%; /* Make it cover the entire width */
-  opacity: 1; /* Maintain opacity */
+  opacity: 0;
+  width: auto;
+  -webkit-transition: all 900ms linear;
+  -moz-transition: all 900ms linear;
+  -ms-transition: all 900ms linear;
+  -o-transition: all 900ms linear;
+  transition: all 900ms linear;
 }
-.card.pro-stat-card img:hover{
-  filter: none
+
+.pro-banner.animation2:hover::after {
+  top: 0;
+	bottom: 0;
+	opacity: 0;
+	width: auto;
+	-webkit-transition: all 900ms linear;
+	-moz-transition: all 900ms linear;
+	-ms-transition: all 900ms linear;
+	-o-transition: all 900ms linear;
+	transition: all 900ms linear;
 }
 
-
-
-
-
-
-
-
+.pro-banner a img:hover {
+  filter: none;
+  
+}
 

@@ -424,8 +424,8 @@
                         <a href="#" class="sub-btn">Project</a>
                         <div class="sub-dropdown">
                             <a class="sub-item" href="completed-projects.php">Completed</a>
-                            <a class="sub-item" href="courtyard-villa.php">Ongoing</a>
-                            <a class="sub-item" href="glamping-tent.php">Pending</a>
+                            <a class="sub-item" href="ongoing-projects.php">Ongoing</a>
+                            <a class="sub-item" href="upcoming-projects.php">Upcoming</a>
                         </div>
                     </li>
                     <li class="menu-item"><a href="">Blogs</a></li>
