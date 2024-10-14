@@ -9524,10 +9524,10 @@ footer .inner-wrapper .copyright {
   cursor: url('../images/whitecursor.png'), auto !important;
 }
 
-.owl-nav .owl-prev i,
+/* .owl-nav .owl-prev i,
 .owl-nav .owl-next i {
   color: #F15B2A;
-}
+} */
 
 .dmsans {
   font-family: "DM Sans", sans-serif;
@@ -10975,6 +10975,136 @@ Main Components
 
 .pro-banner a img:hover {
   filter: none;
-  
 }
 
+
+/* blog page css */
+
+.blog-icon{
+  width: 66px;
+  height: 60.63px;
+  background-color: #F15B2A;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-icon img{
+   width: 40px;
+}
+
+.blog_text {
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "poppins";
+  color: #777171;
+  line-height: 32.56px;
+}
+.blog-value-head{
+  font-family: 'Allerta Stencil';
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #FF7425;
+  letter-spacing: 0.45px;
+}
+.blog-value-text{
+  color: #3F3F3F;
+  font-size: 14px;
+  font-family: "poppins";
+  line-height: 18.6px;
+}
+
+.blog_more .blog-thumb{
+  height: 286px;
+  width: 288px;
+  background-color: #D9D9D9;
+  border-radius: 30px;
+}
+.moreblogs{
+  margin-top: 42px;
+}
+.blog-more-content .read-more-link{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "poppins";
+  line-height: 21.7px;
+  color: #F15B2A;
+  letter-spacing: 0.4px !important;
+  text-decoration: underline !important;
+  transition: all 0.5s ease;
+}
+.blog-more-content .read-more-link:hover{
+  color:#F15B2A !important;
+  transform: scale(1.09) !important;
+  letter-spacing: 0.6px !important;
+}
+.blog-detail-thumbnail{
+  background-color: #D9D9D9;
+  height: 590px;
+  width: 100%;
+  border-radius: 50px;
+}
+.blog-detail-content p{
+  color: #303030;
+  font-size: 18px;
+  line-height: 33px;
+  letter-spacing: 0.06em;
+  font-family: "poppins";
+  font-weight: 400;
+}
+.blog-subdetail-thumbnail{
+  height: 360px;
+  width: 100%;
+  background-color: #D9D9D9;
+}
+.banner-career{
+  height: 548px;
+  background-color: #F15B2A;
+  width: 100%;
+}
+.career-main-head{
+  color: #ffffff;
+  font-size: 100px;
+  line-height: 148.4px;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  font-family: 'Allerta Stencil';
+}
+.card.openingcard{
+  border-radius: 58px;
+  height: 238px;
+  border: 1px solid #F15B2A;
+  transition: all 0.5s ease;
+}
+.openingcardbody .jobtype{
+  font-size: 22px;
+  line-height: 34.11px;
+  color: #000000;
+  font-family: "poppins";
+}
+.roledesc{
+  color: #000000;
+  font-family: "poppins";
+  line-height: 21px;
+  font-size: 14px;
+}
+.positionheading{
+  font-size: 38px;
+  line-height: 48px;
+  color: #F15B2A;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  font-family: 'Allerta Stencil';
+}
+.card.openingcard:hover{
+  background-color:#F15B2A;
+}
+.card.openingcard:hover .positionheading,.card.openingcard:hover .roledesc,.card.openingcard:hover .jobtype{
+  color: #ffffff !important;
+} 
+.card.openingcard:hover .feature-btn{
+  color: #F15B2A;
+  background-color: #ffffff;
+}

@@ -44,6 +44,7 @@
 
     <link rel="stylesheet" href="css/fontawsome.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -288,7 +289,7 @@
                 <!--logo-->
                 <div class="logo-wrapper">
                     <a href="index.php">
-                        <img src="images/anaya_white.png" alt="" class="logo">
+                        <img  alt="" class="logo">
                     </a>
                 </div>
             </div>
@@ -428,8 +429,8 @@
                             <a class="sub-item" href="upcoming-projects.php">Upcoming</a>
                         </div>
                     </li>
-                    <li class="menu-item"><a href="">Blogs</a></li>
-                    <li class="menu-item"><a href="">Careers</a></li>
+                    <li class="menu-item"><a href="blogs.php">Blogs</a></li>
+                    <li class="menu-item"><a href="career.php">Careers</a></li>
                     <li class="menu-item"><a href="contact-us.php">Contact us</a></li>
                 </ul>
             </div>

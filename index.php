@@ -64,7 +64,7 @@
                         <div class="col-lg-2 col-md-2">
 
                             <div class="whyushead">
-                                <h5 class="why_heading">Why Us</h5>
+                                <h5 class="why_heading" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1300">Why Us</h5>
                             </div>
                             <div class="why-sub">
                                 <h1 class="why_sub_heading">Why Choose Us</h1>
@@ -100,9 +100,9 @@
                             <div class="vis-mis-headings">
                                 <div class="tab-side">
                                     <div class="tabs d-flex align-items-center flex-column">
-                                        <a href="#vision" class="tab-link mb-2 active">Vision</a>
-                                        <a href="#mission" class="tab-link mb-2">Mission</a>
-                                        <a href="#values" class="tab-link">Values</a>
+                                        <a href="#vision" class="tab-link mb-2 active" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1300">Vision</a>
+                                        <a href="#mission" class="tab-link mb-2"data-aos="fade-left" data-aos-delay="500" data-aos-duration="1300">Mission</a>
+                                        <a href="#values" class="tab-link" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1300">Values</a>
                                     </div>
 
                                 </div>

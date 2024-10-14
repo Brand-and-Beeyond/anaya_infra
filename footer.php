@@ -238,6 +238,39 @@
 <script src="js/ScrollSmoother.min.js"></script>
 <script src="js/gsap.min.js"></script>
 <script src="js/ScrollTrigger.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+     function setLogoAndBackground() {
+            const logoWrapper = document.querySelector('.logo-wrapper');
+            const logoImage = document.querySelector('.logo-wrapper img');
+            
+            // Default settings for other pages
+            let logoSrc = 'images/anaya_white.png'; 
+            let backgroundColor = '#F15B2A';
+            let altText = 'Anaya White Logo'; 
+            
+            // Check if the current page is career.php
+            if (window.location.pathname.includes("career.php")) {
+                logoSrc = 'images/anayamain.png'; 
+                backgroundColor = 'white'; // White background for career.php
+                altText = 'Anaya Orange Logo'; // Alt text for career.php
+            }
+
+            // Set the background color dynamically
+            logoWrapper.style.backgroundColor = backgroundColor;
+            
+            // Set the logo image dynamically
+            logoImage.src = logoSrc;
+            logoImage.alt = altText;
+        }
+
+        // Run the function to set logo and background
+        setLogoAndBackground();
+</script>
 <script>
     let mouseBall = () => {
         let xmouse, ymouse;
@@ -715,16 +748,7 @@
         nav: true,
         navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i> "]
     });
-    // $('.success-count').owlCarousel({
-    //     loop: true,
-    //     margin: 0,
-    //     items: 1,
-    //     autoplay: true,
-    //     autoplayTimeout: 3000,
-    //     smartSpeed: 2000,
-    //     autoplayHoverPause: true,
-    //     nav: false
-    // });
+    
     $('.clientele').owlCarousel({
         loop: true,
         margin: 10,
