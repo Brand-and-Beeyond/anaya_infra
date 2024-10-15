@@ -2,251 +2,305 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        body {
-            overflow: hidden; /* Remove or adjust this line */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            z-index: 0;
         }
 
-        /* .testimonial_section {
-            background-color: #020d26;
-        } */
-
-        .container {
-            max-width: 100%; /* Adjust or remove as needed */
+        .timeline:before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            left: 50%;
+            width: 2px;
+            top: -20px;
+            background: #C0C0C0;
+            z-index: 1;
         }
 
-        .about_content .section_title h5 {
-            color: #818a8f;
-            font-family: "Open Sans";
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 28px;
-            margin-bottom: 6px;
+        .circle-at-end {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            left: calc(50% - 8.5px);
+            width: 20px;
+            height: 20px;
+            background-color: #D9D9D9;
+
+            border-radius: 50%;
+            z-index: 2;
+            transition: background-color 0.5s ease;
         }
 
-        .about_content .section_title h2 {
-            font-family: "Titillium Web";
-            font-weight: 300;
-            font-size: 45px;
-            line-height: 50px;
-            color: #000;
-            margin-bottom: 24px;
-        }
-
-        .about_content .section_title h2 strong {
-            font-weight: 600 !important;
-            display: block;
-        }
-
-        .about_content .section_title .heading_line {
+        .timeline {
             position: relative;
-            margin-bottom: 24px;
+            margin: 50px auto;
+            width: 1000px;
+            padding: 50px 0;
         }
 
-        .about_content .section_title p {
-            color: #fff;
-            margin-bottom: 24px;
-        }
-
-        .about_content a {
-            color: #fff;
-            text-transform: capitalize;
-            font-size: 15px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-
-        .about_content a:hover {
-            color: #ff5e14;
-        }
-
-        .testimonial_box {
-            width: 100%; /* Adjust width as needed */
-        }
-
-        .testimonial_box .testimonial_container {
-            background-color: #ff5e14;
-            padding: 30px 0;
-            width: 100%; /* Adjust width as needed */
-            
-            height: auto;
-        }
-
-        .testimonial_content {
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.13);
-            width: 500px;
-            height: 280px;
-            margin-left: -100px;
-            
-        }
-.owl-item{
-    margin: 20px;
+        .active-scroll-line {
+    position: absolute;
+    left: 50%;
+    width: 1.6px;
+    height: 180px; /* Fixed height */
+    background: linear-gradient(180deg, #191970 0%, #6969B2 20.4%, #C0C0C0 100%);
+    z-index: 2; /* On top of the base line */
+    transform: translateX(-50%);
+    visibility: hidden; /* Initially hidden */
 }
-        .testimonial_img img {
-            width: 70px;
-            height: 70px;
-            object-fit: contain;
+        .timeline ul {
+            margin: 0;
+            padding: 0;
         }
 
-        .testimonial_caption h6 {
-            font-size: 19px;
-            font-weight: 600;
-            color: #020d26;
+        .timeline ul li {
+            list-style: none;
+            box-sizing: border-box;
+            line-height: normal;
+            position: relative;
+            width: 50%;
+            padding: 40px 70px;
         }
 
-        .testimonial_caption span {
-            font-size: 12px;
-            color: #9f9f9f;
-            display: block;
+        .timeline ul li .right_content h4 {
+            color: #000000;
+            padding: 0px 2px 18px 0px;
         }
 
-        .testimonial_content p {
-            font-size: 16px;
-            line-height: 28px;
-            font-weight: 400;
-            color: #5d6576;
-            font-style: italic;
-            margin-top: 10px;
+        .timeline ul li:nth-child(odd) {
+            float: right;
+            text-align: start;
+            clear: both;
         }
 
-        .owl-nav .owl-prev,
-        .owl-nav .owl-next {
-            background: #ff5e14;
-            color: #fff;
-            padding: 5px 10px;
-            border-radius: 0;
-            margin-top: 10px;
-            transition: all 0.3s ease-in-out;
+        .timeline ul li:nth-child(even) {
+            float: left;
+            text-align: right;
+            clear: both;
         }
 
-        .owl-nav .owl-prev:hover,
-        .owl-nav .owl-next:hover {
-            background: #020d26;
+        .left_content {
+            padding-bottom: 20px;
+        }
+
+
+
+
+        @media (max-width: 1000px) {
+
+            .timeline {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .timeline {
+                width: 100%;
+            }
+
+            .timeline:before {
+                left: 20px;
+            }
+
+            .timeline ul li:nth-child(odd),
+            .timeline ul li:nth-child(even) {
+                width: 100%;
+                text-align: left;
+                padding-left: 50px;
+            }
+
+            .timeline ul li:nth-child(odd):before {
+                top: -18px;
+                left: 16px;
+
+            }
+
+            .timeline ul li:nth-child(even):before {
+                top: -18px;
+                left: 16px;
+            }
+        
+
+
+
         }
     </style>
 </head>
 
 <body>
-    <section class="testimonial_section py-5">
-        <div class="container my-0">
-            <div class="row">
-                <div class="col-lg-4 pl-5">
-                    <div class="about_content">
-                        <div class="section_title">
-                            <h5>CLIENTS</h5>
-                            <h2>Happy with<strong>Customers & Clients</strong></h2>
-                            <div class="heading_line">
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
+    <div class="timeline">
+        <div class="active-scroll-line"></div>
+        <div class="circle-at-end"></div>
+        <ul>
+            <li>
+                
+                <div class="right_content">
+                    <h4>Sample Text 1</h4>
+                    <p>A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford
+                        and Connors 116). Length and appearance do not determine whether a section in a paper is a
+                        paragraph. For instance, in some styles of writing, particularly
+                        journalistic styles, a paragraph can be just one sentence long.
+                    </p>
                 </div>
-                <div class="col-lg-8 d-flex justify-content-end">
-                    <div class="testimonial_box">
-                        <div class="testimonial_container">
-                            <div class="testimonial_owlCarousel owl-carousel">
-                                <div class="testimonials">
-                                    <div class="testimonial_content d-flex align-items-center">
-                                        <div class="testimonial_img mr-3">
-                                            <img class="img-fluid rounded-circle"
-                                                src="https://cdn.pixabay.com/photo/2017/08/30/17/27/business-woman-2697954_960_720.jpg"
-                                                alt="images not found">
-                                        </div>
-                                        <div>
-                                            <div class="testimonial_caption">
-                                                <h6>Robert Clarkson</h6>
-                                                <span>CEO, Axura</span>
-                                            </div>
-                                            <p>The team at Tectxon industry is very talented, dedicated, well organized,
-                                                and knowledgeable. I was most satisfied with the quality of the
-                                                workmanship. They did excellent work.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="testimonials">
-                                    <div class="testimonial_content d-flex align-items-center">
-                                        <div class="testimonial_img mr-3">
-                                            <img class="img-fluid rounded-circle"
-                                                src="https://cdn.pixabay.com/photo/2016/02/19/10/56/man-1209494_960_720.jpg"
-                                                alt="images not found">
-                                        </div>
-                                        <div>
-                                            <div class="testimonial_caption">
-                                                <h6>Robert Clarkson</h6>
-                                                <span>CEO, Axura</span>
-                                            </div>
-                                            <p>The team at Tectxon industry is very talented, dedicated, well organized,
-                                                and knowledgeable. I was most satisfied with the quality of the
-                                                workmanship. They did excellent work.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="testimonials">
-                                    <div class="testimonial_content d-flex align-items-center">
-                                        <div class="testimonial_img mr-3">
-                                            <img class="img-fluid rounded-circle"
-                                                src="https://cdn.pixabay.com/photo/2017/09/21/19/06/woman-2773007_960_720.jpg"
-                                                alt="images not found">
-                                        </div>
-                                        <div>
-                                            <div class="testimonial_caption">
-                                                <h6>Robert Clarkson</h6>
-                                                <span>CEO, Axura</span>
-                                            </div>
-                                            <p>The team at Tectxon industry is very talented, dedicated, well organized,
-                                                and knowledgeable. I was most satisfied with the quality of the
-                                                workmanship. They did excellent work.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-nav">
-                                <button class="owl-prev"><i class="fas fa-chevron-left"></i></button>
-                                <button class="owl-next"><i class="fas fa-chevron-right"></i></button>
-                            </div>
-                        </div>
-                    </div>
+             
+            </li>
+            <li>
+                <div class="right_content">
+                    <h4>Sample Text 2</h4>
+                    <p>A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford
+                        and Connors 116). Length and appearance do not determine whether a section in a paper is a
+                        paragraph. For instance, in some styles of writing, particularly
+                        journalistic styles, a paragraph can be just one sentence long.
+                    </p>
                 </div>
-            </div>
-        </div>
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+                <div class="left_content">
+
+                </div>
+            </li>
+            <li>
+                <div class="right_content">
+                    <h4>Sample Text</h4>
+                    <p>A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford
+                        and Connors 116). Length and appearance do not determine whether a section in a paper is a
+                        paragraph. For instance, in some styles of writing, particularly
+                        journalistic styles, a paragraph can be just one sentence long.
+                    </p>
+                </div>
+                <div class="left_content">
+
+                </div>
+            </li>
+            <li>
+                <div class="right_content">
+                    <h4>Sample Text</h4>
+                    <p>A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford
+                        and Connors 116). Length and appearance do not determine whether a section in a paper is a
+                        paragraph. For instance, in some styles of writing, particularly
+                        journalistic styles, a paragraph can be just one sentence long.
+                    </p>
+                </div>
+                <div class="left_content">
+
+                </div>
+            </li>
+            <li>
+                <div class="right_content">
+                    <h4>Sample Text</h4>
+                    <p>A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford
+                        and Connors 116). Length and appearance do not determine whether a section in a paper is a
+                        paragraph. For instance, in some styles of writing, particularly
+                        journalistic styles, a paragraph can be just one sentence long.
+                    </p>
+                </div>
+                <div class="left_content">
+
+                </div>
+            </li>
+            <li>
+                <div class="right_content">
+                    <h4>Sample Text</h4>
+                    <p>A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford
+                        and Connors 116). Length and appearance do not determine whether a section in a paper is a
+                        paragraph. For instance, in some styles of writing, particularly
+                        journalistic styles, a paragraph can be just one sentence long.
+                    </p>
+                </div>
+                <div class="left_content">
+
+                </div>
+            </li>
+            <li>
+                <div class="right_content">
+                    <h4>Sample Text</h4>
+                    <p>A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford
+                        and Connors 116). Length and appearance do not determine whether a section in a paper is a
+                        paragraph. For instance, in some styles of writing, particularly
+                        journalistic styles, a paragraph can be just one sentence long.
+                    </p>
+                </div>
+                <div class="left_content">
+
+                </div>
+            </li>
+            <li>
+                <div class="right_content">
+                    <h4>Sample Text</h4>
+                    <p>A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford
+                        and Connors 116). Length and appearance do not determine whether a section in a paper is a
+                        paragraph. For instance, in some styles of writing, particularly
+                        journalistic styles, a paragraph can be just one sentence long.
+                    </p>
+                </div>
+                <div class="left_content">
+
+                </div>
+            </li>
+            <div style="clear:both;"></div>
+        </ul>
+    </div>
+
     <script>
-        $('.testimonial_owlCarousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            dots: false,
-            nav: true,
-            autoplay: true,
-            smartSpeed: 2000,
-            autoplayTimeout: 4000,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 2
-                }
-            }
-        });
-    </script>
+   const timeline = document.querySelector('.timeline');
+const activeLine = document.querySelector('.active-scroll-line');
+const circleAtEnd = document.querySelector('.circle-at-end');
+const timelineHeight = timeline.offsetHeight;
+
+ScrollTrigger.create({
+    trigger: timeline,
+    start: "top 20px",
+    end: `+=${timelineHeight}`,
+    markers:true,
+    onEnter: () => {
+        activeLine.style.visibility = 'visible';
+    },
+    onLeave: () => {
+        activeLine.style.visibility = 'hidden';
+        circleAtEnd.style.backgroundColor = '#D9D9D9'; // Reset color
+    },
+    onEnterBack: () => {
+        activeLine.style.visibility = 'visible';
+    },
+    onLeaveBack: () => {
+        activeLine.style.visibility = 'hidden';
+        circleAtEnd.style.backgroundColor = '#D9D9D9'; // Reset color
+    },
+    onUpdate: (self) => {
+        const progress = self.progress.toFixed(3); // Get scroll progress
+        const adjustedTimelineHeight = timelineHeight - 50; // Leave space for the circle (20px + some buffer)
+        
+        // Limit line height to the height of the timeline minus the circle height (20px)
+        const lineHeight = Math.min(progress * adjustedTimelineHeight, adjustedTimelineHeight - 20);
+        
+        activeLine.style.height = `${lineHeight}px`; // Update height
+
+        // Adjust gradient based on scroll progress
+        activeLine.style.background = `linear-gradient(180deg, #191970 ${Math.min(progress * 100, 100)}%, #6969B2 40%, #C0C0C0 100%)`;
+
+        // Keep the active line position just above the circle
+        const translateY = Math.min(lineHeight * 0.1, lineHeight) - 10; // Adjust this value for more/less upward movement
+        activeLine.style.transform = `translate(-50%, ${translateY}px)`; // Move it upward
+
+        // Fill the circle color when the line reaches the bottom
+        if (progress >= 1) {
+            circleAtEnd.style.backgroundColor = '#191970'; // Dark color
+        } else {
+            circleAtEnd.style.backgroundColor = '#D9D9D9'; // Default color
+        }
+    },
+});
+
+
+
+        </script>
+        
+        
 </body>
 
 </html>

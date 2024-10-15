@@ -142,6 +142,12 @@ p {
     text-transform: uppercase;
 
 }
+.why_heading.smart {
+    
+    color: #191970;
+  
+
+}
 
 .whyushead {
     position: absolute;
@@ -177,6 +183,9 @@ p {
     color: #F15B2A;
     padding-bottom: 20px;
 }
+.why_icon.smart{
+    color: #191970;
+}
 
 .why_txt {
     font-family: 'Poppins';
@@ -189,6 +198,13 @@ p {
 
 .why_border {
     border: 3px solid #ED673D;
+    border-radius: 8px;
+    padding: 20px;
+    height: 413px;
+
+}
+.why_border_smart {
+    border: 3px solid #191970;
     border-radius: 8px;
     padding: 20px;
     height: 413px;

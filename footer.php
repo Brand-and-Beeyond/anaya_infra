@@ -241,35 +241,58 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init();
+  AOS.init(
+    {once:true}
+  );
 </script>
 <script>
-     function setLogoAndBackground() {
-            const logoWrapper = document.querySelector('.logo-wrapper');
-            const logoImage = document.querySelector('.logo-wrapper img');
-            
-            // Default settings for other pages
-            let logoSrc = 'images/anaya_white.png'; 
-            let backgroundColor = '#F15B2A';
-            let altText = 'Anaya White Logo'; 
-            
-            // Check if the current page is career.php
-            if (window.location.pathname.includes("career.php")) {
-                logoSrc = 'images/anayamain.png'; 
-                backgroundColor = 'white'; // White background for career.php
-                altText = 'Anaya Orange Logo'; // Alt text for career.php
-            }
+    function setLogoAndBackground() {
+    const logoWrapper = document.querySelector('.logo-wrapper');
+    const logoImage = document.querySelector('.logo-wrapper .logo');
+    const smartText = document.querySelector('.smart-text');
+    const menuSpan = document.querySelector('.menuSpan');
 
-            // Set the background color dynamically
-            logoWrapper.style.backgroundColor = backgroundColor;
-            
-            // Set the logo image dynamically
-            logoImage.src = logoSrc;
-            logoImage.alt = altText;
-        }
+   
+    // Default settings for other pages
+    let logoSrc = 'images/anaya_white.png'; 
+    let backgroundColor = '#F15B2A';
+    let altText = 'Anaya White Logo'; 
+    menuSpan.style.color = '#4E4E4E';
 
-        // Run the function to set logo and background
-        setLogoAndBackground();
+    // Check if the current page is career.php
+    if (window.location.pathname.includes("career.php")) {
+        logoSrc = 'images/anayamain.png'; 
+        backgroundColor = 'white'; // White background for career.php
+        altText = 'Anaya Orange Logo'; // Alt text for career.php
+    }
+    else if (window.location.pathname.includes("smart_consulting.php")) {
+        logoSrc = 'images/smart.png';
+        backgroundColor = 'white';
+        altText = "smart";
+
+        // Set specific styles for smart.png
+        logoImage.style.width = '45px'; // Set desired width
+        logoImage.style.height = 'auto'; // Maintain aspect ratio
+        logoImage.style.padding = '0px';
+        menuSpan.style.color = '#FFFFFF';
+        
+        // Show the "SMART" text
+        smartText.style.display = 'flex'; // Show the span with SMART text
+    } else {
+        smartText.style.display = 'none'; // Hide the span for other pages
+    }
+
+    // Set the background color dynamically
+    logoWrapper.style.backgroundColor = backgroundColor;
+
+    // Set the logo image dynamically
+    logoImage.src = logoSrc;
+    logoImage.alt = altText;
+}
+
+// Run the function to set logo and background
+setLogoAndBackground();
+
 </script>
 <script>
     let mouseBall = () => {

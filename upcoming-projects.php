@@ -4,6 +4,9 @@
     .w-55 {
         width: 55%;
     }
+    .pt-97{
+        padding-top: 97px !important;
+    }
 </style>
 
 <main class="">
@@ -11,11 +14,11 @@
     <?php include('slider.php'); ?>
 
 
-    <section class="about-projects py-5">
+    <section class="about-projects py-5" id="animationSections">
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-11">
-                    <div class="row ">
+                    <div class=" row position-relative">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="pro_stat_content">
                                 <h1 class="pro_heading">Lorem ipsum</h1>
@@ -26,7 +29,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-12"></div>
+                        <div class="col-lg-6 col-md-6 col-12">
+
+                        </div>
+                        <?php include('crane.php'); ?>
                     </div>
                 </div>
 
@@ -35,7 +41,7 @@
     </section>
 
 
-    <section class="pro_grid pt-4">
+    <section class="pro_grid pt-97">
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-11">

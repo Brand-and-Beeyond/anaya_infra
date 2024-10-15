@@ -9338,14 +9338,14 @@ footer .inner-wrapper .copyright {
   }
 }
 
-.navigation-type-split .inner-wrapper .right-side .menu-toggle .menu-toggle-text span {
+.navigation-type-split .inner-wrapper .right-side .menu-toggle .menu-toggle-text .menuSpan {
   display: flex;
   align-items: center;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #4E4E4E;
+  /* color: #4E4E4E; */
   line-height: 15.34px;
   margin-top: 3px;
   font-family: "Allerta Stencil", system-ui;
@@ -9413,6 +9413,9 @@ footer .inner-wrapper .copyright {
 .middlemain {
   position: relative;
   border-left: 2px solid #ED673D;
+}
+.middlemain.smart{
+  border-left: 2px solid #191970;
 }
 
 .clientele .owl-item.cloned {
@@ -9583,6 +9586,11 @@ footer .inner-wrapper .copyright {
   left: -8%;
   bottom: 30px;
 }
+.hr-line.smart {
+  
+  background-color: #191970;
+
+}
 
 .video-box {
   position: relative;
@@ -9677,6 +9685,9 @@ footer .inner-wrapper .copyright {
   top: 30%;
   right: -5%;
 }
+.vis-mis-headings.smart {
+  right: -16%;
+}
 
 .vis-mis-headings .tab-side {
   width: 100%;
@@ -9717,6 +9728,9 @@ footer .inner-wrapper .copyright {
   color: #FF7425;
   transition: all 0.2s;
   letter-spacing: 0.03em;
+}
+.tab-link.smart.active{
+  color: #191970 !important;
 }
 
 
@@ -11107,4 +11121,33 @@ Main Components
 .card.openingcard:hover .feature-btn{
   color: #F15B2A;
   background-color: #ffffff;
+}
+
+/* smart consulting css */
+.banner-smart-consulting{
+  height: 860px;
+  background-color: #191970;
+  width: 100%;
+}
+
+.smart-main-head{
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.smart_about_text{
+  font-family: "Allerta Stencil", system-ui;
+  color: #191970;
+  font-size:70px;
+  font-weight: 400;
+  line-height: 77px;
+}
+.smart_about_us{
+  background-color: #E3DCD6;
+  height: 460px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  display: flex;
+  align-items: center;
 }

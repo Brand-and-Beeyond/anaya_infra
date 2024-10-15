@@ -15,15 +15,15 @@
                 <div class="col-lg-11 col-md-10">
                     <div class="row me-0 align-items-center">
                         <div class="col-lg-5 col-md-5">
-                            <div class="info_box" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1300">
+                            <div class="info_box" data-aos="fade-up-right" data-aos-delay="300" data-aos-duration="1300">
                                 <h3><span>250+</span></h3>
                                 <p>Project Launches</p>
                             </div>
-                            <div class="info_box" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1300">
+                            <div class="info_box" data-aos="fade-up-right" data-aos-delay="400" data-aos-duration="1300">
                                 <h3><span>45,442</span></h3>
                                 <p>Units Sold</p>
                             </div>
-                            <div class="info_box" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1300">
+                            <div class="info_box" data-aos="fade-up-right" data-aos-delay="500" data-aos-duration="1300">
                                 <h3><span>46%<span style="font-size: inherit; padding: 0 2px 0 5px;"><span
                                                 style="font-size: inherit; letter-spacing: 1px;"></span></h3>
                                 <p>Worth Of Inventory Sold</p>

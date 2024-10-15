@@ -132,6 +132,10 @@
         .bars .togglemenu {
             height: 25px;
         }
+        .logo-wrapper{
+            display: flex;
+            align-items: center;
+        }
     </style>
     <meta name="google-site-verification" content="N_SQRRNdO05Q8-iJrI7mbqi0z2A-J1EDzVED7579jts" />
 
@@ -290,6 +294,7 @@
                 <div class="logo-wrapper">
                     <a href="index.php">
                         <img  alt="" class="logo">
+                        <span class="smart-text" style="display: none;">SMART</span>
                     </a>
                 </div>
             </div>
@@ -301,7 +306,7 @@
                         <img src="images/menu.png" class="img-fluid togglemenu" alt="">
                     </div>
                     <div class="menu-toggle-text">
-                        <span>
+                        <span class="menuSpan">
                             menu
                         </span>
                     </div>
@@ -415,7 +420,7 @@
                     <li class="menu-item dropdown">
                         <a href="#" class="sub-btn">Consulting <span class="icon">+<span></a>
                         <div class="sub-dropdown">
-                            <a class="sub-item" href="farmsyde-villa.php">Farmsyde</a>
+                            <a class="sub-item" href="smart_consulting.php">smart consulting</a>
                             <a class="sub-item" href="courtyard-villa.php">Courtyard</a>
                             <a class="sub-item" href="glamping-tent.php">Glamping Tent</a>
                         </div>
