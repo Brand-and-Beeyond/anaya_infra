@@ -1,8 +1,42 @@
 <?php include('header.php'); ?>
+<style>
+    .read-more{
+        color: #F15B2A !important;
+        letter-spacing: 0.6px;
+        text-decoration: underline !important;
+    }
+</style>
+<?php global $connF;
+$getAboutSql = "SELECT * FROM aboutus WHERE 1";
+$getAbout = mysqli_query($connF, $getAboutSql);
+$getAboutRow = mysqli_fetch_array($getAbout);
+$aboutusId = $getAboutRow['aboutusId'];
+$aboutDesc = $getAboutRow['aboutDesc'];
+$aboutVision = $getAboutRow['aboutVision'];
+$aboutMission = $getAboutRow['aboutMission'];
+$aboutValues = $getAboutRow['aboutValues'];
 
+function split_text($text, $limit = 30)
+{
+    $words = explode(' ', $text);
+    if (count($words) > $limit) {
+        $first_part = implode(' ', array_slice($words, 0, $limit));
+        $rest_part = implode(' ', array_slice($words, $limit));
+    } else {
+        $first_part = $text;
+        $rest_part = '';
+    }
+    return array($first_part, $rest_part);
+}
+
+// Split the texts
+list($missionFirst50, $missionRest) = split_text($aboutMission, 30);
+list($visionFirst50, $visionRest) = split_text($aboutVision, 30);
+list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
+?>
 
 <main class="">
-    
+
     <?php include('slider.php'); ?>
 
     <section class="about_us">
@@ -18,18 +52,16 @@
                         </div>
                         <div class="col-lg-8 col-md-6">
                             <div class="about_para">
-                                <p>Pellentesque tempor nisi sem, a tristique justo mattis nec. Nunc consectetur lectus
-                                    quis sem iaculis ornare. Curabitur vulputate, diam et aliquam iaculis, justo urna
-                                    convallis libero, vitae aliquam ante tortor sed ante. Aenean efficitur, leo non
-                                    gravida tempus, ipsum eros gravida lacus, nec laoreet neque ligula eu ipsum. Nam sed
-                                    tincidunt dolor, at venenatis tellus. Suspendisse luctus auctor auctor. Suspendisse
-                                    non luctus ex, id scelerisque quam. Sed neque tellus, convallis eu velit sit amet,
-                                    vulputate elementum massa. Praesent id orci tincidunt, convallis nisi eget,
-                                    fermentum neque. Phasellus ut mollis tellus, vitae tempor eros. Vivamus volutpat
-                                    turpis ac ultrices suscipit. Aenean consectetur dui elit, ut hendrerit erat
-                                    hendrerit ac. Praesent fermentum lacus arcu, venenatis scelerisque quam tempus ac.
-                                    Aliquam eu dolor massa.
-                                </p>
+                                <?php
+                                // Assuming the aboutDesc has multiple paragraphs separated by newlines
+                                $paragraphs = explode("\n", nl2br($aboutDesc));
+                                foreach ($paragraphs as $paragraph) {
+                                    if (!empty($paragraph)) {
+                                        echo "<p>$paragraph</p>";
+                                    }
+                                }
+                                ?>
+                                <button id="toggleBtn" class="feature-btn">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -52,10 +84,11 @@
                                     </div>
                                     <div class="vs-content text-center">
                                         <h4 class="vs-head">Mission</h4>
-                                        <p class="vs-para py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing
-                                            elit. Voluptas iste laboriosam blanditiis, fugiat esse iusto architecto cum
-                                            facere vitae magni natus aperiam doloribus dolores harum! Sint minus odio
-                                            dolorum quibusdam."</p>
+                                        <p class="vs-para py-3"> <?php echo $missionFirst50; ?>
+                                        <?php if($missionRest != '') { ?>
+                                            <span class="moretext" style="display: none;"><?php echo ' ' . $missionRest; ?></span>
+                                            <a href="javascript:void(0);" class="read-more d-block">Read more</a>
+                                        <?php } ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -69,10 +102,11 @@
                                     </div>
                                     <div class="vs-content text-center">
                                         <h4 class="vs-head">Vision</h4>
-                                        <p class="vs-para py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing
-                                            elit. Voluptas iste laboriosam blanditiis, fugiat esse iusto architecto cum
-                                            facere vitae magni natus aperiam doloribus dolores harum! Sint minus odio
-                                            dolorum quibusdam."</p>
+                                        <p class="vs-para py-3"> <?php echo $visionFirst50; ?>
+                                        <?php if($visionRest != '') { ?>
+                                            <span class="moretext" style="display: none;"><?php echo ' ' . $visionRest; ?></span>
+                                            <a href="javascript:void(0);" class="read-more d-block"> Read More</a>
+                                        <?php } ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -86,10 +120,11 @@
                                     </div>
                                     <div class="vs-content text-center">
                                         <h4 class="vs-head">Values</h4>
-                                        <p class="vs-para py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing
-                                            elit. Voluptas iste laboriosam blanditiis, fugiat esse iusto architecto cum
-                                            facere vitae magni natus aperiam doloribus dolores harum! Sint minus odio
-                                            dolorum quibusdam."</p>
+                                        <p class="vs-para py-3">   <?php echo $valuesFirst50; ?>
+                                        <?php if($valuesRest != '') { ?>
+                                            <span class="moretext" style="display: none;"><?php echo ' ' . $valuesRest; ?></span>
+                                            <a href="javascript:void(0);" class="read-more d-block"> Read More</a>
+                                        <?php } ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -583,5 +618,53 @@
             //check if mobile or desktop device
             return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
         }
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const paragraphs = document.querySelectorAll('.about_para p');
+        const toggleBtn = document.getElementById('toggleBtn');
+
+        const visibleParagraphsCount = 3; // Number of paragraphs to show initially
+        let isExpanded = false;
+
+        // Hide all paragraphs after the specified count
+        for (let i = visibleParagraphsCount; i < paragraphs.length; i++) {
+            paragraphs[i].style.display = 'none';
+        }
+
+        toggleBtn.addEventListener('click', function () {
+            if (isExpanded) {
+                // Hide paragraphs beyond the visible count
+                for (let i = visibleParagraphsCount; i < paragraphs.length; i++) {
+                    paragraphs[i].style.display = 'none';
+                }
+                toggleBtn.innerHTML = 'Read More';
+            } else {
+                // Show all paragraphs
+                for (let i = visibleParagraphsCount; i < paragraphs.length; i++) {
+                    paragraphs[i].style.display = 'block';
+                }
+                toggleBtn.innerHTML = 'Read Less';
+            }
+            isExpanded = !isExpanded;
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var readMoreLinks = document.querySelectorAll('.read-more');
+        readMoreLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                var moreText = this.previousElementSibling;
+                if (moreText.style.display === 'none') {
+                    moreText.style.display = 'inline';
+                    this.textContent = ' Read Less';
+                } else {
+                    moreText.style.display = 'none';
+                    this.textContent = ' Read More';
+                }
+            });
+        });
     });
 </script>

@@ -57,13 +57,13 @@
                             <div class="row mb-0">
                                 <div class="col-lg-4 pe-0 py-0">
                                     <div class="card pro-stat-card rounded-0 border-0">
-                                        <div class="pro-banner layout1 animation2">
+                                        <div class="pro-banner layout1 animation2 position-relative">
                                             <a href="" class="rt-banner-link">
                                                 <img src="images/ongoing_projects/ashoka-school.jpg"
                                                     class="img-fluid object-fit-cover" alt="">
                                             </a>
-                                            <figcaption>
-                                                <div class="banner-content"></div>
+                                            <figcaption class="banner-project-tap position-absolute start-0">
+                                                <div class="banner-content">Ashoka Medicover</div>
                                             </figcaption>
                                         </div>
 

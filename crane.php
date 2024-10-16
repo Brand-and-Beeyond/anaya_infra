@@ -67,7 +67,7 @@
 
     #ewWf8lsoQjL62,
     #ewWf8lsoQjL11 {
-        animation: anchorDown 8s linear forwards;
+        animation: anchorDown 8s linear forwards infinite;
     }
 
     #logo {
@@ -300,12 +300,16 @@
     const logo = document.getElementById('logo');
     const truck = document.getElementById('truck');
 
-    // Reset all animations
+    // Step 1: Reset all animations (to ensure a clean state)
     haste.style.animation = 'none';
     anchor1.style.animation = 'none';
     anchor2.style.animation = 'none';
     logo.style.animation = 'none';
     truck.style.animation = 'none'; // Reset truck animation as well
+
+    // Reset positions to initial state
+    truck.style.transform = 'translateX(0)';
+    logo.style.transform = 'matrix(0.415671, 0, 0, 0.415671, -157.189, -21.5882)'; // Reset logo position
 
     // Trigger reflow to restart animations
     haste.offsetHeight;
@@ -314,25 +318,33 @@
     logo.offsetHeight;
     truck.offsetHeight;
 
-    // Start the pulley, anchors, and logo animations
-    haste.style.animation = 'hasteAnimation 8s linear forwards';
-    anchor1.style.animation = 'anchorDown 8s linear forwards';
-    anchor2.style.animation = 'anchorDown 8s linear forwards';
-    logo.style.animation = 'logoDown 4s linear forwards';
+    // Step 2: Start truck movement first
+    truck.style.animation = 'truckArrive 8s linear forwards'; // Truck arrives at its position
 
-    // Start the truck movement after the logo is loaded
+    // Step 3: After the truck arrives, start the pulley and logo animations
     setTimeout(() => {
-        truck.style.animation = 'truckByeBye 10s linear forwards'; // Truck moves off-screen
-    }, 4000); // Truck starts moving after the logo is loaded in 4 seconds
+        // Pulley and logo start after the truck is in position
+        haste.style.animation = 'hasteAnimation 4s linear forwards';
+        anchor1.style.animation = 'anchorDown 4s linear forwards';
+        anchor2.style.animation = 'anchorDown 4s linear forwards';
+        logo.style.animation = 'logoDown 2s linear forwards';
 
-    // After the truck has moved off-screen, reset everything for the next cycle
+        // Start truck movement off-screen after logo is loaded
+        setTimeout(() => {
+            truck.style.animation = 'truckByeBye 8s linear forwards'; // Truck moves off-screen
+        }, 4000); // Start truck after logo animation is done
+
+    }, 4000); // Wait for truck to arrive (4s delay)
+
+    // Step 4: Loop the animation after the truck has moved off-screen
     setTimeout(() => {
-        handleAnimations(); // Recursively call the function to create an infinite loop
-    }, 18000); // This should match the total time of all animations combined
+        handleAnimations(); // Recursively call the function for an infinite loop
+    }, 11000); // Match the total duration of the animations
 }
 
 // Start the animations on page load
 handleAnimations();
+
 
 
 </script>

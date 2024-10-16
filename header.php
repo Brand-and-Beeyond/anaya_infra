@@ -140,7 +140,7 @@
     <meta name="google-site-verification" content="N_SQRRNdO05Q8-iJrI7mbqi0z2A-J1EDzVED7579jts" />
 
 
-    <script type="application/ld+json">
+    <!-- <script type="application/ld+json">
         {
             "@context": "https://schema.org/",
             "@type": "BreadcrumbList",
@@ -266,13 +266,18 @@
                 "item": "https://theguardiansindia.com/contact-us"
             }]
         }
-    </script>
+    </script> -->
 
 </head>
 <!-- HEAD END -->
 
 <!-- BODY START -->
-
+<?php
+    // session_start();
+    // include("admin/include/dbcon.php");
+    include("admin/include/function.php");
+    // setGetCookie();
+?>
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCWQ47P"

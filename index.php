@@ -4,7 +4,7 @@
 <main class="">
     <!--CUSTOM FOLLOW CURSOR START-->
 
-   
+
 
 
     <?php include('slider.php'); ?>
@@ -15,29 +15,34 @@
                 <div class="col-lg-11 col-md-10">
                     <div class="row me-0 align-items-center">
                         <div class="col-lg-5 col-md-5">
-                            <div class="info_box" data-aos="fade-up-right" data-aos-delay="300" data-aos-duration="1300">
+                            <div class="info_box" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1300">
                                 <h3><span>250+</span></h3>
                                 <p>Project Launches</p>
                             </div>
-                            <div class="info_box" data-aos="fade-up-right" data-aos-delay="400" data-aos-duration="1300">
+                            <div class="info_box" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1300">
                                 <h3><span>45,442</span></h3>
                                 <p>Units Sold</p>
                             </div>
-                            <div class="info_box" data-aos="fade-up-right" data-aos-delay="500" data-aos-duration="1300">
+                            <div class="info_box" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1300">
                                 <h3><span>46%<span style="font-size: inherit; padding: 0 2px 0 5px;"><span
                                                 style="font-size: inherit; letter-spacing: 1px;"></span></h3>
                                 <p>Worth Of Inventory Sold</p>
                             </div>
                         </div>
                         <div class="col-lg-7 col-md-7">
-                            <h1 class="home_abt_heading pe-4">Loren Ipsum</h1>
-                            <p class="seo-link home_abt_txt">
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            <h1 class="home_abt_heading pe-4" data-aos="fade-left" data-aos-offset="200"
+                            data-aos-duration="1000">Loren Ipsum</h1>
+                            <p class="seo-link home_abt_txt" data-aos="fade-left" data-aos-offset="300"
+                            data-aos-duration="1200">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut
                                 aliquip ex ea commodo consequat. </p>
 
                             <div class="video-box" data-video-id="s2BTyC4O_1U">
-                                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/399994009.jpg?k=116498503203178453df613c4dcc6c467f7a316bd1d593c1cc15a8290bcca3b4&o=&hp=1" class="img-fluid vthumb" alt="">
+                                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/399994009.jpg?k=116498503203178453df613c4dcc6c467f7a316bd1d593c1cc15a8290bcca3b4&o=&hp=1"
+                                    class="img-fluid vthumb" alt="">
                                 <div class="boxhover"></div>
                                 <div class="play-icon">
                                     <img src="images/play-button.png" class="img-fluid" alt="">
@@ -64,7 +69,8 @@
                         <div class="col-lg-2 col-md-2">
 
                             <div class="whyushead">
-                                <h5 class="why_heading" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1300">Why Us</h5>
+                                <h5 class="why_heading" data-aos="fade-right" data-aos-delay="400"
+                                    data-aos-duration="1300">Why Us</h5>
                             </div>
                             <div class="why-sub">
                                 <h1 class="why_sub_heading">Why Choose Us</h1>
@@ -72,19 +78,48 @@
                         </div>
                         <div class="col-lg-8 col-md-4">
                             <div class="row">
+                                <?php global $connF;
+                                $getAboutSql = "SELECT * FROM aboutus WHERE 1";
+                                $getAbout = mysqli_query($connF, $getAboutSql);
+                                $getAboutRow = mysqli_fetch_array($getAbout);
+                                $aboutusId = $getAboutRow['aboutusId'];
+                                $aboutDesc = $getAboutRow['aboutDesc'];
+                                $aboutVision = $getAboutRow['aboutVision'];
+                                $aboutMission = $getAboutRow['aboutMission'];
+                                $aboutValues = $getAboutRow['aboutValues'];
 
+
+                                // Function to split text
+                                function split_text($text, $limit = 30)
+                                {
+                                    $words = explode(' ', $text);
+                                    if (count($words) > $limit) {
+                                        $first_part = implode(' ', array_slice($words, 0, $limit));
+                                        $rest_part = implode(' ', array_slice($words, $limit));
+                                    } else {
+                                        $first_part = $text;
+                                        $rest_part = '';
+                                    }
+                                    return array($first_part, $rest_part);
+                                }
+
+                                // Split the texts
+                                list($missionFirst50, $missionRest) = split_text($aboutMission, 40);
+                                list($visionFirst50, $visionRest) = split_text($aboutVision, 40);
+                                list($valuesFirst50, $valuesRest) = split_text($aboutValues, 40);
+                                ?>
                                 <div class="col-md-12 position-relative middlemain">
                                     <div class="p-3 mb-40">
                                         <i class="fa fa-user-graduate why_icon"></i>
                                         <div class="tab-content">
                                             <div class="tab-pane fade show active" id="vision">
-                                                <p class="why_txt">Brief text for <span class="text-dark fw-bold">Tab 1</span> goes here. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit temporibus alias aut nemo laborum, nulla totam expedita sapiente ipsa. Nulla molestiae fugit obcaecati optio quibusdam aut autem dolor, rerum quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut id doloribus magni placeat, natus tenetur voluptatibus nesciunt odit a!</p>
+                                                <p class="why_txt"> <?php echo $aboutVision ?></p>
                                             </div>
                                             <div class="tab-pane fade" id="mission">
-                                                <p class="why_txt">Brief text for <span class="text-dark fw-bold">Tab 2</span> goes here. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit temporibus alias aut nemo laborum, nulla totam expedita sapiente ipsa. Nulla molestiae fugit obcaecati optio quibusdam aut autem dolor, rerum quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut id doloribus magni placeat, natus tenetur voluptatibus nesciunt odit a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae est reiciendis cumque voluptatum! Itaque repudiandae fuga labore nobis similique?</p>
+                                                <p class="why_txt"><?php echo $aboutMission ?></p>
                                             </div>
                                             <div class="tab-pane fade" id="values">
-                                                <p class="why_txt">Brief text for <span class="text-dark fw-bold">Tab 3</span> goes here. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit temporibus alias aut nemo laborum, nulla totam expedita sapiente ipsa. Nulla molestiae fugit obcaecati optio quibusdam aut autem dolor, rerum quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut id doloribus magni placeat, natus tenetur voluptatibus nesciunt odit a!</p>
+                                                <p class="why_txt"><?php echo $aboutValues ?></p>
                                             </div>
                                         </div>
 
@@ -100,9 +135,12 @@
                             <div class="vis-mis-headings">
                                 <div class="tab-side">
                                     <div class="tabs d-flex align-items-center flex-column">
-                                        <a href="#vision" class="tab-link mb-2 active" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1300">Vision</a>
-                                        <a href="#mission" class="tab-link mb-2"data-aos="fade-left" data-aos-delay="500" data-aos-duration="1300">Mission</a>
-                                        <a href="#values" class="tab-link" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1300">Values</a>
+                                        <a href="#vision" class="tab-link mb-2 active" data-aos="fade-left"
+                                            data-aos-delay="400" data-aos-duration="1300">Vision</a>
+                                        <a href="#mission" class="tab-link mb-2" data-aos="fade-left"
+                                            data-aos-delay="500" data-aos-duration="1300">Mission</a>
+                                        <a href="#values" class="tab-link" data-aos="fade-left" data-aos-delay="600"
+                                            data-aos-duration="1300">Values</a>
                                     </div>
 
                                 </div>
@@ -124,8 +162,10 @@
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-11">
-                    <h4 class="section_heading">Ongoing Projects</h4>
-                    <h2 class="new_subhead">Exquisite Residences and Bespoke Commercial Spaces</h2>
+                    <h4 class="section_heading" data-aos="fade-right" data-aos-offset="200"
+                    data-aos-duration="1000">Ongoing Projects</h4>
+                    <h2 class="new_subhead" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-duration="1200">Exquisite Residences and Bespoke Commercial Spaces</h2>
                 </div>
             </div>
         </div>
@@ -133,90 +173,82 @@
 
 
             <div class="owl-carousel owl-theme life on_projects">
+                <?php
+                $getProjectSql = "SELECT * FROM project WHERE projectstatusId=2";
+                $getProject = mysqli_query($connF, $getProjectSql);
+                while ($getProjectRow = mysqli_fetch_array($getProject)) {
+                    $projectId = $getProjectRow['projectId'];
+                    $projectName = $getProjectRow['projectName'];
+                    $projectImg = $getProjectRow['projectImg'];
+                    $projectDesc = $getProjectRow['projectDesc'];
+                    $projectLoc = $getProjectRow['projectLoc'];
+                    $projectCatId = $getProjectRow['projectCatId'];
+
+                    // Fetch project category name
+                    $getprojectCatNameSql = "SELECT * FROM projectcategory WHERE projectCatId='$projectCatId'";
+                    $getprojectCatName = mysqli_query($connF, $getprojectCatNameSql);
+                    $getprojectCatNameRow = mysqli_fetch_array($getprojectCatName);
+                    $projectCatName = $getprojectCatNameRow['projectCatName'];
+
+                    // Fetch project status
+                    $projectstatusId = $getProjectRow['projectstatusId'];
+                    $projectstatusSql = "SELECT * FROM projectstatus WHERE projectstatusId='$projectstatusId'";
+                    $getprojectstatus = mysqli_query($connF, $projectstatusSql);
+                    $getprojectstatusRow = mysqli_fetch_array($getprojectstatus);
+                    $projectstatus = $getprojectstatusRow['projectstatus'];
+
+                    // Trim project description to 2 sentences
+                    $sentences = preg_split('/([.!?])\s+/', $projectDesc, 3, PREG_SPLIT_DELIM_CAPTURE);
+                    if (count($sentences) >= 3) {
+                        $trimmedProjectDesc = $sentences[0] . $sentences[1] . ' ' . $sentences[2] . $sentences[3];
+                    } else {
+                        $trimmedProjectDesc = $projectDesc;
+                    }
+                    ?>
 
 
-                <div class="item">
-                    <div class="row mr0 align-items-center">
-                        <div class="col-md-8 pd0">
-                            <div class="feature_img_wrap">
-                                <img src="images/projects/touchwood_bliss.jpg" alt="Touchwood Bliss">
-                                <p class="artist">Artist’s Impression</p>
+                    <div class="item">
+                        <div class="row mr0 align-items-center">
+                            <div class="col-md-8 pd0">
+                                <div class="feature_img_wrap">
+                                    <img src=<?php echo 'admin/resources/project_img/' . $projectImg; ?>
+                                        alt="Touchwood Bliss">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 pd0">
-                            <div class="project_content">
-                                <div>
-                                    <!-- <figure><img class="feature_logo" src="images/dostilogo.svg"
+                            <div class="col-md-4 pd0">
+                                <div class="project_content">
+                                    <div>
+                                        <!-- <figure><img class="feature_logo" src="images/dostilogo.svg"
                                             alt="Dosti 1 Mumbai"></figure> -->
-                                    <div class="projct_name aos-init aos-animate" data-aos="fade-up">Touchwood Bliss
-                                    </div>
-                                    <div class="projct_dtls">
-                                        <div class="project_cat mb-1">
-                                            Hospitality
+                                        <div class="projct_name" >
+                                            <?php echo $projectName; ?>
                                         </div>
-                                        <div class="dtl_col aos-init" data-aos="fade-up">
-                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        </div>
-                                        <div class="dtl_col aos-init project_loc" data-aos="fade-up">
-                                            <span><i class="fa fa-map-marker-alt"></i></span>
-                                            Nashik, Maharashtra
-                                        </div>
-                                        <!--<div class="dtl_col aos-init" data-aos="fade-up">
+                                        <div class="projct_dtls">
+                                            <div class="project_cat mb-1">
+                                                <?php echo $projectCatName; ?>
+                                            </div>
+                                            <div class="dtl_col projectpara">
+                                                <?php echo $trimmedProjectDesc; ?>
+                                            </div>
+                                            <div class="dtl_col project_loc">
+                                                <span><i class="fa fa-map-marker-alt"></i></span>
+                                                <?php echo $projectLoc; ?>
+                                            </div>
+                                            <!--<div class="dtl_col aos-init" data-aos="fade-up">
                                         <span><img src="images/time.png" alt=""></span>
                                         Possession within 24 months
                                     </div>-->
+                                        </div>
+                                        <a href="our-work.php" class="feature-btn">View more</a>
                                     </div>
-                                    <a href="our-work.php" class="feature-btn">View more</a>
+
                                 </div>
 
+
                             </div>
-
-
                         </div>
                     </div>
-                </div>
-
-                <div class="item">
-                    <div class="row mr0 align-items-center">
-                        <div class="col-md-8 pd0">
-                            <div class="feature_img_wrap">
-                                <img src="images/projects/ashoka.jpg" alt="Touchwood Bliss">
-                                <p class="artist">Artist’s Impression</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 pd0">
-                            <div class="project_content">
-                                <div>
-                                    <!-- <figure><img class="feature_logo" src="images/dostilogo.svg"
-                                            alt="Dosti 1 Mumbai"></figure> -->
-                                    <div class="projct_name aos-init aos-animate" data-aos="fade-up">Ashoka Medicover
-                                    </div>
-                                    <div class="projct_dtls">
-                                        <div class="project_cat mb-1">
-                                            Hospital
-                                        </div>
-                                        <div class="dtl_col aos-init" data-aos="fade-up">
-                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        </div>
-                                        <div class="dtl_col aos-init project_loc" data-aos="fade-up">
-                                            <span><i class="fa fa-map-marker-alt"></i></span>
-                                            Nashik, Maharashtra
-                                        </div>
-                                        <!--<div class="dtl_col aos-init" data-aos="fade-up">
-                                        <span><img src="images/time.png" alt=""></span>
-                                        Possession within 24 months
-                                    </div>-->
-                                    </div>
-                                    <a href="our-work.php" class="feature-btn">View more</a>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-
+                <?php } ?>
             </div>
         </div>
     </section>
@@ -226,156 +258,35 @@
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-11">
-                    <h4 class="section_heading mb-3">Clientele</h4>
+                    <h4 class="section_heading mb-3"data-aos="fade-right" data-aos-offset="200"
+                    data-aos-duration="1000">Clientele</h4>
                 </div>
             </div>
         </div>
         <div class="clients">
             <div class="owl-carousel owl-theme clientele d-flex align-items-center w-80 mx-auto">
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/54.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/55.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/56.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/57.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/58.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/59.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/60.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/61.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
+                <?php global $connF;
+                $getClientSql = "SELECT * FROM clients";
+                $getClient = mysqli_query($connF, $getClientSql);
+                while ($getClientRow = mysqli_fetch_array($getClient)) {
+                    $clientId = $getClientRow['clientId'];
+                    $clientName = $getClientRow['clientName'];
+                    $clientImage = $getClientRow['clientImage'];
+
+                    ?>
 
 
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/38.jpg" alt="The Guardians Clients">
+                    <div class="item d-flex align-items-center">
+                        <div class="client-logo-wrap">
+                            <img src=<?php echo 'admin/resources/client_img/' . $clientImage; ?> class="img-fluid clientlogo" alt="">
+                        </div>
                     </div>
-                </div>
+                <?php } ?>
 
 
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/17.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
 
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/10.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
 
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/22.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
 
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/24.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/25.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/26.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/27.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/kanakia_logo.png" alt="The Guardians Clients" style="filter:grayscale(1);">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/29.jpg?v=1" alt="The Guardians Clients">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/30.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/31.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/32.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/33.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/34.jpg?v=1" alt="The Guardians Clients">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/35.jpg" alt="The Guardians Clients">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="client-logo-wrap">
-                        <img src="images/36.jpg?v=1" alt="The Guardians Clients">
-                    </div>
-                </div>
             </div>
 
 
@@ -391,8 +302,10 @@
             <div class="row justify-content-center">
                 <div class="col-lg-11">
                     <div class="ourpro mb-5">
-                        <h4 class="section_heading mb-1">Our Projects</h4>
-                        <h2 class="new_subhead">Exquisite Residences and Bespoke Commercial Spaces</h2>
+                        <h4 class="section_heading mb-1" data-aos="fade-right" data-aos-offset="200"
+                        data-aos-duration="1000">Our Projects</h4>
+                        <h2 class="new_subhead" data-aos="fade-right" data-aos-offset="250"
+                        data-aos-duration="1100">Exquisite Residences and Bespoke Commercial Spaces</h2>
                     </div>
                     <div class="row  mt-4 pt-3">
                         <div class="col-lg-6">
@@ -406,7 +319,8 @@
                                         </a>
                                     </h3>
                                     <div class="news_dtl">
-                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
                                             incididunt ut labore et dolore magna aliqua. </p>
                                         <a
                                             href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
@@ -415,7 +329,8 @@
                                 </div>
                                 <div class="col-lg-6 p-0">
                                     <div class="project_img">
-                                        <img src="images/ongoing_projects/farmsyde.jpg" class="img-fluid object-fit-cover prothumbnail" id="pro1" alt="">
+                                        <img src="images/ongoing_projects/farmsyde.jpg"
+                                            class="img-fluid object-fit-cover prothumbnail" id="pro1" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -431,7 +346,8 @@
                                         </a>
                                     </h3>
                                     <div class="news_dtl">
-                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
                                             incididunt ut labore et dolore magna aliqua. </p>
                                         <a
                                             href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
@@ -440,7 +356,8 @@
                                 </div>
                                 <div class="col-lg-6 p-0">
                                     <div class="project_img second">
-                                        <img src="images/ongoing_projects/ashoka-school.jpg" id="pro2" class="img-fluid object-fit-cover prothumbnail" alt="">
+                                        <img src="images/ongoing_projects/ashoka-school.jpg" id="pro2"
+                                            class="img-fluid object-fit-cover prothumbnail" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -456,7 +373,8 @@
                                         </a>
                                     </h3>
                                     <div class="news_dtl">
-                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
                                             incididunt ut labore et dolore magna aliqua. </p>
                                         <a
                                             href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
@@ -465,7 +383,8 @@
                                 </div>
                                 <div class="col-lg-6 p-0">
                                     <div class="project_img">
-                                        <img src="images/ongoing_projects/tm-cube.jpg" class="img-fluid object-fit-cover prothumbnail" id="pro3" alt="">
+                                        <img src="images/ongoing_projects/tm-cube.jpg"
+                                            class="img-fluid object-fit-cover prothumbnail" id="pro3" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -481,7 +400,8 @@
                                         </a>
                                     </h3>
                                     <div class="news_dtl">
-                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
                                             incididunt ut labore et dolore magna aliqua. </p>
                                         <a
                                             href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
@@ -490,7 +410,8 @@
                                 </div>
                                 <div class="col-lg-6 p-0">
                                     <div class="project_img">
-                                        <img src="images/ongoing_projects/building.png" class="img-fluid object-fit-cover prothumbnail" id="pro4" alt="">
+                                        <img src="images/ongoing_projects/building.png"
+                                            class="img-fluid object-fit-cover prothumbnail" id="pro4" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -512,7 +433,8 @@
             <div class="row d-flex align-items-center">
                 <div class="col-md-3">
                     <div class="ms-4 ps-5">
-                        <h4 class="client_heading">Client <br> Testimonial</h4>
+                        <h4 class="client_heading" data-aos="fade-right" data-aos-offset="300"
+                                            data-aos-duration="1000">Client <br> Testimonial</h4>
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -523,28 +445,36 @@
                                     <h3 class="client_heading">Lorem ipsum</h3>
                                     <h5 class="client_subheading">Touchwood bliss</h5>
                                     <div class="client_para my-2">
-                                        <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet, consectetur </p>
+                                        <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum
+                                            dolor sit amet, consectetur </p>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <h3 class="client_heading">Lorem ipsum</h3>
                                     <h5 class="client_subheading">Touchwood bliss</h5>
                                     <div class="client_para my-2">
-                                        <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet, consectetur </p>
+                                        <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum
+                                            dolor sit amet, consectetur </p>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <h3 class="client_heading">Lorem ipsum</h3>
                                     <h5 class="client_subheading">Touchwood bliss</h5>
                                     <div class="client_para my-2">
-                                        <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet, consectetur </p>
+                                        <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum
+                                            dolor sit amet, consectetur </p>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <h3 class="client_heading">Lorem ipsum</h3>
                                     <h5 class="client_subheading">Touchwood bliss</h5>
                                     <div class="client_para my-2">
-                                        <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet, consectetur </p>
+                                        <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum
+                                            dolor sit amet, consectetur </p>
                                     </div>
                                 </div>
 
@@ -576,7 +506,7 @@
 <?php include('footer.php'); ?>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         const tabs = document.querySelectorAll('.tab-link'); // Select all the tab links
         const tabContents = document.querySelectorAll('.tab-pane'); // Select all tab content panes
         let currentTab = 0;
@@ -632,5 +562,5 @@
         // Initialize the first tab as active on page load
         updateTabs();
     });
-  
+
 </script>

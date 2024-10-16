@@ -288,7 +288,8 @@ ul li {
   /*line-height: 2;*/
   /*letter-spacing: 0.5px;*/
   /*font-style: normal;*/
-  color: var(--white-color-1);
+  /* color: var(--white-color-1); */
+
 }
 
 @media (max-width: 1199px) {
@@ -9391,12 +9392,12 @@ footer .inner-wrapper .copyright {
 .clientele .item {
   height: 197px;
   width: 197px;
-  background: #DEDEDE;
+
 }
 
-.clients {
+/* .clients {
   background: #686161;
-}
+} */
 
 .clientele {
   height: 336px;
@@ -9404,6 +9405,7 @@ footer .inner-wrapper .copyright {
   align-items: center;
   justify-content: center;
   max-width: 85%;
+  padding-left: 53px;
 }
 
 .mb-40 {
@@ -9414,7 +9416,8 @@ footer .inner-wrapper .copyright {
   position: relative;
   border-left: 2px solid #ED673D;
 }
-.middlemain.smart{
+
+.middlemain.smart {
   border-left: 2px solid #191970;
 }
 
@@ -9586,8 +9589,9 @@ footer .inner-wrapper .copyright {
   left: -8%;
   bottom: 30px;
 }
+
 .hr-line.smart {
-  
+
   background-color: #191970;
 
 }
@@ -9673,7 +9677,7 @@ footer .inner-wrapper .copyright {
 }
 
 .clientale {
-  padding: 120px 0 170px 0;
+  padding: 90px 0 100px 0;
 }
 
 .owl-carousel.on_projects {
@@ -9685,6 +9689,7 @@ footer .inner-wrapper .copyright {
   top: 30%;
   right: -5%;
 }
+
 .vis-mis-headings.smart {
   right: -16%;
 }
@@ -9729,7 +9734,8 @@ footer .inner-wrapper .copyright {
   transition: all 0.2s;
   letter-spacing: 0.03em;
 }
-.tab-link.smart.active{
+
+.tab-link.smart.active {
   color: #191970 !important;
 }
 
@@ -10763,7 +10769,7 @@ Main Components
   font-family: "poppins";
   font-weight: 400;
   letter-spacing: 6%;
-  line-height: 16px;
+  line-height: 28px;
 }
 
 .contact_form h2 {
@@ -10952,15 +10958,15 @@ Main Components
 
 .pro-banner.animation2::after {
   background: rgba(255, 255, 255, 0.6);
-	bottom: 50%;
-	content: "";
-	left: 0;
-	position: absolute;
-	right: 0;
-	top: 50%;
-	opacity: 1;
-	width: 0;
-	pointer-events: none;
+  bottom: 50%;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  opacity: 1;
+  width: 0;
+  pointer-events: none;
 }
 
 .pro-banner.animation2:hover:before {
@@ -10977,24 +10983,51 @@ Main Components
 
 .pro-banner.animation2:hover::after {
   top: 0;
-	bottom: 0;
-	opacity: 0;
-	width: auto;
-	-webkit-transition: all 900ms linear;
-	-moz-transition: all 900ms linear;
-	-ms-transition: all 900ms linear;
-	-o-transition: all 900ms linear;
-	transition: all 900ms linear;
+  bottom: 0;
+  opacity: 0;
+  width: auto;
+  -webkit-transition: all 900ms linear;
+  -moz-transition: all 900ms linear;
+  -ms-transition: all 900ms linear;
+  -o-transition: all 900ms linear;
+  transition: all 900ms linear;
+}
+
+.banner-project-tap {
+  background-color: #F15B2A;
+  bottom: 12px;
+  height: 44px;
+  width: 100%;
+  text-align: center;
+  line-height: 44px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity 600ms ease-in-out, visibility 100ms linear 0ms,transform 1.2s ease-in-out;
+}
+
+.banner-project-tap .banner-content {
+  color: #ffffff;
+  font-family: 'Allerta Stencil';
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .pro-banner a img:hover {
   filter: none;
 }
+.pro-banner.animation2:hover .banner-project-tap {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
 
 
 /* blog page css */
 
-.blog-icon{
+.blog-icon {
   width: 66px;
   height: 60.63px;
   background-color: #F15B2A;
@@ -11004,8 +11037,8 @@ Main Components
   align-items: center;
 }
 
-.blog-icon img{
-   width: 40px;
+.blog-icon img {
+  width: 40px;
 }
 
 .blog_text {
@@ -11015,7 +11048,8 @@ Main Components
   color: #777171;
   line-height: 32.56px;
 }
-.blog-value-head{
+
+.blog-value-head {
   font-family: 'Allerta Stencil';
   font-size: 22px;
   font-weight: 400;
@@ -11023,23 +11057,26 @@ Main Components
   color: #FF7425;
   letter-spacing: 0.45px;
 }
-.blog-value-text{
+
+.blog-value-text {
   color: #3F3F3F;
   font-size: 14px;
   font-family: "poppins";
   line-height: 18.6px;
 }
 
-.blog_more .blog-thumb{
+.blog_more .blog-thumb {
   height: 286px;
   width: 288px;
   background-color: #D9D9D9;
   border-radius: 30px;
 }
-.moreblogs{
+
+.moreblogs {
   margin-top: 42px;
 }
-.blog-more-content .read-more-link{
+
+.blog-more-content .read-more-link {
   font-size: 16px;
   font-weight: 400;
   font-family: "poppins";
@@ -11049,18 +11086,21 @@ Main Components
   text-decoration: underline !important;
   transition: all 0.5s ease;
 }
-.blog-more-content .read-more-link:hover{
-  color:#F15B2A !important;
+
+.blog-more-content .read-more-link:hover {
+  color: #F15B2A !important;
   transform: scale(1.09) !important;
   letter-spacing: 0.6px !important;
 }
-.blog-detail-thumbnail{
+
+.blog-detail-thumbnail {
   background-color: #D9D9D9;
   height: 590px;
   width: 100%;
   border-radius: 50px;
 }
-.blog-detail-content p{
+
+.blog-detail-content p {
   color: #303030;
   font-size: 18px;
   line-height: 33px;
@@ -11068,17 +11108,20 @@ Main Components
   font-family: "poppins";
   font-weight: 400;
 }
-.blog-subdetail-thumbnail{
+
+.blog-subdetail-thumbnail {
   height: 360px;
   width: 100%;
   background-color: #D9D9D9;
 }
-.banner-career{
+
+.banner-career {
   height: 548px;
   background-color: #F15B2A;
   width: 100%;
 }
-.career-main-head{
+
+.career-main-head {
   color: #ffffff;
   font-size: 100px;
   line-height: 148.4px;
@@ -11086,25 +11129,29 @@ Main Components
   font-weight: 400;
   font-family: 'Allerta Stencil';
 }
-.card.openingcard{
+
+.card.openingcard {
   border-radius: 58px;
   height: 238px;
   border: 1px solid #F15B2A;
   transition: all 0.5s ease;
 }
-.openingcardbody .jobtype{
+
+.openingcardbody .jobtype {
   font-size: 22px;
   line-height: 34.11px;
   color: #000000;
   font-family: "poppins";
 }
-.roledesc{
+
+.roledesc {
   color: #000000;
   font-family: "poppins";
   line-height: 21px;
   font-size: 14px;
 }
-.positionheading{
+
+.positionheading {
   font-size: 38px;
   line-height: 48px;
   color: #F15B2A;
@@ -11112,42 +11159,57 @@ Main Components
   font-weight: 400;
   font-family: 'Allerta Stencil';
 }
-.card.openingcard:hover{
-  background-color:#F15B2A;
+
+.card.openingcard:hover {
+  background-color: #F15B2A;
 }
-.card.openingcard:hover .positionheading,.card.openingcard:hover .roledesc,.card.openingcard:hover .jobtype{
+
+.card.openingcard:hover .positionheading,
+.card.openingcard:hover .roledesc,
+.card.openingcard:hover .jobtype {
   color: #ffffff !important;
-} 
-.card.openingcard:hover .feature-btn{
+}
+
+.card.openingcard:hover .feature-btn {
   color: #F15B2A;
   background-color: #ffffff;
 }
 
 /* smart consulting css */
-.banner-smart-consulting{
+.banner-smart-consulting {
   height: 860px;
   background-color: #191970;
   width: 100%;
 }
 
-.smart-main-head{
+.smart-main-head {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 60px;
   line-height: 72px;
 }
 
-.smart_about_text{
+.smart_about_text {
   font-family: "Allerta Stencil", system-ui;
   color: #191970;
-  font-size:70px;
+  font-size: 70px;
   font-weight: 400;
   line-height: 77px;
 }
-.smart_about_us{
+
+.smart_about_us {
   background-color: #E3DCD6;
   height: 460px;
   box-shadow: 0px 4px 4px 0px #00000040;
   display: flex;
   align-items: center;
+}
+
+.client-logo-wrap .clientlogo {
+  height: auto !important;
+  width: 100px !important;
+}
+
+.projectpara {
+  color: #000 !important;
 }
