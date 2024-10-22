@@ -399,7 +399,7 @@ list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
                         </div>
                     </div>
                     <div class="row supportcard_sec g-4">
-                        <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="col-lg-3 col-sm-3 col-3">
                             <div class="card supportcard border-0 bg-white" data-aos="zoom-in-up"
                                 data-aos-duration="900" data-aos-offset="100">
                                 <div class="card-body innerbody d-flex flex-column justify-content- align-items-center">
@@ -409,12 +409,12 @@ list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
 
                                     <div class="support-content text-center">
                                         <h5 class="support-text my-3">Call us</h5>
-                                        <span class="support-extra">080-882171731</span>
+                                        <span class="support-extra d-none d-sm-none d-md-block">080-882171731</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="col-lg-3 col-sm-3 col-3">
                             <div class="card supportcard border-0 bg-white" data-aos="zoom-in-up"
                                 data-aos-duration="900" data-aos-offset="120">
                                 <div class="card-body innerbody d-flex flex-column justify-content- align-items-center">
@@ -423,13 +423,13 @@ list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
                                     </div>
 
                                     <div class="support-content text-center">
-                                        <h5 class="support-text my-3">website</h5>
-                                        <span class="support-extra">www.domain.com</span>
+                                        <h5 class="support-text my-3">Whatsapp</h5>
+                                        <span class="support-extra d-none d-sm-none d-md-block">www.domain.com</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="col-lg-3 col-sm-3 col-3">
                             <div class="card supportcard border-0 bg-white" data-aos="zoom-in-up"
                                 data-aos-duration="900" data-aos-offset="140">
                                 <div class="card-body innerbody d-flex flex-column justify-content- align-items-center">
@@ -439,12 +439,12 @@ list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
 
                                     <div class="support-content text-center">
                                         <h5 class="support-text my-3">Address</h5>
-                                        <span class="support-extra">xyz address</span>
+                                        <span class="support-extra d-none d-sm-none d-md-block">xyz address</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="col-lg-3 col-sm-3 col-3">
                             <div class="card supportcard border-0 bg-white" data-aos="zoom-in-up"
                                 data-aos-duration="900" data-aos-offset="160">
                                 <div class="card-body innerbody d-flex flex-column justify-content- align-items-center">
@@ -454,7 +454,7 @@ list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
 
                                     <div class="support-content text-center">
                                         <h5 class="support-text my-3">Email</h5>
-                                        <span class="support-extra">info@domain.com</span>
+                                        <span class="support-extra d-none d-sm-none d-md-block">info@domain.com</span>
                                     </div>
                                 </div>
                             </div>

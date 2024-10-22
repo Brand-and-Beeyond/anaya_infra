@@ -11556,10 +11556,79 @@ Main Components
   .vs-content {
     margin-top: 16px;
   }
+
   .vscard .innerbody .vs-content .vs-head {
     font-size: 17px;
     font-weight: 400;
     line-height: 17.6px;
     color: #F15B2A;
-}
+  }
+
+  .reachus_head::before {
+    width: 33px;
+  }
+
+  .reachus_head {
+    font-size: 18px;
+    line-height: 23.49px;
+  }
+
+  .reachus_para {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .supportcard .innerbody .headset {
+    height: 16.18px;
+    width: 16.18px;
+  }
+
+  .fixlogo {
+    height: 30px !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .supportcard .support-content .support-text {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 12px;
+    line-height: 15.66px;
+    letter-spacing: 0.5%;
+    font-family: "EB Garamond", serif;
+  }
+
+  .card.supportcard {
+    min-height: 70px;
+  }
+
+  .supportcard .innerbody .address {
+    height: 17.18px;
+    width: 14.38px;
+  }
+
+  .reach_to_us {
+    min-height: 363px !important;
+    display: flex;
+    align-items: center;
+    background-color: #E3DCD6;
+    padding: 10px 0;
+  }
+
+  .supportcard .innerbody .email {
+    width: 17.18px;
+    height: 12.14px;
+  }
+
+  .supportcard_sec {
+    padding-top: 25px;
+  }
+
+  .vs-content .vs-para {
+    font-family: "poppins";
+    font-size: 10px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 13.85px;
+  }
 }
