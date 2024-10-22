@@ -3,74 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
-.slider-container {
-  position: relative;
-  width: 100%;
-  max-width: auto;
-  margin: auto;
-  height: 750px;
-  z-index: 33;
-}
-
-.image-display {
-  position: relative;
-  width: 100%;
-  height: 750px;
-}
-
-#displayedImage {
-  width: 100%;
-  height: 750px !important;
-  object-fit: cover;
-}
-
-.marquee {
-  position: absolute;
-  top: 500px;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.marquee-inner {
-  display: inline-block;
-  white-space: nowrap;
-  animation: marquee 20s linear infinite;
-  /* Ensure continuous animation */
-}
-
-.thumbnail {
-  display: inline-block;
-  padding: 10px;
-  margin: 0 360px;
-  /* Adjusted spacing between thumbnails */
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-  font-family: "Allerta Stencil", system-ui;
-  font-size: 70px;
-  font-weight: 400;
-  line-height: 107.38px;
-  text-shadow: 4px 4px 27.7px #252525;
-  text-transform: capitalize;
-}
-
-.thumbnail.active {
-  transform: scale(1.17);
-  color: #FF7425;
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(100%);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
-}
 
 
 :root {
@@ -1110,12 +1042,7 @@ span {
 /* .navigation-type-split .inner-wrapper .left-side .logo-wrapper a .logo {
             max-width: 100px;
             max-height: 50px; } */
-@media (max-width: 575px) {
-  .navigation-type-split .inner-wrapper .left-side .logo-wrapper a .logo {
-    max-width: 90px;
-    max-height: 45px;
-  }
-}
+
 
 .navigation-type-split .inner-wrapper .right-side {
   display: flex;
@@ -9380,14 +9307,12 @@ footer .inner-wrapper .copyright {
 
 .why_us {
   margin-top: 140px;
-  min-height: 650px;
   display: flex;
   align-items: center;
+  padding: 115px 0;
 }
 
-.feature_project {
-  height: 790px !important;
-}
+
 
 .clientele .item {
   height: 197px;
@@ -9461,28 +9386,26 @@ footer .inner-wrapper .copyright {
   overflow: hidden;
 }
 
-.project_img.second {
-  transform: translateX(-8px);
-}
+
 
 .prothumbnail#pro1 {
-  min-height: 290px;
-  width: 100%;
+  height: 290px;
+  width: 100% !important;
   transform: scale(1.5) translateY(-50px);
   object-fit: cover;
   object-position: top;
 }
 
 .prothumbnail#pro2 {
-  min-height: 290px;
-  width: 100%;
+  height: 290px;
+  width: 100% !important;
   transform: scale(1.1);
   object-fit: cover;
   object-position: right;
 }
 
 .prothumbnail#pro3 {
-  min-height: 290px;
+  height: 290px;
   width: 100%;
   transform: scale(1.06) translateX(10px);
   object-fit: cover;
@@ -9498,7 +9421,7 @@ footer .inner-wrapper .copyright {
 }
 
 .clientcar .item {
-  height: 287px;
+  min-height: 287px;
   width: 550px;
   padding: 43px 0px 31px 44px;
   background-color: #eeeeee;
@@ -9677,7 +9600,7 @@ footer .inner-wrapper .copyright {
 }
 
 .clientale {
-  padding: 90px 0 100px 0;
+  padding: 130px 0 100px 0;
 }
 
 .owl-carousel.on_projects {
@@ -10828,6 +10751,7 @@ Main Components
 .btn.contactformbtn:hover {
   background-color: #000000 !important;
   cursor: url('../images/whitecursor.png'), auto !important;
+  color: white;
 }
 
 .contact_service_banner {
@@ -11003,7 +10927,7 @@ Main Components
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
-  transition: opacity 600ms ease-in-out, visibility 100ms linear 0ms,transform 1.2s ease-in-out;
+  transition: opacity 600ms ease-in-out, visibility 100ms linear 0ms, transform 1.2s ease-in-out;
 }
 
 .banner-project-tap .banner-content {
@@ -11016,6 +10940,7 @@ Main Components
 .pro-banner a img:hover {
   filter: none;
 }
+
 .pro-banner.animation2:hover .banner-project-tap {
   opacity: 1;
   visibility: visible;
@@ -11132,7 +11057,7 @@ Main Components
 
 .card.openingcard {
   border-radius: 58px;
-  height: 238px;
+  min-height: 238px;
   border: 1px solid #F15B2A;
   transition: all 0.5s ease;
 }
@@ -11182,12 +11107,7 @@ Main Components
   width: 100%;
 }
 
-.smart-main-head {
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-size: 60px;
-  line-height: 72px;
-}
+
 
 .smart_about_text {
   font-family: "Allerta Stencil", system-ui;
@@ -11212,4 +11132,434 @@ Main Components
 
 .projectpara {
   color: #000 !important;
+}
+
+
+
+/* home page mobile css */
+.mob-aboutsite {
+  padding: 40px 0;
+}
+
+.mob-head {
+  color: #F15B2A;
+  font-family: "Allerta Stencil", system-ui;
+  font-size: 14px;
+  line-height: 17.91px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+}
+
+.anaya-mob-span {
+  color: #F15B2A;
+  font-family: "Allerta Stencil", system-ui;
+  font-size: 28px;
+  line-height: 35.83px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  display: block;
+  padding: 5px 0;
+}
+
+.mob-para p {
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20.88px;
+  padding: 12px 0;
+  color: #000000;
+}
+
+.more-link {
+  color: #F15B2A;
+  font-family: "poppins";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+  text-decoration: underline !important;
+}
+
+
+/* mobile media queries */
+
+@media(max-width:700px) {
+  .logo-wrapper {
+    height: 63px !important;
+    width: 112px !important;
+  }
+
+  .navigation-type-split .inner-wrapper .left-side .logo-wrapper a .logo {
+    max-width: 90px;
+    max-height: 70px;
+  }
+
+  .naviside .nav-inner {
+    min-height: 78vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation-type-split .inner-wrapper {
+    padding: 0px 21px !important;
+  }
+
+  .info_box h2 span,
+  .info_box h3 span {
+    font-size: 33px !important;
+    line-height: 46.02px !important;
+  }
+
+  .info_box h2,
+  .info_box h3 {
+    margin: 3px 0 !important;
+    padding: 0;
+    font-size: 0.563em;
+    text-transform: uppercase;
+  }
+
+  .info_box p {
+    font-size: 14px !important;
+    line-height: 20px;
+    font-family: 'Allerta Stencil';
+    text-transform: uppercase;
+  }
+
+  .info_box {
+    /* border-left: 3px solid #8f8183; */
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .feature_project {
+    padding-top: 40px !important;
+  }
+
+  .section_heading {
+    line-height: 23.01px !important;
+    font-size: 18px !important;
+    font-weight: 400;
+    padding-bottom: 6px !important;
+    letter-spacing: 0.4px;
+  }
+
+  .new_subhead {
+    font-size: 12px !important;
+    letter-spacing: 0.5px;
+    color: #000;
+    font-weight: 400;
+    line-height: 17px;
+  }
+
+  .video-box {
+    height: 195px !important;
+  }
+
+  .play-icon img {
+    height: 50px !important;
+    width: 50px !important;
+  }
+
+  .feature_img_wrap {
+    width: 353px;
+    margin: auto;
+    height: 211px !important;
+  }
+
+  .owl-carousel.on_projects {
+    padding: 0 0px 0 43px !important;
+  }
+
+  .life.owl-carousel .owl-nav .owl-next {
+    right: -28px !important;
+    top: 21% !important;
+    height: 23px !important;
+    width: 23px !important;
+    background: transparent !important;
+    border: 1px solid #898989 !important;
+    border-radius: 50% !important;
+    transition: ease all 0.5s;
+    text-align: center;
+    line-height: 23px !important;
+    box-shadow: 0px 1px 3.5px 0px #C1C1C140 !important;
+
+  }
+
+  .life.owl-carousel .owl-nav .owl-prev {
+    left: 10px !important;
+    top: 21% !important;
+    height: 23px !important;
+    width: 23px !important;
+    background: transparent !important;
+    border: 1px solid #898989 !important;
+    border-radius: 50% !important;
+    transition: ease all 0.5s;
+    text-align: center;
+    line-height: 23px !important;
+    box-shadow: 0px 1px 3.5px 0px #C1C1C140 !important;
+
+  }
+
+  .life.owl-carousel .owl-nav .owl-next i,
+  .life.owl-carousel .owl-nav .owl-prev i {
+    font-size: 13px !important;
+    color: #898989 !important;
+  }
+
+  .projct_name {
+    font-size: 15px !important;
+    color: #F15B2A;
+    font-family: "Allerta Stencil";
+    margin: 14px 0 !important;
+  }
+
+  .dtl_col {
+    /* border-bottom: 1px solid #cccccc; */
+    width: auto;
+    margin-bottom: 1em;
+    /* padding-bottom: 1em; */
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    padding: 10px 0 0px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24.81px;
+    text-align: center !important;
+    width: unset !important;
+  }
+
+  .clientale {
+    padding: 30px 0 46px 0;
+  }
+
+  .clientele.owl-carousel .owl-nav .owl-prev {
+    display: none !important;
+  }
+
+  .clientele.owl-carousel .owl-nav .owl-next {
+    display: none !important;
+  }
+
+  .clientele {
+    min-height: 200px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px !important;
+  }
+
+  .clientale {
+    padding: 30px 0 46px 0;
+
+  }
+
+  .clientele.owl-carousel .owl-nav .owl-prev {
+    display: none !important;
+  }
+
+  .clientele.owl-carousel .owl-nav .owl-next {
+    display: none !important;
+  }
+
+  .clientele {
+    height: 220px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px !important;
+    margin-top: -50px;
+    /* width: 90% !important; */
+  }
+
+  /* .clients{
+  padding-left: 31px !important;
+} */
+
+  .clientele .item {
+    height: 130px;
+    width: 130px;
+  }
+
+  .news_loc {
+    font-size: 11px !important;
+    font-weight: 400;
+    line-height: 14.79px !important;
+  }
+
+  .news_title {
+    font-family: 'Poppins';
+    font-size: 12px !important;
+    font-weight: 400;
+    line-height: 18.6px !important;
+  }
+
+  .news_dtl p {
+    font-size: 9px !important;
+    font-weight: 300;
+    line-height: 12.81px !important;
+  }
+
+  .news_dtl a {
+    font-size: 9px !important;
+    line-height: 12.81px !important;
+    text-align: left;
+    color: #F15B2A;
+  }
+
+  .prothumbnail#pro1 {
+    height: 140px;
+    width: 127px;
+    transform: scale(1.2) !important;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .prothumbnail#pro3 {
+    height: 140px;
+    width: 127px;
+    transform: scale(1.06) translateX(10px);
+    object-fit: cover;
+    object-position: right;
+  }
+
+  .prothumbnail#pro2 {
+    height: 140px;
+    width: 127px;
+
+  }
+
+  .prothumbnail#pro4 {
+    height: 140px !important;
+    width: 100%;
+
+  }
+
+  .client-testi::before {
+    display: none;
+  }
+
+  .testimonials {
+    height: 341px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .clientcar .item {
+    min-height: 193px;
+    width: 100%;
+    padding: 23px 0px 21px 20px;
+    background-color: #eeeeee;
+    box-shadow: -2px 0px 2px 1px #89898929;
+
+  }
+
+  .quote img {
+    height: 44px;
+    width: 50px;
+  }
+
+  .client_heading {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25.56px;
+    font-family: "Allerta Stencil";
+    color: #FF7425;
+  }
+
+  .client_subheading {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20.15px;
+    font-family: "poppins";
+    color: #000;
+    margin: 10px 0;
+  }
+
+  .client_para p {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 17.05px;
+  }
+
+  .clientcar.owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    right: 19px !important;
+    top: 45%;
+    height: 25px !important;
+    width: 25px !important;
+    background: transparent !important;
+    border-radius: 50% !important;
+    transition: ease all 0.5s;
+    border: 1px solid #898989;
+    box-shadow: 1px 1px 10.2px 0px #70707040;
+  }
+
+  .clientcar.owl-carousel .owl-nav .owl-next i {
+    font-size: 12px !important;
+    color: #898989 !important;
+  }
+
+  .quote {
+    position: absolute;
+    top: -9%;
+    left: -3%;
+    z-index: 90;
+  }
+
+  .about_us {
+    min-height: 450px;
+    padding: 25px 0 70px 0 !important;
+    background-color: #E3DCD6;
+  }
+
+  .about_para p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20.88px;
+    font-family: "poppins";
+    color: #000000;
+    padding: 0 10px;
+  }
+
+  .vscard .innerbody .icon-box {
+    width: 46.62px;
+    height: 43px;
+    background-color: #F15B2A;
+    border-radius: 16px;
+  }
+
+  .icon-box .missionicon {
+    width: 30.8px;
+    height: auto;
+  }
+
+  .icon-box .visionicon {
+    width: 30.5px;
+    height: auto;
+  }
+
+  .icon-box .valuesicon {
+    width: 30.5px;
+    height: auto;
+  }
+
+  .vismisrow {
+    top: -34px;
+  }
+
+  .vs-content {
+    margin-top: 16px;
+  }
+  .vscard .innerbody .vs-content .vs-head {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 17.6px;
+    color: #F15B2A;
+}
 }

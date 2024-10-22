@@ -52,7 +52,7 @@
 
     .timeline {
         position: relative;
-        margin: 50px auto;
+        margin: 120px auto;
         width: 1000px;
         padding: 50px 0;
     }
@@ -124,7 +124,7 @@
         line-height: normal;
         position: relative;
         width: 50%;
-        padding: 35px 42px;
+        padding: 38px 42px;
     }
 
     .smart_services {
@@ -172,6 +172,65 @@
         font-weight: 400;
     }
 
+    .smart_service_sublink {
+        color: #191970;
+        font-family: "poppins";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21.7px;
+        padding-top: 12px;
+        letter-spacing: 0.3px;
+        text-decoration: underline !important;
+    }
+
+    .smart-main-head {
+        color: #ffffff;
+        font-family: "Roboto", sans-serif;
+        font-size: 60px;
+        line-height: 72px;
+        animation: bounceInDown 0.8s 1 linear;
+    }
+
+    @keyframes bounceInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-500px);
+        }
+
+        60% {
+            opacity: 1;
+            transform: translateY(30px);
+        }
+
+        80% {
+            transform: translateY(-20px);
+        }
+
+        90% {
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .smart_service_heading {
+        color: #191970;
+        font-family: "Allerta Stencil", system-ui;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 61.36px;
+    }
+
+    .service_para {
+        color: #4C4C4C;
+        font-family: "poppins";
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 40.31px;
+    }
+
     @keyframes bounceInLeft {
         0% {
             transform: translateX(-50%) scale(0);
@@ -188,6 +247,7 @@
             /* Scale from center */
         }
     }
+
     @keyframes bounceInRight {
         0% {
             transform: translateX(50%) scale(0);
@@ -263,13 +323,14 @@
                 <div class="col-lg-10">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
-                            <h1 class="smart_about_text text-end">
+                            <h1 class="smart_about_text text-end"data-aos="fade-right" data-aos-duration="1000"
+                            data-aos-offset="200">
                                 <span class="about">About</span>
                                 <span class="us d-block">Us</span>
                             </h1>
                         </div>
                         <div class="col-lg-8 col-md-6">
-                            <div class="about_para">
+                            <div class="about_para"data-aos="fade-left" data-aos-duration="1000" data-aos-offset="200">
                                 <p>SMART Industrial Consultant by Anaya Infra Build
                                     Delivering innovative and efficient solutions in real estate and infrastructure. Our
                                     expertise spans across project planning, government liaison, strategic partnerships,
@@ -374,28 +435,39 @@
     </section>
 
     <section class="py-5">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <h3 class="smart_service_heading py-2" data-aos="fade-right" data-aos-offset="200"
+                        data-aos-duration="1000">Our Services</h3>
+                    <div class="service_para mt-1" data-aos="fade-right" data-aos-offset="230" data-aos-duration="1000">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="timeline">
             <div class="active-scroll-line"></div>
             <div class="circle-at-end"></div>
             <ul>
                 <li>
-
                     <div class="right_content" data-aos="zoom-in-left" data-aos-duration="1000">
                         <div class="smart_service_numbering mb-2 d-inline-block">1</div>
                         <h4 class="smart_services py-3">Project Planning & Designing</h4>
-                        <p class="smart_services_para">Tailored planning and design solutions that reflect your business
-                            vision and optimize functionality.
+                        <p class="smart_services_para">Transforming ideas into well-planned, innovative designs.
                         </p>
+                        <a href="project_planning_designing.php" class="smart_service_sublink">View more</a>
                     </div>
 
                 </li>
                 <li>
                     <div class="right_content" data-aos="zoom-in-right" data-aos-duration="1000">
                         <div class="smart_service_numbering mb-2 d-inline-block">2</div>
-                        <h4 class="smart_services py-3">Government Authority</h4>
-                        <p class="smart_services_para">Tailored planning and design solutions that reflect your business
-                            vision and optimize functionality.
+                        <h4 class="smart_services py-3">Government Authority Compliance</h4>
+                        <p class="smart_services_para">Ensuring compliance and seamless approvals with government
+                            authorities.
                         </p>
+                        <a href="goverment_authority.php" class="smart_service_sublink">View more</a>
                     </div>
                     <div class="left_content">
 
@@ -405,9 +477,11 @@
                     <div class="right_content" data-aos="zoom-in-left" data-aos-duration="1000">
                         <div class="smart_service_numbering mb-2 d-inline-block">3</div>
                         <h4 class="smart_services py-3">Strategic Partner with Financial Advisory</h4>
-                        <p class="smart_services_para">Tailored planning and design solutions that reflect your business
-                            vision and optimize functionality.
+                        <p class="smart_services_para">Empowering growth with strategic partnerships and expert
+                            financial guidance.
                         </p>
+                        <a href="strategic_partner_with_financial_advisory.php" class="smart_service_sublink">View
+                            more</a>
                     </div>
                     <div class="left_content">
 
@@ -417,9 +491,9 @@
                     <div class="right_content" data-aos="zoom-in-right" data-aos-duration="1000">
                         <div class="smart_service_numbering mb-2 d-inline-block">4</div>
                         <h4 class="smart_services py-3">Service Planning & Designing</h4>
-                        <p class="smart_services_para">Tailored planning and design solutions that reflect your business
-                            vision and optimize functionality.
+                        <p class="smart_services_para">Crafting tailored service plans with innovative design solutions.
                         </p>
+                        <a href="service_planning_designing.php" class="smart_service_sublink">View more</a>
                     </div>
                     <div class="left_content">
 
@@ -429,9 +503,10 @@
                     <div class="right_content" data-aos="zoom-in-left" data-aos-duration="1000">
                         <div class="smart_service_numbering mb-2 d-inline-block">5</div>
                         <h4 class="smart_services py-3">Project Management</h4>
-                        <p class="smart_services_para">Tailored planning and design solutions that reflect your business
-                            vision and optimize functionality.
+                        <p class="smart_services_para">Driving projects from concept to completion with precision and
+                            efficiency.
                         </p>
+                        <a href="project_management_for_construction.php" class="smart_service_sublink">View more</a>
                     </div>
                     <div class="left_content">
 
@@ -441,9 +516,9 @@
                     <div class="right_content" data-aos="zoom-in-right" data-aos-duration="1000">
                         <div class="smart_service_numbering mb-2 d-inline-block">6</div>
                         <h4 class="smart_services py-3">Execution</h4>
-                        <p class="smart_services_para">Tailored planning and design solutions that reflect your business
-                            vision and optimize functionality.
+                        <p class="smart_services_para">Delivering flawless execution with a commitment to excellence.
                         </p>
+                        <a href="execution_of_construction_site.php" class="smart_service_sublink">View more</a>
                     </div>
                     <div class="left_content">
 
@@ -453,9 +528,9 @@
                     <div class="right_content" data-aos="zoom-in-left" data-aos-duration="1000">
                         <div class="smart_service_numbering mb-2 d-inline-block">7</div>
                         <h4 class="smart_services py-3">Branding</h4>
-                        <p class="smart_services_para">Tailored planning and design solutions that reflect your business
-                            vision and optimize functionality.
+                        <p class="smart_services_para">Building impactful brands that inspire and connect.
                         </p>
+                        <a href="" class="smart_service_sublink">View more</a>
                     </div>
                     <div class="left_content">
 

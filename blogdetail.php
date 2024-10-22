@@ -72,6 +72,79 @@
         </div>
     </section>
 
+    <section class="py-5">
+    <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <div class="row gy-5">
+                    <h2 class="pro_heading blog mt-5 ms-3">Explore more Blogs</h2>
+                        <div class="col-lg-3">
+                            <div class="blog_more d-flex flex-column justify-content-center align-items-center" data-aos="zoom-in-up"
+                            data-aos-duration="900" data-aos-offset="100">
+                                <div class="blog-thumb">
+                                    <img src="" class="img-fluid object-fit-cover" alt="">
+                                </div>
+                                <div class="blog-more-content text-center mt-3">
+                                    <h4 class="blog-value-head">Lorem ipsum</h4>
+                                    <p class="blog-value-text mt-2">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit
+                                    </p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="blog_more d-flex flex-column justify-content-center align-items-center" data-aos="zoom-in-up"
+                            data-aos-duration="900" data-aos-offset="120">
+                                <div class="blog-thumb">
+                                    <img src="" class="img-fluid object-fit-cover" alt="">
+                                </div>
+                                <div class="blog-more-content text-center mt-3">
+                                    <h4 class="blog-value-head">Lorem ipsum</h4>
+                                    <p class="blog-value-text mt-2">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit
+                                    </p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="blog_more d-flex flex-column justify-content-center align-items-center"data-aos="zoom-in-up"
+                            data-aos-duration="900" data-aos-offset="140">
+                                <div class="blog-thumb">
+                                    <img src="" class="img-fluid object-fit-cover" alt="">
+                                </div>
+                                <div class="blog-more-content text-center mt-3">
+                                    <h4 class="blog-value-head">Lorem ipsum</h4>
+                                    <p class="blog-value-text mt-2">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit
+                                    </p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="blog_more d-flex flex-column justify-content-center align-items-center"data-aos="zoom-in-up"
+                            data-aos-duration="900" data-aos-offset="160">
+                                <div class="blog-thumb">
+                                    <img src="" class="img-fluid object-fit-cover" alt="">
+                                </div>
+                                <div class="blog-more-content text-center mt-3">
+                                    <h4 class="blog-value-head">Lorem ipsum</h4>
+                                    <p class="blog-value-text mt-2">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit
+                                    </p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
 
 
 

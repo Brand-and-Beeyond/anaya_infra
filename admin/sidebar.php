@@ -75,7 +75,7 @@
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
                             <li><a href="index.php?addvacancy">Manage Home Page</a></li>
-                            <li><a href="index.php?addvacancy">Manage About us Page</a></li>
+                            <li><a href="index.php?addaboutus">Manage About us Page</a></li>
                             <li><a href="index.php?addcontact">Manage Contact us Page</a></li>
                         </ul>
                     </li>

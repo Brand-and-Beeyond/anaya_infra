@@ -129,8 +129,8 @@
 				?>
 				
 				<?php
-					if(isset($_GET['editaboutus'])){
-						include("editaboutus.php");
+					if(isset($_GET['editabout'])){
+						include("editabout.php");
 					}
 				?>
 				<?php

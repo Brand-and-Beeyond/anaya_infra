@@ -765,8 +765,30 @@ setLogoAndBackground();
         margin: 0,
         items: 1,
         autoplay: true,
+        autoplayTimeout: 6000,
+        smartSpeed: 4000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i> "]
+    });
+    $('.smart_sub_service').owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        autoplay: false,
         autoplayTimeout: 4000,
         smartSpeed: 2500,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i> "]
+    });
+    $('.smart_sub_service_planning').owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        smartSpeed: 2800,
         autoplayHoverPause: true,
         nav: true,
         navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i> "]
@@ -777,14 +799,20 @@ setLogoAndBackground();
         margin: 10,
         items: 4,
         autoplay: true,
-        autoplayTimeout: 2000,
-        smartSpeed: 200,
+        autoplayTimeout: 3000,
+        smartSpeed: 1000,
         autoplayHoverPause: true,
         nav: true,
         navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i> "],
         responsive: {
             0: {
                 items: 2
+            },
+            400: {
+                items: 2
+            },
+            500: {
+                items: 3
             },
             768: {
                 items: 3
@@ -806,7 +834,10 @@ setLogoAndBackground();
         navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i> "],
         responsive: {
             0: {
-                items: 2
+                items: 1
+            },
+            530: {
+                items: 1
             },
             768: {
                 items: 2
@@ -816,55 +847,7 @@ setLogoAndBackground();
             }
         }
     });
-    document.addEventListener('DOMContentLoaded', function() {
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    const marquee = document.querySelector('.marquee');
-    const marqueeInner = document.querySelector('.marquee-inner');
-
-    // Initially set the displayed image to the first thumbnail
-    const displayedImage = document.createElement('img');
-    displayedImage.id = 'displayedImage';
-    displayedImage.src = thumbnails[0].getAttribute('data-image');
-    displayedImage.alt = 'Displayed Image';
-    displayedImage.style.width = '100%';
-    displayedImage.style.height = 'auto';
-    document.querySelector('.image-display').prepend(displayedImage);
-
-    function checkCenter() {
-        const marqueeRect = marquee.getBoundingClientRect();
-        const marqueeCenter = marqueeRect.left + marqueeRect.width / 2;
-
-        thumbnails.forEach(thumbnail => {
-            const thumbnailRect = thumbnail.getBoundingClientRect();
-            const thumbnailCenter = thumbnailRect.left + thumbnailRect.width / 2;
-
-            if (Math.abs(marqueeCenter - thumbnailCenter) < thumbnailRect.width / 2) {
-                thumbnail.classList.add('active');
-                const newImageSrc = thumbnail.getAttribute('data-image');
-                if (displayedImage.src !== newImageSrc) {
-                    displayedImage.src = newImageSrc;
-                }
-            } else {
-                thumbnail.classList.remove('active');
-            }
-        });
-    }
-
-    // Adjust marquee speed
-    function adjustMarqueeSpeed() {
-        marqueeInner.style.animationDuration = '23s'; // Adjust as needed for desired speed
-        marqueeInner.style.animationTimingFunction = 'linear'; // Smooth, constant speed
-    }
-
-    // Initial check to set the active thumbnail and image
-    checkCenter();
-
-    // Adjust the interval for checking the center
-    setInterval(checkCenter, 200); // Check frequently
-    adjustMarqueeSpeed();
-
-    window.addEventListener('resize', adjustMarqueeSpeed); // Adjust speed on window resize if needed
-});
+    
 
 </script>
 

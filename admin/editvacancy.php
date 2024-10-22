@@ -15,6 +15,8 @@
 			$experience = $getVacancyRow['experience'];
 			$no_vacancies = $getVacancyRow['no_vacancies'];
 			$qualification = $getVacancyRow['qualification'];
+			$jobdescription = $getVacancyRow['jobdescription'];
+			$jobtype = $getVacancyRow['jobtype'];
 			$skill1 = $getVacancyRow['skill1'];
 			$location1 = $getVacancyRow['location1'];
             $vacancyheaderImage = $getVacancyRow['vacancyheaderImage'];
@@ -30,12 +32,12 @@
         <div class="row">
             <div class="col-12">
                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                    <h4 class="mb-sm-0">Add New Project Category</h4>
+                    <h4 class="mb-sm-0">Edit vacancy</h4>
 
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Add Project Category</li>
+                            <li class="breadcrumb-item active">Edit vacancy</li>
                         </ol>
                     </div>
 
@@ -82,14 +84,26 @@
                                         
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="mb-3">
                                         <label class="form-label" for="validationCustom05">Skills Required</label>
                                         <input type="text" class="form-control" id="validationCustom05" placeholder="Skills Required" required name="skill1" value="<?php echo $skill1;?>">
                                         
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="jobtype">Job type</label>
+                                        <select class="form-select" name="jobtype" required>
+            <option value="" disabled <?php echo empty($jobtype) ? 'selected' : ''; ?>>Choose job type</option>
+            <option value="Full time" <?php echo $jobtype === 'Full time' ? 'selected' : ''; ?>>Full time</option>
+            <option value="Part time" <?php echo $jobtype === 'Part time' ? 'selected' : ''; ?>>Part time</option>
+        </select>
+
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
                                     <div class="mb-3">
                                         <label class="form-label" for="validationCustom05">Location</label>
                                         <input type="text" class="form-control" id="validationCustom05" placeholder="Location" required name="location1" value="<?php echo $location1;?>">
@@ -97,6 +111,15 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="mb-3">
+                                                <label class="form-label" for="validationCustom05">Job description</label>
+                                                <textarea name="jobdescription" id="" class="form-control"
+                                                    rows="6"><?php echo $jobdescription;?></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="mb-3">

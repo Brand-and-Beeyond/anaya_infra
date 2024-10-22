@@ -1,9 +1,34 @@
 <?php include('header.php'); ?>
 <style>
-    .read-more{
+    .read-more {
         color: #F15B2A !important;
         letter-spacing: 0.6px;
         text-decoration: underline !important;
+    }
+
+    .more-link {
+        color: #F15B2A;
+        font-size: 19px;
+        font-weight: 400;
+        font-family: "poppins";
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+
+    .fixlogo {
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    @media(max-width:700px) {
+        .more-link {
+            font-size: 12px;
+            font-weight: 400;
+            font-family: "poppins";
+            padding-left: 10px;
+            margin-top: 10px;
+        }
     }
 </style>
 <?php global $connF;
@@ -45,13 +70,16 @@ list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
                 <div class="col-lg-10">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
-                            <h1 class="about_text text-end">
+                            <h1 class="about_text text-end d-none d-sm-none d-md-block" data-aos="fade-right"
+                                data-aos-duration="1000" data-aos-offset="200">
                                 <span class="about">About</span>
                                 <span class="us">Us</span>
                             </h1>
+                            <h2 class="mob-head text-center d-block d-sm-block d-md-none">about <span
+                                    class="anaya-mob-span">anaya</span></h2>
                         </div>
                         <div class="col-lg-8 col-md-6">
-                            <div class="about_para">
+                            <div class="about_para" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="200">
                                 <?php
                                 // Assuming the aboutDesc has multiple paragraphs separated by newlines
                                 $paragraphs = explode("\n", nl2br($aboutDesc));
@@ -61,7 +89,7 @@ list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
                                     }
                                 }
                                 ?>
-                                <button id="toggleBtn" class="feature-btn">Read More</button>
+                                <button id="toggleBtn" class="more-link">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -70,13 +98,14 @@ list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
         </div>
     </section>
 
-    <section class="abt_vismissvalues">
+    <section class="abt_vismissvalues d-none d-sm-none d-md-block">
         <div class="container-fluid">
             <div class="row justify-content-center vismisrow position-relative">
                 <div class="col-lg-9">
                     <div class="row g-4">
-                        <div class="col-lg-4">
-                            <div class="card vscard border-0 bg-transparent">
+                        <div class="col-lg-4 col-sm-4 col-4">
+                            <div class="card vscard border-0 bg-transparent" data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic" data-aos-duration="1600" data-aos-offset="150">
                                 <div
                                     class="card-body innerbody d-flex justify-content-center align-items-center flex-column">
                                     <div class="icon-box d-flex justify-content-center align-items-center">
@@ -85,16 +114,19 @@ list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
                                     <div class="vs-content text-center">
                                         <h4 class="vs-head">Mission</h4>
                                         <p class="vs-para py-3"> <?php echo $missionFirst50; ?>
-                                        <?php if($missionRest != '') { ?>
-                                            <span class="moretext" style="display: none;"><?php echo ' ' . $missionRest; ?></span>
-                                            <a href="javascript:void(0);" class="read-more d-block">Read more</a>
-                                        <?php } ?></p>
+                                            <?php if ($missionRest != '') { ?>
+                                                <span class="moretext"
+                                                    style="display: none;"><?php echo ' ' . $missionRest; ?></span>
+                                                <a href="javascript:void(0);" class="read-more d-block">Read more</a>
+                                            <?php } ?>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="card vscard border-0 bg-transparent">
+                        <div class="col-lg-4 col-sm-4 col-4">
+                            <div class="card vscard border-0 bg-transparent" data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic" data-aos-duration="1600" data-aos-offset="170">
                                 <div
                                     class="card-body innerbody d-flex justify-content-center align-items-center flex-column">
                                     <div class="icon-box d-flex justify-content-center align-items-center">
@@ -103,16 +135,19 @@ list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
                                     <div class="vs-content text-center">
                                         <h4 class="vs-head">Vision</h4>
                                         <p class="vs-para py-3"> <?php echo $visionFirst50; ?>
-                                        <?php if($visionRest != '') { ?>
-                                            <span class="moretext" style="display: none;"><?php echo ' ' . $visionRest; ?></span>
-                                            <a href="javascript:void(0);" class="read-more d-block"> Read More</a>
-                                        <?php } ?></p>
+                                            <?php if ($visionRest != '') { ?>
+                                                <span class="moretext"
+                                                    style="display: none;"><?php echo ' ' . $visionRest; ?></span>
+                                                <a href="javascript:void(0);" class="read-more d-block"> Read More</a>
+                                            <?php } ?>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="card vscard border-0 bg-transparent">
+                        <div class="col-lg-4 col-sm-4 col-4">
+                            <div class="card vscard border-0 bg-transparent" data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic" data-aos-duration="1600" data-aos-offset="190">
                                 <div
                                     class="card-body innerbody d-flex justify-content-center align-items-center flex-column">
                                     <div class="icon-box d-flex justify-content-center align-items-center">
@@ -120,11 +155,86 @@ list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
                                     </div>
                                     <div class="vs-content text-center">
                                         <h4 class="vs-head">Values</h4>
-                                        <p class="vs-para py-3">   <?php echo $valuesFirst50; ?>
-                                        <?php if($valuesRest != '') { ?>
-                                            <span class="moretext" style="display: none;"><?php echo ' ' . $valuesRest; ?></span>
-                                            <a href="javascript:void(0);" class="read-more d-block"> Read More</a>
-                                        <?php } ?></p>
+                                        <p class="vs-para py-3"> <?php echo $valuesFirst50; ?>
+                                            <?php if ($valuesRest != '') { ?>
+                                                <span class="moretext"
+                                                    style="display: none;"><?php echo ' ' . $valuesRest; ?></span>
+                                                <a href="javascript:void(0);" class="read-more d-block"> Read More</a>
+                                            <?php } ?>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="abt_vismissvalues d-block d-sm-block d-md-none">
+        <div class="container-fluid">
+            <div class="row justify-content-center vismisrow position-relative">
+                <div class="col-lg-9">
+                    <div class="row g-4">
+                        <div class="col-sm-4 col-4">
+                            <div class="card vscard border-0 bg-transparent" data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic" data-aos-duration="1600" data-aos-offset="150">
+                                <div
+                                    class="card-body innerbody d-flex justify-content-center align-items-center flex-column">
+                                    <div class="icon-box d-flex justify-content-center align-items-center">
+                                        <img src="images/mission.png" class="img-fluid missionicon" alt="">
+                                    </div>
+                                    <div class="vs-content text-center">
+                                        <h4 class="vs-head">Mission</h4>
+                                        <p class="vs-para py-3"> <?php echo $missionFirst50; ?>
+                                            <?php if ($missionRest != '') { ?>
+                                                <span class="moretext"
+                                                    style="display: none;"><?php echo ' ' . $missionRest; ?></span>
+                                                <a href="javascript:void(0);" class="read-more d-block">Read more</a>
+                                            <?php } ?>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-4">
+                            <div class="card vscard border-0 bg-transparent" data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic" data-aos-duration="1600" data-aos-offset="170">
+                                <div
+                                    class="card-body innerbody d-flex justify-content-center align-items-center flex-column">
+                                    <div class="icon-box d-flex justify-content-center align-items-center">
+                                        <img src="images/vision.png" class="img-fluid visionicon" alt="">
+                                    </div>
+                                    <div class="vs-content text-center">
+                                        <h4 class="vs-head">Vision</h4>
+                                        <p class="vs-para py-3"> <?php echo $visionFirst50; ?>
+                                            <?php if ($visionRest != '') { ?>
+                                                <span class="moretext"
+                                                    style="display: none;"><?php echo ' ' . $visionRest; ?></span>
+                                                <a href="javascript:void(0);" class="read-more d-block"> Read More</a>
+                                            <?php } ?>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-4">
+                            <div class="card vscard border-0 bg-transparent" data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic" data-aos-duration="1600" data-aos-offset="190">
+                                <div
+                                    class="card-body innerbody d-flex justify-content-center align-items-center flex-column">
+                                    <div class="icon-box d-flex justify-content-center align-items-center">
+                                        <img src="images/values.png" class="img-fluid valuesicon" alt="">
+                                    </div>
+                                    <div class="vs-content text-center">
+                                        <h4 class="vs-head">Values</h4>
+                                        <p class="vs-para py-3"> <?php echo $valuesFirst50; ?>
+                                            <?php if ($valuesRest != '') { ?>
+                                                <span class="moretext"
+                                                    style="display: none;"><?php echo ' ' . $valuesRest; ?></span>
+                                                <a href="javascript:void(0);" class="read-more d-block"> Read More</a>
+                                            <?php } ?>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -135,7 +245,7 @@ list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
         </div>
     </section>
 
-    <section class="orange_sec position-relative">
+    <section class="orange_sec position-relative" style="cursor:pointer !important">
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="cd-horizontal-timeline">
@@ -278,9 +388,11 @@ list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
 
                 <div class="col-lg-10">
                     <div class="row">
-                        <h4 class="reachus_head py-4 ms-4 ps-5">Any questions ? Reach us</h4>
+                        <h4 class="reachus_head py-4 ms-4 ps-5" data-aos="fade-right" data-aos-duration="1100"
+                            data-aos-offset="150">Any questions ? Reach us</h4>
                         <div class="col-lg-5">
-                            <p class="reachus_para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                            <p class="reachus_para" data-aos="fade-right" data-aos-duration="1100"
+                                data-aos-offset="160">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
                                 maiores alias, eum, neque odit mollitia laboriosam eius minima nostrum, provident
                                 asperiores dolorum veritatis excepturi quaerat odio reprehenderit cum voluptas sunt iure
                                 praesentium modi cumque ipsum aut eos. Adipisci, corporis aperiam!</p>
@@ -288,9 +400,13 @@ list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
                     </div>
                     <div class="row supportcard_sec g-4">
                         <div class="col-lg-3 col-sm-6 col-12">
-                            <div class="card supportcard border-0 bg-white">
+                            <div class="card supportcard border-0 bg-white" data-aos="zoom-in-up"
+                                data-aos-duration="900" data-aos-offset="100">
                                 <div class="card-body innerbody d-flex flex-column justify-content- align-items-center">
-                                    <img src="images/headphone.png" class="img-fluid headset" alt="">
+                                    <div class="fixlogo">
+                                        <img src="images/headphone.png" class="img-fluid headset" alt="">
+                                    </div>
+
                                     <div class="support-content text-center">
                                         <h5 class="support-text my-3">Call us</h5>
                                         <span class="support-extra">080-882171731</span>
@@ -299,9 +415,13 @@ list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6 col-12">
-                            <div class="card supportcard border-0 bg-white">
+                            <div class="card supportcard border-0 bg-white" data-aos="zoom-in-up"
+                                data-aos-duration="900" data-aos-offset="120">
                                 <div class="card-body innerbody d-flex flex-column justify-content- align-items-center">
-                                    <img src="images/website.png" class="img-fluid headset" alt="">
+                                    <div class="fixlogo">
+                                        <img src="images/website.png" class="img-fluid headset" alt="">
+                                    </div>
+
                                     <div class="support-content text-center">
                                         <h5 class="support-text my-3">website</h5>
                                         <span class="support-extra">www.domain.com</span>
@@ -310,9 +430,13 @@ list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6 col-12">
-                            <div class="card supportcard border-0 bg-white">
+                            <div class="card supportcard border-0 bg-white" data-aos="zoom-in-up"
+                                data-aos-duration="900" data-aos-offset="140">
                                 <div class="card-body innerbody d-flex flex-column justify-content- align-items-center">
-                                    <img src="images/address.png" class="img-fluid address" alt="">
+                                    <div class="fixlogo">
+                                        <img src="images/address.png" class="img-fluid address" alt="">
+                                    </div>
+
                                     <div class="support-content text-center">
                                         <h5 class="support-text my-3">Address</h5>
                                         <span class="support-extra">xyz address</span>
@@ -321,9 +445,13 @@ list($valuesFirst50, $valuesRest) = split_text($aboutValues, 30);
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6 col-12">
-                            <div class="card supportcard border-0 bg-white">
+                            <div class="card supportcard border-0 bg-white" data-aos="zoom-in-up"
+                                data-aos-duration="900" data-aos-offset="160">
                                 <div class="card-body innerbody d-flex flex-column justify-content- align-items-center">
-                                    <img src="images/email.png" class="img-fluid email" alt="">
+                                    <div class="fixlogo">
+                                        <img src="images/email.png" class="img-fluid email" alt="">
+                                    </div>
+
                                     <div class="support-content text-center">
                                         <h5 class="support-text my-3">Email</h5>
                                         <span class="support-extra">info@domain.com</span>

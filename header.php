@@ -426,11 +426,21 @@
                         <a href="#" class="sub-btn">Consulting <span class="icon">+<span></a>
                         <div class="sub-dropdown">
                             <a class="sub-item" href="smart_consulting.php">smart consulting</a>
-                            <a class="sub-item" href="courtyard-villa.php">Courtyard</a>
-                            <a class="sub-item" href="glamping-tent.php">Glamping Tent</a>
+                           
                         </div>
                     </li>
-                    <li class="menu-item"><a href="">Contracting</a></li>
+                    <li class="menu-item">
+                        <a href="#" class="sub-btn">Contracting</a>
+                        <div class="sub-dropdown">
+                            <a class="sub-item" href="project_planning_designing.php">Project Planning & Designing</a>
+                            <a class="sub-item" href="goverment_authority.php">Government Authority Compliance</a>
+                            <a class="sub-item" href="strategic_partner_with_financial_advisory.php">Strategic Partner with Financial Advisory</a>
+                            <a class="sub-item" href="service_planning_designing.php">Service Planning & Designing</a>
+                            <a class="sub-item" href="project_management_for_construction.php">Project Management</a>
+                            <a class="sub-item" href="execution_of_construction_site.php">Execution</a>
+                            <a class="sub-item" href="">Branding</a>
+                        </div>
+                    </li>
                     <li class="menu-item">
                         <a href="#" class="sub-btn">Project</a>
                         <div class="sub-dropdown">

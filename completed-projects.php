@@ -4,10 +4,10 @@
     .w-55 {
         width: 55%;
     }
-    .pt-97{
+
+    .pt-97 {
         padding-top: 97px !important;
     }
-    
 </style>
 
 <main class="">
@@ -55,139 +55,40 @@
                     <div class="row mt-5">
                         <div class="col-lg-12">
                             <div class="row mb-0">
-                                <div class="col-lg-4 pe-0 py-0">
-                                    <div class="card pro-stat-card rounded-0 border-0">
-                                        <div class="pro-banner layout1 animation2 position-relative">
-                                            <a href="" class="rt-banner-link">
-                                                <img src="images/ongoing_projects/ashoka-school.jpg"
-                                                    class="img-fluid object-fit-cover" alt="">
-                                            </a>
-                                            <figcaption class="banner-project-tap position-absolute start-0">
-                                                <div class="banner-content">Ashoka Medicover</div>
-                                            </figcaption>
+                                <?php
+                                global $connF;
+                                $getCompletedProjectSql = "SELECT * FROM project WHERE projectstatusId=3";
+                                $getCompletedProject = mysqli_query($connF, $getCompletedProjectSql);
+                                while ($getCompletedProjectRow = mysqli_fetch_array($getCompletedProject)) {
+                                    $projectName = $getCompletedProjectRow['projectName'];
+                                    $projectImg = $getCompletedProjectRow['projectImg']
+
+                                        ?>
+                                    <div class="col-lg-4 px-0 py-0">
+
+                                        <div class="card pro-stat-card rounded-0 border-0">
+                                            <div class="pro-banner layout1 animation2 position-relative">
+                                                <a href="" class="rt-banner-link">
+                                                    <img src=<?php echo 'admin/resources/project_img/' . $projectImg; ?>
+                                                        class="img-fluid object-fit-cover" alt="">
+                                                </a>
+                                                <figcaption class="banner-project-tap position-absolute start-0">
+                                                    <div class="banner-content"> <?php echo $projectName; ?></div>
+                                                </figcaption>
+                                            </div>
+
                                         </div>
-
                                     </div>
-                                </div>
-                                <div class="col-lg-4 px-0">
-                                    <div class="card pro-stat-card rounded-0 border-0">
-                                        <div class="pro-banner layout1 animation2">
-                                            <a href="" class="rt-banner-link">
-                                                <img src="images/ongoing_projects/building.png"
-                                                    class="img-fluid object-fit-cover" alt="">
-                                            </a>
-                                            <figcaption>
-                                                <div class="banner-content"></div>
-                                            </figcaption>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 ps-0">
-                                    <div class="card pro-stat-card rounded-0 border-0">
-                                        <div class="pro-banner layout1 animation2">
-                                            <a href="" class="rt-banner-link">
-                                                <img src="images/ongoing_projects/innerbuilding.jpg"
-                                                    class="img-fluid object-fit-cover" alt="">
-                                            </a>
-                                            <figcaption>
-                                                <div class="banner-content"></div>
-                                            </figcaption>
-                                        </div>
+                                <?php } ?>
 
 
-                                    </div>
-                                </div>
+
+
+
+
                             </div>
-                            <div class="row mb-0">
-                                <div class="col-lg-4 pe-0">
-                                    <div class="card pro-stat-card rounded-0 border-0">
-                                        <div class="pro-banner layout1 animation2">
-                                            <a href="" class="rt-banner-link">
-                                                <img src="images/ongoing_projects/pro4.jpg"
-                                                    class="img-fluid object-fit-cover" alt="">
-                                            </a>
-                                            <figcaption>
-                                                <div class="banner-content"></div>
-                                            </figcaption>
-                                        </div>
 
 
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 px-0">
-                                    <div class="card pro-stat-card rounded-0 border-0">
-                                        <div class="pro-banner layout1 animation2">
-                                            <a href="" class="rt-banner-link">
-                                                <img src="images/ongoing_projects/pro5.jpg"
-                                                    class="img-fluid object-fit-cover" alt="">
-                                            </a>
-                                            <figcaption>
-                                                <div class="banner-content"></div>
-                                            </figcaption>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 ps-0">
-                                    <div class="card pro-stat-card rounded-0 border-0">
-                                        <div class="pro-banner layout1 animation2">
-                                            <a href="" class="rt-banner-link">
-                                                <img src="images/ongoing_projects/pro6.jpg"
-                                                    class="img-fluid object-fit-cover" alt="">
-                                            </a>
-                                            <figcaption>
-                                                <div class="banner-content"></div>
-                                            </figcaption>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4 pe-0">
-                                    <div class="card pro-stat-card rounded-0 border-0">
-                                        <div class="pro-banner layout1 animation2">
-                                            <a href="" class="rt-banner-link">
-                                                <img src="images/ongoing_projects/pro6.jpg"
-                                                    class="img-fluid object-fit-cover" alt="">
-                                            </a>
-                                            <figcaption>
-                                                <div class="banner-content"></div>
-                                            </figcaption>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 px-0">
-                                    <div class="card pro-stat-card rounded-0 border-0">
-                                        <div class="pro-banner layout1 animation2">
-                                            <a href="" class="rt-banner-link">
-                                                <img src="images/ongoing_projects/pro7.jpg"
-                                                    class="img-fluid object-fit-cover" alt="">
-                                            </a>
-                                            <figcaption>
-                                                <div class="banner-content"></div>
-                                            </figcaption>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 ps-0">
-                                    <div class="card pro-stat-card rounded-0 border-0">
-                                        <div class="pro-banner layout1 animation2">
-                                            <a href="" class="rt-banner-link">
-                                                <img src="images/ongoing_projects/pro7.jpg"
-                                                    class="img-fluid object-fit-cover" alt="">
-                                            </a>
-                                            <figcaption>
-                                                <div class="banner-content"></div>
-                                            </figcaption>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
                     </div>

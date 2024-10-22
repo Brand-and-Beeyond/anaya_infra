@@ -5,7 +5,7 @@ $username = "root";
 $password = "";
 $dbname = "anaya"; 
 // $base_url="://localhost:8081/asmakgroup/"
-$connF = mysqli_connect($servername,$username,$password,$dbname);
+$connF = mysqli_connect(hostname: $servername,username: $username,password: $password,database: $dbname);
 
 if($connF)
 {
@@ -302,6 +302,114 @@ function deleteAdmin(){
 	}
 }
 // End Delete Admin
+// Start Add About Us
+function addAbout(){
+	global $connF;
+	if(isset($_POST['addnewabout'])){
+		
+		$aboutDesc = $_POST['aboutDesc'];
+		$aboutVision = $_POST['aboutVision'];
+		$aboutMission = $_POST['aboutMission'];
+		$aboutValues = $_POST['aboutValues'];
+		// $projectImg = $_FILES['projectImg']['name'];
+		// $tempImg1 = $_FILES['projectImg']['tmp_name'];
+		// move_uploaded_file($tempImg1,"resources/project_img/$projectImg");
+
+		$addAboutSql = "INSERT INTO aboutus(aboutDesc,aboutVision,aboutMission,aboutValues) VALUES ('$aboutDesc','$aboutVision','$aboutMission','$aboutValues')";
+		$addAbout = mysqli_query($connF,$addAboutSql);
+		if($addAbout){
+			echo "<script>alert('About Us Added')</script>";
+			echo "<script>window.open('index.php?addaboutus','_self')</script>";
+		}
+		
+	}
+}
+
+// End Add About Us
+
+// Start Edit About Us
+function updateAbout(){
+	
+	global $connF;
+	
+	if(isset($_POST['editabout'])){
+		
+		$aboutusId = $_GET['editabout'];
+		
+		$getAboutSql = "SELECT * FROM aboutus WHERE aboutusId='$aboutusId'";
+		$getAbout = mysqli_query($connF,$getAboutSql);
+		$getAboutRow = mysqli_fetch_array($getAbout);
+		
+		$aboutDesc = $_POST['aboutDesc'];
+		$projectImg = $_FILES['projectImg']['name'];
+
+		$aboutMission = $_POST['aboutMission'];
+		$aboutValues = $_POST['aboutValues'];
+		$aboutVision=$_POST['aboutVision'];
+
+
+        $updateAboutSql = "UPDATE aboutus SET aboutDesc='$aboutDesc',aboutVision='$aboutVision',aboutMission='$aboutMission',aboutValues ='$aboutValues' WHERE aboutusId='$aboutusId'";
+		$updateAbout = mysqli_query($connF,$updateAboutSql);
+		if($updateAbout){
+			echo "<script>alert('About us Updated')</script>";
+			echo "<script>window.open('index.php?addaboutus','_self')</script>";
+		}
+		else{
+			echo "<script>alert('Something Wrong!')</script>";
+			echo "<script>window.open('index.php?addaboutus','_self')</script>";
+		}
+	    }
+	}
+// End Edit About Us
+
+//Start View About Us
+function displayAbout(){
+	global $connF;
+	$getAboutSql = "SELECT * FROM aboutus WHERE 1";
+	$getAbout = mysqli_query($connF,$getAboutSql);
+	while($getAboutRow = mysqli_fetch_array($getAbout)){
+		$aboutusId = $getAboutRow['aboutusId'];
+		$aboutDesc = $getAboutRow['aboutDesc'];
+		$aboutVision = $getAboutRow['aboutVision'];
+		$aboutMission = $getAboutRow['aboutMission'];
+		$aboutValues = $getAboutRow['aboutValues'];
+		
+		
+		echo "
+			<tr>
+				<td>$aboutusId</td>
+				<td>$aboutDesc</td>
+				<td>$aboutVision</td>
+				<td>$aboutMission</td>
+				<td>$aboutValues</td>
+			
+				<td><a href='index.php?editabout=$aboutusId' class='btn btn-sm btn-circle btn-warning delete_product'><i class='fa fa-edit'></i></a></td>
+
+			</tr>
+		
+		";
+		// <td><a onClick=\"javascript: return confirm('Please confirm deletion');\" href='index.php?deleteAboutUs=$aboutusId'class='btn btn-sm btn-circle btn-danger delete_product'><i class='fa fa-trash'></i></a></td>
+
+	}
+}
+
+// End View About Us 
+
+// Start Delete About Us
+function deleteAboutUs(){
+	global $connF;
+	if(isset($_GET['deleteAboutUs'])){
+		
+		$AboutId = $_GET['deleteAboutUs'];
+		$deleteAboutUsSql = "DELETE FROM aboutus WHERE aboutusId='$AboutId'";
+		$deleteAboutUs = mysqli_query($connF,$deleteAboutUsSql);
+		if($deleteAboutUs){
+			echo "<script>window.open('index.php?addaboutus','_self')</script>";
+		}
+	}
+	
+}
+
 
 // Start Add Project Category
 
@@ -434,11 +542,13 @@ function addProject(){
 		$projectCatId = $_POST['projectCatId'];
 		$projectstatusId = $_POST['projectstatusId'];
 		$projectDesc = $_POST['projectDesc'];
+		$projectLoc = $_POST['projectLoc'];
+		$projectDate = $_POST['projectDate'];
 		$projectImg = $_FILES['projectImg']['name'];
 		$tempImg1 = $_FILES['projectImg']['tmp_name'];
 		move_uploaded_file($tempImg1,"resources/project_img/$projectImg");
 
-		$addProjectSql = "INSERT INTO project(projectName,projectImg,projectDesc,projectCatId,projectstatusId) VALUES ('$projectName','$projectImg','$projectDesc','$projectCatId'.'$projectstatusId')";
+		$addProjectSql = "INSERT INTO project(projectName,projectImg,projectDesc,projectLoc,projectDate,projectCatId,projectstatusId) VALUES ('$projectName','$projectImg','$projectDesc','$projectLoc','$projectDate','$projectCatId','$projectstatusId')";
 		$addProject = mysqli_query($connF,$addProjectSql);
 		if($addProject){
 			echo "<script>alert('Project Added')</script>";
@@ -467,6 +577,7 @@ function updateProject(){
 		$projectImg = $_FILES['projectImg']['name'];
 
 		$projectDesc = $_POST['projectDesc'];
+		$projectLoc = $_POST['projectLoc'];
 		$projectCatId=$_POST['projectCatId'];
 		$projectstatusId=$_POST['projectstatusId'];
 		$projectImgOld = $getProjectRow['projectImg'];
@@ -478,7 +589,7 @@ function updateProject(){
 		$tempImg1 = $_FILES['projectImg']['tmp_name'];
 		move_uploaded_file($tempImg1,"resources/project_img/$projectImg");
 
-        $updateProjectSql = "UPDATE project SET projectName='$projectName',projectImg='$projectImg',projectDesc='$projectDesc',projectCatId='$projectCatId',projectstatusId='$projectstatusId' WHERE projectId='$projectId'";
+        $updateProjectSql = "UPDATE project SET projectName='$projectName',projectImg='$projectImg',projectDesc='$projectDesc',projectLoc ='$projectLoc',projectCatId='$projectCatId',projectstatusId='$projectstatusId' WHERE projectId='$projectId'";
 		$updateProject = mysqli_query($connF,$updateProjectSql);
 		if($updateProject){
 			echo "<script>alert('Project Updated')</script>";
@@ -502,6 +613,8 @@ function displayProject(){
 		$projectName = $getProjectRow['projectName'];
 		$projectImg = $getProjectRow['projectImg'];
 		$projectDesc = $getProjectRow['projectDesc'];
+		$projectLoc = $getProjectRow['projectLoc'];
+		$projectDate = $getProjectRow['projectDate'];
 		$projectCatId = $getProjectRow['projectCatId'];
 		$getprojectCatNameSql = "SELECT * FROM projectcategory WHERE projectCatId='$projectCatId'";
 		$getprojectCatName = mysqli_query($connF,$getprojectCatNameSql);
@@ -518,6 +631,8 @@ function displayProject(){
 				<td>$projectId</td>
 				<td>$projectName</td>
 				<td>$projectDesc</td>
+				<td>$projectLoc</td>
+				<td>$projectDate</td>
 			<td><img src='resources/project_img/$projectImg' style='width: 50px;height:50px;'></td>
 
 				<td>$projectCatName</td>
@@ -581,29 +696,36 @@ function countCompleted(){
 	echo "$CompletedCount";
 }
 // Start Add Vacancy
-function addVacancy(){
-	global $connF;
-	if(isset($_POST['addnewvacancy'])){
-// 		echo '<pre>';print_r($_POST);exit;
-		$postName = $_POST['postName'];
-		$experience  = $_POST['experience'];
-		$no_vacancies = $_POST['no_vacancies'];
-		// $vacancyheaderTxt = $_POST['qualification'];
-		$qualification = $_POST['qualification'];
-		$skill1  = $_POST['skill1'];
-		$location1 = $_POST['location1'];
-// 		$vacancyheaderImage = $_FILES['vacancyheaderImage']['name'];
-// 		$tempImg2 = $_FILES['vacancyheaderImage']['tmp_name'];
-// 		move_uploaded_file($tempImg2,"resources/$vacancyheaderImage");
-		$addVacancySql = "INSERT INTO vacancy(postName,experience,no_vacancies,qualification,skill1,location1) VALUES ('$postName','$experience','$no_vacancies','$qualification','$skill1','$location1')";
-		$addVacancy = mysqli_query($connF,$addVacancySql);
-		if($addVacancy){
-			echo "<script>alert('Vacancy Added')</script>";
-			echo "<script>window.open('index.php?addvacancy','_self')</script>";
-		}
-		
-	}
+function addVacancy() {
+    global $connF;
+
+    if (isset($_POST['addnewvacancy'])) {
+        // Sanitize input
+        $postName = mysqli_real_escape_string($connF, $_POST['postName']);
+        $experience = mysqli_real_escape_string($connF, $_POST['experience']);
+        $no_vacancies = mysqli_real_escape_string($connF, $_POST['no_vacancies']);
+        $qualification = mysqli_real_escape_string($connF, $_POST['qualification']);
+        $jobdescription = mysqli_real_escape_string($connF, $_POST['jobdescription']);
+        $jobtype = mysqli_real_escape_string($connF, $_POST['jobtype']);
+        $skill1 = mysqli_real_escape_string($connF, $_POST['skill1']);
+        $location1 = mysqli_real_escape_string($connF, $_POST['location1']);
+
+        // SQL query
+        $addVacancySql = "INSERT INTO vacancy(postName, experience, no_vacancies, qualification, jobdescription, jobtype, skill1, location1) VALUES ('$postName', '$experience', '$no_vacancies', '$qualification', '$jobdescription', '$jobtype', '$skill1', '$location1')";
+
+        // Execute query
+        $addVacancy = mysqli_query($connF, $addVacancySql);
+
+        // Check for errors
+        if (!$addVacancy) {
+            echo "Error: " . mysqli_error($connF); // This line checks for errors in the query execution
+        } else {
+            echo "<script>alert('Vacancy Added')</script>";
+            echo "<script>window.open('index.php?addvacancy','_self')</script>";
+        }
+    }
 }
+
 // End Add Vacancy
 
 // Start View Vacancy
@@ -618,6 +740,8 @@ function displayVacancy(){
 		$no_vacancies = $getVacancyRow['no_vacancies'];
 		$experience = $getVacancyRow['experience'];
 		$qualification = $getVacancyRow['qualification'];
+		$jobdescription = $getVacancyRow['jobdescription'];
+		$jobtype =$getVacancyRow['jobtype'];
 		$skill1 = $getVacancyRow['skill1'];
 		$location1 = $getVacancyRow['location1'];
 // 		$vacancyheaderTxt = $getVacancyRow['vacancyheaderTxt'];
@@ -629,7 +753,9 @@ function displayVacancy(){
 				<td>$no_vacancies</td>
 				<td>$experience</td>
 				<td>$qualification</td>
-				'<td>$skill1</td>
+				<td>$jobdescription</td>
+				<td>$jobtype</td>
+				<td>$skill1</td>
 				<td>$location1</td>
 				
 				<td><a href='index.php?editvacancy=$vacancyId' class='btn btn-sm btn-circle btn-warning delete_product'><i class='fa fa-edit'></i></a></td>
@@ -660,6 +786,8 @@ function updateVacancy(){
 		$no_vacancies = $_POST['no_vacancies'];
 // 		$vacancyheaderTxt = $_POST['vacancyheaderTxt'];
 			$qualification = $_POST['qualification'];
+			$jobdescription = $_POST['jobdescription'];
+			$jobtype = $_POST['jobtype'];
 		$skill1  = $_POST['skill1'];
 		$location1 = $_POST['location1'];
 // 		$vacancyheaderImageOld = $getVacancyRow['vacancyheaderImage'];
@@ -671,7 +799,7 @@ function updateVacancy(){
 		$tempImg1 = $_FILES['vacancyheaderImage']['tmp_name'];
 		move_uploaded_file($tempImg1,"resources/$vacancyheaderImage");
 
-        $updateVacancySql = "UPDATE vacancy SET postName='$postName',experience='$experience',no_vacancies='$no_vacancies',qualification='$qualification',skill1='$skill1',location1='$location1' WHERE vacancyId='$vacancyId'";
+        $updateVacancySql = "UPDATE vacancy SET postName='$postName',experience='$experience',no_vacancies='$no_vacancies',qualification='$qualification',jobdescription='$jobdescription',jobtype='$jobtype',skill1='$skill1',location1='$location1' WHERE vacancyId='$vacancyId'";
 		$updateVacancy = mysqli_query($connF,$updateVacancySql);
 		if($updateVacancy){
 			echo "<script>alert('Vacancy Updated')</script>";

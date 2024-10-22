@@ -42,7 +42,7 @@
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label class="form-label" for="validationCustom03">Contact No 2</label>
-                                            <input type="text" class="form-control" id="validationCustom03" placeholder="Contact No 2" required name="contactNum_2">
+                                            <input type="text" class="form-control" id="validationCustom03" placeholder="Contact No 2"  name="contactNum_2">
                                         </div>
                                     </div>
                                 </div>
@@ -50,7 +50,7 @@
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label class="form-label" for="validationCustom04">Contact No 3</label>
-                                            <input type="text" class="form-control" id="validationCustom04" placeholder="Contact No 3" required name="contactNum_3">
+                                            <input type="text" class="form-control" id="validationCustom04" placeholder="Contact No 3"  name="contactNum_3">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -64,13 +64,13 @@
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label class="form-label" for="validationCustom05">Email 2</label>
-                                            <input type="email" class="form-control" id="validationCustom05" placeholder="Email 2" required name="contactEmail_2">
+                                            <input type="email" class="form-control" id="validationCustom05" placeholder="Email 2"  name="contactEmail_2">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label class="form-label" for="validationCustom05">Email 3</label>
-                                            <input type="email" class="form-control" id="validationCustom05" placeholder="Email 3" required name="contactEmail_3">
+                                            <input type="email" class="form-control" id="validationCustom05" placeholder="Email 3"  name="contactEmail_3">
                                         </div>
                                     </div>
                                 </div>

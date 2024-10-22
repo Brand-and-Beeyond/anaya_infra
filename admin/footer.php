@@ -37,7 +37,7 @@
 <!-- apexcharts js -->
 <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
 <script src="assets/js/pages/form-validation.init.js"></script>
-
+<script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 <!-- Required datatable js -->
 <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -63,7 +63,71 @@
 <!-- init js -->
 <script src="assets/js/pages/form-editor.init.js"></script>
 <script src="assets/js/app.js"></script>
-<script src="assets/ckeditor/ckeditor.js"></script>
+<!-- <script src="assets/ckeditor/ckeditor.js"></script> -->
+<script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+
+    
+<script>
+    // Function to initialize CKEditor with custom configuration
+    function initCkeditorOnAllTextareas() {
+        // Select all textareas on the page
+        const textareas = document.querySelectorAll('textarea');
+
+        // Loop through each textarea and initialize CKEditor
+        textareas.forEach((textarea, index) => {
+            const wrapper = textarea.closest('.ckeditor-container'); // Get the closest container
+            ClassicEditor
+                .create(textarea, {
+                    toolbar: {
+                        items: [
+                            'fontFamily', 'fontSize', 
+                            'bold', 'italic', 'underline', 'strikethrough',
+                            'fontColor', 'fontBackgroundColor',
+                            'superscript', 'subscript',
+                            'heading', 'blockquote', 'codeBlock',
+                            'numberedList', 'bulletedList', 'outdent', 'indent',
+                            'alignment',
+                            'link', 'imageUpload', 'mediaEmbed',
+                            'undo', 'redo',
+                            'removeFormat'
+                        ]
+                    },
+                    htmlSupport: {
+                        allow: [
+                            {
+                                name: /.*/, // Allow all elements and attributes
+                                attributes: true,
+                                classes: true,
+                                styles: true
+                            }
+                        ]
+                    },
+                    placeholder: 'Type your content here...',
+                })
+                .then(editor => {
+                    // Resize observer to adjust editor height based on container size
+                    const resizeObserver = new ResizeObserver(entries => {
+                        for (let entry of entries) {
+                            const height = entry.contentRect.height;
+                            editor.ui.view.editable.element.style.height = `${height - 30}px`; // Adjust for padding/border
+                        }
+                    });
+
+                    // Observe the wrapper for resizing
+                    resizeObserver.observe(wrapper);
+
+                    // Set initial editor height based on container size
+                    editor.ui.view.editable.element.style.height = `${wrapper.clientHeight - 30}px`;
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        });
+    }
+
+    // Initialize CKEditor on all textareas when the page loads
+    initCkeditorOnAllTextareas();
+</script>
 
 </body>
 </html>

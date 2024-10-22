@@ -13,6 +13,8 @@
 
 			$projectName = $getprojectRow['projectName'];
             $projectDesc = $getprojectRow['projectDesc'];
+            $projectLoc = $getprojectRow['projectLoc'];
+            $projectDate = $getprojectRow['projectDate'];
 			$projectImg = $getprojectRow['projectImg'];
             $projectCatId = $getprojectRow['projectCatId'];
             // $servicesheaderImage = $getBlogsRow['servicesheaderImage'];
@@ -45,7 +47,7 @@
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Add Project Category</li>
+                            <li class="breadcrumb-item active">Edit Project</li>
                         </ol>
                     </div>
 
@@ -58,9 +60,9 @@
             <div class="col-xl-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Add Project Category</h4>
+                        <h4 class="card-title">Edit Project</h4>
                         <!-- <p class="card-title-desc">Provide valuable, actionable feedback to your users with HTML5 form validation–available in all our supported browsers.</p> -->
-                        <form class="needs-validation" novalidate method="post"  enctype="multipart/form-data">
+                        <form class="needs-validation" novalidate method="post"  enctype="multipart/form-data" accept-charset="UTF-8">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mb-3">
@@ -72,7 +74,7 @@
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label" for="validationCustom01">Project Image</label>
-                                        <input type="file" class="form-control" id="formGroupExampleInput"   name="projectImg" value="<?php echo $projectImg;?>"><img src="<?php echo 'resources/project_img/'.$projectImg;?>" width="200" height="200">
+                                        <input type="file" class="form-control" id="formGroupExampleInput"   name="projectImg" value="<?php echo $projectImg;?>"><img src="<?php echo 'resources/project_img/'.$projectImg;?>" width="150" height="150">
 
                                     </div>
                                 </div>
@@ -110,10 +112,17 @@
 									</select>    
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="validationCustom01">Project  Location</label>
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Project Location "   name="projectLoc" value="<?php echo $projectLoc;?>">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label" for="validationCustom05">Project Description </label>
-                                     
+                                        <!-- <textarea name="projectDesc" id="project-text" style="display:none;"></textarea> -->
                                         <textarea class="form-control ckeditor" name="projectDesc"><?php echo $projectDesc;?></textarea>
                                         </div>
 

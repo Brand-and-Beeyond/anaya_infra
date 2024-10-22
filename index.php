@@ -5,11 +5,11 @@
     <!--CUSTOM FOLLOW CURSOR START-->
 
 
-
-
     <?php include('slider.php'); ?>
 
-    <section class="aboutsite">
+
+    <!--about anaya- section for desktop -->
+    <section class="aboutsite d-none d-sm-none d-md-block d-lg-block">
         <div class="container-fluid">
             <div class="row justify-content-center pt-50">
                 <div class="col-lg-11 col-md-10">
@@ -31,9 +31,9 @@
                         </div>
                         <div class="col-lg-7 col-md-7">
                             <h1 class="home_abt_heading pe-4" data-aos="fade-left" data-aos-offset="200"
-                            data-aos-duration="1000">Loren Ipsum</h1>
+                                data-aos-duration="1000">Loren Ipsum</h1>
                             <p class="seo-link home_abt_txt" data-aos="fade-left" data-aos-offset="300"
-                            data-aos-duration="1200">
+                                data-aos-duration="1200">
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore
                                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -59,8 +59,67 @@
     </section>
 
 
+    <!--about anaya- section for mobile -->
 
-    <section class="why_us overflow-hidden" id="whyus">
+
+    <section class="mob-aboutsite d-block d-sm-block d-md-none d-lg-none">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-11">
+                    <div class="row text-center">
+                        <h2 class="mob-head">about <span class="anaya-mob-span">anaya</span></h2>
+                        <div class="mob-para">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "Lorem ipsum dolor
+                                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt "Lorem ipsum
+                                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+                        </div>
+                        <div class="col-12">
+                            <div class="row mob-achivements g-3 mt-2">
+                                <div class="col-4 text-center">
+                                    <div class="info_box">
+                                        <h3><span>250+</span></h3>
+                                        <p>Project Launches</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <div class="info_box">
+                                        <h3><span>45,442</span></h3>
+                                        <p>Units Sold</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <div class="info_box">
+                                        <h3><span>46%<span style="font-size: inherit; padding: 0 2px 0 5px;"><span
+                                                        style="font-size: inherit; letter-spacing: 1px;"></span></h3>
+                                        <p>Worth Of Inventory Sold</p>
+                                    </div>
+                                </div>
+
+                                <div class="video-box" data-video-id="s2BTyC4O_1U">
+                                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/399994009.jpg?k=116498503203178453df613c4dcc6c467f7a316bd1d593c1cc15a8290bcca3b4&o=&hp=1"
+                                        class="img-fluid vthumb" alt="">
+                                    <div class="boxhover"></div>
+                                    <div class="play-icon">
+                                        <img src="images/play-button.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="video-iframe">
+                                        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" class=""></iframe>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--why us section for desktop -->
+    <section class="why_us overflow-hidden d-none d-sm-none d-md-block d-lg-block" id="whyus">
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-9 col-md-9">
@@ -157,24 +216,30 @@
         </div>
     </section>
 
+
+    <!--why us section for mobile -->
+
+
+
+
     <section class="feature_project white_pointer" style="background: #fff;">
 
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-lg-11">
-                    <h4 class="section_heading" data-aos="fade-right" data-aos-offset="200"
-                    data-aos-duration="1000">Ongoing Projects</h4>
-                    <h2 class="new_subhead" data-aos="fade-right" data-aos-offset="300"
-                    data-aos-duration="1200">Exquisite Residences and Bespoke Commercial Spaces</h2>
+                <div class="col-lg-11 text-center text-sm-center text-md-start">
+                    <h4 class="section_heading" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000">
+                        Completed Projects</h4>
+                    <h2 class="new_subhead" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1200">
+                        Exquisite Residences and Bespoke Commercial Spaces</h2>
                 </div>
             </div>
         </div>
-        <div class="row mr0">
+        <div class="row mr0 d-none d-sm-none d-md-block">
 
 
             <div class="owl-carousel owl-theme life on_projects">
                 <?php
-                $getProjectSql = "SELECT * FROM project WHERE projectstatusId=2";
+                $getProjectSql = "SELECT * FROM project WHERE projectstatusId=3";
                 $getProject = mysqli_query($connF, $getProjectSql);
                 while ($getProjectRow = mysqli_fetch_array($getProject)) {
                     $projectId = $getProjectRow['projectId'];
@@ -209,18 +274,16 @@
 
                     <div class="item">
                         <div class="row mr0 align-items-center">
-                            <div class="col-md-8 pd0">
+                            <div class="col-md-7 pd0">
                                 <div class="feature_img_wrap">
-                                    <img src=<?php echo 'admin/resources/project_img/' . $projectImg; ?>
-                                        alt="Touchwood Bliss">
+                                    <img src=<?php echo 'admin/resources/project_img/' . $projectImg; ?> alt="">
                                 </div>
                             </div>
-                            <div class="col-md-4 pd0">
+                            <div class="col-md-5 col-sm-12 col-12 pd0">
                                 <div class="project_content">
                                     <div>
-                                        <!-- <figure><img class="feature_logo" src="images/dostilogo.svg"
-                                            alt="Dosti 1 Mumbai"></figure> -->
-                                        <div class="projct_name" >
+
+                                        <div class="projct_name">
                                             <?php echo $projectName; ?>
                                         </div>
                                         <div class="projct_dtls">
@@ -234,10 +297,7 @@
                                                 <span><i class="fa fa-map-marker-alt"></i></span>
                                                 <?php echo $projectLoc; ?>
                                             </div>
-                                            <!--<div class="dtl_col aos-init" data-aos="fade-up">
-                                        <span><img src="images/time.png" alt=""></span>
-                                        Possession within 24 months
-                                    </div>-->
+
                                         </div>
                                         <a href="our-work.php" class="feature-btn">View more</a>
                                     </div>
@@ -251,15 +311,91 @@
                 <?php } ?>
             </div>
         </div>
+        <div class="row justify-content-center  d-block d-sm-block d-md-none">
+            <div class="col-11">
+                <div class="row justify-content-center">
+                    <div class="owl-carousel owl-theme life on_projects">
+                        <?php
+                        $getProjectSql = "SELECT * FROM project WHERE projectstatusId=3";
+                        $getProject = mysqli_query($connF, $getProjectSql);
+                        while ($getProjectRow = mysqli_fetch_array($getProject)) {
+                            $projectId = $getProjectRow['projectId'];
+                            $projectName = $getProjectRow['projectName'];
+                            $projectImg = $getProjectRow['projectImg'];
+                            $projectDesc = $getProjectRow['projectDesc'];
+                            $projectLoc = $getProjectRow['projectLoc'];
+                            $projectCatId = $getProjectRow['projectCatId'];
+
+                            // Fetch project category name
+                            $getprojectCatNameSql = "SELECT * FROM projectcategory WHERE projectCatId='$projectCatId'";
+                            $getprojectCatName = mysqli_query($connF, $getprojectCatNameSql);
+                            $getprojectCatNameRow = mysqli_fetch_array($getprojectCatName);
+                            $projectCatName = $getprojectCatNameRow['projectCatName'];
+
+                            // Fetch project status
+                            $projectstatusId = $getProjectRow['projectstatusId'];
+                            $projectstatusSql = "SELECT * FROM projectstatus WHERE projectstatusId='$projectstatusId'";
+                            $getprojectstatus = mysqli_query($connF, $projectstatusSql);
+                            $getprojectstatusRow = mysqli_fetch_array($getprojectstatus);
+                            $projectstatus = $getprojectstatusRow['projectstatus'];
+
+                            // Trim project description to 2 sentences
+                            $sentences = preg_split('/([.!?])\s+/', $projectDesc, 3, PREG_SPLIT_DELIM_CAPTURE);
+                            if (count($sentences) >= 3) {
+                                $trimmedProjectDesc = $sentences[0] . $sentences[1] . ' ' . $sentences[2] . $sentences[3];
+                            } else {
+                                $trimmedProjectDesc = $projectDesc;
+                            }
+                            ?>
+
+
+                            <div class="item">
+                                <div class="row mr0 align-items-center">
+                                    <div class="col-12 pd0">
+                                        <div class="feature_img_wrap">
+                                            <img src=<?php echo 'admin/resources/project_img/' . $projectImg; ?> alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-12 pd0">
+                                        <div class="project_content ">
+                                            <div class="text-center">
+                                                <div class="projct_name">
+                                                    <?php echo $projectName; ?>
+                                                </div>
+                                                <div class="projct_dtls text-center">
+
+                                                    <div class="dtl_col projectpara text-center">
+                                                        <?php echo $trimmedProjectDesc; ?>
+                                                    </div>
+
+
+                                                </div>
+                                                <a href="" class="more-link">
+                                                    View more</a>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
     </section>
 
 
     <section class="white_pointer clientale">
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-lg-11">
-                    <h4 class="section_heading mb-3"data-aos="fade-right" data-aos-offset="200"
-                    data-aos-duration="1000">Clientele</h4>
+                <div class="col-lg-11 col-11">
+                    <h4 class="section_heading mb-3" data-aos="fade-right" data-aos-offset="200"
+                        data-aos-duration="1000">Clientele</h4>
                 </div>
             </div>
         </div>
@@ -278,7 +414,8 @@
 
                     <div class="item d-flex align-items-center">
                         <div class="client-logo-wrap">
-                            <img src=<?php echo 'admin/resources/client_img/' . $clientImage; ?> class="img-fluid clientlogo" alt="">
+                            <img src=<?php echo 'admin/resources/client_img/' . $clientImage; ?>
+                                class="img-fluid clientlogo" alt="">
                         </div>
                     </div>
                 <?php } ?>
@@ -294,8 +431,8 @@
     </section>
 
 
-
-    <section class="white_pointer px-3">
+    <!-- our projects section - for desktop -->
+    <section class="white_pointer px-3 d-none d-sm-none  d-md-block">
 
         <div class="container-fluid">
 
@@ -303,120 +440,243 @@
                 <div class="col-lg-11">
                     <div class="ourpro mb-5">
                         <h4 class="section_heading mb-1" data-aos="fade-right" data-aos-offset="200"
-                        data-aos-duration="1000">Our Projects</h4>
-                        <h2 class="new_subhead" data-aos="fade-right" data-aos-offset="250"
-                        data-aos-duration="1100">Exquisite Residences and Bespoke Commercial Spaces</h2>
+                            data-aos-duration="1000">Our Projects</h4>
+                        <h2 class="new_subhead" data-aos="fade-right" data-aos-offset="250" data-aos-duration="1100">
+                            Exquisite Residences and Bespoke Commercial Spaces</h2>
                     </div>
                     <div class="row  mt-4 pt-3">
-                        <div class="col-lg-6">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6">
-                                    <div class="news_loc pb-10">Hospitality</div>
-                                    <h3 class="news_title pb-5">
-                                        <a
-                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
-                                            Touchwood Bliss
-                                        </a>
-                                    </h3>
-                                    <div class="news_dtl">
-                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore magna aliqua. </p>
-                                        <a
-                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
-                                            View more</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 p-0">
-                                    <div class="project_img">
-                                        <img src="images/ongoing_projects/farmsyde.jpg"
-                                            class="img-fluid object-fit-cover prothumbnail" id="pro1" alt="">
-                                    </div>
-                                </div>
+                        <div class="col-lg-3 col-sm-4 col-4">
+                            <div class="news_loc pb-10">Hospitality</div>
+                            <h3 class="news_title pb-5">
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    Touchwood Bliss
+                                </a>
+                            </h3>
+                            <div class="news_dtl">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                </p>
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    View more</a>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="row align-items-center ps-3">
-                                <div class="col-lg-6">
-                                    <div class="news_loc pb-10">Institutional</div>
-                                    <h3 class="news_title pb-5">
-                                        <a
-                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
-                                            Ashoka Global Acadamy
-                                        </a>
-                                    </h3>
-                                    <div class="news_dtl">
-                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore magna aliqua. </p>
-                                        <a
-                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
-                                            View more</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 p-0">
-                                    <div class="project_img second">
-                                        <img src="images/ongoing_projects/ashoka-school.jpg" id="pro2"
-                                            class="img-fluid object-fit-cover prothumbnail" alt="">
-                                    </div>
-                                </div>
+                        <div class="col-lg-3 col-sm-4 col-4 p-0">
+                            <div class="project_img">
+                                <img src="images/ongoing_projects/farmsyde.jpg"
+                                    class="img-fluid object-fit-cover prothumbnail" id="pro1" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="row align-items-center flex-row-reverse">
-                                <div class="col-lg-6">
-                                    <div class="news_loc pb-10">Industrial</div>
-                                    <h3 class="news_title pb-5">
-                                        <a
-                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
-                                            TM Cube Indware
-                                        </a>
-                                    </h3>
-                                    <div class="news_dtl">
-                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore magna aliqua. </p>
-                                        <a
-                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
-                                            View more</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 p-0">
-                                    <div class="project_img">
-                                        <img src="images/ongoing_projects/tm-cube.jpg"
-                                            class="img-fluid object-fit-cover prothumbnail" id="pro3" alt="">
-                                    </div>
-                                </div>
+                        <div class="col-lg-3 col-sm-4 col-4">
+                            <div class="news_loc pb-10">Institutional</div>
+                            <h3 class="news_title pb-5">
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    Ashoka Global
+                                </a>
+                            </h3>
+                            <div class="news_dtl">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                </p>
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    View more</a>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="row align-items-center flex-row-reverse">
-                                <div class="col-lg-6">
-                                    <div class="news_loc pb-10">Buildership</div>
-                                    <h3 class="news_title pb-5">
-                                        <a
-                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
-                                            24 GEMS
-                                        </a>
-                                    </h3>
-                                    <div class="news_dtl">
-                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore magna aliqua. </p>
-                                        <a
-                                            href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
-                                            View more</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 p-0">
-                                    <div class="project_img">
-                                        <img src="images/ongoing_projects/building.png"
-                                            class="img-fluid object-fit-cover prothumbnail" id="pro4" alt="">
-                                    </div>
-                                </div>
+                        <div class="col-lg-3 p-0">
+                            <div class="project_img second">
+                                <img src="images/ongoing_projects/ashoka-school.jpg" id="pro2"
+                                    class="img-fluid object-fit-cover prothumbnail" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 p-0">
+                            <div class="project_img">
+                                <img src="images/ongoing_projects/tm-cube.jpg"
+                                    class="img-fluid object-fit-cover prothumbnail" id="pro3" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="news_loc pt-4 pb-10">Industrial</div>
+                            <h3 class="news_title pb-5">
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    TM Cube Indware
+                                </a>
+                            </h3>
+                            <div class="news_dtl">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua. </p>
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    View more</a>
                             </div>
                         </div>
 
+                        <div class="col-lg-3 px-0">
+                            <div class="project_img">
+                                <img src="images/ongoing_projects/building.png"
+                                    class="img-fluid object-fit-cover prothumbnail" id="pro4" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="news_loc pt-4 pb-10">Buildership</div>
+                            <h3 class="news_title pb-5">
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    24 GEMS
+                                </a>
+                            </h3>
+                            <div class="news_dtl">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua. </p>
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    View more</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- our projects section - for mobile -->
+
+    <section class="white_pointer px-3 d-block d-sm-block d-md-none">
+
+        <div class="container-fluid">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <div class="ourpro mb-5">
+                        <h4 class="section_heading mb-1" data-aos="fade-right" data-aos-offset="200"
+                            data-aos-duration="1000">Our Projects</h4>
+                        <h2 class="new_subhead" data-aos="fade-right" data-aos-offset="250" data-aos-duration="1100">
+                            Exquisite Residences and Bespoke Commercial Spaces</h2>
+                    </div>
+                    <div class="row  mt-4 pt-3">
+                        <div class="col-lg-3 col-sm-4 col-4">
+                            <div class="news_loc pb-10">Hospitality</div>
+                            <h3 class="news_title pb-5">
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    Touchwood Bliss
+                                </a>
+                            </h3>
+                            <div class="news_dtl">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                </p>
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    View more</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-4 col-4 p-0">
+                            <div class="project_img">
+                                <img src="images/ongoing_projects/farmsyde.jpg"
+                                    class="img-fluid object-fit-cover prothumbnail" id="pro1" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-4 col-4">
+                            <div class="news_loc pb-10">Institutional</div>
+                            <h3 class="news_title pb-5">
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    Ashoka Global
+                                </a>
+                            </h3>
+                            <div class="news_dtl">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                </p>
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    View more</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-4 col-4 p-0">
+                            <div class="project_img">
+                                <img src="images/ongoing_projects/tm-cube.jpg"
+                                    class="img-fluid object-fit-cover prothumbnail" id="pro3" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-4 col-4">
+                            <div class="news_loc pt-md-4 pt-1 pb-0 pb-md-5">Industrial</div>
+                            <h3 class="news_title pb-5">
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    TM Cube Indware
+                                </a>
+                            </h3>
+                            <div class="news_dtl">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                </p>
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    View more</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-4 col-4 ps-0">
+                            <div class="project_img second">
+                                <img src="images/ongoing_projects/ashoka-school.jpg" id="pro2"
+                                    class="img-fluid object-fit-cover prothumbnail" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-4 col-4">
+                            <div class="news_loc pt-4 pb-10">Buildership</div>
+                            <h3 class="news_title pb-5">
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    24 GEMS
+                                </a>
+                            </h3>
+                            <div class="news_dtl">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                </p>
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    View more</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-4 col-4 px-0">
+                            <div class="project_img">
+                                <img src="images/ongoing_projects/building.png"
+                                    class="img-fluid object-fit-cover prothumbnail" id="pro4" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-4 col-4">
+                            <div class="news_loc pt-4 pb-10">Residential</div>
+                            <h3 class="news_title pb-5">
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    24 GEMS
+                                </a>
+                            </h3>
+                            <div class="news_dtl">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                </p>
+                                <a
+                                    href="https://infra.economictimes.indiatimes.com/amp/news/urban-infrastructure/from-congestion-to-connectivity-how-mumbais-infrastructure-projects-are-changing-property-dynamics/112704356">
+                                    View more</a>
+                            </div>
+                        </div>
 
                     </div>
 
@@ -431,13 +691,14 @@
     <section class="testimonials py-3">
         <div class="container-fluid px-0">
             <div class="row d-flex align-items-center">
-                <div class="col-md-3">
+                <div class="col-md-3 d-none d-sm-none d-md-block">
                     <div class="ms-4 ps-5">
-                        <h4 class="client_heading" data-aos="fade-right" data-aos-offset="300"
-                                            data-aos-duration="1000">Client <br> Testimonial</h4>
+                        <h4 class="client_heading " data-aos="fade-right" data-aos-offset="300"
+                            data-aos-duration="1000">
+                            Client <br> Testimonial</h4>
                     </div>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-9 col-sm-12 col-12">
                     <div class="client-testi position-relative">
                         <div class="row mr0 g-1">
                             <div class="owl-carousel clientcar position-relative">
@@ -445,36 +706,61 @@
                                     <h3 class="client_heading">Lorem ipsum</h3>
                                     <h5 class="client_subheading">Touchwood bliss</h5>
                                     <div class="client_para my-2">
-                                        <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum
-                                            dolor sit amet, consectetur </p>
+                                        <div class="row">
+                                            <div class="col-lg-9 col-sm-9 col-10">
+                                                <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem
+                                                    ipsum
+                                                    dolor sit amet, consectetur </p>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                                 <div class="item">
                                     <h3 class="client_heading">Lorem ipsum</h3>
                                     <h5 class="client_subheading">Touchwood bliss</h5>
                                     <div class="client_para my-2">
-                                        <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum
-                                            dolor sit amet, consectetur </p>
+                                        <div class="row">
+                                            <div class="col-lg-9 col-sm-9 col-10">
+                                                <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem
+                                                    ipsum
+                                                    dolor sit amet, consectetur </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <h3 class="client_heading">Lorem ipsum</h3>
                                     <h5 class="client_subheading">Touchwood bliss</h5>
                                     <div class="client_para my-2">
-                                        <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum
-                                            dolor sit amet, consectetur </p>
+                                        <div class="row">
+                                            <div class="col-lg-9 col-sm-9 col-10">
+                                                <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem
+                                                    ipsum
+                                                    dolor sit amet, consectetur </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <h3 class="client_heading">Lorem ipsum</h3>
                                     <h5 class="client_subheading">Touchwood bliss</h5>
                                     <div class="client_para my-2">
-                                        <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum
-                                            dolor sit amet, consectetur </p>
+                                        <div class="row">
+                                            <div class="col-lg-9 col-sm-9 col-10">
+                                                <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem
+                                                    ipsum
+                                                    dolor sit amet, consectetur </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
